@@ -3,11 +3,15 @@
     color: #fff;
 }
 
-.ieee-navbar{
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+/*.ieee-navbar{
     font-size: 13px;
     background: #0874a4;
     height: 35px;
-    /*margin-left: 125px;*/
 }
 
 .ieee-navbar a{
@@ -15,109 +19,96 @@
     margin: 0 10px;
     color: #fff;
 }
-
-/**{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}*/
-
-/*body{
-    margin: 0;
-}
 */
-/*.ieee-navbar{
-	align-content: center;
-    background: rgb(108, 211, 245);
-    height: 60px;
-    border-bottom: 20px;
-}
-
-.ieee-navbar a{
-    margin: 3px 30px;
-}*/
-
-.navbar-carousel{
-    width: 100%;
-}
-
-/*.sb-navbar {
-    position:absolute;
-    top:0;
-    z-index:10;
-    width:100%;
-    background-image: rgb(0, 0, 0);
-    transition: background 0.5s;
-    padding: 0;
-}*/
 
 .sticky-top{
     top: 0;
-    /*position: fixed;*/
-}
-
-
-.dropdown-item{
-
 }
 
 .sb-navbar{
-    background-color: #fff;
-    background: transparent !important;
-    z-index: 20;
-    /*font-color: #0874a4;
-    color: #000;*/
+    position: fixed;
+    background: transparent;
+    margin-bottom: -10px;
+    font-weight: 400;
 }
 
-.sb-navbar a{
+.sb-navbar .dropdown-menu{
+    border: 0;
+    background: transparent;
+}
+
+.sb-navbar .dropdown a{
+    text-align: center;
+}
+
+.sb-navbar .nav-item a{
     color: #fff;
-}
-
-.sb-navbar .navbar-toggler{
-    border-color: #0874a4;
-    color:  #0874a4;
-
 }
 
 .sb-navbar.scrolled {  
-    background-color: #525354 !important;
+    background-color: #000;
     transition: background-color 200ms linear;
-
 }
 
-.sb-navbar.scrolled a{
-    color: #fff;
-    transition: font-color 500ms linear;
-}
-
-.sb-navbar.scrolled .navbar-toggler{
-    border-color: #fff;
-    /*transition: font-color 500ms linear;*/
+.sb-navbar.scrolled .dropdown-menu{
+    background-color: #000;
 }
 
 .sb-navbar .navbar-brand img{
-    height: 5rem;
-    width: 5rem;
+    height: 50px;
+    width: 50px;
     margin-left: 5vw;
 }
 
 .sb-navbar .navbar-nav{
-    margin-right: 30px;
+    margin-right: 25px;
     position: relative;
 }
 
 .sb-navbar .navbar-nav li{
-    margin: 3px 20px;
+    padding: 5px 20px;
+    /*padding-left: 20px;*/
+}
+
+.sb-navbar ul{
+    padding-right: 25px;
+    list-style: none;
+}
+
+.sb-navbar ul li{
+    display: inline-block;
+    position: relative;
+    line-height: 21px;
+    text-align: center;
+}
+
+.sb-navbar ul li a{
+    display: block;
+    padding: 8px 25px;
+    text-decoration: none;
+}
+
+.sb-navbar ul li:hover{
+    color: #fff;
+    background: #193f7d;
+}
+
+.sb-navbar ul li .dropdown{
+    min-width: 100%;
+    background: #f2f2f2;
+    display: none;
+    position: absolute;
+    /*z-index: 999;*/
+    left: 0;
+}
+
+.sb-navbar ul li .dropdown-menu a:hover{
+    background: #426296;   
 }
 
 .home-carousel{
-    /*max-height: 90vh;
-    overflow: hidden;
-    object-fit: cover;*/
-    /*top : 35px;*/
-    margin-top: -107px;
+    margin-top: 0;
     position: relative;
-    margin-bottom: 15vh;
     width: 100%;
     background: black;
 }
@@ -141,57 +132,119 @@
     background-image: #000 opacity 0.2;
 }
 
-img.carousel-image {
-    width: 100%;
-    /*max-height: 85vh;*/
-}
-
-
-.card-img-top{
-    /*height: 20vw;*/
-    /*width: 100%;
-    height: 35vh;
-    object-fit: cover;*/
-}
-
 .about-ieee{
     /*color: #fff;
     background: rgb(2,0,36);
     background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 48%, rgba(0,212,255,1) 100%); */
+    margin-top: 30px;
     padding-bottom: 20px;
 }
 
 .about-ieee-heading{
     padding: 30px;
+    font-weight: 400;
+    color: #006699;
+    /*text-decoration: underline #000;*/
 }
 
-.about-ieee-info .ieee{
+.about-ieee-info h2{
+    padding: 20px 0;
+    color: #000;
+}
+
+.about-ieee-heading .underline{
+    background-color: #000;
+    border: 2px solid #000;
+    margin-top: -12px;
+}
+
+.about-ieee-info .underline{
+    background-color: #006699;
+    border: 1px solid #006699;
+    margin-top: -18px;
+}
+
+.about-ieee-info p{
+    padding-bottom: 10px;
+}
+
+.about-ieee-info .sub-section{
     padding: 40px 0;
 }
 
-.about-ieee-info .ieee-india{
-    padding: 40px 0;
+.about-ieee-info button{
+    color: #fff;
+    background-color: #006699;
+    font-family: 'Oswald';
 }
 
-.about-ieee-info .ieee-vizag{
-    padding: 40px 0;
+.about-ieee-info button:hover{
+    color: #006699;
+    background-color: #fff;
+    border: 2px solid #000;
+    overflow: hidden;
+    margin-bottom: -2px;
 }
 
 .ieee-sb-gvpce{
     /*background: rgb(0,212,255);
     background: linear-gradient(180deg, rgba(0,212,255,1) 125%, rgba(102,229,255,1) 175%, rgba(255,255,255,1) 275%);*/
+
+    /*background-image: url("images/gvp-admin.jpg");
+
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+
+    height: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+
+.ieee-sb-gvpce{
+    padding: 50px 0;
+
+    background-image: url("../images/cover-gvp.png");
+
+
+    /*filter: blur(2px);
+    -webkit-filter: blur(2px);*/
+
+    height: 100%;
+    object-position: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /*background-image: url(../images/sb_gvpce_bg.jpg);
+    object-fit: contain;
+    background-repeat: no-repeat;*/
+    /*background: linear-gradient(180deg, rgba(0,212,255,1) 125%, rgba(102,229,255,1) 175%, rgba(255,255,255,1) 275%) fixed;
+    background-size: cover;*/
 }
 
 .ieee-sb-gvpce-heading{
     padding: 30px;
 }
 
-.ieee-sb-gvpce-info{
-    padding: 40px 0;
+.ieee-sb-gvpce-heading .sb-name{
+    color: #006699;
+    font-weight: 600;
 }
 
-.events{
+.ieee-sb-gvpce-info{
+    padding: 40px 0;
+    /*filter: blur(2px);
+    -webkit-filter: blur(2px);*/
+}
 
+/*.ieee-sb-gvpce-info img{
+    wi
+}*/
+
+.events{
+    margin: 50px 0;
 }
 
 .events-heading{
@@ -203,8 +256,14 @@ img.carousel-image {
     margin: 0 40px;
 }
 
+.events-info .card{
+    height: auto;
+    max-height: 700px;
+}
+
 .events-info .card img{
     width: 100%;
+    height: auto;
     max-height: 500px;
     object-position: relative;
     object-fit: cover;
@@ -218,17 +277,11 @@ img.carousel-image {
 }
 
 .status-count p{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .team{
-    padding: 0 7%;
-}
-
-.team .card-img-top{
-    max-width: 100%;
-    max-height: 35vh;
-    object-fit: cover;
+    margin: 40px 0;
 }
 
 .team-heading{
@@ -239,6 +292,24 @@ img.carousel-image {
     padding: 40px 0;
     margin: 0 40px;
 }
+
+.team-info .card-img-top{
+    width: 100%;
+    height: 40vh;
+}
+
+
+.team-info .card img{
+    width: 100%;
+    object-position: relative;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+/*.team-info .card{
+    margin: 40px 0;
+}*/
 
 /*.team-info .member-handles{
     position: absolute;
