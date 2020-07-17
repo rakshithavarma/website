@@ -252,7 +252,11 @@ body{
 }
 
 .events{
-    margin: 50px 0;
+    padding: 50px 0;
+    /*background-image: url(../images/sb_gvpce_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;*/
 }
 
 .events-heading{
@@ -276,7 +280,11 @@ body{
     max-height: 900px;
     background-color: #d3e4ed;
     color: #000;
-    margin: 20px 0;
+    margin: 20px 10px;
+}
+
+.events-info .card:hover{
+    box-shadow: 0 0 111px rgba(0,0,0,.7); 
 }
 
 .events-info .card img{
@@ -293,9 +301,11 @@ body{
 }
 
 .status-count{
-    padding: 40px 0;
-    background-color: #000;
-    color: rgb(245, 114, 66);
+    padding: 60px 0;
+    /*background-color: #000;
+    color: rgb(245, 114, 66);*/
+    background-color: #006699;
+    color: #fff;
 }
 
 .status-count h1{
@@ -306,12 +316,36 @@ body{
     font-weight: 300;
 }
 
+.status-count .icon i{
+    /*background-color: #fff;*/
+    color: #fff;
+    margin-bottom: 40px;
+    /*height: 1.5em;
+    width: 1.5em;
+    top: 50%;
+    left: 50%;
+    align-items: center;
+    line-height: 50px;
+    border-radius: 100%;*/
+}
+
 .team{
     margin: 40px 0;
 }
 
 .team-heading{
     padding: 30px;
+    color: #006699;
+}
+
+.team-heading .underline{
+    background-color: #000;
+    border: 2px solid #000;
+    margin-top: -5px;
+}
+
+.team-heading a{
+    color: #000;
 }
 
 .team-info{
@@ -320,16 +354,16 @@ body{
 }
 
 .team-info .card-img-top{
-    width: 100%;
-    height: 40vh;
+    width: 250px;
+    height: 250px;
 }
-
 
 .team-info .card img{
     width: 100%;
     object-position: relative;
     object-fit: cover;
     overflow: hidden;
+    background-position: center top;
 }
 
 
