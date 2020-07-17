@@ -20,13 +20,13 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
 
+    <!-- <script type="text/javascrip" src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up.js/1.0.0/jquery.counterup.js"></script>
+    <script type="text/javascrip" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints.js/4.0.1/jquery.waypoints.js"></script> -->
+
     <script type="text/javascript">
-    	$(function () {
-  			$(document).scroll(function () {
-    		var $nav = $(".sb-navbar");
-    		$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-  			});
-		});
+
+    	
+
     </script>
 
 </head>
@@ -304,23 +304,24 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="icon text-center">
-						<i class="fa fa-ticket fa-3x"></i>
+						<i class="fa fa-ticket fa-4x"></i>
 					</div>
-					<h1 class="text-center">57</h1>
+					<h1 class="text-center counter" data-target = "57">0</h1>
+					<!-- <h1 class="num">250</h1> -->
 					<p class="text-center">Events</p>
 				</div>
 				<div class="col-md-4 justify-content-center">
 					<div class="icon text-center">
-						<i class="fa fa-users fa-3x"></i>
+						<i class="fa fa-users fa-4x"></i>
 					</div>
-					<h1 class="text-center">250</h1>
-					<p class="text-center">Members</p>
+					<h1 class="text-center counter" data-target = "250">0</h1>
+					<p class="text-center">Memberships</p>
 				</div>
 				<div class="col-md-4">
 					<div class="icon text-center">
-						<i class="fa fa-calender fa-3x"></i>
+						<i class="fa fa-calendar fa-4x"></i>
 					</div>
-					<h1 class="text-center">5</h1>
+					<h1 class="text-center counter" data-target = "05">0</h1>
 					<p class="text-center">Years of Volunteering</p>
 				</div>
 			</div>
@@ -339,7 +340,8 @@
 				<div class="row">
 					<div class="col-sm-10 offset-sm-1 text-center">
 						<h1>Our Team</h1>
-						<a href=""><p>Click here to meet the entire team</p></a>
+						<hr class="underline" align="center" style="width:8.5em">
+						<a href=""><p>Meet the entire team</p></a>
 					</div>
 				</div>
 			</div>
@@ -353,6 +355,13 @@
 					        		<h5 class="card-title">Member Name</h5>
 					        		<p class="card-text">Responsibility</p>
 					      		</div>
+					      		<div class="card-img-overlay">
+									<ul class="list-inline">
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+									</ul>
+								</div>
 					    	</div>
 					  	</div>
 					  	<div class="col col-xs-12 col-md-6 col-lg-4 mb-4">
@@ -523,7 +532,11 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
  	
- 	<script type="text/javascript" src="scripts.js"></script>
+ 	<script type="text/javascript" src="js/scripts.js"></script>
+
+ 	<!-- <script type="text/javascript">
+ 		$(".num").counterUp({delay:10,time:1000})
+ 	</script> -->
 
 
 </body>
