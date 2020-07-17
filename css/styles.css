@@ -209,7 +209,7 @@ body{
     -webkit-background-size:cover;
     background-size: cover;
     text-align: center;
-    height: 100vh;
+    /*height: 100vh;*/
     position: relative;
 
 
@@ -254,9 +254,11 @@ body{
     -webkit-filter: blur(2px);*/
 }
 
-/*.ieee-sb-gvpce-info img{
-    wi
-}*/
+.ieee-sb-gvpce-info img{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
 
 .events{
     margin: 50px 0;
