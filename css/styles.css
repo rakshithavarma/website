@@ -155,7 +155,7 @@ body{
 .about-ieee-heading .underline{
     background-color: #000;
     border: 2px solid #000;
-    margin-top: -12px;
+    margin-top: -5px;
 }
 
 .about-ieee-info .underline{
@@ -204,7 +204,7 @@ body{
 
 .ieee-sb-gvpce{
     padding: 50px 0;
-
+    /*background: #006699;*/
     background-image: linear-gradient(rgba(26,88,203,0.5), rgba(7,198,237,0.5)),url("../images/cover-gvp.png");
     -webkit-background-size:cover;
     background-size: cover;
@@ -229,15 +229,8 @@ body{
     background-size: cover;*/
 }
 
-/*.ieee-sb-gvpce .content{
-    position: absolute;
-    background: #fff;
-    opacity: 0.5;
-}*/
-
 .ieee-sb-gvpce-heading{
     padding: 30px;
-    /*-webkit-filter: blur(2px);*/
 }
 
 .ieee-sb-gvpce-heading .sb-name{
@@ -250,8 +243,6 @@ body{
 .ieee-sb-gvpce-info{
     padding: 40px 0;
     color: #fff;
-    /*filter: blur(2px);
-    -webkit-filter: blur(2px);*/
 }
 
 .ieee-sb-gvpce-info img{
@@ -266,16 +257,25 @@ body{
 
 .events-heading{
     padding: 30px;
+    color: #006699;
+}
+
+.events-heading .underline{
+    background-color: #000;
+    border: 2px solid #000;
+    margin-top: -5px;
 }
 
 .events-info{
     padding: 40px 0;
-    margin: 0 40px;
+    margin: 0 60px;
 }
 
 .events-info .card{
     height: auto;
-    max-height: 700px;
+    max-height: 900px;
+    background-color: #d3e4ed;
+    color: #000;
 }
 
 .events-info .card img{
@@ -287,14 +287,22 @@ body{
     overflow: hidden;
 }
 
+.events-info .card button:hover{
+    color: #000;
+}
+
 .status-count{
     padding: 40px 0;
     background-color: #000;
     color: rgb(245, 114, 66);
 }
 
+.status-count h1{
+    font-weight: 600;
+}
+
 .status-count p{
-    font-size: 20px;
+    font-weight: 300;
 }
 
 .team{
