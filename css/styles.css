@@ -302,8 +302,6 @@ body{
 
 .status-count{
     padding: 60px 0;
-    /*background-color: #000;
-    color: rgb(245, 114, 66);*/
     background-color: #006699;
     color: #fff;
 }
@@ -317,16 +315,8 @@ body{
 }
 
 .status-count .icon i{
-    /*background-color: #fff;*/
     color: #fff;
-    margin-bottom: 40px;
-    /*height: 1.5em;
-    width: 1.5em;
-    top: 50%;
-    left: 50%;
-    align-items: center;
-    line-height: 50px;
-    border-radius: 100%;*/
+    margin: 40px 0;
 }
 
 .team{
