@@ -191,13 +191,13 @@ body{
     padding: 40px 0;
 }
 
-.about-ieee-info button{
+.about-ieee-info .btn{
     color: #fff;
     background-color: #006699;
     font-family: 'Oswald';
 }
 
-.about-ieee-info button:hover{
+.about-ieee-info .btn:hover{
     color: #006699;
     background-color: #fff;
     border: 2px solid #000;
@@ -223,29 +223,12 @@ body{
 
 .ieee-sb-gvpce{
     padding: 50px 0;
-    /*background: #006699;*/
     background-image: linear-gradient(rgba(26,88,203,0.5), rgba(7,198,237,0.5)),url("../images/cover-gvp.png");
     -webkit-background-size:cover;
     background-size: cover;
     text-align: center;
-    /*height: 100vh;*/
     position: relative;
-
-
-    /*filter: blur(2px);
-    -webkit-filter: blur(2px);*/
-
-    /*height: 100%;
-    object-position: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;*/
-
-    /*background-image: url(../images/sb_gvpce_bg.jpg);
-    object-fit: contain;
-    background-repeat: no-repeat;*/
-    /*background: linear-gradient(180deg, rgba(0,212,255,1) 125%, rgba(102,229,255,1) 175%, rgba(255,255,255,1) 275%) fixed;
-    background-size: cover;*/
+    background-attachment: fixed;
 }
 
 .ieee-sb-gvpce-heading{
@@ -315,7 +298,7 @@ body{
     overflow: hidden;
 }
 
-.events-info .card button:hover{
+.events-info .card .btn:hover{
     color: #000;
 }
 
