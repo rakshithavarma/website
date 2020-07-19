@@ -486,15 +486,21 @@ body{
 }
 
 .testimonials{
-    background : #000000;
+    background : #646c73;
     padding: 50px 0;
     position: relative;
     /*margin: 20px 0;*/
 }
 
 .testimonials-heading{
-    color: #ffffff;
+    color: #fff;
     padding-bottom: 30px;
+}
+
+.testimonials-heading .underline{
+    background-color: #006699;
+    border: 2px solid #006699;
+    margin-top: -5px;
 }
 
 .testimonial-image{
@@ -535,6 +541,10 @@ body{
 .footer-info{
     padding: 40px 0;
     margin: 0 40px;
+}
+
+.footer-info .underline{
+    background-color: #fff;
 }
 
 .footer-info .contact-mode{
