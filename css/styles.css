@@ -60,7 +60,7 @@ body{
 
 .sb-navbar .navbar-brand img{
     height: 50px;
-    width: 50px;
+    width: 100%;
     margin-left: 5vw;
 }
 
