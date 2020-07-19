@@ -18,7 +18,7 @@ $(window).scroll(function() {
 		const count = +counter.innerText;
 		const start = 0;
 		const range = target-start;
-		const duration = 2000;
+		const duration = 2500;
 		let current = start,
 		increment = target > start ? 1 : -1,
 	   	step = Math.abs(Math.floor(duration / range)),
