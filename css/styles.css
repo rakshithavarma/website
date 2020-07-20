@@ -40,6 +40,10 @@ body{
     color: #fff;
 }
 
+.sb-navbar.scrolled .fa-bars{
+    color: #000;
+}
+
 .sb-navbar .dropdown-menu{
     border: 0;
     background: transparent;
@@ -73,6 +77,13 @@ body{
     height: 4rem;
     width: 9rem;
     margin-left: 5vw;
+}
+
+@media (max-width: 1080px){
+    .sb-navbar .navbar-brand img{
+        height: 3rem;
+        width: 6.75rem;
+    }
 }
 
 .sb-navbar .navbar-nav{
