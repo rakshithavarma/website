@@ -37,3 +37,22 @@ $(window).scroll(function() {
   }
 
 });
+
+// $('html, body').animate({scrollTop: $elem.scrollTop()}, 800);
+
+// $(document).on("click","a",function(e){
+//         e.preventDefault();
+//         var id = $(this).attr("href"),
+//             topSpace = 30;
+//         $('html, body').animate({
+//           scrollTop: $(id).offset().top - topSpace
+//         }, 800);
+//     });
+
+$(function(){
+	$(".events-nav-item a").on('click', function(){
+		$("html, body").animate({
+			scrollTop: $($.attr(this, 'href')).offset().top
+		}, 1500);
+	});
+});
