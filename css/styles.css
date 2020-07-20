@@ -3,6 +3,10 @@
     color: #fff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
@@ -50,19 +54,24 @@ body{
 }
 
 .sb-navbar.scrolled {  
-    background-color: #000;
+    /*background-color: #fbc108;*/
+    background-color: #fff;
     transition: background-color 200ms linear;
 }
 
+.sb-navbar.scrolled a{
+    color: #000;
+}
+
 .sb-navbar.scrolled .dropdown-menu{
-    background-color: #000;
+    background-color: #fff;
 }
 
 .sb-navbar .navbar-brand img{
     /*height: 50px;
     width: 100%;*/
-    height: 3em;
-    width: 9em;
+    height: 4rem;
+    width: 9rem;
     margin-left: 5vw;
 }
 
@@ -97,6 +106,16 @@ body{
 .sb-navbar ul li:hover{
     color: #fff;
     background: #193f7d;
+}
+
+.sb-navbar.scrolled ul li:hover a{
+    color: #fff;
+    /*background: #193f7d;*/
+}
+
+.sb-navbar.scrolled ul li:hover .dropdown-menu a{
+    color: #000;
+    /*background: #193f7d;*/
 }
 
 .sb-navbar ul li .dropdown{
