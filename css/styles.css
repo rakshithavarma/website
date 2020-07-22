@@ -162,13 +162,13 @@ body{
 .home-carousel-image img{
     width: 100vh;
     height: 100vh;
-    opacity: 0.5;
+    opacity: 0.7;
     object-fit: cover;
     background-image: #000 opacity 0.2;
 }
 
 .home-carousel .carousel-caption{
-    top: 50%;
+    top: 45%;
 }
 
 .home-carousel .ieee-sb-gvpce-carousel .carousel-caption img{
@@ -539,25 +539,26 @@ body{
     margin: 0 0 5px;
     font-size: 30px;
     font-family: bignoodletitling;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
 }
 
 .img-text h5{
     font-size: 17px;
     text-transform: uppercase;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .testimonials{
     background : #646c73;
-    padding: 50px 0;
+    padding: 60px 0;
     position: relative;
     /*margin: 20px 0;*/
 }
 
 .testimonials-heading{
     color: #fff;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 
 .testimonials-heading .underline{
@@ -575,14 +576,20 @@ body{
     overflow: hidden;
 }
 
+.testimonials .carousel-inner{
+    height: 400px;
+    cursor: pointer;
+}
+
 .testimonials .carousel-caption{
     position: static;
-    padding-bottom: 20px;
-    padding-top: 5vw; 
+    /*padding-bottom: 20px;
+    padding-top: 5vw; */
+    padding: 20px 0;
 }
 
 .testimonials .carousel-indicators{
-    bottom: -30px;
+    bottom: -50px;
 }
 
 .page-footer{
