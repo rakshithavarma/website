@@ -171,14 +171,64 @@ body{
     top: 50%;
 }
 
-/*.home-carousel .ieee-sb-gvpce-carousel .carousel-caption{
-    top: 60%;
-}*/
-
 .home-carousel .ieee-sb-gvpce-carousel .carousel-caption img{
     width: 50%;
     max-height: 70%;
     background-image: #000 opacity 0.2;
+}
+
+/*updates*/
+
+.updates{
+    padding: 60px 0;
+    position: relative;
+    /*margin: 20px 0;*/
+}
+
+.updates-heading{
+    color: #006699;
+    padding-bottom: 30px;
+}
+
+.updates-heading .underline{
+    background-color: #000;
+    border: 2px solid #000;
+    margin-top: -5px;
+}
+
+.updates .carousel-item{
+    min-height: 100px;
+}
+
+.carousel-content {
+  height: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center 
+}
+
+
+.carosuel-content p {
+  margin: 5px;
+  padding: 5px;
+  width: 90%;
+}
+
+.updates .carousel-indicators{
+    bottom: -40px;
+}
+
+.updates .carousel-indicators li {
+    background-color: #000;
+}
+
+.updates .carousel-indicators .active {
+    background-color: #006699;
+}
+
+.updates .carousel-control-icon{
+    color: #000;
+    padding: 5px;
 }
 
 .about-ieee{
