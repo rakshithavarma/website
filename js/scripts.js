@@ -38,16 +38,15 @@ $(window).scroll(function() {
 
 });
 
-// $('html, body').animate({scrollTop: $elem.scrollTop()}, 800);
-
-// $(document).on("click","a",function(e){
-//         e.preventDefault();
-//         var id = $(this).attr("href"),
-//             topSpace = 30;
-//         $('html, body').animate({
-//           scrollTop: $(id).offset().top - topSpace
-//         }, 800);
+// $(document).ready(function () {
+//     $(document).click(function (event) {
+//         var clickover = $(event.target);
+//         var _opened = $(".navbar-collapse").hasClass("navbar-collapse");
+//         if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+//             $("button.navbar-toggler").click();
+//         }
 //     });
+// });
 
 $(function(){
 	$(".events-nav-item a").on('click', function(){
