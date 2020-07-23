@@ -200,13 +200,18 @@ body{
     min-height: 100px;
 }
 
-.carousel-content {
+.updates .carousel-content {
   height: 10em;
   display: flex;
   align-items: center;
-  justify-content: center 
+  justify-content: center;
+  padding: 0 15%;
 }
 
+.updates .fa-quote-left{
+    padding-right: 10px;
+    margin-bottom: 15px;
+}
 
 .carosuel-content p {
   margin: 5px;
@@ -577,15 +582,13 @@ body{
 }
 
 .testimonials .carousel-inner{
-    height: 400px;
-    cursor: pointer;
+    height: 450px;
 }
 
 .testimonials .carousel-caption{
     position: static;
-    /*padding-bottom: 20px;
-    padding-top: 5vw; */
-    padding: 20px 0;
+    margin-top: 35px;
+    padding: 0 10%;
 }
 
 .testimonials .carousel-indicators{
