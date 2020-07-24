@@ -317,23 +317,23 @@ body{
 }
 
 .img-text{
-    padding: 25px;
+    padding: 20px 10px;
     color: #fff;
     text-align: center;
 }
 
 .img-text h4{
     margin: 0 0 5px;
-    font-size: 30px;
+    font-size: 20px;
     font-family: bignoodletitling;
-    letter-spacing: 2px;
+    /*letter-spacing: 2px;*/
 }
 
 .img-text h5{
-    font-size: 17px;
+    font-size: 15px;
     text-transform: uppercase;
     font-weight: bold;
-    letter-spacing: 1px;
+    /*letter-spacing: 1px;*/
 }
 
 .page-footer{
