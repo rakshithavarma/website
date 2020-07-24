@@ -208,9 +208,10 @@ body{
   padding: 0 15%;
 }
 
-.updates .fa-quote-left{
+/*.updates*/
+.fa-quote-left{
     padding-right: 10px;
-    margin-bottom: 15px;
+    /*margin-bottom: 15px;*/
 }
 
 .carosuel-content p {
@@ -558,7 +559,6 @@ body{
     background : #646c73;
     padding: 60px 0;
     position: relative;
-    /*margin: 20px 0;*/
 }
 
 .testimonials-heading{
@@ -572,28 +572,34 @@ body{
     margin-top: -5px;
 }
 
+.testimonials .carousel-item{
+    color: #fff;
+}
+
 .testimonial-image{
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    overflow: hidden;
+    padding: 20px;
 }
 
-.testimonials .carousel-inner{
-    height: 450px;
+.testimonial-image img{
+    width: 100%;
+    max-height: 40vh;
+    border: 3px solid #fff;
+    object-fit: cover;
 }
 
-.testimonials .carousel-caption{
-    position: static;
-    margin-top: 35px;
-    padding: 0 10%;
+.testimonials .single-testimonial{
+    padding: 35px 15px;
+}
+
+.testimonials .single-testimonial h4{
+    font-size: 35px;
 }
 
 .testimonials .carousel-indicators{
     bottom: -50px;
 }
+
+/*footer*/
 
 .page-footer{
     background-color: #006699;
