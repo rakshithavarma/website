@@ -146,7 +146,7 @@ body{
     color: #fff;
     height: 80vh;
     min-height: 500px;
-    background:linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/benefits_banner.jpg');
+    background:linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/notices_banner.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
