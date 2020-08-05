@@ -25,6 +25,7 @@ body{
 }
 */
 
+
 .sticky-top{
     top: 0;
 }
@@ -61,14 +62,6 @@ body{
     /*background-color: #fbc108;*/
     background-color: #fff;
     transition: background-color 200ms linear;
-}
-
-.sb-navbar.scrolled a{
-    color: #000;
-}
-
-.sb-navbar.scrolled .dropdown-menu{
-    background-color: #fff;
 }
 
 .sb-navbar .navbar-brand img{
@@ -119,16 +112,6 @@ body{
     background: #193f7d;
 }
 
-.sb-navbar.scrolled ul li:hover a{
-    color: #fff;
-    /*background: #193f7d;*/
-}
-
-.sb-navbar.scrolled ul li:hover .dropdown-menu a{
-    color: #000;
-    /*background: #193f7d;*/
-}
-
 .sb-navbar ul li .dropdown{
     min-width: 100%;
     background: #f2f2f2;
@@ -140,6 +123,32 @@ body{
 
 .sb-navbar ul li .dropdown-menu a:hover{
     background: #426296;   
+}
+
+.offcanvas-header{ display:none; }
+
+@media (max-width: 992px) {
+  .offcanvas-header{ display:block; }
+  .navbar-collapse {
+    position: fixed;
+    top:0; 
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: black;
+    transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  }
+  .navbar-collapse.show {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+  .navbar .nav-item{
+      padding: 20px;
+  }
 }
 
 .home-carousel{
@@ -271,6 +280,8 @@ body{
 
 .about-ieee-info p{
     padding-bottom: 10px;
+    /*text-align: justify;*/
+    text-justify: inter-word;
 }
 
 .about-ieee-info .sub-section{
@@ -291,11 +302,11 @@ body{
     margin-bottom: -2px;
 }
 
-.ieee-sb-gvpce{
-    /*background: rgb(0,212,255);
-    background: linear-gradient(180deg, rgba(0,212,255,1) 125%, rgba(102,229,255,1) 175%, rgba(255,255,255,1) 275%);*/
+/* .ieee-sb-gvpce{
+    background: rgb(0,212,255);
+    background: linear-gradient(180deg, rgba(0,212,255,1) 125%, rgba(102,229,255,1) 175%, rgba(255,255,255,1) 275%);
 
-    /*background-image: url("images/gvp-admin.jpg");
+    background-image: url("images/gvp-admin.jpg");
 
     filter: blur(2px);
     -webkit-filter: blur(2px);
@@ -304,8 +315,8 @@ body{
 
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;*/
-}
+    background-size: cover;
+} */
 
 .ieee-sb-gvpce{
     padding: 50px 0;
