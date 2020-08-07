@@ -58,10 +58,26 @@ body{
     color: #fff;
 }
 
+/*.sb-navbar.scrolled {  
+    background-color: #fff;
+    transition: background-color 200ms linear;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 5px 6px #ccc;
+}*/
+
 .sb-navbar.scrolled {  
     /*background-color: #fbc108;*/
     background-color: #fff;
     transition: background-color 200ms linear;
+}
+
+.sb-navbar.scrolled a{
+    color: #000;
+}
+
+.sb-navbar.scrolled .dropdown-menu{
+    background-color: #fff;
 }
 
 .sb-navbar .navbar-brand img{
@@ -112,6 +128,16 @@ body{
     background: #193f7d;
 }
 
+.sb-navbar.scrolled ul li:hover a{
+    color: #fff;
+    /*background: #193f7d;*/
+}
+
+.sb-navbar.scrolled ul li:hover .dropdown-menu a{
+    color: #000;
+    /*background: #193f7d;*/
+}
+
 .sb-navbar ul li .dropdown{
     min-width: 100%;
     background: #f2f2f2;
@@ -125,6 +151,8 @@ body{
     background: #426296;   
 }
 
+.sb-navbar .dropdown:hover .dropdown-menu {display: block;}
+
 .offcanvas-header{ display:none; }
 
 @media (max-width: 992px) {
@@ -135,19 +163,18 @@ body{
     bottom: 0;
     left: 100%;
     width: 100%;
+    color: #fff;
+    padding-top: 25px;
     padding-right: 1rem;
     padding-left: 1rem;
     overflow-y: auto;
     visibility: hidden;
-    background-color: black;
+    background-color: #193f7d;
     transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
   }
   .navbar-collapse.show {
     visibility: visible;
     transform: translateX(-100%);
-  }
-  .navbar .nav-item{
-      padding: 20px;
   }
 }
 
@@ -281,7 +308,7 @@ body{
 .about-ieee-info p{
     padding-bottom: 10px;
     /*text-align: justify;*/
-    text-justify: inter-word;
+    text-justify: auto;
 }
 
 .about-ieee-info .sub-section{
@@ -320,7 +347,7 @@ body{
 
 .ieee-sb-gvpce{
     padding: 50px 0;
-    background-image: linear-gradient(rgba(26,88,203,0.5), rgba(7,198,237,0.5)),url("../images/cover-gvp.png");
+    background-image: linear-gradient(rgba(26,88,203,0.5), rgba(7,198,237,0.5)),linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url("../images/cover-gvp.png");
     -webkit-background-size:cover;
     background-size: cover;
     text-align: center;
@@ -341,7 +368,8 @@ body{
 
 .ieee-sb-gvpce-info{
     padding: 40px 0;
-    color: #fff;
+    color: white;
+    font-weight: 400;
 }
 
 .ieee-sb-gvpce-info img{

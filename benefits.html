@@ -26,13 +26,16 @@
 
 	<nav class="container-fluid navbar navbar-expand-lg sb-navbar sticky-top">
 	  	<a class="navbar-brand" href="#"><img src="images/ieee_sb_logo.png"></a>
-	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	  	<button class="navbar-toggler" type="button" data-trigger="#navbarNavDropdown">
 	    	<i class="fa fa-bars hamburger" aria-hidden = "true"></i>
 	  	</button>
-	  	<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+	  	<div class="navbar-collapse justify-content-end" id="navbarNavDropdown">
+	  		<div class="offcanvas-header mt-3">
+				<button class="btn btn-outline-danger btn-close float-right"> &times </button>
+			</div>
 	    	<ul class="navbar-nav justify-content-center">
 	      		<li class="nav-item active">
-	        		<a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+	        		<a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
 	      		</li>
 	      		<li class="nav-item">
 	        		<a class="nav-link" href="team.html">TEAM</a>
