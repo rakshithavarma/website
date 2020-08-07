@@ -59,10 +59,6 @@ body{
     background-color: #fff;
 }
 
-.sb-navbar.scrolled .dropdown-menu{
-    background-color: #fff;
-}
-
 .sb-navbar .navbar-brand img{
     /*height: 50px;
     width: 100%;*/
@@ -142,31 +138,6 @@ body{
 .sb-navbar ul li .dropdown-menu a:hover{
     background: #9618cc;
     color: #fff;
-}
-
-.offcanvas-header{ display:none; }
-
-@media (max-width: 992px) {
-  .offcanvas-header{ display:block; }
-  .navbar-collapse {
-    position: fixed;
-    top:0; 
-    bottom: 0;
-    left: 100%;
-    width: 100%;
-    color: #fff;
-    padding-top: 25px;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    overflow-y: auto;
-    visibility: hidden;
-    background-color: #193f7d;
-    transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
-  }
-  .navbar-collapse.show {
-    visibility: visible;
-    transform: translateX(-100%);
-  }
 }
 
 /*wie-banner*/
