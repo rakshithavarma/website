@@ -65,7 +65,7 @@ body{
 }
 
 .sb-navbar.scrolled a{
-    color: #fff;
+    color: #000;
 }
 
 .sb-navbar.scrolled .dropdown-menu{
@@ -166,7 +166,7 @@ body{
     padding-left: 1rem;
     overflow-y: auto;
     visibility: hidden;
-    background-color: black;
+    background-color: #006699;
     transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
   }
   .navbar-collapse.show {
