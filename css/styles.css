@@ -304,8 +304,8 @@ body{
 
 .about-ieee-info p{
     padding-bottom: 10px;
-    /*text-align: justify;*/
-    text-justify: auto;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .about-ieee-info .sub-section{
@@ -367,6 +367,11 @@ body{
     padding: 40px 0;
     color: white;
     font-weight: 400;
+}
+
+.ieee-sb-gvpce-info p{
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .ieee-sb-gvpce-info img{

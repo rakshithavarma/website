@@ -211,6 +211,8 @@ body{
 
 .about-ieee-info p{
     padding-bottom: 10px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .about-ieee-info .sub-section{
