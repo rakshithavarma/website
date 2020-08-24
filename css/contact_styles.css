@@ -1,0 +1,15 @@
+/*.form_row{
+	background: url('../images/college_map.jpg');
+}*/
+
+/*contact-banner*/
+
+.contact-banner {
+    color: #fff;
+    height: 70vh;
+    min-height: 500px;
+    background:linear-gradient(0deg,rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../images/college_map.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

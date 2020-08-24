@@ -59,7 +59,6 @@ body{
 }
 
 .sb-navbar.scrolled {  
-    /*background-color: #fbc108;*/
     background-color: #fff;
     transition: background-color 200ms linear;
 }
@@ -282,12 +281,19 @@ body{
     padding: 30px;
     font-weight: 400;
     color: #006699;
-    /*text-decoration: underline #000;*/
 }
 
 .about-ieee-info h2{
     padding: 20px 0;
     color: #000;
+}
+
+.about-ieee-info .sub-section{
+    padding: 40px 0;
+}
+
+.about-ieee-info .ieee-india{
+    padding: 40px 0;
 }
 
 .about-ieee-heading .underline{
@@ -308,10 +314,6 @@ body{
     text-justify: inter-word;
 }
 
-.about-ieee-info .sub-section{
-    padding: 40px 0;
-}
-
 .about-ieee-info .btn{
     color: #fff;
     background-color: #006699;
@@ -325,22 +327,6 @@ body{
     overflow: hidden;
     margin-bottom: -2px;
 }
-
-/* .ieee-sb-gvpce{
-    background: rgb(0,212,255);
-    background: linear-gradient(180deg, rgba(0,212,255,1) 125%, rgba(102,229,255,1) 175%, rgba(255,255,255,1) 275%);
-
-    background-image: url("images/gvp-admin.jpg");
-
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
-
-    height: 100%;
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
 
 .ieee-sb-gvpce{
     padding: 50px 0;
