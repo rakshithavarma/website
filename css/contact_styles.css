@@ -2,6 +2,10 @@
 	background: url('../images/college_map.jpg');
 }*/
 
+body{
+	background-color: #c9d8f0;
+}
+
 /*contact-banner*/
 
 .contact-banner {
@@ -12,4 +16,53 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.contact-form{
+	padding: 40px 0;
+	margin: 40px auto;
+}
+
+.contact-form .box{
+	box-shadow: 20px 20px 6px -6px #777;
+}
+
+.contact-form-head{
+	/*background: linear-gradient(0deg,rgba(0,0,0,0.7),rgba(0,0,0,0.7));*/
+	background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,138,255,1) 100%);
+	/*background-color: #007FFF;*/
+}
+
+.contact-form-heading{
+	padding: 20px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    /*margin-right: -50%;*/
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.contact-form-info{
+	background-color: #fff;
+}
+
+.contact-form-info label{
+	font-weight: bold;
+}
+
+.contact-form-info input{
+	border: none;
+	outline: none;
+	border-bottom: 2px solid #090979;
+}
+
+.contact-form-info input[]:focus{
+	border: none;
+	outline: none;
+	/*border-bottom: 2px solid #090979;*/
+}
+
+.contact-form-info textarea{
+	border: 2px solid #090979;
 }
