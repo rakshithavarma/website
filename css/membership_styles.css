@@ -68,3 +68,63 @@ body{
 .membership-form-info textarea{
 	border: 2px solid #090979;
 }
+
+.membership-process{
+	padding: 40px 0;
+	margin-bottom: 40px;
+	background-color: rgba(0,138,255,1);
+	color: #fff;
+}
+
+.membership-process-heading{
+	font-color: #fff;
+	padding: 5px 20px;
+}
+
+.membership-process-heading h1{
+	/*font-size: 60px;*/
+  	/*background: linear-gradient(90deg, rgba(121,64,9,1) 0%, rgba(169,229,107,1) 100%);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;*/
+  	/*text-shadow: 0 12px rgba(30,132,242,0.52);*/
+  	text-shadow: 0 2px 2px #dfdfdf, 
+      -2px 5px 1px #b8b8b8;
+      /*-4px 8px 0px #979797, 
+      -6px 11px 0px #747474,
+      -8px 14px 0px #565656,
+      -10px 17px 0px #343434,
+      -12px 20px 0px #171717,
+      -14px 23px 0px #000;*/
+}
+
+.glow {
+  /*font-size: 80px;*/
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.membership-process-info{
+	color: #011d52;
+	padding: 40px;
+}
+
+.membership-process-info .lead_{
+	color: #fff;
+	font-weight: 400;
+	text-align: justify;
+	justify-content: inter-word;
+	/*padding: 40px;*/
+}
