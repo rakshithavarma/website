@@ -1,0 +1,70 @@
+body{
+	background-color: #c9d8f0;
+}
+
+/*membership-banner*/
+
+.membership-banner {
+    color: #fff;
+    height: 70vh;
+    min-height: 500px;
+    background:linear-gradient(0deg,rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../images/memberpic.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.membership-form{
+	padding: 40px 0;
+	margin: 40px auto;
+}
+
+.membership-form .box{
+	box-shadow: 20px 20px 6px -6px #777;
+}
+
+.membership-form-head{
+	/*background: linear-gradient(0deg,rgba(0,0,0,0.7),rgba(0,0,0,0.7));*/
+	background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,138,255,1) 100%);
+	/*background-color: #007FFF;*/
+}
+
+.membership-form-heading{
+	padding: 20px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    /*margin-right: -50%;*/
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.membership-form-info{
+	background-color: #fff;
+}
+
+.membership-form-info label{
+	font-weight: bold;
+}
+
+.membership-form-info input{
+	border: none;
+	outline: none;
+	border-bottom: 2px solid #090979;
+}
+
+.membership-form-info input[type = submit]{
+	border: none;
+	outline: none;
+	/*border-bottom: 2px solid #090979;*/
+}
+
+.membership-form-info input[]:focus{
+	border: none;
+	outline: none;
+	/*border-bottom: 2px solid #090979;*/
+}
+
+.membership-form-info textarea{
+	border: 2px solid #090979;
+}

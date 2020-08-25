@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Membership Froms</title>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/membership_styles.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+	<!-- navbar -->
+
+	<div class="container-fluid navbar navbar-expand-lg sb-navbar sticky-top">
+	  	<a class="navbar-brand" href="#"><img src="images/ieee_sb_logo.png"></a>
+	  	<button class="navbar-toggler" type="button" data-trigger="#navbarNavDropdown">
+	    	<i class="fa fa-bars hamburger" aria-hidden = "true"></i>
+	  	</button>
+	  	<div class="navbar-collapse justify-content-end" id="navbarNavDropdown">
+			<div class="offcanvas-header mt-3">
+				<button class="btn btn-outline-danger btn-close float-right"> &times </button>
+				<h5 class="py-2 text-white">IEEE SB GVPCE(A)</h5>
+			</div>
+			<ul class="navbar-nav justify-content-center">
+	      		<li class="nav-item active">
+	        		<a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
+	      		</li>
+	      		<li class="nav-item">
+	        		<a class="nav-link" href="team.html">TEAM</a>
+	      		</li>
+	      		<li class="nav-item dropdown">
+	        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownChaptersLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          		CHAPTERS
+	        		</a>
+	        		<div class="dropdown-menu justify-content-start" aria-labelledby="navbarDropdownChaptersLink">
+	          			<a class="dropdown-item" href="ieee_wie.html">Women In Engineering</a>
+	          			<!-- <a class="dropdown-item" href="#">IEEE CS</a> -->
+	        		</div>
+	      		</li>
+	      		<li class="nav-item events-nav-item">
+	        		<a class="nav-link" href="index.html#sb-events">EVENTS</a>
+	      		</li>
+	      		<li class="nav-item dropdown">
+	        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownIEEELink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          		IEEE
+	        		</a>
+	        		<div class="dropdown-menu justify-content-start" aria-labelledby="navbarDropdownIEEELink">
+	          			<a class="dropdown-item" href="http://www.ieee.org/?WT.mc_id=mn_ieee">IEEE.org</a>
+	          			<a class="dropdown-item" href="http://ieeexplore.ieee.org/">IEEE Xplore</a>
+	          			<a class="dropdown-item" href="http://standards.ieee.org/">IEEE Standards</a>
+	          			<a class="dropdown-item" href="http://spectrum.ieee.org/">IEEE Spectrum</a>
+	          			<a class="dropdown-item" href="http://www.ieee.org/sitemap.html?WT.mc_id=mn_smap">More Sites</a>
+	        		</div>
+	      		</li>
+	      		<li class="nav-item dropdown">
+	        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMoreLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          		MISC.
+	        		</a>
+	        		<div class="dropdown-menu" aria-labelledby="navbarDropdownMoreLink">
+	          			<a class="dropdown-item" href="http://www.gvpce.ac.in/">GVPCE(A) HOME</a>
+	          			<a class="dropdown-item" href="notices.html">Notices</a>
+	          			<a class="dropdown-item" href="benefits.html">Benefits of Membership</a>
+	          			<a class="dropdown-item" href="membership_form.html">Membership Form</a>
+	        		</div>
+	      		</li>
+	      		<li class="nav-item">
+	        		<a class="nav-link" href="contact.html">CONTACT US</a>
+	      		</li>
+	    	</ul>
+	  	</div>
+	</div>
+
+	<header class="membership-banner">
+		<div class="container h-100">
+	    	<div class="row h-100 align-items-center">
+	      		<div class="col-12 text-center">
+	        		<h1>Membership Form</h1>
+	      		</div>
+	    	</div>
+	  	</div>
+	</header>
+
+	<section class="container container-fluid membership-form">
+		<div class="container">
+            <div class="row p-3">
+            	<div class="col-lg-4 membership-form-head rounded box">
+            		<div class="membership-form-heading">
+            			<h1>Interested to join IEEE</h1>
+                    	<p class="lead">Total amount $ 27 (for full year membership). Consult your student branch councellor after filling the form for payment</p>
+            		</div>
+            	</div>
+
+                <div class="col-lg-8 py-5 membership-form-info rounded box">
+
+                    <!-- We're going to place the form here in the next step -->
+                    <form id="membership-form" method="post" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScsVYN4GCTyhFOSDsxb8Kr9ulHCDakUp-QczpDcFvjT2ZbgaQ/formResponse" role="form">
+
+					    <div class="messages"></div>
+
+					    <div class="controls">
+
+					        <div class="row">
+					            <div class="col-md-6">
+					                <div class="form-group">
+					                    <label for="form_name">First Name *</label>
+					                    <input id="form_name" type="text" name="entry.1054603866" class="form-control" placeholder="Please enter your firstname" required="required" data-error="Firstname is required.">
+					                    <div class="help-block with-errors"></div>
+					                </div>
+					            </div>
+					            <div class="col-md-6">
+					                <div class="form-group">
+					                    <label for="form_lastname">Last Name *</label>
+					                    <input id="form_lastname" type="text" name="entry.1583569679" class="form-control" placeholder="Please enter your lastname" required="required" data-error="Lastname is required.">
+					                    <div class="help-block with-errors"></div>
+					                </div>
+					            </div>
+					        </div>
+					        <div class="row">
+					            <div class="col-lg-6">
+					                <div class="form-group">
+					                    <label for="form_email">Email Id *</label>
+					                    <input id="form_email" type="email" name="entry.767989661" class="form-control" placeholder="Please enter your email" required="required" data-error="Valid email is required.">
+					                    <div class="help-block with-errors"></div>
+					                </div>
+					            </div>
+					            <div class="col-lg-6">
+					                <div class="form-group">
+					                    <label for="form_phone">Contact</label>
+					                    <input id="form_phone" type="tel" name="entry.1773494130" class="form-control" placeholder="Please enter your phone no."  required="required" data-error="Your phone number is required.">
+					                    <div class="help-block with-errors"></div>
+					                </div>
+					            </div>
+					        </div>
+					        <div class="row">
+					        	<div class="col-md-12">
+					                <div class="form-group">
+					                    <label for="form_need">Membership Type *</label>
+					                    <select id="form_need" name="entry.1175181684_sentinel" class="form-control" required="required" data-error="Please select your branch/ stream.">
+					                        <option value=""></option>
+					                        <option value="Student">Student</option>
+					                        <option value="Professional">Professional</option>
+					                    </select>
+					                    <div class="help-block with-errors"></div>
+					                </div>
+					            </div>
+					        	<div class="col-md-12">
+					                <div class="form-group">
+					                    <label for="form_need">Please select your branch/ stream *</label>
+					                    <select id="form_need" name="entry.311852791_sentinel" class="form-control" required="required" data-error="Please select your branch/ stream.">
+					                        <option value=""></option>
+					                        <option value="CSE">CSE</option>
+					                        <option value="ECE">ECE</option>
+					                        <option value="EEE">EEE</option>
+					                        <option value="MECH">MECH</option>
+					                        <option value="IT">IT</option>
+					                        <option value="CIVIL">CIVIL</option>
+					                        <option value="CHEMICAL">CHEMICAL</option>
+					                        <option value="M.TECH">M.TECH</option>
+					                        <option value="MCA">MCA</option>
+					                    </select>
+					                    <div class="help-block with-errors"></div>
+					                </div>
+					            </div>
+					            <!-- <div class="col-md-12">
+					                <div class="form-group">
+					                    <label for="form_message">Message *</label>
+					                    <textarea id="form_message" name="entry.198948346" class="form-control" placeholder="Drop your message here" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+					                    <div class="help-block with-errors"></div>
+					                </div>
+					            </div> -->
+					            <div class="col-md-12">
+					                <input type="submit" class="btn btn-success btn-send" value="Submit Details">
+					            </div>
+					        </div>
+					        <div class="row">
+					            <div class="col-md-12">
+					                <p class="text-muted">
+					                    <strong>*</strong> These fields are required.</p>
+					            </div>
+					        </div>
+					    </div>
+
+					</form>
+
+                </div>
+            </div>
+        </div>
+	</section>
+
+	<section class="page-footer" id="contact-info">
+
+		<div class="container footer-heading">
+			<div class="row">
+				<div class="col-sm-10 offset-sm-1">
+					<h1 class="text-center">Contact Us</h1>
+					<hr class="underline" align="center" style="width:8.5em">
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-info">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-4">
+						<div class="contact-mode address">
+							<h4 class="text-left">Address</h4>
+							<hr class="underline" align="left" style="width:6em">
+						</div>
+						<address>
+						Gayatri Vidya Parishad College of Engineering (Autonomous)<br>
+						Madhurawada<br>
+						Visakhapatnam - 530 048<br>
+						Andhra Pradesh<br>
+						India
+						</address>
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<div class="contact-mode contact">
+							<h4 class="text-left">Contact Info</h4>
+							<hr class="underline" align="left" style="width:9em">
+						</div>
+						<div>
+							<p>E-Mail: <span><a href="mailto:ieeesb@gvpce.ac.in? subject = ">ieeesb@gvpce.ac.in</a></span></p>
+							<p>Mobile: <a href="tel:+919441969659">+91 9441969659</a> (Branch Counsellor)</p>
+							<p>Mobile: <a href="tel:+919182985123">+91 9182985123</a> (Chair)</p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<div class="contact-mode social-media">
+							<h4 class="text-left">Follow Us</h4>
+							<hr class="underline" align="left" style="width:7em">
+						</div>
+						<div class="contact-mode social-media-handles">
+							<a href="https://www.facebook.com/under.vizag.bay.sub.section/"><i class="fa fa-facebook-official fa-2x"></i></a>
+							<a href="https://www.instagram.com/ieee_sb_gvpce_a/"><i class="fa fa-instagram fa-2x"></i></a>
+							<a href="https://www.linkedin.com/in/ieee-sb-gvpce-a-b362791a1/"><i class="fa fa-linkedin-square fa-2x"></i></a>
+							<a href="https://linkedin.com/GvpceSb"><i class="fa fa-twitter-square fa-2x"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3798.3861539630434!2d83.34015411494428!3d17.820523887820432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a395bedc7efb603%3A0x87c06caab54e902a!2sGVP%20College%20of%20Engineering%20(Autonomous)!5e0!3m2!1sen!2sin!4v1598167973876!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+ 	
+ 	<script type="text/javascript" src="js/scripts.js"></script>
+
+</body>
+</html>
+
+
+
+<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScsVYN4GCTyhFOSDsxb8Kr9ulHCDakUp-QczpDcFvjT2ZbgaQ/formResponse" target="_self" method="POST" id="mG61Hd" jsmodel="TOfxwf Q91hve" data-response="%.@.[]]" data-first-entry="0" data-last-entry="6" data-is-first-page="true"><div jscontroller="yUS4Lc" jsaction="rcuQ6b:rcuQ6b;UxRBlf:rcuQ6b;"><div jsname="o6bZLc"><input type="hidden" name="entry.1054603866" value=""><input type="hidden" name="entry.1583569679" value=""><input type="hidden" name="entry.767989661" value=""><input type="hidden" name="entry.1773494130" value=""></div></div><div class="freebirdFormviewerViewFormCard exportFormCard"><div class="freebirdFormviewerViewFormContent"><div class="freebirdFormviewerViewNoPadding"><div class="freebirdFormviewerViewHeaderHeader exportHeader"><div class="freebirdFormviewerViewHeaderThemeStripe freebirdSolidBackground exportThemeStripe"></div><div class="freebirdFormviewerViewHeaderTitleRow"><div class="freebirdFormviewerViewHeaderTitle exportFormTitle freebirdCustomFont" dir="auto" role="heading" aria-level="1">Membership Form</div></div><div class="freebirdFormviewerViewHeaderDescription" dir="auto">Interested to join IEEE</div><div jsname="F0H8Yc" class="freebirdCommonViewSecurequizSecureQuizBannerContainer"></div><div class="freebirdFormviewerViewHeaderRequiredLegend" aria-hidden="true" dir="auto">* Required</div></div></div><div class="freebirdFormviewerViewItemList" role="list"><div class="freebirdFormviewerViewNumberedItemContainer"><div jsmodel="CP1oW" data-params="%.@.[1641655241,&quot;First Name&quot;,null,0,[[1054603866,[],true,[],[]]],null,null,null,[]],&quot;i1&quot;,&quot;i2&quot;,&quot;i3&quot;,false]" class="m2"><div jscontroller="sWGJ4b" jsaction="EEvAHc:yfX9oc;" class="freebirdFormviewerComponentsQuestionBaseRoot"><div class="freebirdFormviewerComponentsQuestionBaseHeader"><div class="freebirdFormviewerComponentsQuestionBaseTitleDescContainer"><div id="i1" class="freebirdFormviewerComponentsQuestionBaseTitle exportItemTitle freebirdCustomFont" role="heading" aria-level="3" aria-describedby="i4">First Name<span class="freebirdFormviewerComponentsQuestionBaseRequiredAsterisk" id="i4" aria-label="Required question"> *</span></div><div class="freebirdFormviewerComponentsQuestionBaseDescription" id="i2"></div></div></div><div jscontroller="oCiKKc" jsaction="rcuQ6b:vZc4S;O22p3e:zjh6rb;b2trFe:eVidQc;sPvj8e:d3sQLd;AHmuwe:h06R8;" class="freebirdFormviewerComponentsQuestionTextRoot"><div class="quantumWizTextinputPaperinputEl freebirdFormviewerComponentsQuestionTextShort freebirdFormviewerComponentsQuestionTextTextInput freebirdThemedInput modeLight" jscontroller="pxq3x" jsaction="clickonly:KjsqPd; focus:Jt1EX; blur:fpfTEe; input:Lg5SV" jsshadow="" jsname="YPqjbf"><div class="quantumWizTextinputPaperinputMainContent exportContent"><div class="quantumWizTextinputPaperinputContentArea exportContentArea"><div class="quantumWizTextinputPaperinputInputArea"><input type="text" class="quantumWizTextinputPaperinputInput exportInput" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-labelledby="i1" aria-describedby="i2 i3" required="" dir="auto" data-initial-dir="auto" data-initial-value=""><div jsname="LwH6nd" class="quantumWizTextinputPaperinputPlaceholder exportLabel" aria-hidden="true">Your answer</div></div><div class="quantumWizTextinputPaperinputUnderline exportUnderline"></div><div jsname="XmnwAc" class="quantumWizTextinputPaperinputFocusUnderline exportFocusUnderline"></div></div></div><div class="quantumWizTextinputPaperinputCounterErrorHolder"><div jsname="ty6ygf" class="quantumWizTextinputPaperinputHint exportHint"></div></div></div></div><div jsname="Rfh2Tc" class="freebirdFormviewerComponentsQuestionBaseValidationError" id="i3" role="alert"></div></div></div></div><div class="freebirdFormviewerViewNumberedItemContainer"><div jsmodel="CP1oW" data-params="%.@.[230369184,&quot;Last Name&quot;,null,0,[[1583569679,[],true,[],[]]],null,null,null,[]],&quot;i5&quot;,&quot;i6&quot;,&quot;i7&quot;,false]" class="m2"><div jscontroller="sWGJ4b" jsaction="EEvAHc:yfX9oc;" class="freebirdFormviewerComponentsQuestionBaseRoot"><div class="freebirdFormviewerComponentsQuestionBaseHeader"><div class="freebirdFormviewerComponentsQuestionBaseTitleDescContainer"><div id="i5" class="freebirdFormviewerComponentsQuestionBaseTitle exportItemTitle freebirdCustomFont" role="heading" aria-level="3" aria-describedby="i8">Last Name<span class="freebirdFormviewerComponentsQuestionBaseRequiredAsterisk" id="i8" aria-label="Required question"> *</span></div><div class="freebirdFormviewerComponentsQuestionBaseDescription" id="i6"></div></div></div><div jscontroller="oCiKKc" jsaction="rcuQ6b:vZc4S;O22p3e:zjh6rb;b2trFe:eVidQc;sPvj8e:d3sQLd;AHmuwe:h06R8;" class="freebirdFormviewerComponentsQuestionTextRoot"><div class="quantumWizTextinputPaperinputEl freebirdFormviewerComponentsQuestionTextShort freebirdFormviewerComponentsQuestionTextTextInput freebirdThemedInput modeLight" jscontroller="pxq3x" jsaction="clickonly:KjsqPd; focus:Jt1EX; blur:fpfTEe; input:Lg5SV" jsshadow="" jsname="YPqjbf"><div class="quantumWizTextinputPaperinputMainContent exportContent"><div class="quantumWizTextinputPaperinputContentArea exportContentArea"><div class="quantumWizTextinputPaperinputInputArea"><input type="text" class="quantumWizTextinputPaperinputInput exportInput" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-labelledby="i5" aria-describedby="i6 i7" required="" dir="auto" data-initial-dir="auto" data-initial-value=""><div jsname="LwH6nd" class="quantumWizTextinputPaperinputPlaceholder exportLabel" aria-hidden="true">Your answer</div></div><div class="quantumWizTextinputPaperinputUnderline exportUnderline"></div><div jsname="XmnwAc" class="quantumWizTextinputPaperinputFocusUnderline exportFocusUnderline"></div></div></div><div class="quantumWizTextinputPaperinputCounterErrorHolder"><div jsname="ty6ygf" class="quantumWizTextinputPaperinputHint exportHint"></div></div></div></div><div jsname="Rfh2Tc" class="freebirdFormviewerComponentsQuestionBaseValidationError" id="i7" role="alert"></div></div></div></div><div class="freebirdFormviewerViewNumberedItemContainer"><div jsmodel="CP1oW" data-params="%.@.[1010705780,&quot;Email Id&quot;,null,0,[[767989661,[],true,[],[]]],null,null,null,[]],&quot;i9&quot;,&quot;i10&quot;,&quot;i11&quot;,false]" class="m2"><div jscontroller="sWGJ4b" jsaction="EEvAHc:yfX9oc;" class="freebirdFormviewerComponentsQuestionBaseRoot"><div class="freebirdFormviewerComponentsQuestionBaseHeader"><div class="freebirdFormviewerComponentsQuestionBaseTitleDescContainer"><div id="i9" class="freebirdFormviewerComponentsQuestionBaseTitle exportItemTitle freebirdCustomFont" role="heading" aria-level="3" aria-describedby="i12">Email Id<span class="freebirdFormviewerComponentsQuestionBaseRequiredAsterisk" id="i12" aria-label="Required question"> *</span></div><div class="freebirdFormviewerComponentsQuestionBaseDescription" id="i10"></div></div></div><div jscontroller="oCiKKc" jsaction="rcuQ6b:vZc4S;O22p3e:zjh6rb;b2trFe:eVidQc;sPvj8e:d3sQLd;AHmuwe:h06R8;" class="freebirdFormviewerComponentsQuestionTextRoot"><div class="quantumWizTextinputPaperinputEl freebirdFormviewerComponentsQuestionTextShort freebirdFormviewerComponentsQuestionTextTextInput freebirdThemedInput modeLight" jscontroller="pxq3x" jsaction="clickonly:KjsqPd; focus:Jt1EX; blur:fpfTEe; input:Lg5SV" jsshadow="" jsname="YPqjbf"><div class="quantumWizTextinputPaperinputMainContent exportContent"><div class="quantumWizTextinputPaperinputContentArea exportContentArea"><div class="quantumWizTextinputPaperinputInputArea"><input type="text" class="quantumWizTextinputPaperinputInput exportInput" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-labelledby="i9" aria-describedby="i10 i11" required="" dir="auto" data-initial-dir="auto" data-initial-value=""><div jsname="LwH6nd" class="quantumWizTextinputPaperinputPlaceholder exportLabel" aria-hidden="true">Your answer</div></div><div class="quantumWizTextinputPaperinputUnderline exportUnderline"></div><div jsname="XmnwAc" class="quantumWizTextinputPaperinputFocusUnderline exportFocusUnderline"></div></div></div><div class="quantumWizTextinputPaperinputCounterErrorHolder"><div jsname="ty6ygf" class="quantumWizTextinputPaperinputHint exportHint"></div></div></div></div><div jsname="Rfh2Tc" class="freebirdFormviewerComponentsQuestionBaseValidationError" id="i11" role="alert"></div></div></div></div><div class="freebirdFormviewerViewNumberedItemContainer"><div jsmodel="CP1oW" data-params="%.@.[830013955,&quot;Phone No&quot;,null,0,[[1773494130,[],true,[],[]]],null,null,null,[]],&quot;i13&quot;,&quot;i14&quot;,&quot;i15&quot;,false]" class="m2"><div jscontroller="sWGJ4b" jsaction="EEvAHc:yfX9oc;" class="freebirdFormviewerComponentsQuestionBaseRoot"><div class="freebirdFormviewerComponentsQuestionBaseHeader"><div class="freebirdFormviewerComponentsQuestionBaseTitleDescContainer"><div id="i13" class="freebirdFormviewerComponentsQuestionBaseTitle exportItemTitle freebirdCustomFont" role="heading" aria-level="3" aria-describedby="i16">Phone No<span class="freebirdFormviewerComponentsQuestionBaseRequiredAsterisk" id="i16" aria-label="Required question"> *</span></div><div class="freebirdFormviewerComponentsQuestionBaseDescription" id="i14"></div></div></div><div jscontroller="oCiKKc" jsaction="rcuQ6b:vZc4S;O22p3e:zjh6rb;b2trFe:eVidQc;sPvj8e:d3sQLd;AHmuwe:h06R8;" class="freebirdFormviewerComponentsQuestionTextRoot"><div class="quantumWizTextinputPaperinputEl freebirdFormviewerComponentsQuestionTextShort freebirdFormviewerComponentsQuestionTextTextInput freebirdThemedInput modeLight" jscontroller="pxq3x" jsaction="clickonly:KjsqPd; focus:Jt1EX; blur:fpfTEe; input:Lg5SV" jsshadow="" jsname="YPqjbf"><div class="quantumWizTextinputPaperinputMainContent exportContent"><div class="quantumWizTextinputPaperinputContentArea exportContentArea"><div class="quantumWizTextinputPaperinputInputArea"><input type="text" class="quantumWizTextinputPaperinputInput exportInput" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-labelledby="i13" aria-describedby="i14 i15" required="" dir="auto" data-initial-dir="auto" data-initial-value=""><div jsname="LwH6nd" class="quantumWizTextinputPaperinputPlaceholder exportLabel" aria-hidden="true">Your answer</div></div><div class="quantumWizTextinputPaperinputUnderline exportUnderline"></div><div jsname="XmnwAc" class="quantumWizTextinputPaperinputFocusUnderline exportFocusUnderline"></div></div></div><div class="quantumWizTextinputPaperinputCounterErrorHolder"><div jsname="ty6ygf" class="quantumWizTextinputPaperinputHint exportHint"></div></div></div></div><div jsname="Rfh2Tc" class="freebirdFormviewerComponentsQuestionBaseValidationError" id="i15" role="alert"></div></div></div></div><div class="freebirdFormviewerViewNumberedItemContainer"><div jsmodel="CP1oW" data-params="%.@.[945518519,&quot;Membership Type&quot;,null,2,[[1175181684,[[&quot;Student&quot;,null,null,null,false],[&quot;Professional&quot;,null,null,null,false]],true,[],[],null,null,null,false]],null,null,null,[]],&quot;i17&quot;,&quot;i18&quot;,&quot;i19&quot;,false]" class="m2"><div jscontroller="sWGJ4b" jsaction="EEvAHc:yfX9oc;" class="freebirdFormviewerComponentsQuestionBaseRoot"><div class="freebirdFormviewerComponentsQuestionBaseHeader"><div class="freebirdFormviewerComponentsQuestionBaseTitleDescContainer"><div id="i17" class="freebirdFormviewerComponentsQuestionBaseTitle exportItemTitle freebirdCustomFont" role="heading" aria-level="3" aria-describedby="i20">Membership Type<span class="freebirdFormviewerComponentsQuestionBaseRequiredAsterisk" id="i20" aria-label="Required question"> *</span></div><div class="freebirdFormviewerComponentsQuestionBaseDescription" id="i18"></div></div></div><div jscontroller="UmOCme" jsaction="rcuQ6b:vZc4S;O22p3e:zjh6rb;b2trFe:eVidQc;JIbuQc:RgMCxe(YlCLKb);sPvj8e:d3sQLd;TYy3Ne:RgMCxe;" class="freebirdFormviewerComponentsQuestionRadioRoot" jsname="GCYh9b"><input type="hidden" name="entry.1175181684_sentinel" jsname="DTMEae"><div jscontroller="eFy6Rc" jsaction="sPvj8e:Gh295d" jsname="cnAzRb"><div class="appsMaterialWizToggleRadiogroupGroupContainer exportGroupContainer freebirdFormviewerViewItemsRadiogroupRadioGroup" jscontroller="wPRNsd" jsshadow="" jsaction="keydown: I481le;JIbuQc:JIbuQc;rcuQ6b:rcuQ6b" jsname="wCJL8" aria-labelledby="i17" aria-describedby="i18 i19" aria-required="true" role="radiogroup"><span jsslot="" role="presentation" jsname="bN97Pc" class="appsMaterialWizToggleRadiogroupGroupContent exportGroupContent"><div class="freebirdFormviewerComponentsQuestionRadioChoicesContainer"><div class="freebirdFormviewerComponentsQuestionRadioChoice freebirdFormviewerComponentsQuestionRadioOptionContainer"><label for="i21" class="docssharedWizToggleLabeledContainer freebirdFormviewerComponentsQuestionRadioRadio"><div class="docssharedWizToggleLabeledLabelWrapper exportLabelWrapper"><div class="appsMaterialWizToggleRadiogroupElContainer exportContainerEl  docssharedWizToggleLabeledControl freebirdThemedRadio freebirdThemedRadioDarkerDisabled"><div id="i21" class="appsMaterialWizToggleRadiogroupEl exportToggleEl" jscontroller="EcW08c" jsaction="keydown:I481le;dyRcpb:dyRcpb;click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;" jsshadow="" aria-label="Student" data-value="Student" role="radio" aria-checked="false" aria-posinset="1" aria-setsize="2" tabindex="0"><div class="appsMaterialWizToggleRadiogroupInk exportInk"></div><div class="appsMaterialWizToggleRadiogroupInnerBox"></div><div class="appsMaterialWizToggleRadiogroupRadioButtonContainer"><div class="appsMaterialWizToggleRadiogroupOffRadio exportOuterCircle"><div class="appsMaterialWizToggleRadiogroupOnRadio exportInnerCircle"></div></div></div></div></div><div class="docssharedWizToggleLabeledContent"><div class="docssharedWizToggleLabeledPrimaryText"><span dir="auto" class="docssharedWizToggleLabeledLabelText exportLabel freebirdFormviewerComponentsQuestionRadioLabel">Student</span></div></div></div></label></div><div class="freebirdFormviewerComponentsQuestionRadioChoice freebirdFormviewerComponentsQuestionRadioOptionContainer"><label for="i24" class="docssharedWizToggleLabeledContainer freebirdFormviewerComponentsQuestionRadioRadio"><div class="docssharedWizToggleLabeledLabelWrapper exportLabelWrapper"><div class="appsMaterialWizToggleRadiogroupElContainer exportContainerEl  docssharedWizToggleLabeledControl freebirdThemedRadio freebirdThemedRadioDarkerDisabled"><div id="i24" class="appsMaterialWizToggleRadiogroupEl exportToggleEl" jscontroller="EcW08c" jsaction="keydown:I481le;dyRcpb:dyRcpb;click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;" jsshadow="" aria-label="Professional" data-value="Professional" role="radio" aria-checked="false" aria-posinset="2" aria-setsize="2" tabindex="0"><div class="appsMaterialWizToggleRadiogroupInk exportInk"></div><div class="appsMaterialWizToggleRadiogroupInnerBox"></div><div class="appsMaterialWizToggleRadiogroupRadioButtonContainer"><div class="appsMaterialWizToggleRadiogroupOffRadio exportOuterCircle"><div class="appsMaterialWizToggleRadiogroupOnRadio exportInnerCircle"></div></div></div></div></div><div class="docssharedWizToggleLabeledContent"><div class="docssharedWizToggleLabeledPrimaryText"><span dir="auto" class="docssharedWizToggleLabeledLabelText exportLabel freebirdFormviewerComponentsQuestionRadioLabel">Professional</span></div></div></div></label></div></div></span></div></div></div><div jsname="Rfh2Tc" class="freebirdFormviewerComponentsQuestionBaseValidationError" id="i19" role="alert"></div></div></div></div><div class="freebirdFormviewerViewNumberedItemContainer"><div jsmodel="CP1oW" data-params="%.@.[1427980696,&quot;Branch&quot;,null,2,[[311852791,[[&quot;CSE&quot;,null,null,null,false],[&quot;ECE&quot;,null,null,null,false],[&quot;EEE&quot;,null,null,null,false],[&quot;MECH&quot;,null,null,null,false],[&quot;IT&quot;,null,null,null,false],[&quot;CIVIL&quot;,null,null,null,false],[&quot;CHEMICAL&quot;,null,null,null,false],[&quot;M.TECH&quot;,null,null,null,false],[&quot;MCA&quot;,null,null,null,false]],true,[],[],null,null,null,false]],null,null,null,[]],&quot;i27&quot;,&quot;i28&quot;,&quot;i29&quot;,false]" class="m2"><div jscontroller="sWGJ4b" jsaction="EEvAHc:yfX9oc;" class="freebirdFormviewerComponentsQuestionBaseRoot"><div class="freebirdFormviewerComponentsQuestionBaseHeader"><div class="freebirdFormviewerComponentsQuestionBaseTitleDescContainer"><div id="i27" class="freebirdFormviewerComponentsQuestionBaseTitle exportItemTitle freebirdCustomFont" role="heading" aria-level="3" aria-describedby="i30">Branch<span class="freebirdFormviewerComponentsQuestionBaseRequiredAsterisk" id="i30" aria-label="Required question"> *</span></div><div class="freebirdFormviewerComponentsQuestionBaseDescription" id="i28"></div></div></div><div jscontroller="UmOCme" jsaction="rcuQ6b:vZc4S;O22p3e:zjh6rb;b2trFe:eVidQc;JIbuQc:RgMCxe(YlCLKb);sPvj8e:d3sQLd;TYy3Ne:RgMCxe;" class="freebirdFormviewerComponentsQuestionRadioRoot" jsname="GCYh9b"><input type="hidden" name="entry.311852791_sentinel" jsname="DTMEae"><div jscontroller="eFy6Rc" jsaction="sPvj8e:Gh295d" jsname="cnAzRb"><div class="appsMaterialWizToggleRadiogroupGroupContainer exportGroupContainer freebirdFormviewerViewItemsRadiogroupRadioGroup" jscontroller="wPRNsd" jsshadow="" jsaction="keydown: I481le;JIbuQc:JIbuQc;rcuQ6b:rcuQ6b" jsname="wCJL8" aria-labelledby="i27" aria-describedby="i28 i29" aria-required="true" role="radiogroup"><span jsslot="" role="presentation" jsname="bN97Pc" class="appsMaterialWizToggleRadiogroupGroupContent exportGroupContent"><div class="freebirdFormviewerComponentsQuestionRadioChoicesContainer"><div class="freebirdFormviewerComponentsQuestionRadioChoice freebirdFormviewerComponentsQuestionRadioOptionContainer"><label for="i31" class="docssharedWizToggleLabeledContainer freebirdFormviewerComponentsQuestionRadioRadio"><div class="docssharedWizToggleLabeledLabelWrapper exportLabelWrapper"><div class="appsMaterialWizToggleRadiogroupElContainer exportContainerEl  docssharedWizToggleLabeledControl freebirdThemedRadio freebirdThemedRadioDarkerDisabled"><div id="i31" class="appsMaterialWizToggleRadiogroupEl exportToggleEl" jscontroller="EcW08c" jsaction="keydown:I481le;dyRcpb:dyRcpb;click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;" jsshadow="" aria-label="CSE" data-value="CSE" role="radio" aria-checked="false" aria-posinset="1" aria-setsize="9" tabindex="0"><div class="appsMaterialWizToggleRadiogroupInk exportInk"></div><div class="appsMaterialWizToggleRadiogroupInnerBox"></div><div class="appsMaterialWizToggleRadiogroupRadioButtonContainer"><div class="appsMaterialWizToggleRadiogroupOffRadio exportOuterCircle"><div class="appsMaterialWizToggleRadiogroupOnRadio exportInnerCircle"></div></div></div></div></div><div class="docssharedWizToggleLabeledContent"><div class="docssharedWizToggleLabeledPrimaryText"><span dir="auto" class="docssharedWizToggleLabeledLabelText exportLabel freebirdFormviewerComponentsQuestionRadioLabel">CSE</span></div></div></div></label></div><div class="freebirdFormviewerComponentsQuestionRadioChoice freebirdFormviewerComponentsQuestionRadioOptionContainer"><label for="i34" class="docssharedWizToggleLabeledContainer freebirdFormviewerComponentsQuestionRadioRadio"><div class="docssharedWizToggleLabeledLabelWrapper exportLabelWrapper"><div class="appsMaterialWizToggleRadiogroupElContainer exportContainerEl  docssharedWizToggleLabeledControl freebirdThemedRadio freebirdThemedRadioDarkerDisabled"><div id="i34" class="appsMaterialWizToggleRadiogroupEl exportToggleEl" jscontroller="EcW08c" jsaction="keydown:I481le;dyRcpb:dyRcpb;click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;" jsshadow="" aria-label="ECE" data-value="ECE" role="radio" aria-checked="false" aria-posinset="2" aria-setsize="9" tabindex="-1"><div class="appsMaterialWizToggleRadiogroupInk exportInk"></div><div class="appsMaterialWizToggleRadiogroupInnerBox"></div><div class="appsMaterialWizToggleRadiogroupRadioButtonContainer"><div class="appsMaterialWizToggleRadiogroupOffRadio exportOuterCircle"><div class="appsMaterialWizToggleRadiogroupOnRadio exportInnerCircle"></div></div></div></div></div><div class="docssharedWizToggleLabeledContent"><div class="docssharedWizToggleLabeledPrimaryText"><span dir="auto" class="docssharedWizToggleLabeledLabelText exportLabel freebirdFormviewerComponentsQuestionRadioLabel">ECE</span></div></div></div></label></div><div class="freebirdFormviewerComponentsQuestionRadioChoice freebirdFormviewerComponentsQuestionRadioOptionContainer"><label for="i37" class="docssharedWizToggleLabeledContainer freebirdFormviewerComponentsQuestionRadioRadio"><div class="docssharedWizToggleLabeledLabelWrapper exportLabelWrapper"><div class="appsMaterialWizToggleRadiogroupElContainer exportContainerEl  docssharedWizToggleLabeledControl freebirdThemedRadio freebirdThemedRadioDarkerDisabled"><div id="i37" class="appsMaterialWizToggleRadiogroupEl exportToggleEl" jscontroller="EcW08c" jsaction="keydown:I481le;dyRcpb:dyRcpb;click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;" jsshadow="" aria-label="EEE" data-value="EEE" role="radio" aria-checked="false" aria-posinset="3" aria-setsize="9" tabindex="-1"><div class="appsMaterialWizToggleRadiogroupInk exportInk"></div><div class="appsMaterialWizToggleRadiogroupInnerBox"></div><div class="appsMaterialWizToggleRadiogroupRadioButtonContainer"><div class="appsMaterialWizToggleRadiogroupOffRadio exportOuterCircle"><div class="appsMaterialWizToggleRadiogroupOnRadio exportInnerCircle"></div></div></div></div></div><div class="docssharedWizToggleLabeledContent"><div class="docssharedWizToggleLabeledPrimaryText"><span dir="auto" class="docssharedWizToggleLabeledLabelText exportLabel freebirdFormviewerComponentsQuestionRadioLabel">EEE</span></div></div></div></label></div><div class="freebirdFormviewerComponentsQuestionRadioChoice freebirdFormviewerComponentsQuestionRadioOptionContainer"><label for="i40" class="docssharedWizToggleLabeledContainer freebirdFormviewerComponentsQuestionRadioRadio"><div class="docssharedWizToggleLabeledLabelWrapper exportLabelWrapper"><div class="appsMaterialWizToggleRadiogroupElContainer exportContainerEl  docssharedWizToggleLabeledControl freebirdThemedRadio freebirdThemedRadioDarkerDisabled"><div id="i40" class="appsMaterialWizToggleRadiogroupEl exportToggleEl" jscontroller="EcW08c" jsaction="keydown:I481le;dyRcpb:dyRcpb;click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;" jsshadow="" aria-label="MECH" data-value="MECH" role="radio" aria-checked="false" aria-posinset="4" aria-setsize="9" tabindex="-1"><div class="appsMaterialWizToggleRadiogroupInk exportInk"></div><div class="appsMaterialWizToggleRadiogroupInnerBox"></div><div class="appsMaterialWizToggleRadiogroupRadioButtonContainer"><div class="appsMaterialWizToggleRadiogroupOffRadio exportOuterCircle"><div class="appsMaterialWizToggleRadiogroupOnRadio exportInnerCircle"></div></div></div></div></div><div class="docssharedWizToggleLabeledContent"><div class="docssharedWizToggleLabeledPrimaryText"><span dir="auto" class="docssharedWizToggleLabeledLabelText exportLabel freebirdFormviewerComponentsQuestionRadioLabel">MECH</span></div></div></div></label></div><div class="freebirdFormviewerComponentsQuestionRadioChoice freebirdFormviewerComponentsQuestionRadioOptionContainer"><label for="i43" class="docssharedWizToggleLabeledContainer freebirdFormviewerComponentsQuestionRadioRadio"><div class="docssharedWizToggleLabeledLabelWrapper exportLabelWrapper"><div class="appsMaterialWizToggleRadiogroupElContainer exportContainerEl  docssharedWizToggleLabeledControl freebirdThemedRadio freebirdThemedRadioDarkerDisabled"><div id="i43" class="appsMaterialWizToggleRadiogroupEl exportToggleEl" jscontroller="EcW08c" jsaction="keydown:I481le;dyRcpb:dyRcpb;click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;" jsshadow="" aria-label="IT" data-value="IT" role="radio" aria-checked="false" aria-posinset="5" aria-setsize="9" tabindex="-1"><div class="appsMaterialWizToggleRadiogroupInk exportInk"></div><div class="appsMaterialWizToggleRadiogroupInnerBox"></div><div class="appsMaterialWizToggleRadiogroupRadioButtonContainer"><div class="appsMaterialWizToggleRadiogroupOffRadio exportOuterCircle"><div class="appsMaterialWizToggleRadiogroupOnRadio exportInnerCircle"></div></div></div></div></div><div class="docssharedWizToggleLabeledContent"><div class="docssharedWizToggleLabeledPrimaryText"><span dir="auto" class="docssharedWizToggleLabeledLabelText exportLabel freebirdFormviewerComponentsQuestionRadioLabel">IT</span></div></div></div></label></div><div class="freebirdFormviewerComponentsQuestionRadioChoice freebirdFormviewerComponentsQuestionRadioOptionContainer"><label for="i46" class="docssharedWizToggleLabeledContainer freebirdFormviewerComponentsQuestionRadioRadio"><div class="docssharedWizToggleLabeledLabelWrapper exportLabelWrapper"><div class="appsMaterialWizToggleRadiogroupElContainer exportContainerEl  docssharedWizToggleLabeledControl freebirdThemedRadio freebirdThemedRadioDarkerDisabled"><div id="i46" class="appsMaterialWizToggleRadiogroupEl exportToggleEl" jscontroller="EcW08c" jsaction="keydown:I481le;dyRcpb:dyRcpb;click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;" jsshadow="" aria-label="CIVIL" data-value="CIVIL" role="radio" aria-checked="false" aria-posinset="6" aria-setsize="9" tabindex="-1"><div class="appsMaterialWizToggleRadiogroupInk exportInk"></div><div class="appsMaterialWizToggleRadiogroupInnerBox"></div><div class="appsMaterialWizToggleRadiogroupRadioButtonContainer"><div class="appsMaterialWizToggleRadiogroupOffRadio exportOuterCircle"><div class="appsMaterialWizToggleRadiogroupOnRadio exportInnerCircle"></div></div></div></div></div><div class="docssharedWizToggleLabeledContent"><div class="docssharedWizToggleLabeledPrimaryText"><span dir="auto" class="docssharedWizToggleLabeledLabelText exportLabel freebirdFormviewerComponentsQuestionRadioLabel">CIVIL</span></div></div></div></label></div><div class="freebirdFormviewerComponentsQuestionRadioChoice freebirdFormviewerComponentsQuestionRadioOptionContainer"><label for="i49" class="docssharedWizToggleLabeledContainer freebirdFormviewerComponentsQuestionRadioRadio"><div class="docssharedWizToggleLabeledLabelWrapper exportLabelWrapper"><div class="appsMaterialWizToggleRadiogroupElContainer exportContainerEl  docssharedWizToggleLabeledControl freebirdThemedRadio freebirdThemedRadioDarkerDisabled"><div id="i49" class="appsMaterialWizToggleRadiogroupEl exportToggleEl" jscontroller="EcW08c" jsaction="keydown:I481le;dyRcpb:dyRcpb;click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;" jsshadow="" aria-label="CHEMICAL" data-value="CHEMICAL" role="radio" aria-checked="false" aria-posinset="7" aria-setsize="9" tabindex="-1"><div class="appsMaterialWizToggleRadiogroupInk exportInk"></div><div class="appsMaterialWizToggleRadiogroupInnerBox"></div><div class="appsMaterialWizToggleRadiogroupRadioButtonContainer"><div class="appsMaterialWizToggleRadiogroupOffRadio exportOuterCircle"><div class="appsMaterialWizToggleRadiogroupOnRadio exportInnerCircle"></div></div></div></div></div><div class="docssharedWizToggleLabeledContent"><div class="docssharedWizToggleLabeledPrimaryText"><span dir="auto" class="docssharedWizToggleLabeledLabelText exportLabel freebirdFormviewerComponentsQuestionRadioLabel">CHEMICAL</span></div></div></div></label></div><div class="freebirdFormviewerComponentsQuestionRadioChoice freebirdFormviewerComponentsQuestionRadioOptionContainer"><label for="i52" class="docssharedWizToggleLabeledContainer freebirdFormviewerComponentsQuestionRadioRadio"><div class="docssharedWizToggleLabeledLabelWrapper exportLabelWrapper"><div class="appsMaterialWizToggleRadiogroupElContainer exportContainerEl  docssharedWizToggleLabeledControl freebirdThemedRadio freebirdThemedRadioDarkerDisabled"><div id="i52" class="appsMaterialWizToggleRadiogroupEl exportToggleEl" jscontroller="EcW08c" jsaction="keydown:I481le;dyRcpb:dyRcpb;click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;" jsshadow="" aria-label="M.TECH" data-value="M.TECH" role="radio" aria-checked="false" aria-posinset="8" aria-setsize="9" tabindex="-1"><div class="appsMaterialWizToggleRadiogroupInk exportInk"></div><div class="appsMaterialWizToggleRadiogroupInnerBox"></div><div class="appsMaterialWizToggleRadiogroupRadioButtonContainer"><div class="appsMaterialWizToggleRadiogroupOffRadio exportOuterCircle"><div class="appsMaterialWizToggleRadiogroupOnRadio exportInnerCircle"></div></div></div></div></div><div class="docssharedWizToggleLabeledContent"><div class="docssharedWizToggleLabeledPrimaryText"><span dir="auto" class="docssharedWizToggleLabeledLabelText exportLabel freebirdFormviewerComponentsQuestionRadioLabel">M.TECH</span></div></div></div></label></div><div class="freebirdFormviewerComponentsQuestionRadioChoice freebirdFormviewerComponentsQuestionRadioOptionContainer"><label for="i55" class="docssharedWizToggleLabeledContainer freebirdFormviewerComponentsQuestionRadioRadio"><div class="docssharedWizToggleLabeledLabelWrapper exportLabelWrapper"><div class="appsMaterialWizToggleRadiogroupElContainer exportContainerEl  docssharedWizToggleLabeledControl freebirdThemedRadio freebirdThemedRadioDarkerDisabled"><div id="i55" class="appsMaterialWizToggleRadiogroupEl exportToggleEl" jscontroller="EcW08c" jsaction="keydown:I481le;dyRcpb:dyRcpb;click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;" jsshadow="" aria-label="MCA" data-value="MCA" role="radio" aria-checked="false" aria-posinset="9" aria-setsize="9" tabindex="0"><div class="appsMaterialWizToggleRadiogroupInk exportInk"></div><div class="appsMaterialWizToggleRadiogroupInnerBox"></div><div class="appsMaterialWizToggleRadiogroupRadioButtonContainer"><div class="appsMaterialWizToggleRadiogroupOffRadio exportOuterCircle"><div class="appsMaterialWizToggleRadiogroupOnRadio exportInnerCircle"></div></div></div></div></div><div class="docssharedWizToggleLabeledContent"><div class="docssharedWizToggleLabeledPrimaryText"><span dir="auto" class="docssharedWizToggleLabeledLabelText exportLabel freebirdFormviewerComponentsQuestionRadioLabel">MCA</span></div></div></div></label></div></div></span></div></div></div><div jsname="Rfh2Tc" class="freebirdFormviewerComponentsQuestionBaseValidationError" id="i29" role="alert"></div></div></div></div></div><div class="freebirdFormviewerViewNavigationNavControls" jscontroller="lSvzH" jsaction="rcuQ6b:npT2md;JIbuQc:Gl574d(QR6bsb),V3upec(GeGHKb),HiUbje(M2UYVd),NPBnCf(OCpkoe);" data-shuffle-seed="3606162198848802664" data-should-execute-invisible-captcha-challenge="false" data-is-receipt-checked="false"><div class="freebirdFormviewerViewNavigationButtonsAndProgress"><div class="freebirdFormviewerViewNavigationLeftButtons"><div role="button" class="appsMaterialWizButtonEl appsMaterialWizButtonPaperbuttonEl appsMaterialWizButtonPaperbuttonFilled freebirdFormviewerViewNavigationSubmitButton freebirdThemedFilledButtonM2" jscontroller="VXdfxd" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;" jsshadow="" jsname="M2UYVd" aria-disabled="false" tabindex="0"><div class="appsMaterialWizButtonPaperbuttonRipple exportInk" jsname="ksKsZd"></div><div class="appsMaterialWizButtonPaperbuttonFocusOverlay exportOverlay"></div><span jsslot="" class="appsMaterialWizButtonPaperbuttonContent exportButtonContent"><span class="appsMaterialWizButtonPaperbuttonLabel quantumWizButtonPaperbuttonLabel exportLabel">Submit</span></span></div></div></div><div class="freebirdFormviewerViewNavigationPasswordWarning">Never submit passwords through Google Forms.</div></div><input type="hidden" name="fvv" value="1"><input type="hidden" name="draftResponse" value="[null,null,&quot;3606162198848802664&quot;]
+"><input type="hidden" name="pageHistory" value="0"><input type="hidden" name="fbzx" value="3606162198848802664"></div></div></form>"><input type="hidden" name="pageHistory" value="0"><input type="hidden" name="fbzx" value="6493736509405594415"></div></div></form>
