@@ -12,19 +12,6 @@ body{
     font-weight: 300;
 }
 
-/*.ieee-navbar{
-    font-size: 13px;
-    background: #0874a4;
-    height: 35px;
-}
-
-.ieee-navbar a{
-    padding: 0 20px;
-    margin: 0 10px;
-    color: #fff;
-}
-*/
-
 .sticky-top{
     top: 0;
 }
@@ -165,23 +152,7 @@ body{
   }
 }
 
-.benefits-banner {
-    color: #fff;
-    height: 80vh;
-    min-height: 500px;
-    background:linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/benefits_banner.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.benefits-section{
-    padding: 40px 0;
-}
-
-.benefits-section .sub-section{
-    padding: 40px 0;
-}
+/*footer*/
 
 .page-footer{
     background-color: #055fad;

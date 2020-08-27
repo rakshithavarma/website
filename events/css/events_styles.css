@@ -10,6 +10,9 @@ html {
 body{
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
+    background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../images/events_banner.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /*.ieee-navbar{
@@ -165,199 +168,93 @@ body{
   }
 }
 
-.team-banner {
+/*wie-banner*/
+
+.events-banner {
     color: #fff;
-    height: 80vh;
+    height: 70vh;
     min-height: 500px;
-    background:linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('../images/team/home-carousel/sb_2018_team.jpg');
+    /*background:linear-gradient(0deg,rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../../images/events_banner.jpg');*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.team{
-    padding: 40px 0;
+.events-banner h1{
+    line-height: 40px;
 }
 
-.faculty{
-    padding: 20px 0;
-    background-color: #f9f6e9;
+.events{
+    padding: 50px 0;
+    /*background: #000;*/
 }
 
-.sb-team{
-    padding: 20px 0;
+.events .single-event{
+    background-color: #fff;
+    width: 100%;
+    /*margin: 2px;*/
+    /*box-sizing: border-box;*/
 }
 
-.wie-team{
-    padding: 20px 0;
-    background-color: #f9f6e9;
+.events .single-event .time{
+    padding: 10px;
+    background: #262626;
+    color: #fff;
 }
 
-.core-team{
-    padding: 20px 0;
+.events .single-event:hover .time{
+    background: #055fad;
+    transition: 0.3s;
 }
 
-.team-heading{
-    padding: 30px;
+.events .single-event .time h2{
+    position: relative;
+    /*margin: 0;*/
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    line-height: 30px;
+}
+
+.events .single-event .time h2 span{
+    font-size: 2rem;
+}
+
+.events .single-event .details{
+    padding: 10px;
+    background: #fff;
+}
+
+.events .single-event .details h5{
+    font-size: 1.5rem;
     color: #055fad;
 }
 
-.faculty .team-heading{
-    padding: 30px;
-    color: #28324b;
-}
-
-.wie-team .team-heading{
-    padding: 30px;
-    color: #420b5a;
-}
-
-/*.team-heading .underline{
-    background-color: #000;
-    border: 2px solid #000;
-    margin-top: -5px;
-}*/
-
-.team-info{
-    padding: 40px 0;
-    margin: 0 20px;
-}
-
-/*.team-info .card-img-top{
-    width: 250px;
-    height: 250px;
-}*/
-
-.single-team{
+.events .single-event .details .btn{
+    /*color: #fff;
     background-color: #055fad;
-    margin-bottom: 10px;
+    font-family: 'Oswald';*/
+    /*color: #055fad;
+    background-color: #fff;*/
+    border: 2px solid #055fad;
+    color: #055fad;
 }
 
-.faculty .single-team{
-    background-color: #28324b;
-    margin-bottom: 10px;
-}
-
-.wie-team .single-team{
-    background-color: #420b5a;
-    margin-bottom: 10px;
-}
-
-.single-team:hover .social{
-    cursor: pointer;
-    opacity: 1;
-    transform: rotateY(0deg) scale(1,1);
-}
-
-.img-area{
-    overflow: hidden;
-    position: relative;
-}
-
-.img-area img{
-    width: 100%;
-    height: 320px;
-    object-fit: cover;
-    vertical-align: top;
-}
-
-.sb-team .img-area img{
-    max-height: 320px;
-}
-
-.wie-team .img-area img{
-    max-height: 320px;
-}
-
-.core-team .img-area img{
-    max-height: 320px;
-}
-
-.single-team:hover img{
-    transform: scale(1.2);
-}
-
-.img-area img{
-    transition: all 0.4s ease 0s;
-}
-
-@media (max-width: 768px){
-    .img-area img{
-        display: inline-block;
-    }
-}
-
-.img-area .social{
-    background-color: rgba(0,66,99,0.4);
-    position: absolute;
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    transform: rotateY(90deg) scale(0.5,0.5);
-}
-
-.faculty .img-area .social{
-    background-color: rgba(40, 50, 75,0.4);
-}
-
-.wie-team .img-area .social{
-    background-color: rgba(66, 11, 90,0.1);
-}
-
-.img-area .social ul{
-    text-align: center;
-    position: relative;
-    top: 50%;
-    /*left: 46%;*/
-}
-
-.img-area .social ul li{
-    margin: 3px;
-    display: inline-block;
-}
-
-.img-area .social ul li a{
-    border: 1px solid #fff;
+.events .single-event .details .btn:hover{
+    /*color: #055fad;
+    background-color: #fff;*/
+    border: 2px solid #055fad;
     color: #fff;
-    display: block;
-    font-size: 20px;
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-    text-align: center;
+    background-color: #055fad;
+    /*font-family: 'Oswald';*/
+    /*overflow: hidden;*/
+    transition: 0.3s;
+    /*margin-bottom: -2px;*/
 }
 
-.img-area .social ul li a:hover{
-    background-color: #fff;
-    border: 1px solid transparent;
-}
-
-.img-area .social ul li a:hover i{
-    color: #000;
-}
-
-.img-text{
-    padding: 20px 10px;
-    color: #fff;
-    text-align: center;
-}
-
-.img-text h4{
-    margin: 0 0 5px;
-    font-size: 25px;
-    font-family: bignoodletitling;
-    /*letter-spacing: 2px;*/
-}
-
-.img-text h5{
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: bold;
-    /*letter-spacing: 1px;*/
-}
+/*footer*/
 
 .page-footer{
     background-color: #055fad;
