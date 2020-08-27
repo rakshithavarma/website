@@ -152,6 +152,41 @@ body{
   }
 }
 
+/*events-banner*/
+
+.events-banner {
+    color: #fff;
+    height: 70vh;
+    min-height: 500px;
+    background:linear-gradient(0deg,rgba(0,0,0,0.7),rgba(0,0,0,0.7)),linear-gradient(rgba(26,88,203,0.5), rgba(7,198,237,0.5));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.single-event{
+	padding: 50px 0;
+}
+
+.single-event .event-poster img{
+	max-height: 50vh;
+	/*width: 100%;*/
+	object-fit: contain;
+	border: 3px solid #055fad;
+}
+
+.single-event .event-details .details .btn{
+    border: 2px solid #055fad;
+    color: #055fad;
+}
+
+.single-event .event-details .details .btn:hover{
+    border: 2px solid #055fad;
+    color: #fff;
+    background-color: #055fad;
+    transition: 0.3s;
+}
+
 /*footer*/
 
 .page-footer{
