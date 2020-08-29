@@ -156,31 +156,66 @@ body{
 
 .events-banner {
     color: #fff;
-    height: 70vh;
-    min-height: 500px;
+    /*height: 80vh;*/
+    height: 700px;
     background:linear-gradient(0deg,rgba(0,0,0,0.7),rgba(0,0,0,0.7)),linear-gradient(rgba(26,88,203,0.5), rgba(7,198,237,0.5));
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding-top: 50px;
 }
 
 .single-event{
 	padding: 50px 0;
 }
 
-.single-event .event-poster img{
-	max-height: 50vh;
-	/*width: 100%;*/
+/*.events-banner .event-poster{
+	margin-top: 30px;
+}*/
+
+.events-banner .events-header{
+	margin-top: 70px;
+}
+
+.events-banner .event-poster img{
+	/*max-height: 50vh;
+*/	/*width: 100%;*/
+	height: 400px;
 	object-fit: contain;
 	border: 3px solid #055fad;
 }
 
-.single-event .event-details .details .btn{
+.single-event .heading{
+	color: #055fad;
+}
+
+.single-event .event-info{
+	padding: 10px;
+}
+
+.single-event .event-info .details{
+	padding: 10px;
+	font-size: 1.25rem;
+}
+
+.single-event .single-detail{
+	padding: 10px 0;
+}
+
+.single-event .event-info .details .heading{
+	font-weight: bold;
+}
+
+.single-event .event-info .sub-details{
+	padding: 10px;
+}
+
+.single-event .event-info .sub-details .btn{
     border: 2px solid #055fad;
     color: #055fad;
 }
 
-.single-event .event-details .details .btn:hover{
+.single-event .event-info .sub-details .btn:hover{
     border: 2px solid #055fad;
     color: #fff;
     background-color: #055fad;
