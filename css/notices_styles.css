@@ -176,7 +176,7 @@ body{
 }
 
 .notices .single-notice{
-    padding: 40px 20px;
+    padding: 20px 20px 0 20px;
 }
 
 .team-announcement .modal-body img{
@@ -185,6 +185,26 @@ body{
     object-fit: cover;
     padding: 10px 0;
     margin: 0;
+}
+
+.notices .single-notice .notice-matter{
+    padding-top: 20px;
+}
+
+.notices .single-notice .notice-matter .sub-heading{
+    color: #055fad;
+}
+
+.notices .single-notice .notice-matter .btn{
+    border: 2px solid #055fad;
+    color: #055fad;
+}
+
+.notices .single-notice .notice-matter .btn:hover{
+    border: 2px solid #055fad;
+    color: #fff;
+    background-color: #055fad;
+    transition: 0.3s;
 }
 
 .page-footer{
