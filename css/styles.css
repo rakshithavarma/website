@@ -200,6 +200,13 @@ body{
     background-image: #000 opacity 0.2;
 }
 
+/*announcements*/
+
+.announcements-content{
+    padding: 40px;
+    /*position: relative;*/
+}
+
 /*updates*/
 
 .updates{
