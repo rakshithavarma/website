@@ -12,28 +12,21 @@
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/notices_styles.css">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- fonts -->
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
 
+    <style type="text/css">
+    	#exampleModal span{
+    		color: #055fad;
+    	}
+    </style>
+
 </head>
 <body>
-  
-
-	<!-- navbar - ieee.org -->
-
-	
-	<!-- <nav class="navbar navbar-expand-sm ieee-navbar hidden-xs d-none d-lg-block">
-	    <div class="navbar-nav justify-content-center">
-	      	<a class="nav-item nav-link" href="https://www.ieee.org">IEEE.org</a>
-	      	<a class="nav-item nav-link" href="https://ieeexplore.ieee.org/Xplore/home.jsp">IEEE <em>Xplore</em> Digital Library</a>
-	      	<a class="nav-item nav-link" href="http://standards.ieee.org">IEEE Standards</a>
-	      	<a class="nav-item nav-link" href="http://spectrum.ieee.org">IEEE Spectrum</a>
-	      	<a class="nav-item nav-link" href="https://www.ieee.org/sitemap.html">More Sites</a>
-	    </div>
-	</nav> -->
 
 	<!-- navbar - ieee sb gvp -->
 
@@ -229,6 +222,46 @@
 			</div>
 		</div>
 	</section>
+
+	<div class="modal fade" id="exampleModal" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+	  	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+	    	<div class="modal-content">
+	      		<div class="modal-header">
+	        		<h5 class="modal-title" style="color: #055fad, font-weight: bold;">IEEE DAY 2020 Celebrations are ON!!!</h5>
+	        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          			<span aria-hidden="true">&times;</span>
+	        		</button>
+	      		</div>
+	      		<div class="modal-body">
+	      			<div class="container-fluid">
+	      				<!-- <div class="row notice-image">
+	      					<div class="col-sm-12">
+	      						<img src="images/notices/sywl.jpg">
+	      					</div>
+	      				</div> -->
+
+	      				<div class="row notice-matter about-ieee-info">
+	      					<div class="col-sm-12" style="font-weight: bold">
+	      						
+	      						<p>IEEE SB GVPCE(A) is back again this year with it's biggest event of the year <span>"IEEE Day 2020 Celebrations"</span>.</p>
+
+	      						<p>Last couple of years, IEEE SB GVPCE(A) have been celebrating IEEE Day on <span>1st or 2nd week of October</span> and organising workshops, competitions and events on that occassion. We are back again this year with <span><i>much more interesting workshops, events and many more</i></span>. No worries, if you're struck at home and feeling bored, this year we are doing it virtually.</p>
+
+	      						<p style="color: #055fad; font-style: Roboto">Knowledge and Fun guaranteed!!!<img src="images/guarantee.jpg" style="height: 80px; width: 80px; object-fit: contain;"></p>
+
+
+	      						<a href="evento/index.html" class="btn btn-lg rounded-0" role="button" aria-pressed="true">Know More</a>
+
+	      					</div>
+	      				</div>
+	      			</div>
+	      		</div>
+	      		<div class="modal-footer">
+	        		<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	     		</div>
+	    	</div>
+	  	</div>
+	</div>
 
 
 	<!-- about ieee content -->
@@ -615,7 +648,7 @@
 							<a href="https://www.facebook.com/under.vizag.bay.sub.section/"><i class="fa fa-facebook-official fa-2x"></i></a>
 							<a href="https://www.instagram.com/ieee_sb_gvpce_a/"><i class="fa fa-instagram fa-2x"></i></a>
 							<a href="https://www.linkedin.com/in/ieee-sb-gvpce-a-b362791a1/"><i class="fa fa-linkedin-square fa-2x"></i></a>
-							<a href="https://linkedin.com/GvpceSb"><i class="fa fa-twitter-square fa-2x"></i></a>
+							<a href="https://twitter.com/GvpceSb"><i class="fa fa-twitter-square fa-2x"></i></a>
 						</div>
 					</div>
 				</div>
@@ -635,6 +668,11 @@
  	
  	<script type="text/javascript" src="js/scripts.js"></script>
  	<script type="text/javascript" src="js/counter.js"></script>
+ 	<script type="text/javascript">
+    $(document).ready(function(){
+        $("#exampleModal").modal('show');
+    });
+</script>
 
 
 </body>

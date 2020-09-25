@@ -1,0 +1,112 @@
+.pricing-card-area{
+    .single-card{
+        background: #fcfcfc;
+        padding: 70px 25px;
+        border-radius: 6px;
+        @include transition(.4s);
+        transform: scale(1);
+        margin-left: 15px;
+        margin-right: 15px;
+        .card-top{
+            border-bottom: 1px solid#f4f4f4;
+            margin-bottom: 46px;
+            span{
+                color: #222;
+                font-size: 16px;
+                margin-bottom: 8px;
+                display: inline-block;
+            }
+            h4{
+                color: #222;
+                font-size: 30px;
+                font-weight: 800;
+                margin-bottom: 26px;
+                padding-right: 3px;
+            }
+        }
+        .card-bottom{
+            ul{
+                li{
+                    color:#717081;
+                    font-weight: 300;
+                    margin-bottom: 16px;
+                    font-size: 16px;
+                    &:last-child{
+                        margin-bottom: 45px;
+                    }
+                }
+            }
+        }
+        // Active
+        &.active{
+            background: #31118f;
+            transform: scale(1.2);
+            @media #{$sm}{
+                transform: scale(1);
+            }
+            @media #{$xs}{
+                transform: scale(1);
+            }
+            .card-top{
+                border-bottom: 1px solid #fff;
+                span{
+                    color: #fff;
+                }
+                h4{
+                    color: #fff;
+                }
+            }
+            .card-bottom{
+                ul{
+                    li{
+                        color:#fff;
+
+                    }
+                }
+                .black-btn{
+                    background: #fff;
+                    color: #331391 !important;
+                    &::before{
+                        background: #000;
+                    }
+                }
+            }
+
+        }
+        // Hover
+        &:hover{
+            background: #31118f;
+            .card-top{
+                border-bottom: 1px solid #fff;
+                span{
+                    color: #fff;
+                }
+                h4{
+                    color: #fff;
+                }
+            }
+            .card-bottom{
+                ul{
+                    li{
+                        color:#fff;
+
+                    }
+                }
+                .black-btn{
+                    padding: 14px 35px;
+                    background: #fff;
+                    color: #331391 !important;
+                }
+            }
+
+        }
+    }
+}
+
+.work-company{
+    .single-logo img {
+        @media #{$lg}{
+            width: 100%;
+        }
+    }
+}
