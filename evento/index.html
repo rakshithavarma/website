@@ -21,6 +21,13 @@
 	<link rel="stylesheet" href="assets/css/slick.css">
 	<link rel="stylesheet" href="assets/css/nice-select.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style type="text/css">
+        html {
+                scroll-behavior: smooth;
+            }
+    </style>
 </head>
 <body>
     <!-- ? Preloader Start -->
@@ -29,7 +36,6 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <!-- <img src="assets/img/logo/loder.png" alt=""> -->
                     <h1 style="color: #055fad;">IEEE</h1>
                 </div>
             </div>
@@ -45,7 +51,7 @@
                     <!-- Logo -->
                     <div class="col-xl-2 col-lg-2 col-md-1">
                         <div class="logo">
-                            <a href="index.html"><!-- <img src="assets/img/logo/logo.png" alt=""> --><h1 style="color: #331391;">Insprio'20</h1></a>
+                            <a href="index.html"><!-- <h1 style="color: #331391;">Insprio'20</h1> --><img src="assets/img/logo/insprio.png" style="height: 3.5rem; width: 7.5rem;"></a>
                         </div>
                     </div>
                     <div class="col-xl-10 col-lg-10 col-md-10">
@@ -54,11 +60,11 @@
                             <div class="main-menu f-right d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="speakers.html">Speakers</a></li>
-                                        <li><a href="schedule.html">Schedule</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#about">About</a></li>
+                                        <li><a href="#speakers">Speakers</a></li>
+                                        <li><a href="#schedule">Schedule</a></li>
+                                        <li><a href="#contact">Contact</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -81,6 +87,26 @@
     <!--? slider Area Start-->
     <div class="slider-area position-relative">
         <div class="slider-active">
+            <!-- Single Slider -->
+            <div class="single-slider slider-height d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-8 col-lg-8 col-md-9 col-sm-10">
+                            <div class="hero__caption">
+                                <h1 data-animation="fadeInLeft" data-delay=".5s">Insprio 2020</h1>
+                                <span data-animation="fadeInLeft" data-delay=".1s">Inspire through Knowledge</span>
+                                <!-- Hero-btn -->
+                                <div class="slider-btns">
+                                    <a data-animation="fadeInLeft" data-delay="1.0s" href="#" class="btn hero-btn">Buy Tickets</a>
+                                    <a data-animation="fadeInRight" data-delay="1.0s" class="video-btn" role="button" data-toggle="modal" data-target="#modal1">
+                                        <i class="fas fa-play"></i></a>
+                                    <p class="video-cap d-none d-sm-block" data-animation="fadeInRight" data-delay="1.0s">Story Video<br> Watch</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>         
+            </div>
             <!-- Single Slider -->
             <div class="single-slider slider-height d-flex align-items-center">
                 <div class="container">
@@ -138,7 +164,7 @@
     </div> 
     <!-- slider Area End-->
     <!--? About Law Start-->
-    <section class="about-low-area section-padding2">
+    <section class="about-low-area section-padding2" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12">
@@ -192,10 +218,10 @@
     </section>
     <!-- About Law End-->
     <!--? Brand Area Start -->
-    <section class="team-area pt-180 pb-100 section-bg" data-background="assets/img/gallery/section_bg02.png">
+    <section class="team-area pt-180 pb-100 section-bg" data-background="assets/img/gallery/section_bg02.png" id="speakers">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-9">
+                <div class="col-lg-6 col-md-9"> 
                     <!-- Section Tittle -->
                     <div class="section-tittle section-tittle2 mb-50">
                         <h2>The Most Important Speakers.</h2>
@@ -310,7 +336,7 @@
     </section>
     <!-- Brand Area End -->  
     <!--? accordion -->
-    <section class="accordion fix section-padding30">
+    <section class="accordion fix section-padding30" id="schedule">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-5 col-lg-6 col-md-6">
@@ -649,42 +675,42 @@
                 <div class="col-lg-3 col-md-3 col-sm-6">
                     <div class="gallery-box">
                         <div class="single-gallery">
-                            <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery1.png);"></div>
+                            <div class="gallery-img " style="background-image: url(assets/img/gallery/5_1.jpg);"></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6">
                     <div class="gallery-box">
                         <div class="single-gallery">
-                            <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery2.png);"></div>
+                            <div class="gallery-img " style="background-image: url(assets/img/gallery/4.jpg);"></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="gallery-box">
                         <div class="single-gallery">
-                            <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery3.png);"></div>
+                            <div class="gallery-img " style="background-image: url(assets/img/gallery/1.jpg);"></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="gallery-box">
                         <div class="single-gallery">
-                            <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery4.png);"></div>
+                            <div class="gallery-img " style="background-image: url(assets/img/gallery/9.jpg);"></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6">
                     <div class="gallery-box">
                         <div class="single-gallery">
-                             <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery5.png);"></div>
+                             <div class="gallery-img " style="background-image: url(assets/img/gallery/6.jpg);"></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6">
                     <div class="gallery-box">
                         <div class="single-gallery">
-                            <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery6.png);"></div>
+                            <div class="gallery-img " style="background-image: url(assets/img/gallery/8_1.jpg);"></div>
                         </div>
                     </div>
                 </div>
@@ -693,7 +719,7 @@
     </div>
     <!-- gallery Products End -->
     </main>
-    <footer>
+    <footer id="contact">
         <!-- Footer Start-->
         <div class="footer-area footer-padding">
             <div class="container">
@@ -755,12 +781,14 @@
                                  <p>We are active in social media.</p>
                             </div>
                             <div class="col-xl-2 col-lg-4">
-                                <div class="footer-social f-right">
-                                    <a href="https://www.facebook.com/under.vizag.bay.sub.section/"><i class="fa fa-facebook-official fa-2x" style="color: #fff"></i></a>
-                                    <a href="https://www.instagram.com/ieee_sb_gvpce_a/"><i class="fa fa-instagram fa-2x" style="color: #fff"></i></a>
-                                    <a href="https://www.linkedin.com/in/ieee-sb-gvpce-a-b362791a1/"><i class="fa fa-linkedin-square fa-2x" style="color: #fff"></i></a>
-                                    <a href="https://twitter.com/GvpceSb"><i class="fa fa-twitter-square fa-2x" style="color: #fff"></i></a>
-                                    <a href="https://www.youtube.com/channel/UCIromj4UjhjDzjwPgPzvv7Q?app=desktop"><i class="fa fa-youtube-play fa-2x" style="color: #fff"></i></a>
+                                <div class="footer-social-ieee">
+                                    <ul style="list-style: none; display: inline-flex;">
+                                        <li><a href="https://www.facebook.com/under.vizag.bay.sub.section/"><i class="fa fa-facebook fa-2x"></i></a></li>
+                                        <li><a href="https://www.instagram.com/ieee_sb_gvpce_a/"><i class="fa fa-instagram fa-2x"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/ieee-sb-gvpce-a-b362791a1/"><i class="fa fa-linkedin fa-2x"></i></a></li>
+                                        <li><a href="https://twitter.com/GvpceSb"><i class="fa fa-twitter fa-2x"></i></a></li>
+                                        <li><a href="https://www.youtube.com/channel/UCIromj4UjhjDzjwPgPzvv7Q?app=desktop"><i class="fa fa-youtube-play fa-2x"></i></a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -836,6 +864,18 @@
     <!-- Jquery Plugins, main Jquery -->	
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
+
+    <style type="text/css">
+        .footer-social-ieee i{
+            color: #fff;
+        }
+        .footer-social-ieee ul{
+            list-style-type: none;
+        }
+        .footer-social-ieee li{
+            padding: 0 10px;
+        }
+    </style>
     
     </body>
 </html>
