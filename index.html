@@ -247,7 +247,7 @@
 
 	      						<p>Last couple of years, IEEE SB GVPCE(A) have been celebrating IEEE Day on <span>1st or 2nd week of October</span> and organising workshops, competitions and events on that occassion. We are back again this year with <span><i>much more interesting workshops, events and many more</i></span>. No worries, if you're struck at home and feeling bored, this year we are doing it virtually.</p>
 
-	      						<p style="color: #055fad; font-style: Roboto">Knowledge and Fun guaranteed!!!<img src="images/guarantee.jpg" style="height: 80px; width: 80px; object-fit: contain;"></p>
+	      						<p style="color: #055fad; font-style: Roboto">Knowledge and Fun guaranteed!!!<!-- <img src="images/guarantee.jpg" style="height: 80px; width: 80px; object-fit: contain;"> --></p>
 
 
 	      						<a href="evento/index.html" class="btn btn-lg rounded-0" role="button" aria-pressed="true">Know More</a>
@@ -659,6 +659,9 @@
 		</div>
 	</section>
 
+	<div id="insprio" style="display: block; position: fixed; right:30px; bottom:40px; border: 1px solid #000; ">
+        <a title="Insprio Page" href="evento/index.html"><img src="evento/assets/img/logo/insprio.png" style="height: 4rem; width: 8rem;"></a>
+    </div>
 
 	<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -669,10 +672,11 @@
  	<script type="text/javascript" src="js/scripts.js"></script>
  	<script type="text/javascript" src="js/counter.js"></script>
  	<script type="text/javascript">
-    $(document).ready(function(){
-        $("#exampleModal").modal('show');
-    });
-</script>
+	    $(document).ready(function(){
+	        $("#exampleModal").modal('show');
+	    });
+	    $('#insprio').fadeIn(500);
+	</script>
 
 
 </body>
