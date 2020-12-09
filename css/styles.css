@@ -402,9 +402,19 @@ body{
     color: #000;
 }
 
+.events-info .card-body{
+    font-family: 'Poppins';
+    font-weight: 250;
+}
+
+.events-info .card-body a{
+    color: inherit;
+    text-decoration: none;
+}
+
 .events-info .card-img-top{
     /*width: 100%;*/
-    height: 60vh;
+    /*height: 60vh;*/
     /*max-height: 500px;*/
     /*object-position: relative;*/
     object-fit: cover;
