@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>IEEE SB GVPCE</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/notices_styles.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- fonts -->
+
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+	<!-- navbar - ieee sb gvp -->
+
+	<?php echo file_get_contents("hf/header.html"); ?>
+
+	<!-- carousel -->
+
+	<div id="homeCarousel" class="carousel slide home-carousel" data-ride="carousel" data-interval="3000">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#homeCarousel" data-slide-to="1"></li>
+			<li data-target="#homeCarousel" data-slide-to="2"></li>
+			<li data-target="#homeCarousel" data-slide-to="3"></li>
+			<!-- <li data-target="#homeCarousel" data-slide-to="2"></li> -->
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+			<div class="carousel-item ieee-sb-gvpce-carousel active">
+				<div class="home-carousel-image">
+					<img class="carousel-image img-responsive d-block w-100" src="images/team/home-carousel/ieee_team2.jpg" alt="IEEE TEAM">
+				</div>
+				<div class="carousel-caption">
+					<div>
+						<img src="images/ieee_sb_logo.png">
+					</div>
+					<h3>IEEE SB GVPCE(A)</h3>
+					<p>under IEEE Vizag Bay Section (SPO ID:STB63321)</p>
+				</div>
+			</div>
+
+			<div class="carousel-item">
+				<div class="home-carousel-image">
+					<img class="carousel-image img-responsive d-block w-100" src="images/team/home-carousel/audience2.jpg" alt="IEEE Event">
+				</div>
+				<!-- <div class="carousel-caption">
+	        		<h3>Events</h3>
+	        		<p>We love the Events!</p>
+	      		</div> -->
+			</div>
+
+			<div class="carousel-item">
+				<div class="home-carousel-image">
+					<img class="carousel-image img-responsive d-block w-100" src="images/team/home-carousel/princey.jpg" alt="Social Event">
+				</div>
+				<!-- <div class="carousel-caption">
+	        		<h3>Events</h3>
+	        		<p>We love the Events!</p>
+	      		</div> -->
+			</div>
+
+			<div class="carousel-item">
+				<div class="home-carousel-image">
+					<img class="carousel-image img-responsive d-block w-100" src="images/team/home-carousel/lightning.jpg" alt="Social Event">
+				</div>
+				<!-- <div class="carousel-caption">
+	        		<h3>Events</h3>
+	        		<p>We love the Events!</p>
+	      		</div> -->
+			</div>
+		</div>
+
+		<!-- Left and right controls -->
+		<a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+
+	<!-- updates -->
+
+	<section class="updates">
+		<div class="container container-fluid">
+			<div class="updates-heading">
+				<h1 class="text-center">Updates</h1>
+				<hr class="underline" align="center" style="width:8.5em">
+			</div>
+			<div id="updatesCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+				<ol class="carousel-indicators">
+					<li data-target="#updatesCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#updatesCarousel" data-slide-to="1"></li>
+					<li data-target="#updatesCarousel" data-slide-to="2"></li>
+					<!-- <li data-target="#updatesCarousel" data-slide-to="3"></li> -->
+				</ol>
+				<div class="carousel-inner">
+
+					<div class="carousel-item active">
+						<div class="carousel-content col-xs-10 offset-xs-1">
+							<p align="center"><i class="fa fa-quote-left" aria-hidden="true"></i><b>IEEE SB GVPCE(A)</b> has received approval to form the <b style="color: #5a9541; font-weight: 750">IEEE Power & Energy Society Student Branch Chapter</b> in <b>Vizag Bay Section</b> as of 18/01/2021.<br><strong>- IEEE</strong></p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="carousel-content col-xs-10 offset-xs-1">
+							<p align="center"><i class="fa fa-quote-left" aria-hidden="true"></i>IEEE SB GVPCE(A) SB Members nominated as Student Branch Associate for <b>AISYWLC 2020 (All India Student/YP/WIE/LM Congress)</b>, the annual flagship event of IEEE India Council. Check <a href="notices.html">here</a> <br><strong>- IEEE</strong></p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="carousel-content col-xs-10 offset-xs-1">
+							<p align="center"><i class="fa fa-quote-left" aria-hidden="true"></i>IEEE SB GVPCE(A) is organising a Membership Drive for interested prople to join IEEE professional body.<br><strong>- IEEE</strong></p>
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-prev carousel-control-icon" href="#updatesCarousel" role="button" data-slide="prev">
+					<i class="fa fa-chevron-circle-left fa-2x" aria-hidden="true"></i>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next carousel-control-icon" href="#updatesCarousel" role="button" data-slide="next">
+					<i class="fa fa-chevron-circle-right fa-2x" aria-hidden="true"></i>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- about ieee content -->
+
+	<section class="about-ieee">
+		<div class="container container-fluid">
+			<div class="about-ieee-heading">
+				<div class="row">
+					<div class="col-sm-10 offset-sm-1">
+						<h1 class="text-center">About Us</h1>
+						<hr class="underline" style="width:5em">
+					</div>
+				</div>
+			</div>
+			<div class="about-ieee-info">
+				<div class="container container-fluid">
+					<div class="row">
+						<div class="col-sm-10 offset-sm-1">
+
+							<div class="ieee container-fluid sub-section text-left">
+
+								<h2><b>IEEE</b></h2>
+								<hr class="underline" align="left" style="width:3em">
+
+								<p>The Institute of Electrical and Electronics Engineers (IEEE), is a professional association for electrical and electronic engineers along with associate disciplines formed in the year 1953. IEEE produces over 30% of the world's literature in the electrical and electronics engineering and computer science fields, publishing well over 100 peer-reviewed journals and magazines and also sponsors over 1800 conferences and events. As of 2018, it is the world's largest association of technical professionals with more than 423,000 members in over 160 countries around the world. IEEE offers educational opportunities within the engineering sciences, research, and technology such as IEEE e-Learning Library, the Education Partners Program, Standards in Education and Continuing Education Units (CEUs).</p>
+
+								<a href="http://www.ieee.org/?WT.mc_id=mn_ieee" class="btn btn-lg rounded-0" role="button" aria-pressed="true">Know More</a>
+
+							</div>
+
+							<div class="ieee-india container-fluid sub-section text-right">
+
+								<h2><b>IEEE India</b></h2>
+								<hr class="underline" align="right" style="width:8.5em">
+
+								<p>IEEE India Council is an organization that coordinates IEEE activities in India. The main aim of the council is to assist and coordinate various sections across the country. The council was established on 20th May 1976 and is one of the five councils in the Asia Pacific Region (Region #10 of IEEE).</p>
+
+								<a href="https://site.ieee.org/indiacouncil/" class="btn btn-lg rounded-0" role="button" aria-pressed="true">Know More</a>
+
+							</div>
+
+							<div class="ieee-vizag container-fluid sub-section text-left">
+
+								<h2><b>IEEE Vizag Section</b></h2>
+								<hr class="underline" align="left" style="width:16.5em">
+
+								<p>IEEE Vizag Bay Sub-section was a part of IEEE Hyderabad Section. Established in 2011 and with a team of 1,456 members, a petition has been filed to elevate the geographical area of this Sub-section, and thus the IEEE VIZAG BAY SECTION has been formed on 15th February,2020. This section has been set up to meet the needs and promote various events of the branches that are a part of it. The Section is vibrant and also includes a Women in Engineering affinity group (WIE AG) along with Computer Society(CS) and Power engineering society (PES) chapters. The Section is the best blend of academic and research organisations. Vizag Bay section is all set for an IEEE India Council International Sub-sections' conference on 3rd-4th October of 2020.</p>
+
+								<a href="https://r10.ieee.org/vizagbay/" class="btn btn-lg rounded-0" role="button" aria-pressed="true">Know More</a>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- what we do IEEE SB GVPCE -->
+
+	<section class="ieee-sb-gvpce">
+		<!-- <div class="container container-fluid content"> -->
+		<h1 class="text-center ieee-sb-gvpce-heading">What We Do at <span class="sb-name">IEEE SB GVPCE(A)</span></h1>
+
+		<div class="ieee-sb-gvpce-info">
+			<div class="container-fluid">
+				<div class="row align-items-center mb-5 pb-5">
+					<div class="col-lg-6 ml-auto mb-5 mb-lg-0 item">
+						<img src="images/team/home-carousel/ieee_team.jpg" alt="IEEE SB GVP Team" class="img-fluid">
+					</div>
+					<div class="col-lg-4 mr-auto item">
+						<p class="mb-4">Our student branch is passionate about community engagement of students and provides a networking opportunity to meet and learn from fellow students, as well as from faculty and professional members in the field of their interests, professions, and ideas. We have started a Women in Engineering Affinity Group (WIE AG) and are also planning to introduce a computer society (CS) chapter. We, at our student branch, enhance the degree of importance of providing guidance for students and also aim to create a clear image of various available options in moulding a successful career. The executive committee members volunteering for our student branch are young budding engineers along with trained professors, and many more goal-driven people. We work together to carry out educational and focussed activities like technical events, Seminars, Workshops, Webinars, and also activities that foster social responsibilities. We are supportive and creative to novel ideas that link up with the latest technologies and are looking forward to reaching greater heights.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- </div> -->
+	</section>s
+
+	<!-- events -->
+
+	<section class="events" id="sb-events">
+		<div class="container">
+			<div class="events-heading">
+				<div class="row">
+					<div class="col-sm-10 offset-sm-1">
+						<h1 class="text-center">Latest Events</h1>
+						<hr class="underline" align="center" style="width:8.5em">
+					</div>
+				</div>
+			</div>
+
+			<div class="events-info">
+				<div class="row justify-content-center scrolling-wrapper-flexbox">
+					<div class="col-sm-12 col-md-6 col-lg-4 py-2">
+						<div class="card h-100 shadow-lg">
+							<img src="events/images/2020/ieee_opensource.jpg" class="card-img-top img-fluid rounded" alt="...">
+							<div class="card-body">
+								<h6 class="card-title"><a href="events/2020/ieee_opensource.html">Introduction to Open Source Technologies - Industry Trends</a></h6>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-4 py-2">
+						<div class="card h-100 shadow-lg">
+							<img src="events/images/2020/ieeeday/arvr.jpg" class="card-img-top img-fluid rounded" alt="...">
+							<div class="card-body">
+								<h6 class="card-title"><a href="events/2020/arvr.html">Webinar on Augmented and Virtual Reality</a></h6>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-4 py-2">
+						<div class="card h-100 shadow-lg">
+							<img src="events/images/2020/ieeeday/web.jpg" class="card-img-top img-fluid rounded" alt="...">
+							<div class="card-body">
+								<h6 class="card-title"><a href="events/2020/web_designing.html">Web Designing Workshop</a></h6>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- events-count -->
+
+	<section class="status-count">
+		<div class="container container-fluid">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="icon text-center">
+						<i class="fa fa-ticket fa-4x"></i>
+					</div>
+					<h1 class="text-center counter" data-target="60">0</h1>
+					<p class="text-center">Events</p>
+				</div>
+				<div class="col-md-4 justify-content-center">
+					<div class="icon text-center">
+						<i class="fa fa-users fa-4x"></i>
+					</div>
+					<h1 class="text-center counter" data-target="78">0</h1>
+					<p class="text-center">Memberships</p>
+				</div>
+				<div class="col-md-4">
+					<div class="icon text-center">
+						<i class="fa fa-calendar fa-4x"></i>
+					</div>
+					<h1 class="text-center counter" data-target="5">0</h1>
+					<p class="text-center">Years of Volunteering</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- team -->
+
+	<!--  row-cols-1 row-cols-xs-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3  -->
+
+
+	<section class="team">
+		<div class="container container-fluid">
+
+			<div class="team-heading">
+				<div class="row">
+					<div class="col-sm-10 offset-sm-1 text-center">
+						<h1>Our Team</h1>
+						<hr class="underline" align="center" style="width:8.5em">
+						<a href="team.html">
+							<p style="font-weight: 500; font-size: 1.25em;">Meet the entire team</p>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="team-info">
+				<div class="row justify-content-center">
+
+					<div class="col-md-6 col-lg-4 mb-4 h-100">
+						<div class="single-team">
+							<div class="img-area">
+								<img src="images/team/individual/abkrao.jpg" class="img-fluid">
+								<div class="social">
+									<ul class="list-inline">
+										<li><a href="mailto:principal@gvpce.ac.in? subject = "><i class="fa fa-envelope"></i></a></li>
+										<li><a href="mailto:abkr_gvp@yahoo.co.in? subject = "><i class="fa fa-yahoo"></i></a></li>
+										<!-- <li><a href="#"><i class="fa fa-instagram"></i></a></li> -->
+									</ul>
+								</div>
+							</div>
+							<div class="img-text">
+								<h4>Prof.Dr. A.B. Koteswara Rao</h4>
+								<h5>Principal</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-4 mb-4 h-100">
+						<div class="single-team">
+							<div class="img-area">
+								<img src="images/team/individual/satish.jpg" class="img-fluid">
+								<div class="social">
+									<ul class="list-inline">
+										<li><a href="mailto:satishgudey5@gvpce.ac.in? subject = "><i class="fa fa-envelope"></i></a></li>
+										<!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-instagram"></i></a></li> -->
+									</ul>
+								</div>
+							</div>
+							<div class="img-text">
+								<h4>Dr. G.V.E. Satish Kumar</h4>
+								<h5>Professor</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-4 mb-4 h-100">
+						<div class="single-team">
+							<div class="img-area">
+								<img src="images/team/individual/leelarani.jpg" class="img-fluid">
+								<div class="social">
+									<ul class="list-inline">
+										<li><a href="mailto:lee_rani@gvpce.ac.in? subject = "><i class="fa fa-envelope"></i></a></li>
+										<!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-instagram"></i></a></li> -->
+									</ul>
+								</div>
+							</div>
+							<div class="img-text">
+								<h4>Dr. V. Leela Rani</h4>
+								<h5>Associate Professor</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-6 col-lg-4 mb-4 h-100">
+						<div class="single-team">
+							<div class="img-area">
+								<img src="images/team/individual/sb_chair.jpg" class="img-fluid">
+								<div class="social">
+									<ul class="list-inline">
+										<li><a href="https://www.linkedin.com/in/singuru-abhiram-4610b2190"><i class="fa fa-linkedin"></i></a></li>
+										<li><a href="https://www.instagram.com/abhiram_singuru/"><i class="fa fa-instagram"></i></a></li>
+										<li><a href="https://twitter.com/AbhiramSinguru?s=09"><i class="fa fa-twitter"></i></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="img-text">
+								<h4>Singuru Abhiram</h4>
+								<h5>SB Chair</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-6 col-lg-4 mb-4 h-100">
+						<div class="single-team">
+							<div class="img-area">
+								<img src="images/team/individual/wie_chair.jpg" class="img-fluid">
+								<div class="social">
+									<ul class="list-inline">
+										<li><a href="https://www.linkedin.cn/feed/?trk=cold_join_sign_in"><i class="fa fa-linkedin"></i></a></li>
+										<li><a href="https://www.instagram.com/sheetal._.vijapurapu/"><i class="fa fa-instagram"></i></a></li>
+										<li><a href="https://twitter.com/SheetalVijapur1?s=08"><i class="fa fa-twitter"></i></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="img-text">
+								<h4>Sheetal Vijapurapu</h4>
+								<h5>WIE Chair</h5>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- testimonials -->
+
+	<section class="testimonials">
+		<div class="container container-fluid">
+			<div class="testimonials-heading">
+				<h1 class="text-center">Testimonials</h1>
+				<hr class="underline" align="center" style="width:8.5em">
+			</div>
+			<div id="testimonialsCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+				<ol class="carousel-indicators">
+					<li data-target="#testimonialsCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#testimonialsCarousel" data-slide-to="1"></li>
+					<!-- <li data-target="#testimonialsCarousel" data-slide-to="2"></li> -->
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-lg-5">
+									<div class="testimonial-image">
+										<img src="images/testimonials/howard_michel.jpg" class="d-block img-responsive rounded" alt="...">
+									</div>
+								</div>
+								<div class="col-lg-7">
+									<div class="single-testimonial">
+										<h4>Howard Michel</h4>
+										<h5>IEEE President, 2015</h5>
+										<p><i class="fa fa-quote-left fa-2x" aria-hidden="true"></i>People talk about job security. No one can give you that. Job security depends on the company. What IEEE can do - and I use the phrase carefully - is offer security. You can be the most valuable engineer by being current in technology and by networking with others. If you take advantage of the products and services that IEEE offers, you will become the most valuable engineer in your organization. And if your job goes away, you'll have no trouble finding another.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-lg-5">
+									<div class="testimonial-image">
+										<img src="images/testimonials/lawrence_wong.jpg" class="d-block img-responsive rounded" alt="...">
+									</div>
+								</div>
+								<div class="col-lg-7">
+									<div class="single-testimonial">
+										<h4>Lawrence Wong</h4>
+										<h5>Vice President, IEEE Member and Geographic Activities</h5>
+										<p><i class="fa fa-quote-left fa-2x" aria-hidden="true"></i>IEEE’s mission 'to foster technological innovation and excellence for the benefit of humanity' challenges us engineers to work towards a better future for the entire global community, and there’s never a better and more exciting time to be a member of IEEE to be part of this meaningful mission. I hope you will take this opportunity and experience for yourself what I discovered when I joined this dynamic community more than 30 years ago.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- footer -->
+
+	<section class="page-footer" id="contact-info"></section>
+	<div class="container footer-heading">
+		<div class="row" class="justify-content-center">
+
+			<div class="col-sm-10 offset-sm-1 justify-content-center p-3">
+				<div id="sfck6xxw7mczpe9yqpbpx5ks7saemw81gej" style="text-align: center"></div>
+				<script type="text/javascript" src="https://counter3.stat.ovh/private/counter.js?c=k6xxw7mczpe9yqpbpx5ks7saemw81gej&down=async" async></script><noscript><a href="https://www.freecounterstat.com" title="website counter"><img src="https://counter3.stat.ovh/private/freecounterstat.php?c=k6xxw7mczpe9yqpbpx5ks7saemw81gej" border="0" title="website counter" alt="website counter"></a></noscript>
+			</div>
+
+			<div class="col-sm-10 offset-sm-1">
+				<h1 class="text-center">Contact Us</h1>
+				<hr class="underline" align="center" style="width:8.5em">
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-info">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-4">
+					<div class="contact-mode address">
+						<h4 class="text-left">Address</h4>
+						<hr class="underline" align="left" style="width:6em">
+					</div>
+					<address>
+						Gayatri Vidya Parishad College of Engineering (Autonomous)<br>
+						Madhurawada<br>
+						Visakhapatnam - 530 048<br>
+						Andhra Pradesh<br>
+						India
+					</address>
+				</div>
+				<div class="col-xs-12 col-md-4">
+					<div class="contact-mode contact">
+						<h4 class="text-left">Contact Info</h4>
+						<hr class="underline" align="left" style="width:9em">
+					</div>
+					<div>
+						<p>E-Mail: <span><a href="mailto:ieeesb@gvpce.ac.in? subject = ">ieeesb@gvpce.ac.in</a></span></p>
+						<p>Mobile: <a href="tel:+919441969659">+91 9441969659</a> (Branch Counsellor)</p>
+						<p>Mobile: <a href="tel:+919182985123">+91 9182985123</a> (Chair)</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-4">
+					<div class="contact-mode social-media">
+						<h4 class="text-left">Follow Us</h4>
+						<hr class="underline" align="left" style="width:7em">
+					</div>
+					<div class="contact-mode social-media-handles">
+						<a href="https://www.facebook.com/under.vizag.bay.sub.section/"><i class="fa fa-facebook-official fa-2x"></i></a>
+						<a href="https://www.instagram.com/ieee_sb_gvpce_a/"><i class="fa fa-instagram fa-2x"></i></a>
+						<a href="https://www.linkedin.com/in/ieee-sb-gvpce-a-b362791a1/"><i class="fa fa-linkedin-square fa-2x"></i></a>
+						<a href="https://twitter.com/GvpceSb"><i class="fa fa-twitter-square fa-2x"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3798.3861539630434!2d83.34015411494428!3d17.820523887820432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a395bedc7efb603%3A0x87c06caab54e902a!2sGVP%20College%20of%20Engineering%20(Autonomous)!5e0!3m2!1sen!2sin!4v1598167973876!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+		</div>
+	</div>
+	</section>
+
+	<!-- <?php echo file_get_contents("hf/footer.html"); ?>	 -->
+
+	<!-- <div id="insprio" style="display: block; position: fixed; right:30px; bottom:40px; border: 1px solid #000; ">
+        <a title="Insprio Page" href="evento/index.html"><img src="events/images/2020/ieeeday/insprio.png" style="height: 5rem; width: 10rem; background-color: #fff; padding: 5px;"></a>
+    </div> -->
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/counter.js"></script>
+
+
+
+</body>
+
+</html>
