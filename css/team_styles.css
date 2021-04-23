@@ -193,6 +193,15 @@ body{
     background-color: #f9f6e9;
 }
 
+.cs-team{
+    padding: 20px 0;
+}
+
+.pes-team{
+    padding: 20px 0;
+    background-color: #ebfcdc;
+}
+
 .core-team{
     padding: 20px 0;
 }
@@ -210,6 +219,16 @@ body{
 .wie-team .team-heading{
     padding: 30px;
     color: #420b5a;
+}
+
+.cs-team .team-heading{
+    padding: 30px;
+    color: #fc9b1c;
+}
+
+.pes-team .team-heading{
+    padding: 30px;
+    color: #5a9541;
 }
 
 /*.team-heading .underline{
@@ -243,6 +262,16 @@ body{
     margin-bottom: 10px;
 }
 
+.cs-team .single-team{
+    background-color: #fc9b1c;
+    margin-bottom: 10px;
+}
+
+.pes-team .single-team{
+    background-color: #5a9541;
+    margin-bottom: 10px;
+}
+
 .single-team:hover .social{
     cursor: pointer;
     opacity: 1;
@@ -262,15 +291,23 @@ body{
 }
 
 .sb-team .img-area img{
-    max-height: 320px;
+    max-height: 250px;
 }
 
 .wie-team .img-area img{
-    max-height: 320px;
+    max-height: 250px;
+}
+
+.cs-team .img-area img{
+    max-height: 250px;
+}
+
+.pes-team .img-area img{
+    max-height: 250px;
 }
 
 .core-team .img-area img{
-    max-height: 320px;
+    max-height: 250px;
 }
 
 .single-team:hover img{
@@ -305,6 +342,14 @@ body{
 
 .wie-team .img-area .social{
     background-color: rgba(66, 11, 90,0.1);
+}
+
+.cs-team .img-area .social{
+    background-color: rgba(252, 155, 28,0.1);
+}
+
+.pes-team .img-area .social{
+    background-color: rgba(90, 149, 65,0.1);
 }
 
 .img-area .social ul{
