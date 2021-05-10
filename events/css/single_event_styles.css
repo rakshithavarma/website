@@ -202,6 +202,11 @@ body{
 	padding: 10px 0;
 }
 
+.single-event .single-detail .matter{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 .single-event .event-info .details .heading{
 	font-weight: bold;
 }
