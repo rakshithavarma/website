@@ -18,6 +18,49 @@
 </head>
 <body>
 
+	<style type="text/css">
+		.winners .participant{
+			padding: 5px;
+			text-align: center;
+		}
+		.winners .participant .name{
+			color: #420b5a;
+			font-weight: bolder;
+			font-size: xx-large;
+		}
+		.winners .participant .detail{
+			font-size: smaller;
+			font-weight: bolder;
+		}
+		.icon-bar {
+		position: fixed;
+		top: 60%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		}
+
+		/* Style the icon bar links */
+		.icon-bar a {
+		display: block;
+		text-align: center;
+		padding: 16px;
+		transition: all 0.3s ease;
+		color: white;
+		font-size: 20px;
+		}
+
+		/* Style the social media icons with color, if you want */
+		.icon-bar a:hover {
+		background-color: #000;
+		}
+
+		.results {
+		background: #420b5a;
+		color: white;
+		}
+	</style>
+
 	<!-- navbar - ieee sb gvp -->
 
 	<div class="container-fluid navbar navbar-expand-lg sb-navbar sticky-top">
@@ -197,22 +240,62 @@
 
 		</div>
 
-		<!-- <div class="container-fluid event-photos">
-			<div class="row">
-				<div class="col-md-6 image">
-					<img src="../images/2021/2cs_inauguration/1.jpg" class="img-fluid p-2">
-				</div>
-				<div class="col-md-6 image">
-					<img src="../images/2021/2cs_inauguration/2.jpg" class="img-fluid p-2">
-				</div>
-				<div class="col-md-6 image">
-					<img src="../images/2021/2cs_inauguration/3.jpg" class="img-fluid p-2">
-				</div>
-				<div class="col-md-6 image">
-					<img src="../images/2021/2cs_inauguration/8.jpg" class="img-fluid p-2">
+		<div class="container-fluid event-photos" id="winners_poster">
+			<div class="row align-items-center" style="justify-content: center; text-align: center;">
+				<div class="col">
+					<img src="../images/2021/9_video_contest/winners_poster.jpg" class="img-fluid p-4">
 				</div>
 			</div>
-		</div> -->
+		</div>
+
+		<div class="container-fluid winners">
+			<div class="row">
+				<div class="col-md-6 image mb-2 h-100">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/JLTOIT4h6R8" allowfullscreen></iframe>
+					</div>
+					<div class="participant mb-4 mt-2">
+						<p class="m-0 name">Raina Raj</p>
+						<p class="m-0 detail">CSE, St Joseph's College of Engineering and Technology, Palai</p>
+						<!-- <p class="m-0 detail">IEEE ID: 97488670</p> -->
+						<!-- <p class="m-0 detail">HOW CAN STUDENTS MAKE USE OF LOCKDOWN APART FROM ACADEMICS</p> -->
+					</div>
+				</div>
+				<div class="col-md-6 image mb-2 h-100">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/s1Mvgp1KeGs" allowfullscreen></iframe>
+					</div>
+					<div class="participant mb-4 mt-2">
+						<p class="m-0 name">Ashna Dua</p>
+						<p class="m-0 detail">CSE, UIET, Punjab University, Chandigarh</p>
+						<!-- <p class="m-0 detail">IEEE ID: 97531830</p> -->
+						<!-- <p class="m-0 detail">WHAT ARE THE EFFECTS OF ONLINE EDUCATION IN THIS PANDAMEIC</p> -->
+					</div>
+				</div>
+				<div class="col-md-6 image mb-2 h-100">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/iLhbAewjI4Y" allowfullscreen></iframe>
+					</div>
+					<div class="participant mb-4 mt-2">
+						<p class="m-0 name">Sravani Majji</p>
+						<p class="m-0 detail">BSc, Aditya Degree College for Women</p>
+						<!-- <p class="m-0 detail">IEEE ID: 97488670</p> -->
+						<!-- <p class="m-0 detail">WHAT ARE THE EFFECTS OF ONLINE EDUCATION IN THIS PANDAMEIC</p> -->
+					</div>
+				</div>
+				<div class="col-md-6 image mb-2 h-100">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/x6B2nBM44Do" allowfullscreen></iframe>
+					</div>
+					<div class="participant mb-4 mt-2">
+						<p class="m-0 name">Sai Neeraj</p>
+						<p class="m-0 detail">ECE, Gayatri Vidya Parishad College of Engineering ,Visakhapatnam</p>
+						<!-- <p class="m-0 detail">IEEE ID: 97488670</p> -->
+						<!-- <p class="m-0 detail">WHAT ARE THE EFFECTS OF ONLINE EDUCATION IN THIS PANDAMEIC</p> -->
+					</div>
+				</div>
+			</div>
+		</div>
 
 	</section>
 
@@ -275,6 +358,10 @@
 			</div>
 		</div>
 	</section>
+
+	<div class="icon-bar">
+		<a href="#winners_poster" class="results" style="color: #fff;">Check Results</a>
+	</div>
 
 
 	<!-- Optional JavaScript -->

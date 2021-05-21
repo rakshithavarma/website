@@ -228,8 +228,8 @@ body{
 }
 
 .single-event .event-photos img{
-    height: 20rem;
-    width: 40rem;
+    height: 30rem;
+    width: 30rem;
     object-fit: cover;
     overflow: hidden;
 }
