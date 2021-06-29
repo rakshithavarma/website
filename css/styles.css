@@ -372,6 +372,108 @@ body{
     margin: 0;
 }*/
 
+/* events */
+
+@media only screen and (min-width: 600px) {
+      .owl-prev, .owl-next {
+        width: 2rem;
+        height: 6rem;
+        padding: 10px;
+        margin:10px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block !important;
+        border: solid;
+      }
+      .owl-prev:visited{
+          border: none !important;
+      }
+      .owl-prev { left: -50px; }
+      .owl-next { right: -50px; }
+      .owl-prev i, .owl-next i {transform : scale(2,5); color: black;}
+      }
+      
+      @media only screen and (max-width: 600px) {
+        .owl-prev, .owl-next {
+          width: 2rem;
+          height: 6rem;
+          padding: 10px;
+          margin:10px;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          display: block !important;
+          border: solid;
+        }
+        .owl-prev:visited{
+            border: none !important;
+        }
+        .owl-prev { left: -10px; }
+        .owl-next { right: -10px; }
+        .owl-prev i, .owl-next i {transform : scale(2,5); color: black;}
+      
+      }
+
+/* #events {
+
+    background: url("https://jaxa.netlify.com/home-1/img/bg/feature-bg.png") top center no-repeat;
+    background-size: cover;
+    padding: 0 0;
+    margin: 100px auto;
+  }
+
+  #events h1{
+    margin: 30px auto;
+  }
+  
+  .feature_header {
+    margin-bottom: 88%;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+    font-size: 2rem;
+  }
+  #events{
+      text-align: center;
+  } */
+  .feature_item {
+    background: #ffffff;
+    box-shadow: 1px 1px 25px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 60px 30px;
+    height: 71vh;
+    transition: all .4s ease-in-out;
+    margin: 20px auto;
+  }
+  
+  .feature_item:hover{
+    transform: translateY(-30px);
+    box-shadow: 1px 1px 25px 0 rgba(0,0,0,0.09);
+  }
+  
+  
+  .feature_title {
+    font-size: 20px;
+    color: #3b566e;
+    font-weight: 600;
+    margin: 15px 0 15px;
+    padding: 0;
+  }
+  
+  .feature_text {
+    font-size: 15px;
+    font-weight: 400;
+    color: #919aaf;
+    line-height: 26px;
+    margin: 0;
+    padding: 0;
+  }
+  .btn{
+      margin-top:10px;
+  }
+
 .events{
     padding: 50px 0;
     /*background-image: url(../images/sb_gvpce_bg.jpg);
