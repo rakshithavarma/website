@@ -11,13 +11,12 @@
 
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/notices_styles.css">
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- fonts -->
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+	<script type="module" src = "js/hf.js"></script>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/notices_styles.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">	
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    
 
 
 </head>
@@ -25,7 +24,7 @@
 
 	<!-- navbar - ieee sb gvp -->
 
-	<div class="container-fluid navbar navbar-expand-lg sb-navbar sticky-top">
+	<div class="container-fluid navbar navbar-expand-lg sb-navbar sticky-top" id="navbar">
 	  	<a class="navbar-brand" href="#"><img src="images/ieee_sb_logo.png"></a>
 	  	<button class="navbar-toggler" type="button" data-trigger="#navbarNavDropdown">
 	    	<i class="fa fa-bars hamburger" aria-hidden = "true"></i>
@@ -35,61 +34,10 @@
 				<button class="btn btn-outline-danger btn-close float-right"> &times </button>
 				<h5 class="py-2 text-white">IEEE SB GVPCE(A)</h5>
 			</div>
-			<ul class="navbar-nav justify-content-center">
-	      		<li class="nav-item active">
-	        		<a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
-	      		</li>
-	      		<li class="nav-item">
-	        		<a class="nav-link" href="team.html">TEAM</a>
-	      		</li>
-	      		<li class="nav-item dropdown">
-	        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownChaptersLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	          		CHAPTERS
-	        		</a>
-	        		<div class="dropdown-menu justify-content-start" aria-labelledby="navbarDropdownChaptersLink">
-	          			<a class="dropdown-item" href="ieee_wie.html">Women In Engineering</a>
-	          			<!-- <a class="dropdown-item" href="#">IEEE CS</a> -->
-	        		</div>
-	      		</li>
-	      		<li class="nav-item dropdown">
-	        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMoreLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	          		EVENTS
-	        		</a>
-	        		<div class="dropdown-menu" aria-labelledby="navbarDropdownMoreLink">
-	        			<a class="dropdown-item" href="events/events_page_2021.html">2021</a>
-	          			<a class="dropdown-item" href="events/events_page_2020.html">2020</a>
-	          			<a class="dropdown-item" href="events/events_page_2019.html">2019</a>
-	          			<a class="dropdown-item" href="events/events_page_2018.html">2018</a>
-	          			<a class="dropdown-item" href="events/events_page_2017.html">2017</a>
-	        		</div>
-	      		</li>
-	      		<li class="nav-item dropdown">
-	        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownIEEELink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	          		IEEE
-	        		</a>
-	        		<div class="dropdown-menu justify-content-start" aria-labelledby="navbarDropdownIEEELink">
-	          			<a class="dropdown-item" href="http://www.ieee.org/?WT.mc_id=mn_ieee">IEEE.org</a>
-	          			<a class="dropdown-item" href="http://ieeexplore.ieee.org/">IEEE Xplore</a>
-	          			<a class="dropdown-item" href="http://standards.ieee.org/">IEEE Standards</a>
-	          			<a class="dropdown-item" href="http://spectrum.ieee.org/">IEEE Spectrum</a>
-	          			<a class="dropdown-item" href="http://www.ieee.org/sitemap.html?WT.mc_id=mn_smap">More Sites</a>
-	        		</div>
-	      		</li>
-	      		<li class="nav-item dropdown">
-	        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMoreLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	          		MISC.
-	        		</a>
-	        		<div class="dropdown-menu" aria-labelledby="navbarDropdownMoreLink">
-	          			<a class="dropdown-item" href="http://www.gvpce.ac.in/">GVPCE(A) HOME</a>
-	          			<a class="dropdown-item" href="notices.html">Notices</a>
-	          			<a class="dropdown-item" href="benefits.html">Benefits of Membership</a>
-	          			<a class="dropdown-item" href="membership_form.html">Membership Form</a>
-	        		</div>
-	      		</li>
-	      		<li class="nav-item">
-	        		<a class="nav-link" href="contact.html">CONTACT US</a>
-	      		</li>
-	    	</ul>
+
+			<!-- my-header tag contains all the list items of navbar -->
+			<my-header></my-header>
+
 	  	</div>
 	</div>
 
@@ -635,63 +583,22 @@
 			</div>
 		</div>
 
-		<div class="footer-info">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-md-4">
-						<div class="contact-mode address">
-							<h4 class="text-left">Address</h4>
-							<hr class="underline" align="left" style="width:6em">
-						</div>
-						<address>
-						Gayatri Vidya Parishad College of Engineering (Autonomous)<br>
-						Madhurawada<br>
-						Visakhapatnam - 530 048<br>
-						Andhra Pradesh<br>
-						India
-						</address>
-					</div>
-					<div class="col-xs-12 col-md-4">
-						<div class="contact-mode contact">
-							<h4 class="text-left">Contact Info</h4>
-							<hr class="underline" align="left" style="width:9em">
-						</div>
-						<div>
-							<p>E-Mail: <span><a href="mailto:ieeesb@gvpce.ac.in? subject = ">ieeesb@gvpce.ac.in</a></span></p>
-							<p>Mobile: <a href="tel:+919441969659">+91 9441969659</a> (Branch Counsellor)</p>
-							<p>Mobile: <a href="tel:+919182985123">+91 9182985123</a> (Chair)</p>
-						</div>
-					</div>
-					<div class="col-xs-12 col-md-4">
-						<div class="contact-mode social-media">
-							<h4 class="text-left">Follow Us</h4>
-							<hr class="underline" align="left" style="width:7em">
-						</div>
-						<div class="contact-mode social-media-handles">
-							<a href="https://www.facebook.com/under.vizag.bay.sub.section/"><i class="fa fa-facebook-official fa-2x"></i></a>
-							<a href="https://www.instagram.com/ieee_sb_gvpce_a/"><i class="fa fa-instagram fa-2x"></i></a>
-							<a href="https://www.linkedin.com/in/ieee-sb-gvpce-a-b362791a1/"><i class="fa fa-linkedin-square fa-2x"></i></a>
-							<a href="https://twitter.com/GvpceSb"><i class="fa fa-twitter-square fa-2x"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3798.3861539630434!2d83.34015411494428!3d17.820523887820432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a395bedc7efb603%3A0x87c06caab54e902a!2sGVP%20College%20of%20Engineering%20(Autonomous)!5e0!3m2!1sen!2sin!4v1598167973876!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-				</div>
-			</div>
-		</div>
+		<!-- my-footer tag contains the footer-info -->
+		<my-footer></my-footer>
+
 	</section>
 
 	<!-- <div id="insprio" style="display: block; position: fixed; right:30px; bottom:40px; border: 1px solid #000; ">
         <a title="Insprio Page" href="evento/index.html"><img src="events/images/2020/ieeeday/insprio.png" style="height: 5rem; width: 10rem; background-color: #fff; padding: 5px;"></a>
     </div> -->
 
+	
 	<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
- 	
+
  	<script type="text/javascript" src="js/scripts.js"></script>
  	<script type="text/javascript" src="js/counter.js"></script>
 

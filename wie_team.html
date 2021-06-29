@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WIE Team</title>
+  <link rel="shortcut icon" href="assets/cs_logo.jpg" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="./css/wie_team.css">
+ 
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- aos -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+  <script type="module" src="js/hf.js"></script>
+</head>
+<body>
+  <!--Scroll up bottom-->
+  <a id="button" class="show">
+    <i class="fas fa-angle-up upp"  aria-hidden="true"></i>
+    </a>
+    <!-- navbar - ieee sb gvp -->
+  
+    <nav class="container-fluid navbar navbar-expand-lg sb-navbar sticky-top">
+        <a class="navbar-brand" href="#"><img src="images/wie/wie_logo.png"></a>
+        <button class="navbar-toggler" type="button" data-trigger="#navbarNavDropdown">
+          <i class="fa fa-bars hamburger" aria-hidden = "true"></i>
+        </button>
+        <div class="navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <div class="offcanvas-header mt-3">
+          <button class="btn  btn-close float-right" style="color: white; font-size: 30px;"> &times </button>
+        </div>
+          <my-header></my-header>
+        </div>
+    </nav>
+  
+  <header id="header" class="d-flex header1 flex-column justify-content-center">
+  
+      <nav id="navbar" class="navbar nav-menu">
+        <div id="none1" class="none1">
+        <ul>
+          <li><a href="#WIE" class="nav-link scrollto active"><i class="fas fa-home"></i> <span>WIE</span></a></li>
+          <li><a href="#aboutus" class="nav-link scrollto"><i class="fas fa-address-card"></i></i> <span>About us</span></a></li>
+          <li><a href="#events" class="nav-link scrollto"><i class="far fa-calendar-alt"></i> <span>Events</span></a></li>
+          <li><a href="#gallery" class="nav-link scrollto"><i class="far fa-images"></i> <span>Gallery</span></a></li>
+          <li><a href="#team" class="nav-link scrollto"><i class="fas fa-user-friends"></i> <span>Teams</span></a></li>
+          <li><a href="#contact-info" class="nav-link scrollto"><i class="far fa-address-book"></i> <span>Contact</span></a></li>
+  
+  
+        </ul>
+    </div>
+      </nav><!-- .nav-menu -->
+  
+    </header>
+    <!-- ieee wie banner -->
+  
+    <header class="wie-banner" id="WIE">
+      <div class="container h-100">
+          <div class="row h-100 align-items-center">
+              <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                <h1 style="color: white;">Women In Engineering</h1>
+                <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div >
+              
+              <a href="#filterBox" style="scroll-behavior: smooth; ">
+              <div class="indicator" style="margin:auto;">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+               </div>
+              </a>
+  
+              </div>
+          </div>
+        </div>
+    </header>
+  
+  
+  
+
+  <!--Main Container i.e content holder-->
+<!--Main Container i.e content holder-->
+
+  <div class="container filterBox" id="filterBox">
+
+    <h2 class="text-center heading">
+      WIE TEAM
+    </h2>
+
+    <!--Navigation tab for filter for pc-->
+
+    <div class="filter-tabs">
+      <div class="filter-sort">
+          <div class="navigation">
+              <a href="javascript:void(0)" data-filter="all" class="button navv active">
+                All
+              </a>
+              <a href="javascript:void(0)" data-filter="web" class="button navv">
+                Web designing
+              </a>
+              <a href="javascript:void(0)" data-filter="tech" class="button navv">
+                Technical and Organizing
+              </a>
+              <a href="javascript:void(0)" data-filter="orators" class="button navv">
+                Orators and Documentation
+              </a>
+              <a href="javascript:void(0)" data-filter="graphic" class="button navv">
+                Graphic Designing
+              </a>
+          </div>
+      </div>
+    </div>
+
+    <!--Navigation tab for filter for Mobiles-->
+    <div class="thumbnails-filter mobile text-center">
+      <select id="filter">
+        <option value="all">
+          All
+        </option>
+        <option value="web">
+          Web designing
+        </option>
+        <option value="tech">
+          Technical and Organising
+        </option>
+        <option value="orators">
+          Orators and Documentation
+        </option>
+        <option value="graphic">
+          Graphic Designing
+        </option>
+      </select>
+    </div>
+
+    <!--Team members of CS chapter-->
+
+    <section class="team cs-team" data-aos="fade-up">
+      <div class="team-info">
+        <div class="row">
+
+          <!--
+            Web Designing Commitee
+            /
+            ** gayatri
+            ** divya
+            ** sridevi 
+            /
+          -->
+
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail web graphic">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="./images/wie/team/gayathri.jpeg" class="img-fluid">
+                    <div class="social">
+                      <div class="style-dashes">
+                        </div>
+                        <ul class="list-inline">
+                            <li class="linkedin"><a href="https://www.linkedin.com/in/bvssl-gayathri-9091591b0" target="__blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="twitter"><a href="https://bvsslgayathri-8679.github.io/portfoliooo.github.io/" target="__blank"><i class="fa fab fa-edge"></i></a></li>
+                            <li class="instagram"><a href="https://www.instagram.com/gayathri_8679/" target="__blank" class="contactlink"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>Gayathri</h4>
+                    <h5>97351649</h5>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail web graphic">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="./images/wie/team/divya.jpeg" class="img-fluid">
+                    <div class="social">
+                      <div class="style-dashes">
+                        </div>
+                        <ul class="list-inline">
+                             <li class="linkedin"><a href="https://www.linkedin.com/in/divya-srisai-3291311b0" target="__blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="twitter"><a href="mailto:divyasai@ieee.org? subject = " target="__blank"><i class="fa far fa-envelope"></i></a></li>
+                            <li class="instagram"><a href="https://www.instagram.com/divya_sai__/" target="__blank" class="contactlink"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                  <h4>Divya</h4>
+                  <h5>97352562</h5>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail web">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="./images/wie/team/sreedevi.jpg" class="img-fluid">
+                    <div class="social">
+                      <div class="style-dashes">
+                        </div>
+                        <ul class="list-inline">
+                             <li class="linkedin"><a href="https://www.linkedin.com/in/chitneedi-sridevi-17b6b31b9" target="__blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="twitter"><a href="https://twitter.com/CHSRIDEVI18?s=08" target="__blank"><i class="fa fa-twitter" ></i></a></li>
+                            <li class="instagram"><a href="https://www.instagram.com/__sri_devi/" target="__blank"><i class="fa fa-instagram" target="__blank"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                  <h4>Ch.Sridevi</h4>
+                  <h5>97351640</h5>
+                   
+                </div>
+            </div>
+          </div>
+
+          
+          <!--
+            tech Commitee
+            /
+            ** PRATHUSHA 
+            ** ANUSHA
+            ** ROHITH
+            **ADIL SHAIK
+            /
+          -->
+
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail tech">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="./images/wie/team/pratusha.JPG" class="img-fluid">
+                    <div class="social">
+                      <div class="style-dashes">
+                        </div>
+                        <ul class="list-inline">
+                             <li class="linkedin"><a href="https://www.linkedin.com/in/i-prathyusha-51b0ab213" target="__blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="instagram"><a href="mailto:prathyu@ieee.org? subject = " target="__blank" class="contactlink"><i class="fa far fa-envelope"></i></a></li>
+                            <li class="instagram"><a href="https://instagram.com/prathyusha_ikkurthi?utm_medium=copy_link" target="__blank"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>   
+                <div class="img-text">
+                    <h4>PRATHUSHA</h4>
+                    <h5>97572652</h5>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail tech graphic">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="./images/wie/team/anusha.JPG" class="img-fluid">
+                    <div class="social">
+                      <div class="style-dashes">
+                        </div>
+                        <ul class="list-inline">
+                          <li class="linkedin"><a href="https://www.linkedin.com/in/bitra-anusha-10468118b" target="__blank"><i class="fa fa-linkedin"></i></a></li>
+                         <li class="instagram"><a href="mailto:anusha_16@ieee.org? subject = " target="__blank" class="contactlink"><i class="fa far fa-envelope"></i></a></li>
+                         <li class="instagram"><a href="https://www.instagram.com/anusha_____._/" target="__blank"><i class="fa fa-instagram"></i></a></li>
+                     </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>ANUSHA</h4>
+                    <h5>97352601</h5>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail tech">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="./images/wie/team/rohit.jpeg" class="img-fluid">
+                    <div class="social">
+                      <div class="style-dashes">
+                        </div>
+                        <ul class="list-inline">
+                         <li class="instagram"><a href="mailto:rohit08dhurva@gmail.com? subject = " target="__blank" class="contactlink"><i class="fa far fa-envelope"></i></a></li>
+                         <li class="instagram"><a href="https://instagram.com/maddu_rohit_009?igshid=1mbk4igjmo52y=copy_link" target="__blank"><i class="fa fa-instagram"></i></a></li>
+                     </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>ROHITH</h4>
+                    <h5>97581095</h5>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail tech">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="./images/wie/team/Shaik Adil Inthiyaz.jpg" class="img-fluid">
+                    <div class="social">
+                      <div class="style-dashes">
+                        </div>
+                        <ul class="list-inline">
+                         <li class="instagram"><a href="mailto:adilshaik184@ieee.org? subject = " target="__blank" class="contactlink"><i class="fa far fa-envelope"></i></a></li>
+                         <li class="instagram"><a href="https://instagram.com/adil_inthiyaz_shaik?utm_medium=copy_link=copy_link" target="__blank"><i class="fa fa-instagram"></i></a></li>
+                     </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>ADIL SHAIK</h4>
+                    <h5>97581095</h5>
+                </div>
+            </div>
+          </div>
+
+          <!--
+            orators Team
+            /
+            ** SNEHITHA
+            ** ROSHINI
+            ** VAISHNAVI
+            ** NARASIMHA
+            /
+          -->
+
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail orators">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="./images/wie/team/snehitha.JPG" class="img-fluid">
+                    <div class="social">
+                      <div class="style-dashes">
+                        </div>
+                        <ul class="list-inline">
+                            <li class="twitter"><a href="mailto:snehithapalla@ieee.org? subject = " target="__blank"><i class="fa far fa-envelope"></i></a></li>
+                            <li class="instagram"><a href="#https://instagram.com/snehitha_palla?utm_medium=copy_link" target="__blank"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>SNEHITHA</h4>
+                    <h5>97572698</h5>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail orators">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="./images/wie/team/roshini.JPG" class="img-fluid">
+                    <div class="social">
+                      <div class="style-dashes">
+                        </div>
+                        <ul class="list-inline">
+                          <li class="linkedin"><a href="https://www.linkedin.com/in/haritha-gopisetty-746a351a8"target="__blank"><i class="fa fa-linkedin"></i></a></li>
+                         <li class="instagram"><a href="mailto:? subject = " target="__blank" class="contactlink"><i class="fa far fa-envelope"></i></a></li>
+                         <li class="instagram"><a href="https://instagram.com/_.r.o.s.h.i.n.i._?utm_medium=copy_link=copy_link=copy_link" target="__blank"><i class="fa fa-instagram"></i></a></li>
+                     </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>ROSHINI</h4>
+                    <h5>97576048</h5>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail orators">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="./images/wie/team/vaishnavi.JPG" class="img-fluid">
+                    <div class="social">
+                      <div class="style-dashes">
+                        </div>
+                        <ul class="list-inline">
+
+                             
+                            <li class="instagram"><a href="https://www.instagram.com/rvsvaishnavi/" target="__blank"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>VAISHNAVI</h4>
+                    <h5>97351690</h5>
+                </div>
+            </div>
+          </div>
+
+
+   
+          <!--
+            Technical and Organising Team
+            /
+            ** HARITHA
+            ** LALITHA GAYATRI
+            ** HARITHA
+            ** PADMINI
+            
+            /
+          -->
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail graphic">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="./images/wie/team/haritha.JPG" class="img-fluid">
+                    <div class="social">
+                      <div class="style-dashes">
+                        </div>
+                        <ul class="list-inline">
+                          <li class="linkedin"><a href="https://www.linkedin.com/in/haritha-gopisetty-746a351a8" target="__blank"><i class="fa fa-linkedin"></i></a></li>
+                         <li class="instagram"><a href="mailto:adilshaik184@ieee.org? subject = " target="__blank" class="contactlink"><i class="fa far fa-envelope"></i></a></li>
+                         <li class="instagram"><a href="https://instagram.com/u_r_4u?utm_medium=copy_link" target="__blank"><i class="fa fa-instagram"></i></a></li>
+                     </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>HARITHA</h4>
+                    <h5>97343962</h5>
+                </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail graphic">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="./images/wie/team/padmini.JPG" class="img-fluid">
+                    <div class="social">
+                      <div class="style-dashes">
+                        </div>
+                        <ul class="list-inline">
+                             <li class="linkedin"><a href="https://www.linkedin.com/in/kusala-sreya-hara-padmini-yarakareddy-2a2601213" target="__blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li class="instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>PADMINI</h4>
+                    <h5>97572983</h5>
+                </div>
+            </div>
+          </div>
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/3075ff846e.js" crossorigin="anonymous"></script>
+
+  <script  src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+  <script src="js/lightbox-plus-jquery.min.js"></script>
+ 
+  <script src="./js/wie_team.js"></script>
+  <!-- aos -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+    });
+  </script>
+
+  <!--JQuery-->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+</body>
+</html>

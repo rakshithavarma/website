@@ -2,104 +2,114 @@
 <html>
 <head>
 	<title>IEEE WIE GVP</title>
+	<script type="module" src="js/hf.js"></script>
+
 
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<!-- font awesome -->
+    <script src="https://kit.fontawesome.com/3075ff846e.js" crossorigin="anonymous"></script>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+<!-- Events -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/mdb.min.css">
+
+  
+
+
+<!--carousel -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
     <link rel="stylesheet" href="css/wie_styles.css">
-    <!-- <link rel="stylesheet" href="css/styles.css"> -->
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- fonts -->
+      <!-- fonts -->
+	<!--Animation on Scroll CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--Animation on Scroll JS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <script type="module" src="js/hf.js"></script>
 
 </head>
 <body>
-
+<a id="button" class="show">
+	<i class="fas fa-angle-up upp" style="color:#000;" aria-hidden="true"></i>
+  </a>
 	<!-- navbar - ieee sb gvp -->
 
 	<nav class="container-fluid navbar navbar-expand-lg sb-navbar sticky-top">
-	  	<a class="navbar-brand" href="#"><img src="images/wie_logo.png"></a>
+	  	<a class="navbar-brand" href="#"><img src="images/wie/wie_logo.png"></a>
 	  	<button class="navbar-toggler" type="button" data-trigger="#navbarNavDropdown">
 	    	<i class="fa fa-bars hamburger" aria-hidden = "true"></i>
 	  	</button>
 	  	<div class="navbar-collapse justify-content-end" id="navbarNavDropdown">
 	  		<div class="offcanvas-header mt-3">
-				<button class="btn btn-outline-danger btn-close float-right"> &times </button>
+				<button class="btn  btn-close float-right" style="color: white; font-size: 30px;"> &times </button>
 			</div>
-	    	<ul class="navbar-nav justify-content-center">
-	      		<li class="nav-item active">
-	        		<a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
-	      		</li>
-	      		<li class="nav-item">
-	        		<a class="nav-link" href="team.html">TEAM</a>
-	      		</li>
-	      		<li class="nav-item dropdown">
-	        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownChaptersLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	          		CHAPTERS
-	        		</a>
-	        		<div class="dropdown-menu justify-content-start" aria-labelledby="navbarDropdownChaptersLink">
-	          			<a class="dropdown-item" href="ieee_wie.html">Women In Engineering</a>
-	          			<a class="dropdown-item disabled" href="">Power & Energy Society</a>
-	          			<a class="dropdown-item disabled" href="">Computer Society</a>
-	          			<!-- <a class="dropdown-item" href="#">IEEE CS</a> -->
-	        		</div>
-	      		</li>
-	      		<li class="nav-item dropdown">
-	        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMoreLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	          		EVENTS
-	        		</a>
-	        		<div class="dropdown-menu" aria-labelledby="navbarDropdownMoreLink">
-	          			<a class="dropdown-item" href="events/events_page_2020.html">2020</a>
-	          			<a class="dropdown-item" href="events/events_page_2019.html">2019</a>
-	          			<a class="dropdown-item" href="events/events_page_2018.html">2018</a>
-	          			<a class="dropdown-item" href="events/events_page_2017.html">2017</a>
-	        		</div>
-	      		</li>
-	      		<li class="nav-item dropdown">
-	        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownIEEELink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	          		IEEE
-	        		</a>
-	        		<div class="dropdown-menu justify-content-start" aria-labelledby="navbarDropdownIEEELink">
-	          			<a class="dropdown-item" href="http://www.ieee.org/?WT.mc_id=mn_ieee">IEEE.org</a>
-	          			<a class="dropdown-item" href="http://ieeexplore.ieee.org/">IEEE Xplore</a>
-	          			<a class="dropdown-item" href="http://standards.ieee.org/">IEEE Standards</a>
-	          			<a class="dropdown-item" href="http://spectrum.ieee.org/">IEEE Spectrum</a>
-	          			<a class="dropdown-item" href="http://www.ieee.org/sitemap.html?WT.mc_id=mn_smap">More Sites</a>
-	        		</div>
-	      		</li>
-	      		<li class="nav-item dropdown">
-	        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMoreLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	          		MISC.
-	        		</a>
-	        		<div class="dropdown-menu" aria-labelledby="navbarDropdownMoreLink">
-	          			<a class="dropdown-item" href="http://www.gvpce.ac.in/">GVPCE(A) HOME</a>
-	          			<a class="dropdown-item" href="notices.html">Notices</a>
-	          			<a class="dropdown-item" href="benefits.html">Benefits of Membership</a>
-	          			<a class="dropdown-item" href="membership_form.html">Membership Form</a>
-	        		</div>
-	      		</li>
-	      		<li class="nav-item">
-	        		<a class="nav-link" href="contact.html">CONTACT US</a>
-	      		</li>
-	    	</ul>
+	    	<my-header></my-header>
 	  	</div>
 	</nav>
 
+<header id="header" class="d-flex header1 flex-column justify-content-center">
 
+    <nav id="navbar" class="navbar nav-menu">
+    	<div id="none1" class="none1">
+      <ul>
+        <li><a href="#WIE" class="nav-link scrollto active"><i class="fas fa-home"></i> <span>WIE</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="fas fa-address-card"></i></i> <span>About us</span></a></li>
+        <li><a href="#events" class="nav-link scrollto"><i class="far fa-calendar-alt"></i> <span>Events</span></a></li>
+		<li><a href="#team" class="nav-link scrollto"><i class="fas fa-user-friends"></i> <span>Teams</span></a></li>
+
+		<li><a href="#gallery" class="nav-link scrollto"><i class="far fa-images"></i> <span>Gallery</span></a></li>
+        <li><a href="#contact-info" class="nav-link scrollto"><i class="far fa-address-book"></i> <span>Contact</span></a></li>
+
+
+      </ul>
+  </div>
+    </nav><!-- .nav-menu -->
+
+  </header>
 	<!-- ieee wie banner -->
 
-	<header class="wie-banner">
+	<header class="wie-banner" id="WIE">
 		<div class="container h-100">
 	    	<div class="row h-100 align-items-center">
-	      		<div class="col-12 text-center">
-	        		<h1>Women In Engineering</h1>
+	      		<div class="col-lg-12 col-md-12 col-sm-12 text-center">
+	        		<h1 style="color: white;">Women In Engineering</h1>
+	        		<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div >
+						
+						<a href="#about" style="scroll-behavior: smooth; ">
+						<div class="indicator" style="margin:auto;">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						 </div>
+						</a>
+
 	      		</div>
 	    	</div>
 	  	</div>
@@ -107,159 +117,593 @@
 
 
 	<!-- about ieee content -->
+<section class="about-ieee justify-content-center" data-aos="fade-up" id="about">
+	<div class="container ">
+	  <div class="about-ieee-heading justify-content-center">
+		  <div class="row">
+			<div class="col-sm-12 offset-sm-1 heading finalh">
+			  <h1 class="text-center">About Us</h1>
+			  <span style="background-color:#420b5a;" class="anime-line"></span>
+			  </div>
+		</div>
+	  </div>
+	  <div class="about-ieee-info" >
+		<!-- data-aos="fade-in" data-aos-duration="3000" -->
+		<div class="container">
+		  <div class="row">
+			<div class="col-sm-10 offset-sm-1">
+  
+			  <div class="sub-section" data-aos="fade-up" data-aos-duration="1000" >
+				<!-- data-aos="fade-up" data-aos-duration="1000" -->
+				<!-- data-aos="slide-right" data-aos-duration="3000" -->
+				<h2 class="text-left" style="margin-right: 0.5rem;padding-right: 0.5rem;"><b>IEEE WIE</b></h2>
+				
+  
+				<p>IEEE Women in Engineering (WIE) provides members with the opportunity to network at a local level through IEEE WIE Affinity Groups. Opportunities include coordinating events, mentoring, or serving as an officer. Currently, there are over 900 WIE Affinity Groups worldwide that organize and host diverse activities including guest speakers, workshops, and/or seminars.</p>
+  
+			  </div> 
+  
+			  <div class="sub-section2" data-aos="fade-up" data-aos-duration="1000"  >
+				<!-- data-aos="fade-up" data-aos-duration="1000"  -->
+                <!-- data-aos="slide-left" data-aos-duration="3000" -->
+				<h2 class="text-right" style="margin-right: 0.5rem;padding-right: 0.5rem;"><b>Our Mission</b></h2>
+				
+  
+				<p>The mission of IEEE WIE is to facilitate the global recruitment and retention of women in technical disciplines. IEEE WIE envisions a vibrant community of IEEE women and men collectively using their diverse talents to innovate for the benefit of humanity.</p>
+  
+			  </div>
+  
+			  <div class="sub-section" data-aos="fade-up" data-aos-duration="1000"   >
+				<!-- data-aos="fade-up" data-aos-duration="1000" -->
+				<!-- data-aos="slide-right" data-aos-duration="3000" -->
+  
+				<h2 class="text-left" style="margin-right: 0.5rem;padding-right: 0.5rem;"><b>Who We Are?</b></h2>
+				
+  
+				<p>IEEE Women in Engineering (WIE) is a global network of IEEE members and volunteers dedicated to promoting women engineers and scientists, and inspiring girls around the world to follow their academic interests in a career in engineering and science.</p>
+  
+			  </div>
+			  
+  
+			  <div class="container-fluid what-we-do justify-content-center" data-aos="fade-up" style="width: 100%;" id="what-we-do">
+				<div class="row">
+				  <div class="col-md-12 col-lg-12 header">
+					<h3 class="text-center m-10" [>What We Do?</h3>
+				  </div>
+				</div>
+				<div class="row">
+				  <div class="col-md-12 col-lg-12 col-sm-12 list-items text-center">
+					<p>
+						Recognize the outstanding achievements of women in electrical and electronics engineering through IEEE Awards nominations.
+					</p>
+					<p>
+						Organize workshops at major technical conferences to enhance networking and to promote membership in IEEE WIE.
+					</p>
+					<p>
+						Advocate women in leadership roles in IEEE governance and career advancement for women in the profession.
+					</p>
+					<p>
+						Promote member grade advancement for women to the IEEE membership grades of Senior Member and Fellow.
+					</p>
+					<p>
+						Facilitate the development of programs and activities that promote the entry into, and retention of, women in engineering programs.
+					</p>
+					<p>
+						Administer the IEEE Student-Teacher and Research Engineer/Scientist (STAR) Program to mentor young women in junior high and high schools.
+					</p>
+				  </div>
+				  <div class="col-sm-10 offset-sm-1 p-3" align="center">
+					<!-- <a href="https://www.ieee-pes.org/" class="btn btn-lg rounded-0" role="button" aria-pressed="true">Know More</a> -->
+					<a href="https://wie.ieee.org/" target="_blank"><button type="button" class="btn btn-outline-secondary" style="background-color: #420b5a; ">Know More</button></a>
+					
+				  </div>
+				</div>
+			  </div>
+		  </div>
+		  
+		</div>
+	  </div>
+	</div>
+  
+  </section>
 
-	<section class="about-ieee">
-		<div class="container container-fluid">
-			<div class="about-ieee-heading">
-					<div class="row">
-						<div class="col-sm-10 offset-sm-1">
-							<h1 class="text-center">About Us</h1>
-							<hr class="underline" style="width:5em">
-						</div>
+
+  <section class="preevents" id="events"  data-aos="fade-up">
+	<div class="eventspre">
+   	 <div class="heading1 heading finalh" >
+		<h1 style="color: white">Recent events!
+		</h1>
+		<span style="background-color:white;" class="anime-line"></span>
+
+	 </div>
+	 <div class="container" >
+
+		<div class="owl-carousel owl-theme container">
+			<div class="item1">
+				<div class="card feature_item" >
+					
+					<img class="card-img-top justify-content-center" src="./images/wie/events/12_wie_gd.jpg" alt="Card image cap">
+					<div class="card-body">
+					  <h5 class="card-title">Group discussion</h5>
+					  <p style="text-align: center;">Opportunities don't happen. You create them</p>
+					  <!--<p>Every accomplishment starts with a decision to try</p>-->
+					  <a href="http://ieeesbgvpce.org/events/2021/9_video_contest.html" class="btn btn-outline-secondary">Know more</a>
 					</div>
+				   </div>
+				</div>
+			<div class="item1">
+				<div class="card feature_item" >
+					
+					<img class="card-img-top justify-content-center" src="./images/wie/events/film.jpg" alt="Card image cap">
+					<div class="card-body">
+					  <h5 class="card-title">Film your thoughts</h5>
+					  <p style="text-align: center;">Every accomplishment starts with a decision to try</p>
+					  <a href="http://ieeesbgvpce.org/events/2021/9_video_contest.html" class="btn btn-outline-secondary">Know more</a>
+					</div>
+				   </div>
+				</div>
+			<div class="item1">
+				<div class="card feature_item">
+					<img class="card-img-top" src="./images/wie/events/womenemp.jpeg" alt="Card image cap">
+					<div class="card-body">
+					  <h5 class="card-title">Research and Innovation to Ensure Women Empowerment</h5>
+					  <P style="text-align: center;">There is no chance for the welfare of world unless the condition of women is improved.</P>
+					  <a href="http://ieeesbgvpce.org/events/2021/1wie_research.html" class="btn btn-outline-secondary">Know more</a>
+					</div>
+				  </div>
 			</div>
-			<div class="about-ieee-info">
-				<div class="container container-fluid">
-					<div class="row">
-						<div class="col-sm-10 offset-sm-1">
-
-							<div class="sub-section">
-
-								<h2 class="text-left"><b>IEEE WIE</b></h2>
-								<hr class="underline" align="left" style="width:6.5em">
-
-								<p>IEEE Women in Engineering (WIE) provides members with the opportunity to network at a local level through IEEE WIE Affinity Groups. Opportunities include coordinating events, mentoring, or serving as an officer. Currently, there are over 900 WIE Affinity Groups worldwide that organize and host diverse activities including guest speakers, workshops, and/or seminars.</p>
-
-							</div>
-
-							<div class="sub-section" align="right">
-
-								<h2 class="text-right"><b>Our Mission</b></h2>
-								<hr class="underline" align="right" style="width:10.5em">
-
-								<p>The mission of IEEE WIE is to facilitate the global recruitment and retention of women in technical disciplines. IEEE WIE envisions a vibrant community of IEEE women and men collectively using their diverse talents to innovate for the benefit of humanity.</p>
-
-							</div>
-
-							<div class="sub-section">
-
-								<h2 class="text-left"><b>Who We Are?</b></h2>
-								<hr class="underline" align="left" style="width:12em">
-
-								<p>IEEE Women in Engineering (WIE) is a global network of IEEE members and volunteers dedicated to promoting women engineers and scientists, and inspiring girls around the world to follow their academic interests in a career in engineering and science.</p>
-
-							</div>
-
-							<div class="sub-section">
-
-								<h2 class="text-center"><b>What We Do?</b></h2>
-								<hr class="underline" align="center" style="width:12em">
-
-								<div class="list-group-flush">
-						            <div class="list-group-item">
-						             	<p class="mb-0"><i class="fa fa-check-square-o fa-2x mr-4 blue p-2 white-text rounded " aria-hidden="true"></i>Provide assistance with the formation of new IEEE WIE Affinity Groups and support ongoing activities.</p>
-						            </div>
-						            <div class="list-group-item">
-						             	<p class="mb-0"><i class="fa fa-check-square-o fa-2x mr-4 blue p-2 white-text rounded " aria-hidden="true"></i>Recognize the outstanding achievements of women in electrical and electronics engineering through IEEE Awards nominations.</p>
-						            </div>
-						            <div class="list-group-item">
-						             	<p class="mb-0"><i class="fa fa-check-square-o fa-2x mr-4 blue p-2 white-text rounded " aria-hidden="true"></i>Organize workshops at major technical conferences to enhance networking and to promote membership in IEEE WIE.</p>
-						            </div>
-						            <div class="list-group-item">
-						             	<p class="mb-0"><i class="fa fa-check-square-o fa-2x mr-4 blue p-2 white-text rounded " aria-hidden="true"></i>Advocate women in leadership roles in IEEE governance and career advancement for women in the profession.</p>
-						            </div>
-						            <div class="list-group-item">
-						             	<p class="mb-0"><i class="fa fa-check-square-o fa-2x mr-4 blue p-2 white-text rounded " aria-hidden="true"></i>Promote member grade advancement for women to the IEEE membership grades of Senior Member and Fellow.</p>
-						            </div>
-						            <div class="list-group-item">
-						             	<p class="mb-0"><i class="fa fa-check-square-o fa-2x mr-4 blue p-2 white-text rounded " aria-hidden="true"></i>Facilitate the development of programs and activities that promote the entry into, and retention of, women in engineering programs.</p>
-						            </div>
-						            <div class="list-group-item">
-						             	<p class="mb-0"><i class="fa fa-check-square-o fa-2x mr-4 blue p-2 white-text rounded " aria-hidden="true"></i>Administer the IEEE Student-Teacher and Research Engineer/Scientist (STAR) Program to mentor young women in junior high and high schools.</p>
-						            </div>
-						        </div>
-							</div>
-
-						</div>
+			<div class="item1">
+				<div class="card feature_item" >
+					<img class="card-img-top" src="./images/wie/events/headway_wie.jpg" alt="Card image cap">
+					<div class="card-body">
+					  <h5 class="card-title">Head Way for Women in Engineering and Communication</h5>
+					  <p style="text-align: center;">Webinar session on Headway for Women in Engineering and Communication.</p>
+					  <a href="http://ieeesbgvpce.org/events/2020/headway_wie.html" class="btn btn-outline-secondary">Know more</a>
 					</div>
-					<div class="col-sm-10 offset-sm-1 p-5" align="center">
-						<a href="https://wie.ieee.org/" class="btn btn-lg rounded-0" role="button" aria-pressed="true">Know More</a>
+				  </div>
+			</div>
+			<div class="item1">
+				<div class="card feature_item" >
+					<img class="card-img-top" src="./images/wie/events/inspiro.jpeg" alt="Card image cap">
+					<div class="card-body">
+					  <h5 class="card-title">Inspiro</h5>
+					  <p style="text-align: center;">IEEE DAY 2020</p>
+					  <a href="http://ieeesbgvpce.org/events/2020/ieee_day_2020.html" class="btn btn-outline-secondary">Know more</a>
+					</div>
+				  </div>
+			</div>
+			<div class="item1">
+				<div class="card feature_item" >
+					<img class="card-img-top" src="./images/wie/events/ml.jpeg" alt="Card image cap">
+					<div class="card-body">
+					  <h5 class="card-title">Machine learning</h5>
+					  
+					  <a href="https://www.tonyrobbins.com/" class="btn btn-outline-secondary">Know more</a>
+					</div>
+				  </div>
+			</div>
+			<div class="item1">
+				<div class="card feature_item"  height="30px">
+				<img class="card-img-top" src="./images/wie/events/quiz.jpeg" alt="Card image cap">
+				<div class="card-body">
+				  <h5 class="card-title">Quiz based on Spectrum Magazine</h5>
+				  <p style="text-align: center;">EVERYONE LOVES SPORT, AND EVERYONE LOVES A QUIZ</p>
+				  <a href="http://ieeesbgvpce.org/events/2021/3spectrum_quiz.html" class="btn btn-outline-secondary">Know more</a>
+				</div>
+			  </div>
+			</div>
+			
+		</div>
+		<div style="text-align: center;justify-content: center;">
+			<a href="wie_events.html">
+			<button class="btn btn-outline-success"> More events</button>
+			</a>
+		</div>
+     </div>
+    </div>
+</section>
+
+	<section class="team pt-5 pb-5" id="team" data-aos="fade-up" >
+		<div class="container container-fluid">
+
+			<div class="team-heading pb-4 pt-2">
+				<div class="row ">
+					<div class="col-sm-12 offset-sm-1 text-center heading finalh" data-aos="flip-up">
+						<h1 style="margin-top: 35px; justify-content: center;">Our Team</h1>
+						<span style="background-color:#420b5a;" class="anime-line"></span>
+
+						
 					</div>
 				</div>
 			</div>
+
+			<div class="team-info container ">
+				<div class="row d-flex relative justify-content-center">
+
+					<div class="col-md-6 col-lg-3 mb-4 h-100 mainteam justify-content-center" data-aos="flip-left">
+						<div class="box teaam">
+							
+								<img src="images/wie/team/wie_chair.jpg" class="img-fluid teammain">
+								<div class="box-content">
+									<!-- --- -->
+								</div>
+									<ul class="icon">
+										<li><a href="https://www.linkedin.cn/feed/?trk=cold_join_sign_i"><i class="fa fa-envelope"></i></a></li>
+										<li><a href="https://www.instagram.com/sheetal._.vijapurapu/"><i class="fa fa-yahoo"></i></a></li>
+										
+										 <li><a href="https://twitter.com/SheetalVijapur1?s=08"><i class="fa fa-instagram"></i></a></li> 
+									</ul>
+								</div>
+							
+							<div class="img-text">
+								<div class="txt">
+								<h4 class="txt">Sheetal</h4>
+								<h5 class="txt" style="color: white;">CHAIR</h5>
+							</div>
+							</div>
+						</div>
+
+					<div class="col-md-6 col-lg-3 mb-4 h-100 mainteam" data-aos="flip-right">
+						<div class="box teaam">
+							
+								<img src="images/wie/team/wie_vice_chair1.jpeg" class="img-fluid teammain">
+								<div class="box-content">
+									<!-- --- -->
+								</div>
+									<ul class="icon">
+										<li><a href="https://twitter.com/puruhootika"><i class="fa fab fa-twitter-square"></i></a></li>
+										<li><a href=" https://www.linkedin.com/mwlite/in/yashaswini-marupalli-64aa871b0" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+										 <li><a href="https://www.instagram.com/sri_puruhootika/"><i class="fa fa-instagram"></i></a></li> 
+									</ul>
+								</div>
+							
+							<div class="img-text">
+								<div class="txt">
+								<h4 class="txt">Yeseswini</h4>
+								<h5 class="txt" style="color: white;">VICE CHAIR</h5>
+							</div>
+							</div>
+						</div>
+
+					<div class="col-md-6 col-lg-3 mb-4 h-100 mainteam" data-aos="flip-left">
+						<div class="box teaam">
+							
+								<img src="images/wie/team/wie_secretary.jpg" class="img-fluid teammain">
+								<div class="box-content">
+									<!-- --- -->
+								</div>
+									<ul class="icon">
+										<li><a href="https://twitter.com/puruhootika"><i class="fa fab fa-twitter-square"></i></a></li>
+										<li><a href="https://www.linkedin.com/in/sri-puruhootika-vipparti-0507511b1/ "><i class="fa fa-linkedin"></i></a></li>
+										<li><a href="https://www.instagram.com/sri_puruhootika/"><i class="fa fa-instagram"></i></a></li> 
+									</ul>
+								</div>
+							
+							<div class="img-text">
+								<h4>V Sri Puruhootika</h4>
+								<h5 style="color: white;">SECRETARY</h5>
+							</div>
+						</div>
+
+
+					<div class="col-md-6 col-lg-3 mb-4 h-100 mainteam" data-aos="flip-right">
+						<div class="box teaam">
+							
+								<img src="images/wie/team/wie_treasurer.jpg" class="img-fluid teammain">
+								<div class="box-content">
+									<!-- --- -->
+								</div>
+									<ul class="icon">
+										<li><a href="mailto:principal@gvpce.ac.in? subject = "><i class="fa fa-envelope"></i></a></li>
+										<li><a href="mailto:abkr_gvp@yahoo.co.in? subject = "><i class="fa fa-yahoo"></i></a></li>
+										<!-- <li><a href="#"><i class="fa fa-instagram"></i></a></li> -->
+									</ul>
+								</div>
+							
+							<div class="img-text">
+								<h4>Navitha Simhadri</h4>
+								<h5 style="color: white;">TREASURER</h5>
+							</div>
+						</div>
+
+
+
+					
+
+				</div>
+			</div>
 		</div>
+		
+		<div class="completeteam">
+			<a href="wie_team.html" >
+			<button class="btn btn--primary compteam">Complete team</button>
+		</a>
+		</div>
+		<br>
 	</section>
 
 
+<section class="gallery111" id="gallery" data-aos="fade-up">
+		<div class="gg">
+		<div class="galleryheader heading finalh"> 
+			<h1 >
+				Gallery
+			</h1>
+			<span style="background-color:#420b5a;" class="anime-line"></span>
+
+
+
+		</div>
+	<div class="container ">
+		<div class="row mt-4 dflex justify-content-between gal">
+			<div class="item col-sm-6 col-md-4 col-mb-3 col-lg-4 ggg">
+				<a href="images/wie/gallery/1.jpg" class="fancybox" data-fancybox="gallery1">
+					<img src="images/wie/gallery/1.jpg" width="100%" height="auto">
+				</a>
+
+			</div>
+
+			<div class="item col-sm-6 col-md-4 col-mb-3 col-lg-4 ggg">
+				<a href="images/wie/gallery/2.jpeg" class="fancybox" data-fancybox="gallery1">
+					<img src="images/wie/gallery/2.jpeg" width="100%" height="auto">
+				</a>
+
+			</div>
+
+			<div class="item col-sm-6 col-md-4 col-mb-3 col-lg-4 ggg">
+				<a href="images/wie/gallery/3.jpeg" class="fancybox" data-fancybox="gallery1">
+					<img src="images/wie/gallery/3.jpeg" width="100%" height="auto">
+				</a>
+
+			</div>
+
+			<div class="item col-sm-6 col-md-4 col-mb-3 col-lg-4 ggg">
+				<a href="images/wie/gallery/4.jpeg" class="fancybox" data-fancybox="gallery1">
+					<img src="images/wie/gallery/4.jpeg" width="100%" height="auto">
+				</a>
+
+			</div>
+
+			<div class="item col-sm-6 col-md-4 col-mb-3 col-lg-4 ggg">
+				<a href="images/wie/gallery/2.jpeg" class="fancybox" data-fancybox="gallery1">
+					<img src="images/wie/gallery/2.jpeg" width="100%" height="auto">
+				</a>
+
+			</div>
+
+			<div class="item col-sm-6 col-md-4 col-mb-3 col-lg-4 ggg">
+				<a href="images/wie/gallery/3.jpeg" class="fancybox" data-fancybox="gallery1">
+					<img src="images/wie/gallery/3.jpeg" width="100%" height="auto">
+				</a>
+
+			</div>
+
+
+
+		</div>
+
+	</div>
+	</div>
+</section>
+
+
+
+<footer class="foot" style="background-image: url('images/wie/background/cont.png');" id="contact-info" data-aos="fade-up" >
+	<div class="ff ">
+	<h1 class="contact heading finalh" style="text-align: center; margin-bottom: 20px; color: white">
+				CONTACT INFO
+
+			</h1>
+
+	<div class="row cont dflex justify-content-between float-md-right">
+
+		<div class="col-lg-5 col-md-6 col-sm-12 col-xs-11 hel" style="margin: 10px">
+			
+			<h4>
+				Address :
+			</h4>
+			<div class="footercontent">
+				
+
+				
+Gayatri Vidya Parishad College of Engineering (Autonomous)<br>
+Madhurawada<br>
+Visakhapatnam - 530 048<br>
+Andhra Pradesh<br>
+India
+
+
+			</div>
+			
+			
+		</div>
+
+<div class="col-lg-3 col-md-5 col-sm-12 col-xs-11 hel " style="margin: 10px">
+			<h4>
+				Contact us
+							</h4>
+			<div>
+				<div class="contactinfo">
+					Mail to <a href="mailto:ieeewie@gvpce.ac.in? subject = " class="contactlink">ieeewie@gvpce.ac.in</a>
+				</div>
+				<div class="contactinfo">
+				Mobile: 
+				<a class="mobilesOnly contactlink" href="tel:+919441969659" >
+						+919441969659
+						
+					</a>(Branch Counsellor)
+
+
+
+				</div >
+				<div class="contactinfo">
+				Mobile: 
+				<a class="mobilesOnly contactlink" href="tel:+91 9182985123" >
+						+91 9182985123
+						
+					</a>(Chair)
+
+
+
+				</div>
+
+
+		</div>
+			
+
+
+
+		</div>
+		<div class="col-lg-2 col-md-4 col-sm-12 col-xs-11 d-flex hel" style="margin: 10px">
+      		<div>
+      		<h4>
+				Follow us
+				<br>
+			</h4>
+
+				<div class="">
+
+					<a href="https://www.linkedin.com/in/ieee-sb-gvpce-a-b362791a1/" class="so"><img src="images/wie/socialmedia/linkedin.png" class="socialmedia"></a>
+					<a href="https://www.facebook.com/under.vizag.bay.sub.section/" class="so"><img src="images/wie/socialmedia/fb.png" class="socialmedia"></a>
+					<a href="https://www.instagram.com/ieee_sb_gvpce_a/" class="so"><img src="images/wie/socialmedia/insta.png" class="socialmedia"></a>
+					<a href="https://twitter.com/GvpceSb" class="so"><img src="images/wie/socialmedia/twitter.png" class="socialmedia"></a>
+				</br>
+		</div>
+	</div>
+
+
+	</div>
+
+
+	<div class="row">
+		<div class="col-lg-6 col-md-6 col-sm-12 mapp " data-aos="zoom-in">
+			<iframe class="googlemap1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2248.547297057873!2d83.34082389335262!3d17.82059473696497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a395bedc7efb603%3A0x87c06caab54e902a!2sGVP%20College%20of%20Engineering%20(Autonomous)!5e0!3m2!1sen!2sin!4v1619681985755!5m2!1sen!2sin" width="100%" height="400"  style="border:0;position: relative;width: 90%;top: 50px;margin-right: 50px;border-radius: 15px;display: inline-block;overflow: hidden;" allowfullscreen="0" loading="lazy" ></iframe>
+
+			<br>
+			<br>
+			<br>
+			<br>
+
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-12 ppp" style="padding-top: 10px;margin-top: 30px;" data-aos="zoom-in">
+			<h4 class="fh">In case of any Queries</h4>
+			<br>
+      
+			 <form class="row g-3 form-container" action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSfEIIOzKAbNVHNmB5vAhwCFd1o6VTZcMcWuKuf9k0TIBQJYRg/formResponse" target="_blank" method="POST" id="mG61Hd" jsmodel="TOfxwf Q91hve" data-response="%.@.[]]" data-first-entry="0" data-last-entry="7" data-is-first-page="true" >
+   <div class="col-md-6">
+    <label for="inputname" class="form-label" ></label>
+    <input type="name" name="entry.327919065" class="form-control" id="inputname"  placeholder="Name">
+  </div>
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label" ></label>
+    <input type="email" name="entry.2075636910" class="form-control" id="inputEmail4"  placeholder="Email">
+  </div>
+  
+  <textarea rows="4" cols="50" name="entry.1147404907" name="comment" form="usrform" style="margin-top: 2rem;margin-left: 0.5rem;width: 100%;" placeholder="Enter your message here......"></textarea>
+  <div class="col-md-12 col-sm-8 col-xs-5 text-center">
+    <button type="submit" class="btn btn-md btn-outline-success" style="padding: 2px;   margin: 10px;">Message me</button>
+  
+  </div>
+
+</form>
+
+
+
+		</div>
+
+
+	</div>
+</div>
+</footer>
+
+<script>
+        AOS.init({
+            duration: 1300,
+        });
+    </script>
 
 	<!-- footer -->
-
-	<section class="page-footer" id="contact-info">
-
-		<div class="container footer-heading">
-			<div class="row">
-				<div class="col-sm-10 offset-sm-1">
-					<h1 class="text-center">Contact Us</h1>
-					<hr class="underline" align="center" style="width:8.5em">
-				</div>
-			</div>
-		</div>
-
-		<div class="footer-info">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-md-4">
-						<div class="contact-mode address">
-							<h4 class="text-left">Address</h4>
-							<hr class="underline" align="left" style="width:6em">
-						</div>
-						<address>
-						Gayatri Vidya Parishad College of Engineering (Autonomous)<br>
-						Madhurawada<br>
-						Visakhapatnam - 530 048<br>
-						Andhra Pradesh<br>
-						India
-						</address>
-					</div>
-					<div class="col-xs-12 col-md-4">
-						<div class="contact-mode contact">
-							<h4 class="text-left">Contact Info</h4>
-							<hr class="underline" align="left" style="width:9em">
-						</div>
-						<div>
-							<p>E-Mail: <span><a href="mailto:ieeewie@gvpce.ac.in? subject = ">ieeewie@gvpce.ac.in</a></span></p>
-							<p>Mobile: <a href="tel:+919441969659">+91 9441969659</a> (Branch Counsellor)</p>
-							<p>Mobile: <a href="tel:+919502394488">+91 9502394488</a> (WIE Chair)</p>
-						</div>
-					</div>
-					<div class="col-xs-12 col-md-4">
-						<div class="contact-mode social-media">
-							<h4 class="text-left">Follow Us</h4>
-							<hr class="underline" align="left" style="width:7em">
-						</div>
-						<div class="contact-mode social-media-handles">
-							<a href="https://www.facebook.com/under.vizag.bay.sub.section/"><i class="fa fa-facebook-official fa-2x"></i></a>
-							<a href="https://www.instagram.com/ieee_sb_gvpce_a/"><i class="fa fa-instagram fa-2x"></i></a>
-							<a href="https://www.linkedin.com/in/ieee-sb-gvpce-a-b362791a1/"><i class="fa fa-linkedin-square fa-2x"></i></a>
-							<a href="https://twitter.com/GvpceSb"><i class="fa fa-twitter-square fa-2x"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3798.3861539630434!2d83.34015411494428!3d17.820523887820432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a395bedc7efb603%3A0x87c06caab54e902a!2sGVP%20College%20of%20Engineering%20(Autonomous)!5e0!3m2!1sen!2sin!4v1598167973876!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-				</div>
-			</div>
-		</div>
-	</section>
 
 
 	<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+</script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
  	
- 	<script type="text/javascript" src="js/scripts.js"></script>
+ 	<script type="text/javascript" src="js/wie_scripts.js"></script>
+<script>
+			$(window).scroll(function(){ 
+            if($(window).scrollTop() >= 350 ){ 
+               $( "#none1" ).css( "display", "block","background-color .3s", "opacity .5s"," visibility .5s" ); 
+            } else { 
+      
+            $( "#none1" ).css( "display", "none" ); 
+            } 
+            }); 
+		</script>
+		 <script src="scripts/team.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript">
+	 $('.owl-carousel').owlCarousel({
+	 loop:true,
+	 margin:10,
+	 stagePadding:30,
+	         dots: false,
+	 nav:true,
+      navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
 
+	 arrows:true,
+	 autoplay:false,
+	 autoplayTimeout:4000,
+	 responsive:{
+		 0:{
+			 items:1
+		 },
+		 800:{
+			 items:2
+		 },
+		 1000:{
+			 items:3
+		 }
+	 }
+ })</script>
+ <script type="text/javascript">
+		  
+		var btn = $('#button');
+	  
+	  $(window).scroll(function() {
+		if ($(window).scrollTop() > 300) {
+		  btn.addClass('show');
+		} else {
+		  btn.removeClass('show');
+		}
+	  });
+	  
+	  btn.on('click', function(e) {
+		e.preventDefault();
+		$('html, body').animate({scrollTop:0}, '300');
+	  });
+		  
+		</script> 
 </body>
 </html>

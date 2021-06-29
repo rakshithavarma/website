@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CS Team</title>
+	<script type="module" src="js/hf.js"></script>
+  <link rel="shortcut icon" href="images/cs/cs_logo.jpg" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="css/cs_teamStyle.css">
+ 
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- aos -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!--Scroll up bottom-->
+
+  <a id="button">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!--Navigation for page-->
+
+  <nav class="container-fluid navbar navbar-expand-lg cs-navbar sticky-top" id="nav-bar">
+    <a class="navbar-brand" href="#"><img src="images/cs/cslogo.png"></a>
+    <button class="navbar-toggler" type="button" data-trigger="#navbarNavDropdown">
+      <i class="fa fa-bars hamburger" aria-hidden = "true"></i>
+    </button>
+    <div class="navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <div class="offcanvas-header mt-3">
+      <button class="btn btn-close float-right" style="color: #fff; font-size: 16px;"> &times </button>
+    </div>
+      <my-header></my-header>
+    </div>
+  </nav>
+
+  <!-- ieee cs chapter banner -->
+     
+	<header class="cs-banner" id="banner">
+		<div class="container h-100" id="top">
+	    <div class="row h-100 align-items-center">
+	      <div class="col-12 text-center">
+	        		<h1>IEEE Computer Society</h1>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+					  <div>
+              <a href="#filterBox" style="scroll-behavior: smooth; ">
+                <div class="indicator" style="margin:auto;">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </a>
+					</div>
+	      </div>
+	    </div>
+	  </div>
+	</header>
+
+  <!--Main Container i.e content holder-->
+
+  <div class="container filterBox" id="filterBox">
+
+    <h2 class="text-center heading">
+      CS TEAM
+    </h2>
+
+    <!--Navigation tab for filter for pc-->
+
+    <div class="filter-tabs">
+      <div class="filter-sort">
+          <div class="navigation">
+              <a href="javascript:void(0)" data-filter="all" class="button navv active">
+                All
+              </a>
+              <a href="javascript:void(0)" data-filter="web" class="button navv">
+                Web designing
+              </a>
+              <a href="javascript:void(0)" data-filter="tech" class="button navv">
+                Technical and Organizing
+              </a>
+              <a href="javascript:void(0)" data-filter="orators" class="button navv">
+                Orators and Documentation
+              </a>
+              <a href="javascript:void(0)" data-filter="graphic" class="button navv">
+                Graphic Designing
+              </a>
+          </div>
+      </div>
+    </div>
+
+    <!--Navigation tab for filter for Mobiles-->
+    <div class="thumbnails-filter mobile text-center">
+      <select id="filter">
+        <option value="all">
+          All
+        </option>
+        <option value="web">
+          Web designing
+        </option>
+        <option value="tech">
+          Technical and Organising
+        </option>
+        <option value="orators">
+          Orators and Documentation
+        </option>
+        <option value="graphic">
+          Graphic Designing
+        </option>
+      </select>
+    </div>
+
+    <!--Team members of CS chapter-->
+
+    <section class="team cs-team" data-aos="fade-up">
+      <div class="team-info">
+        <div class="row">
+
+          <!--
+            Web Designing Commitee
+            /
+            ** samba
+            ** aiswarya
+            ** firoza 
+            /
+          -->
+
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail web">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="images/cs/team-members/Samba_Web_Designing.jpeg" class="img-fluid">
+                    <div class="social">
+                        
+                        <ul class="list-inline">
+                            <li class="linkedin"><a href="https://www.linkedin.com/in/samba-siva-reddy-chinta-78a9651b2/"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="blog"><a href="https://samba-chinta.github.io/sam-blog/" target="_blank"><i class="fa fa-rss"></i></a></li>
+                            <li class="instagram"><a href="https://www.instagram.com/sambasiva_24/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>Ch Samba</h4>
+                    <h5>97351649</h5>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail web">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="images/cs/team-members/Aiswarya_Web_Designing.jpeg" class="img-fluid">
+                    <div class="social">
+                      
+                        <ul class="list-inline">
+                          <li class="email">
+                          <a href="mailto:aiswaryanagabathula123@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                          </li>
+                          <li class="linkedin"><a href="https://www.linkedin.com/in/nagabathula-aiswarya-9266b11b5" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                          <li class="instagram"><a href="https://www.instagram.com/___aiswarya24___/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>N Aiswarya</h4>
+                    <h5>97595632</h5>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail web">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="images/cs/team-members/Firoza_Web_Designing.jpg" class="img-fluid">
+                    <div class="social">
+                      
+                        <ul class="list-inline">
+                            <li class="email">
+                            <a href="mailto:firozasheik22@ieee.org" target="_blank"><i class="fa fa-envelope"></i></a>
+                            </li>
+                            <li class="linkedin"><a href="https://www.linkedin.com/in/firoza-khatoon-sheik-aa4199204" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="instagram"><a href="https://www.instagram.com/firozasheik22/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>Sk Firoza</h4>
+                    <h5>97352623</h5>
+                </div>
+            </div>
+          </div>
+
+          <!--
+            Graphic Design Commitee
+            /
+            **  Lavanya
+            ** Prasanna
+            ** Kiran
+            /
+          -->
+
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail graphic">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="images/cs/team-members/Lavanya_graphic designing.jpg" class="img-fluid">
+                    <div class="social">
+                      
+                        <ul class="list-inline">
+                            <li class="email">
+                            <a href="mailto:lavanya-74@ieee.org" target="_blank"><i class="fa fa-envelope"></i></a>
+                            </li>
+                             <li class="linkedin"><a href="https://www.linkedin.com/in/lavanya-dubakula-a892b81a3" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="instagram"><a href="https://www.instagram.com/lavanyadubakula/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>D Lavanya</h4>
+                    <h5>97352690</h5>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail graphic tech">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="images/cs/team-members/Saiprasanna_organizing_graphic designing.jpg" class="img-fluid">
+                    <div class="social">
+                      
+                        <ul class="list-inline">
+                            <li class="email">
+                            <a href="mailto:saiprasanna@ieee.org" target="_blank"><i class="fa fa-envelope"></i></a>
+                            </li>
+                             <li class="linkedin"><a href="http://www.linkedin.com/in/saiprasanna-boyina-0a78551a9" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="instagram"><a href="https://www.instagram.com/_____prasanna__/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>B Prasanna</h4>
+                    <h5>97351659</h5>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail graphic">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="images/cs/team-members/Kiran_graphic designing .jpg" class="img-fluid">
+                    <div class="social">
+                      
+                        <ul class="list-inline">
+                          <li class="email">
+                            <a href="mailto:kiran.rokkam09@ieee.org" target="_blank"><i class="fa fa-envelope"></i></a>
+                            </li>
+                            <li class="instagram"><a href="https://www.instagram.com/kiran__rokkam/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>R Kiran</h4>
+                    <h5>97579105</h5>
+                </div>
+            </div>
+          </div>
+
+          <!--
+            Documentation Team
+            /
+            ** Srikar
+            ** Yashwanth Raj
+            ** Lalitha 
+            ** Ramya Sri sai
+            /
+          -->
+
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail orators">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="images/cs/team-members/user.jpg" class="img-fluid">
+                    <div class="social">
+                      
+                        <ul class="list-inline">
+                             <li class="linkedin"><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li class="instagram"><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>G Srikar</h4>
+                    <h5>97348702</h5>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail orators">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="images/cs/team-members/Yashwant_raj_ oration and documentation.jpg" class="img-fluid">
+                    <div class="social">
+                      
+                        <ul class="list-inline">
+                          <li class="email">
+                            <a href="mailto:yashwanthraj249@ieee.org" target="_blank"><i class="fa fa-envelope"></i></a>
+                            </li>
+                            <li class="instagram"><a href="https://www.instagram.com/yashwant.gali/ " target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>G Yashwanth Raj</h4>
+                    <h5>97574857</h5>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail orators">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="images/cs/team-members/Varanasi_Ramya_Sri_Sai-Oration_and_Documentation.png" class="img-fluid">
+                    <div class="social">
+                      
+                        <ul class="list-inline">
+                          <li class="email">
+                            <a href="mailto:ramyasrisai.v@ieee.org" target="_blank"><i class="fa fa-envelope"></i></a>
+                            </li>
+                             <li class="linkedin"><a href="https://www.linkedin.com/in/ramya-sri-sai-varanasi-113379208/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>V Ramya Sri Sai</h4>
+                    <h5>97351690</h5>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail orators">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="images/cs/team-members/Lalitha Pavani_Oration & Documentation.jpg" class="img-fluid">
+                    <div class="social">
+                      
+                        <ul class="list-inline">
+                          <li class="email">
+                            <a href="mailto:srilalitha@ieee.org" target="_blank"><i class="fa fa-envelope"></i></a>
+                            </li>
+                             <li class="linkedin"><a href="https://www.linkedin.com/in/lalitha-pavani-banda-19a7781a4" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>B Lalitha Pavani</h4>
+                    <h5>97352433</h5>
+                </div>
+            </div>
+          </div>
+
+          <!--
+            Technical and Organising Team
+            /
+            ** Hima bindu
+            ** Manvitha
+            ** Babu rao
+            ** Ajay Kumar
+            ** Prasanna
+            ** Nithin Kumar
+            /
+          -->
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail tech">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="images/cs/team-members/Hima_Bindu_Organizing.jpg" class="img-fluid">
+                    <div class="social">
+                      
+                        <ul class="list-inline">
+                             <li class="linkedin"><a href="https://www.linkedin.com/in/hima-bindu-002a45194/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="twitter"><a href="https://twitter.com/BinduTenneti" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li class="blog"><a href="https://portfolios.talentsprint.com/~hima_bindu/" target="_blank"><i class="fa fa-rss"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>T Hima Bindu</h4>
+                    <h5>97351541</h5>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail tech">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="images/cs/team-members/Manvitha_technical and organizing.jpeg" class="img-fluid">
+                    <div class="social">
+                      
+                        <ul class="list-inline">
+                          <li class="email">
+                            <a href="mailto:manvitha_vemulapalli@ieee.org" target="_blank"><i class="fa fa-envelope"></i></a>
+                            </li>
+                            <li class="instagram"><a href="https://www.instagram.com/manvitha_vemulapalli/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>V Manvitha</h4>
+                    <h5>97351558</h5>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail tech">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="images/cs/team-members/Baburao_organizing.jpg" class="img-fluid">
+                    <div class="social">
+                      
+                        <ul class="list-inline">
+                          <li class="email">
+                            <a href="mailto:babu1166@iee.org" target="_blank"><i class="fa fa-envelope"></i></a>
+                            </li>
+                            <li class="instagram"><a href="https://instagram.com/___b___a___b___u?utm_medium=copy_link" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>S Babu Rao</h4>
+                    <h5>97578026</h5>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail tech">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="images/cs/team-members/Ajay_Kumar_Orgainzing_committee.jpeg" class="img-fluid">
+                    <div class="social">
+                      
+                        <ul class="list-inline">
+                          <li class="email">
+                            <a href="mailto:ajaykumarvelangi1@ieee.org" target="_blank"><i class="fa fa-envelope"></i></a>
+                            </li>
+                             <li class="linkedin"><a href="https://www.linkedin.com/in/ajay-kumar-5100601b8" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="instagram"><a href="https://www.instagram.com/ajayanudeep/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>V Ajay Kumar</h4>
+                    <h5>97350406</h5>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail tech">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="images/cs/team-members/Nithin_kumar_organizing.jpg" class="img-fluid">
+                    <div class="social">
+                      
+                        <ul class="list-inline">
+                          <li class="email"><a href="mailto:nithinkumarsaragadam@ieee.org " target="_blank"><i class="fa fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>S Nithin Kumar</h4>
+                    <h5>97575996</h5>
+                </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <div class="footer container">
+    <div class="row justify-content-center">
+      <div class="home">
+        <a href="index.html">
+          <button id="home-btn">Home</button>
+        </a>
+      </div>
+      <div class="cs">
+        <a href="ieee_cs.html">
+          <button id="cs-btn">CS</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/3075ff846e.js" crossorigin="anonymous"></script>
+
+  <script  src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+  <script src="js/lightbox-plus-jquery.min.js"></script>
+  <script src="js/cs_team.js"></script>
+  <!-- aos -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+    });
+  </script>
+
+  <!--JQuery-->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+</body>
+</html>

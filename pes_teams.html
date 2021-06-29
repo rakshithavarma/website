@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> PES Team</title>
+  <script type="module" src="js/hf.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="css/pes_teams.css">
+ 
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- aos -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!--Scroll up bottom-->
+
+  <a id="button">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!--Navigation for page-->
+
+  <nav class="container-fluid navbar navbar-expand-lg cs-navbar sticky-top" id="nav-bar">
+    <a class="navbar-brand" href="#"><img src="images/pes/pes_logo.png"></a>
+    <button class="navbar-toggler" type="button" data-trigger="#navbarNavDropdown">
+      <i class="fa fa-bars hamburger" aria-hidden = "true"></i>
+    </button>
+    <div class="navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <div class="offcanvas-header mt-3">
+      <button class="btn btn-close float-right" style="color: #fff; font-size: 16px;"> &times </button>
+    </div>
+    <my-header></my-header>
+    </div>
+  </nav>
+
+  <!-- ieee cs chapter banner -->
+     
+	<header class="cs-banner" id="banner">
+		<div class="container h-100" id="top">
+	    <div class="row h-100 align-items-center">
+	      <div class="col-12 text-center">
+	        		<h1>Power And Energy</h1>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+					  <div>
+              <a href="#filterBox" style="scroll-behavior: smooth; ">
+                <div class="indicator" style="margin:auto;">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </a>
+					</div>
+	      </div>
+	    </div>
+	  </div>
+	</header>
+
+  <!--Main Container i.e content holder-->
+
+  <div class="container filterBox" id="filterBox">
+
+    <h2 class="text-center heading">
+      Teams
+    </h2>
+
+    <!--Navigation tab for filter for pc-->
+
+    <div class="filter-tabs">
+      <div class="filter-sort">
+          <div class="navigation">
+              <a href="javascript:void(0)" data-filter="all" class="button navv active">
+                All
+              </a>
+              <a href="javascript:void(0)" data-filter="tech" class="button navv">
+                Technical and Organising
+              </a>
+              <a href="javascript:void(0)" data-filter="orators" class="button navv">
+                Orators and Documentation
+              </a>
+              <a href="javascript:void(0)" data-filter="web" class="button navv">
+                Web Designing
+              </a>
+              <a href="javascript:void(0)" data-filter="graphic" class="button navv">
+                Graphic Designing
+              </a>
+          </div>
+      </div>
+    </div>
+
+    <!--Navigation tab for filter for Mobiles-->
+    <div class="thumbnails-filter mobile text-center">
+      <select id="filter">
+        <option value="all">
+          All
+        </option>
+        <option value="tech">
+            Technical and Organising
+        </option>
+        <option value="orators">
+            Orators and Documentation
+        </option>
+        <option value="web">
+            Web Designing
+        </option>
+        <option value="graphic">
+          Graphic Designing
+        </option>
+      </select>
+    </div>
+
+    <!--Team members of CS chapter-->
+
+    <section class="team cs-team" data-aos="fade-up">
+      <div class="team-info">
+        <div class="row">
+             <!--
+            Technical and Organising Team
+            /
+            ** Sunil kumar
+            ** bindu madhavi
+            ** surya bulu raju
+            ** chakradhar reddy
+            /
+          -->
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail tech">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="images/pes/team/pes_sunil.jpeg" class="img-fluid">
+                    <div class="social">
+                      <div class="style-dashes">
+                          <!-- <span>----</span> -->
+                        </div>
+                        <ul class="list-inline">
+                          
+                          <li class="facebook"><a href="https://www.facebook.com/sunny.sunil.31586"><i class="fab fa-facebook-f"></i></a></li>
+                             <!-- <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li> -->
+                            <li class="instagram"><a href="https://instagram.com/sunnnnnnyyyyyyyyyyy?utm_medium=copy_link"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>Sunil Kumar</h4>
+                    <h5>97530422</h5>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail tech">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="images/pes/team/pes_bindumadhavi.jpeg" class="img-fluid">
+                    <div class="social">
+                      <div class="style-dashes">
+                          <!-- <span>----</span> -->
+                        </div>
+                        <ul class="list-inline">
+                             <li class="linkedin"><a href="https://www.linkedin.com/in/kalla-bindu-madhavi-3a981220b"><i class="fa fa-linkedin"></i></a></li>
+                            <!--<li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+                            <li class="instagram"><a href="https://www.instagram.com/bindu_madhavi_kalla/"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>Kalla Bindu Madhavi</h4>
+                    <h5>97572480</h5>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail tech">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="images/pes/team/pes_suryaraju.jpeg" class="img-fluid">
+                    <div class="social">
+                      <div class="style-dashes">
+                          <!-- <span>----</span> -->
+                        </div>
+                        <ul class="list-inline">
+                             <li class="linkedin"><a href="https://www.linkedin.com/in/raju-chintapatla-b2b1001a6"><i class="fa fa-linkedin"></i></a></li>
+                            <!--<li class="twitter"><a href=""><i class="fa fa-twitter"></i></a></li>-->
+                            <li class="facebook"><a href="https://www.facebook.com/yuva.raju.1257"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="instagram"><a href="https://instagram.com/rajuchintapatla?utm_medium=copy_link"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>C. Surya Raju</h4>
+                    <h5>97576983</h5>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail tech">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="images/pes/team/pes_chakradhar_reddy.jpeg" class="img-fluid">
+                    <div class="social">
+                      <div class="style-dashes">
+                          <!-- <span>----</span> -->
+                        </div>
+                        <ul class="list-inline">
+                             <li class="linkedin"><a href="https://www.linkedin.com/in/chakradhar-reddy-185476189"><i class="fa fa-linkedin"></i></a></li>
+                            <!--<li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+                            <li class="mail"><a href="mailto:chakradharreddy12@gmail.com? subject = "><i class="fa fa-envelope"></i></a></li>
+                            <li class="instagram"><a href="https://www.instagram.com/itsme_chakri"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>B. Chakradhar Reddy</h4>
+                    <h5>97587499</h5>
+                </div>
+            </div>
+          </div>
+        
+             <!--
+            Documentation Team
+            /
+            ** raghava
+            ** srivatsav
+            ** soujanya
+            ** roshini
+            ** sai neeraj
+            /
+          -->
+
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail orators">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="images/pes/team/pes_Raghava.jpg" class="img-fluid">
+                    <div class="social">
+                      <div class="style-dashes">
+                          <!-- <span>----</span> -->
+                        </div>
+                        <ul class="list-inline">
+                             <li class="linkedin"><a href="https://www.linkedin.com/in/raghava-boya-598942212"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="twitter"><a href="https://twitter.com/RaghavaBoya2?s=09"><i class="fa fa-twitter"></i></a></li>
+                            <li class="instagram"><a href="https://instagram.com/raghava._.boya?utm_medium=copy_link"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>Boya Raghava</h4>
+                    <h5>97573669</h5>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail orators">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="images/pes/team/pes_Srivatsav.jpeg" class="img-fluid">
+                    <div class="social">
+                      <div class="style-dashes">
+                          <!-- <span>----</span> -->
+                        </div>
+                        <ul class="list-inline">
+                             <!--<li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
+                            <li class="linkedin"><a href="http://facebook.com/srivatsav.chinta/"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="twitter"><a href="http://twitter.com/chivachav"><i class="fa fa-twitter"></i></a></li>
+                            <li class="instagram"><a href="http://instagram.com/srivatsav.chinta/"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>Srivatsav Chinta</h4>
+                    <h5>97573669</h5>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail orators">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="images/pes/team/pes_indira_soujanya.jpeg" class="img-fluid">
+                    <div class="social">
+                      <div class="style-dashes">
+                          <!-- <span>----</span> -->
+                        </div>
+                        <ul class="list-inline">
+                             <!--<li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+                            <li class="mail"><a href="mailto:indirasoujanya27@gmail.com? subject = "><i class="fa fa-envelope"></i></a></li>
+                            <li class="instagram"><a href="https://www.instagram.com/p/CMev3pSrpjYHx_KqJ56uLB3_rXm08beJEFmbY00/?utm_medium=copy_link"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>P. Indira Soujanya</h4>
+                    <h5>97576136</h5>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail orators">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="images/pes/team/pes_roshini.jpeg" class="img-fluid">
+                    <div class="social">
+                      <div class="style-dashes">
+                          <!-- <span>----</span> -->
+                        </div>
+                        <ul class="list-inline">
+                            <!---- <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+                            <li class="mail"><a href="mailto:broshini2001@gmail.com? subject = "><i class="fa fa-envelope"></i></a></li>
+                            <li class="instagram"><a href="https://instagram.com/_.r.o.s.h.i.n.i._?utm_medium=copy_link"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>B.Sai Roshini</h4>
+                    <h5>97573618</h5>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail orators">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="images/pes/team/pes_saineeraj.jpeg" class="img-fluid">
+                    <div class="social">
+                      <div class="style-dashes">
+                          <!-- <span>----</span> -->
+                        </div>
+                        <ul class="list-inline">
+                            <!---- <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+                            <li class="mail"><a href="mailto:saineerajjetti@ieee.org? subject = "><i class="fa fa-envelope"></i></a></li>
+                            <li class="instagram"><a href="https://www.instagram.com/sai_neeraj_jetti/"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>Jetti Sai Neeraj</h4>
+                    <h5>97539002</h5>
+                </div>
+            </div>
+          </div>
+
+          <!--
+            Web Designing Commitee
+            /
+            ** vamsi
+            ** bhavana
+            /
+          -->
+
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail web">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="images/pes/team/pes_vamsi.png" class="img-fluid">
+                    <div class="social">
+                      <div class="style-dashes">
+                          <!-- <span>----</span> -->
+                        </div>
+                        <ul class="list-inline">
+                            <li class="linkedin"><a href="https://in.linkedin.com/in/vamsi-valiveti-b39737206"><i class="fa fa-linkedin"></i></a></li>
+                            <!--<li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+                            <li class="facebook"><a href="https://www.facebook.com/vamsi.valiveti.7/"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="instagram"><a href="https://www.instagram.com/vamsi_valiveti_02/"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>V. Vamsi Krishna</h4>
+                    <h5>97352569</h5>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail web">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="images/pes/team/pes_bhavana.jpeg" class="img-fluid">
+                    <div class="social">
+                      <div class="style-dashes">
+                          <!-- <span>----</span> -->
+                        </div>
+                        <ul class="list-inline">
+                             <li class="linkedin"><a href="https://www.linkedin.com/in/bhavana-dvs-7826721b1"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="mail"><a href="mailto:dumpalavenkatasaibhavana@gmail.com? subject = "><i class="fa fa-envelope"></i></a></li>
+
+                           <!---- <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+                            <li class="instagram"><a href="https://www.instagram.com/bhavana_dvs/"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>D.V.S.Bhavana</h4>
+                    <h5>97350586</h5>
+                </div>
+            </div>
+          </div>
+
+
+          
+
+          <!--
+            Graphic Design Commitee
+            /
+            **  sasank
+            ** narasimha
+            ** vidya sagar
+            /
+          -->
+
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail graphic">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="images/pes/team/pes_sasank.jpeg" class="img-fluid">
+                    <div class="social">
+                      <div class="style-dashes">
+                          <!-- <span>----</span> -->
+                        </div>
+                        <ul class="list-inline">
+                             <li class="linkedin"><a href="https://tinyurl.com/linkedinsasankmatta"><i class="fa fa-linkedin"></i></a></li>
+                            <!--<li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+                            <li class="facebook"><a href="https://www.facebook.com/sasank.padma"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="instagram"><a href="https://www.instagram.com/ssaasnajnuk/"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>Sasank Matta</h4>
+                    <h5>99533795</h5>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail graphic tech">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="images/pes/team/pes_narasimha.jpeg" class="img-fluid">
+                    <div class="social">
+                      <div class="style-dashes">
+                          <!-- <span>----</span> -->
+                        </div>
+                        <ul class="list-inline">
+                          
+                          <li class="mail"><a href="mailto:narasimhavaranasi3066@gmail.com? subject = "><i class="fa fa-envelope"></i></a></li>
+                             <li class="linkedin"><a href=" https://www.linkedin.com/in/narasimha-varanasi-2159471a4"><i class="fa fa-linkedin"></i></a></li>
+                            <!-- <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li class="instagram"><a href="#"><i class="fa fa-instagram"></i></a></li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>Varanasi Narasimha</h4>
+                    <h5>97576048</h5>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail graphic">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="images/pes/team/pes_vidyasagar.jpg" class="img-fluid">
+                    <div class="social">
+                      <div class="style-dashes">
+                          <!-- <span>----</span> -->
+                        </div>
+                        <ul class="list-inline">
+                             <!--<li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
+
+                            <li class="facebook"><a href="https://www.facebook.com/profile.php?id=100009273098623"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="twitter"><a href="https://twitter.com/sagar_nameis?s=08"><i class="fa fa-twitter"></i></a></li>
+                            <li class="instagram"><a href="https://www.instagram.com/the.nameis.sagar/"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>Mallipudi Vidya Sagar</h4>
+                    <h5>97582260</h5>
+                </div>
+            </div>
+          </div>
+
+         
+        
+          
+          
+
+          <!--<div class="col-md-6 col-lg-4 mb-4 h-100 shot-thumbnail tech">
+            <div class="single-team">
+                <div class="img-area">
+                    <img src="https://images.unsplash.com/photo-1610123598147-f632aa18b275?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMTY2MDE0NQ&ixlib=rb-1.2.1&q=85" class="img-fluid">
+                    <div class="social">
+                      <div class="style-dashes">
+                          <span>----</span>
+                        </div>
+                        <ul class="list-inline">
+                            <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li class="instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-text">
+                    <h4>S Nithin Kumar</h4>
+                    <h5>97575996</h5>
+                </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div> -->
+
+  <div class="footer container">
+    <div class="row justify-content-center">
+      <div class="home">
+        <a href="index.html">
+          <button id="home-btn">Home</button>
+        </a>
+      </div>
+      <div class="cs">
+        <a href="ieee_pes.html">
+          <button id="cs-btn">PES</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/3075ff846e.js" crossorigin="anonymous"></script>
+
+  <script  src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+  <script src="js/lightbox-plus-jquery.min.js"></script>
+  <script src="js/pes_teams.js"></script>
+  <!-- aos -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+    });
+  </script>
+
+  <!--JQuery-->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+</body>
+</html>
