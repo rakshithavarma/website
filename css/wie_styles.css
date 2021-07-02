@@ -1211,7 +1211,7 @@ color: #420b5a;
   }
   .owl-prev { left: -50px; }
   .owl-next { right: -50px; }
-  .owl-prev i, .owl-next i {transform : scale(2,5); color: black;}
+  .owl-prev i, .owl-next i {transform : scale(2,5); color: white;}
   }
   
   @media only screen and (max-width: 600px) {
@@ -1231,16 +1231,16 @@ color: #420b5a;
     }
     .owl-prev { left: -10px; }
     .owl-next { right: -10px; }
-    .owl-prev i, .owl-next i {transform : scale(2,5); color: black;}
+    .owl-prev i, .owl-next i {transform : scale(2,5); color:white;}
   
   }
   
 #events {
 
-background: url("https://jaxa.netlify.com/home-1/img/bg/feature-bg.png") top center no-repeat;
+background: url("../images/wie/background/events.jpg") top center no-repeat;
 background-size: cover;
 padding: 0 0;
-margin: 100px auto;
+/* margin: 100px auto; */
 }
 
 #events h1{
@@ -1276,7 +1276,7 @@ box-shadow: 1px 1px 25px 0 rgba(0,0,0,0.09);
 
 #events .feature_item .feature_title {
 font-size: 20px!important;
-color: #3b566e;
+color:black;
 font-weight: 600;
 margin: 15px 0 15px;
 padding: 0;
@@ -1285,11 +1285,51 @@ padding: 0;
 #events .feature_item .feature_text {
 font-size: 15px;
 font-weight: 400;
-color: #919aaf;
+color:black;
 line-height: 26px;
 margin: 0;
 padding: 0;
 }
-#events feature_item .btn{
+#events .feature_item .btn{
   margin-top:10px;
+}
+
+.even{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+/*Page buttons*/
+.page-btn
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-btn .page-btn-text
+{
+  background: none;
+  color: white;
+  border: 2px solid white;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
+.page-btn-text a
+{
+  text-decoration: none;
+  color: #000;
+}
+
+.page-btn-text:hover, .page-btn-text:focus
+{
+  box-shadow: inset 0 -3.25em 0 0 white;
+  transition: box-shadow 0.5s;
+  color:#420b5a;
 }
