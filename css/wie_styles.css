@@ -608,173 +608,10 @@ display: block;
 .none1 {
   display:none;
 }
-/*upcoming events*/
-
-/*.upcomingcards{
-box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-}*/
-
-
-
-
-/* events*/
-
-
-/* Owl  events*/
- .owl-prev, .owl-next {
-  width: 1rem;
-  height: 5rem;
-  border: none;
-  background: transparent!important;
-  padding: 10px;
-  margin:10px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        display: block !important;
-        border: none!important;
-    }
-
-    .owl-prev { left: -15px; }
-    .owl-next { right: -15px; }
-    .owl-next:hover .owl-prev:hover{
-      background: transparent;
-      background-color: #7d0cad;
-    }
-    .owl-prev i, .owl-next i {transform : scale(2,5); background: transparent; color: #fff;}
-
-
-.card{
-  text-align: justify;
-  height: 30rem;
-
-
-}
-.card-img-top{
-  border:5px solid rgb(116, 15, 146,0.4);
-  border-radius: 1;
-  border-width: 0.1em;
-  height: 53%!important;
-  width: 100%!important;
-  margin-bottom: auto;
-  margin-left: auto;
-  margin-top: auto;
-  margin-right: auto;
-}
-.card-text{
-  text-align: center;
- display: flex!important;
- font-weight: 500;
- font-size: 0.8rem!important;
- flex-wrap: wrap!important;
- overflow: hidden!important; 
-}
-.card .card-body p{
-  font-size: 1.1vh;
-}
-
-
-
-
-/* pre eve*/
-
-.preevents{
-width: 100%;
-margin-bottom: 2rem;
-background:url('../images/wie/background/eventsbg.jpg');
-background-attachment: relative;
-background-repeat: no-repeat;
-background-size: cover;
-overflow-x: hidden;
-overflow-y: hidden;
-}
-.item{
-  position: relative;
-}
-
-/* .item1:hover{
-  transform: translateY(-20px);
-  transition-delay: 0.3s;
-  box-shadow: 1px 1px 25px 0 rgba(0,0,0,0.09);
-} */
-
-.feature_item {
-  background: #ffffff;
-  box-shadow: 1px 1px 25px 0 rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-  padding: 30px 20px;
-  height: 85vh;
-  transition: all .4s ease-in-out;
-  margin: 20px auto;
-}
-
-.feature_item:hover{
-  transform: translateY(-30px);
-  
-  box-shadow: 1px 1px 25px 0 rgba(0,0,0,0.09);
-  
-}
-
-.feature_title {
-  font-size: 20px;
-  color:black;
-  font-weight: 600;
-  margin: 15px 0 15px;
-  padding: 0;
-}
-
-.feature_text {
-  font-size: 15px;
-  font-weight: 400;
-  color: #2e2d24;
-  line-height: 26px;
-  margin: 0;
-  padding: 0;
-}
-.eventspre{
-/*margin: 0rem;*/
-margin-bottom: 2rem;
-
-padding:0rem;
-/*background-color: grey;*/
-background-image:url('images/wie/background/preeve.png')!important;
-background-size: cover;
-
-background-position: center;
-overflow-y: hidden;
-overflow-x: hidden;
-background-repeat: no-repeat;
-
-}
-
-.heading1{
-color: white;
-text-align: center;
-font-family: 'Poppins', sans-serif;
-font-size: 2.5rem;
-margin: 2rem
-}
-.eveup{
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
-  background: linear-gradient(180deg,#f9f6e9 40%,#0ab5c4 60%);
-  margin: 0;
-  padding: 0;
-}
-.card-img-top{
-  height: 25rem;
-  width: 100%;
-}
 
 .nav-item{
 color: #0ab5c4;
 }
-
-
-
-
-
-
 
 .carousel-control-prev,.carousel-control-prev-icon {
   margin-left: 0px;
@@ -787,11 +624,6 @@ color: #0ab5c4;
   
   margin-right: 0;
 }
-
-
-
-
-
 
 .item:hover{
 opacity: 0.5;
@@ -1003,11 +835,7 @@ width: 200px!important;
     text-align: center;
   }
     }
-/* @media(max-width: 1200px){
-.teaam{
-height: 250px!important;
-}
-} */
+
 .completeteam{
     display: -webkit-box;
 display: -webkit-flex;
@@ -1219,7 +1047,7 @@ padding: 10px;
 }
 .btn-outline-secondary{
   position: absolute;
-  top:85%;
+  
   left:50%;
   bottom: 13%, imp !important;
   transform: translate(-50%,0);
@@ -1234,37 +1062,6 @@ padding: 10px;
 .so{
 color: #420b5a;
 }
-/*
-.page-footer{
-  background-color: #420b5a;
-  color: #ffffff;
-}
-.footer-heading{
-  padding: 30px;
-  color: #fff;
-}
-.footer-heading .underline{
-  background-color: #fff;
-  border: 2px solid #fff;
-  margin-top: -5px;
-}
-.footer-info{
-  padding: 40px 0;
-  margin: 0 40px;
-}
-.footer-info .underline{
-  background-color: #fff;
-}
-.footer-info .contact-mode{
-  padding: 20px 0;
-}
-.page-footer a{
-  color: #ffffff;
-}
-.social-media-handles a{
-  padding: 10px;
-}*/
-
 
 /* back to top*/
 @media(max-width: 1800px){
@@ -1327,9 +1124,7 @@ color: #420b5a;
     font-size:32px;
     color:white;
   }
-  
-  
-  
+
   #button:hover {
     cursor: pointer;
     background-color: #420b5a;
@@ -1338,62 +1133,7 @@ color: #420b5a;
   #button.show {
     opacity: 1;
   }
-
-
 }
-
-
-
-
-
-/*headingss*/
-
-/* .team .container .team-heading .animeline{
-  display: block;
-    width: 120px;
-    box-sizing: border-box;
-    align-items: center;
-    height: 3px;
-    background-color: #420b5a;
-    transform-origin: center!important;
-    animation: animate-line 2s ease infinite;
-} */
-
-
-/* .gallery111 .gg .animeline{
-  display: block;
-    width: 120px;
-    box-sizing: border-box;
-    align-items: center;
-    height: 3px;
-    background-color: #420b5a;
-    transform-origin: center!important;
-    animation: animate-line 2s ease infinite;
-} */
-
-
-/* .preevents .eventspre .animeline{
-  display: block;
-    width: 120px;
-    box-sizing: border-box;
-    align-items: center;
-    height: 3px;
-    background-color:white;
-    transform-origin: center!important;
-    animation: animate-line 2s ease infinite;
-}
-
-.foot .ff .animeline{
-  display: block;
-    width: 120px;
-    box-sizing: border-box;
-    align-items: center;
-    height: 3px;
-    background-color: #420b5a;
-    transform-origin: center!important;
-    animation: animate-line 2s ease infinite;
-} */
-
 
 .heading{
      display: flex;
@@ -1403,17 +1143,7 @@ color: #420b5a;
     align-items: center;
     margin: 5px 0;
 }
-/* .about-ieee .container .about-ieee-heading .animeline
-{
-    display: block;
-    width: 120px;
-    box-sizing: border-box;
-    align-items: center;
-    height: 3px;
-    background-color: #420b5a;
-    transform-origin: center!important;
-    animation: animate-line 2s ease infinite;
-} */
+
 @keyframes animate-line 
 {
     0%
@@ -1429,18 +1159,10 @@ color: #420b5a;
         transform: scaleX(0);
     }
 }
-
-
-
 .finalh{
   text-align: center;
   justify-content: center;
 }
-
-
-
-
-
 .upp{
   color:#000;
 }
@@ -1471,3 +1193,103 @@ color: #420b5a;
   color: #fff!important;
 }
 
+/******events***********/
+@media only screen and (min-width: 600px) {
+  .owl-prev, .owl-next {
+    width: 2rem;
+    height: 6rem;
+    padding: 10px;
+    margin:10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block !important;
+    border: solid;
+  }
+  .owl-prev:visited{
+      border: none !important;
+  }
+  .owl-prev { left: -50px; }
+  .owl-next { right: -50px; }
+  .owl-prev i, .owl-next i {transform : scale(2,5); color: black;}
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .owl-prev, .owl-next {
+      width: 2rem;
+      height: 6rem;
+      padding: 10px;
+      margin:10px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      display: block !important;
+      border: solid;
+    }
+    .owl-prev:visited{
+        border: none !important;
+    }
+    .owl-prev { left: -10px; }
+    .owl-next { right: -10px; }
+    .owl-prev i, .owl-next i {transform : scale(2,5); color: black;}
+  
+  }
+  
+#events {
+
+background: url("https://jaxa.netlify.com/home-1/img/bg/feature-bg.png") top center no-repeat;
+background-size: cover;
+padding: 0 0;
+margin: 100px auto;
+}
+
+#events h1{
+margin: 30px auto;
+}
+
+#events  .feature_header {
+margin-bottom: 88%;
+font-family: inherit;
+font-weight: 300;
+line-height: 1.1;
+color: inherit;
+font-size: 2rem;
+}
+#events{
+  text-align: center;
+}
+#events .feature_item {
+background: #ffffff;
+box-shadow: 1px 1px 25px 0 rgba(0, 0, 0, 0.1);
+border-radius: 15px;
+padding: 60px 30px;
+height: 71vh;
+transition: all .4s ease-in-out;
+margin: 20px auto;
+}
+
+#events .feature_item:hover{
+transform: translateY(-30px);
+box-shadow: 1px 1px 25px 0 rgba(0,0,0,0.09);
+}
+
+
+#events .feature_item .feature_title {
+font-size: 20px!important;
+color: #3b566e;
+font-weight: 600;
+margin: 15px 0 15px;
+padding: 0;
+}
+
+#events .feature_item .feature_text {
+font-size: 15px;
+font-weight: 400;
+color: #919aaf;
+line-height: 26px;
+margin: 0;
+padding: 0;
+}
+#events feature_item .btn{
+  margin-top:10px;
+}
