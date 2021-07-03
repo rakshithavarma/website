@@ -214,7 +214,7 @@
     color: #fff;
     height: 70vh;
     min-height: 500px;
-    background:linear-gradient(0deg,rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('images/pes/pes1.png');
+    background:linear-gradient(0deg,rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../images/pes/pes1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
