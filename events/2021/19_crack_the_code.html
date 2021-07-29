@@ -19,6 +19,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
 </head>
 
+<style type="text/css">
+    #winners_poster img{
+        height: 25rem;
+        width: 25rem;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    .icon-bar {
+    position: fixed;
+    top: 60%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    }
+
+    /* Style the icon bar links */
+    .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+    }
+
+    /* Style the social media icons with color, if you want */
+    .icon-bar a:hover {
+    background-color: #000;
+    }
+
+    .results {
+    background: #fc9b1c;
+    color: white;
+    }
+</style>
+
 <body>
 
     <!-- navbar - ieee sb gvp -->
@@ -114,22 +150,58 @@
 
             </div>
 
-            <!-- <div class="container-fluid event-photos">
-			<div class="row">
-				<div class="col-md-6 image">
-					<img src="../images/2021/2cs_inauguration/1.jpg" class="img-fluid p-2">
-				</div>
-				<div class="col-md-6 image">
-					<img src="../images/2021/2cs_inauguration/2.jpg" class="img-fluid p-2">
-				</div>
-				<div class="col-md-6 image">
-					<img src="../images/2021/2cs_inauguration/3.jpg" class="img-fluid p-2">
-				</div>
-				<div class="col-md-6 image">
-					<img src="../images/2021/2cs_inauguration/8.jpg" class="img-fluid p-2">
-				</div>
-			</div>
-		</div> -->
+            <hr class="seperator" style="border: 1px solid #000; background-color: #000;">
+
+            <div class="container event-info" id="winners_announcement">
+                <div class="row align-items-center">
+                    <div class="col-sm-10 offset-sm-1 m-2 sub-details">
+                        <br><br><br><br>
+    
+                        <div class="single-detail" style="font-weight: bolder; font-size: large;">
+                            <p class="matter">Here are the results of <b>Crack the code</b> by <b style="color: #fc9b1c">IEEE CS SB GVPCE (A).</b></p>
+    
+                            <p class="matter"><b>Congratulations to Gowrav, Sumanth and Uday for scoring the highest in given time!✨
+
+                                We hope you all enjoyed participating in the event.⚡<br>
+                                Thank you and have a great time ahead!✨</b></p>
+                        </div>
+    
+                        
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container-fluid event-photos" id="winners_poster">
+                <div class="row align-items-center" style="justify-content: center; text-align: center;">
+                    <div class="col">
+                        <img src="../images/2021/19_crack_the_code/winners.jpeg" class="img-fluid p-4">
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid event-photos">
+                <div class="row">
+                    <div class="col-md-6 image">
+                        <img src="../images/2021/19_crack_the_code/1.jpeg" class="img-fluid p-2">
+                    </div>
+                    <div class="col-md-6 image">
+                        <img src="../images/2021/19_crack_the_code/2.jpeg" class="img-fluid p-2">
+                    </div>
+                    <div class="col-md-6 image">
+                        <img src="../images/2021/19_crack_the_code/3.jpeg" class="img-fluid p-2">
+                    </div>
+                    <div class="col-md-6 image">
+                        <img src="../images/2021/19_crack_the_code/4.jpeg" class="img-fluid p-2">
+                    </div>
+                    <div class="col-md-6 image">
+                        <img src="../images/2021/19_crack_the_code/5.jpeg" class="img-fluid p-2">
+                    </div>
+                    <div class="col-md-6 image">
+                        <img src="../images/2021/19_crack_the_code/6.jpeg" class="img-fluid p-2">
+                    </div>
+                </div>
+            </div>
+    
+        </section>
 
     </section>
 
@@ -149,6 +221,9 @@
         <my-footer></my-footer>
     </section>
 
+    <div class="icon-bar">
+		<a href="#winners_announcement" class="results" style="color: #fff;">Check Results</a>
+	</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
