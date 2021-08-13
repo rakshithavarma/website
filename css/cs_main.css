@@ -571,16 +571,13 @@ p
 }
 
 /* team */
+
+/* team */
 #team {
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-top: 130px;
 }
-
-#team .cont {
-  position: relative;
-  margin :30px auto;
-}
-
 .box{
 background: linear-gradient(to top right, #8f8d79 0.3%, rgb(197, 195, 186) 90.2%);
 font-family: 'Raleway', sans-serif;
@@ -646,25 +643,28 @@ background: #ffa726;
 }
 
 
-.teammain{
-height: auto;
-width: auto;
-object-fit: cover;
-}
 
-.teaam{
-height: 250px!important;
-}
-@media(max-width: 300px){
-.teaam{
-height: 250px!important;
-}
-}
-@media(max-width: 1200px){
-.teaam{
-height: 250px!important;
-}
-}
+.teammain{
+  height: auto;
+  width: auto;
+  object-fit: cover;
+  }
+  
+  .teaam{
+  height: 250px!important;
+  }
+  @media(max-width: 300px){
+  .teaam{
+  height: 250px!important;
+  }
+  }
+  @media(max-width: 1200px){
+  .teaam{
+  height: 250px!important;
+  }
+  }
+
+
 
 /* Underline animation*/
 .heading
