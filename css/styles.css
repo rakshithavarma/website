@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Cookie&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Cookie&family=Mate+SC&family=Montserrat:wght@500&display=swap');
+
 ::selection {
     background-color: #000;
     color: #fff;
@@ -30,6 +34,7 @@ body{
 }
 
 .sb-navbar{
+    
     position: fixed;
     background: transparent;
     margin-bottom: -10px;
@@ -79,6 +84,121 @@ body{
     margin-left: 5vw;
 }
 
+/* ieee day model
+
+.modal-title{
+    text-align: center;
+    left: 25%;
+    margin-left: 25%;
+    color: #fff;
+    font-family: 'Merriweather', serif;
+
+}
+.modal-content{
+    background-color: #031522 !important;
+
+} */
+/* .close{
+    color: #fff;
+} */
+/* .redirect{
+    text-align: center;
+    align-items: center;
+    margin-left: 28%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
+    /* color: #031522; 
+
+    background-color: white;
+}
+.redirect:hover{
+    background-color: #031522;
+    color: white;
+    border: #ffffff;
+
+} */
+/* .ieee_day{
+    
+    color: #031522;
+    text-decoration: none;
+
+}
+.ieee_day:hover{
+    color: white;
+    border: #ffffff;
+    text-decoration: none;
+    
+
+} */
+
+/*ieee day model */
+
+.modal-title{
+    font-family: 'Montserrat', sans-serif!important;
+    text-align: center;
+    left: 25%;
+    font-size: 1.4rem;
+    /* margin-left: 25%; */
+    color: rgb(0, 0, 0);
+    font-family: 'Merriweather', serif;
+
+}
+.ieeeday-text{
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    /* font-family: 'PT Serif', serif; */
+}
+.modal-body{
+    padding-top: 0%!important;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.modal-content{
+    /* background-color: #031522 !important; */
+    background-color: rgb(220, 227, 231)
+
+}
+.modal-header{
+    border-bottom: 1px solid #000000!important;
+    border-top-left-radius: calc(.3rem - 1px);
+    border-top-right-radius: calc(.3rem - 1px);
+}
+.close{
+    color: rgb(0, 0, 0);
+}
+
+img.ieee-day{
+    width:80%;
+}
+a.ieee-day {
+    font-family: 'Mate SC', serif;
+    /* font-family: 'Yrsa', serif; */
+    display: inline-block;
+    position: relative;
+    color: #094c70;
+    font-size: 1.4rem;
+    padding-top: 0.8rem;
+  }
+  
+  a.ieee-day:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #094c70;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  a.ieee-day:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 @media (max-width: 1080px){
     .sb-navbar .navbar-brand img{
         height: 3rem;
