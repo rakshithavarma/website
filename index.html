@@ -85,6 +85,8 @@
 		</div>
 	  </div> -->
 
+      <!-- IEEE-DAY 2021 -->
+
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog" role="document">
 		  <div class="modal-content">
@@ -130,6 +132,7 @@
 		  </div>
 		</div>
 	  </div>
+      <div class="icon-bar blink"><a href="ieee_day.html">IEEE DAY</a></div>
 	  
 
     <!-- carousel -->
@@ -403,6 +406,20 @@
 			</div> -->
 
             <div class="owl-carousel owl-theme container">
+                <div class="feature_item text-center">
+                    <img src="events/images/2021/29_ieee_day_2021.jpeg" style="width: 100%;" alt="">
+                    <h3 class="feature_title">IEEE DAY - 2021 (UPSKILLING)</h3>
+                    <p class="feature_text">Be a part of our IEEE Day celebrations</p>
+                    <a href="events/2021/29_ieee_day_2021.html" target="_blank"><button type="button"
+							class="btn btn-outline-info">Know More</button></a>
+                </div>
+                <div class="feature_item text-center">
+                    <img src="events/images/2021/28_ieee_day_web_wizards.jpeg" style="width: 100%;" alt="">
+                    <h3 class="feature_title">Web Wizards</h3>
+                    <p class="feature_text">An Interesting Workshop on Web Development </p>
+                    <a href="events/2021/28_ieee_day_web_wizards.html" target="_blank"><button type="button"
+							class="btn btn-outline-info">Know More</button></a>
+                </div>
                 <div class="feature_item text-center">
                     <img src="events/images/2021/27Embark_Enhance_Emerge.jpeg" style="width: 100%;" alt="">
                     <h3 class="feature_title">Embark • Enhance • Emerge</h3>
@@ -845,6 +862,16 @@
                 }
             }
         })
+
+
+        $(window).scroll(function(){ 
+    if($(window).scrollTop() >= 250 ){ 
+       $( ".blink" ).css( "display", "block","background-color .3s", "opacity .5s"," visibility .5s" ); 
+    } else { 
+
+    $( ".blink" ).css( "display", "none" ); 
+    } 
+    });
     </script>
 
 </body>

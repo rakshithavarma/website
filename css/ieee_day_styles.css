@@ -47,6 +47,35 @@
 .container1 .date-container .event-dates span {
   display: none;
 }
+
+@media screen and (min-width:650px) {
+  .guidelines{
+    padding-left: 20%; 
+    padding-right: 20%;
+    text-align: justify;
+
+  }
+}
+@media screen and (max-width:650px) {
+  .guidelines{
+    padding-left: 6%; 
+    padding-right: 6%;
+   text-align: justify;
+  }
+}
+
+/* .theme1{
+  background-color: #055fad;
+  color: white;
+
+
+}
+.theme1 .text-center{
+  color: white;
+}
+.theme1 p{
+  color: rgb(222, 227, 238);
+} */
 .container1 .date-container .event-dates a {
   /* /box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;/ */
   box-shadow: rgb(222, 235, 235,0.5) 1.95px 1.95px 2.6px;
@@ -90,9 +119,21 @@
 #image2 {display:none}
 
 @media all and (max-width: 700px) {
-
-    #image1 {display: none;}
-    #image2{display: block;}
+  
+    #image1 {display: none;
+     }
+    #image2{display: block;
+      max-width: 100%;
+      width: 100%;
+      height: 70%;
+    position: relative;
+    top: 0%;
+    left:0%;
+    transform: translate( -0%, 0%);
+  }
+  .square{
+    height: auto!important;
+  }
 }
 
 
@@ -321,6 +362,9 @@
     justify-content: center;
     /*border-radius: 3px;*/
   }
+  hr{
+    margin-bottom: 2rem;
+  }
   .event .eventHref {
     color: black;
     font-family: 'Merriweather', serif;
@@ -515,9 +559,7 @@ body{
 */
 
 
-.row{
-  margin-right: 0px!important;
-}
+
 .sticky-top{
     top: 0;
 }
@@ -683,7 +725,7 @@ body{
     background-repeat: no-repeat;
   }
 .about-ieee-day-heading{
-    padding: 30px;
+    padding: 15px;
     font-weight: 400;
     color: #055fad;
 }
@@ -693,9 +735,9 @@ body{
     color: #000;
 }
 
-.about-ieee-info .sub-section{
+/* .about-ieee-info .sub-section{
     padding: 40px 0;
-}
+} */
 
 .about-ieee-info .ieee-india{
     padding: 40px 0;
@@ -746,11 +788,62 @@ body{
     margin-bottom: -2px;
 }
 
-.about-ieee-day .poster{
-    justify-content: center;
+.about-ieee-day .poster img{
+      justify-content: center;
     align-items: center;
-    object-fit: contain;
-    display: flex;
+    display: flex; 
+    flex-direction: column;
+    object-fit: contain; 
+    margin: auto;
+    text-align: center;
+    margin-top: 12%;
+    border:2px solid rgba(34, 34, 51, 0.342);
+    margin-bottom: 15%;
+    height: 70%;
+
+    
+    /*
+     width: 100vh; 
+    height: 100vh;  */
+    height: 400px;
+	object-fit: contain;
+}
+@media screen and (max-width:550px) {
+  .heading{
+    font-size: 2rem;
+  }
+}
+.preview{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+@media screen and (max-width:800px) {
+  .preview{
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+@media screen and (max-width:650px) {
+  .about-ieee-day .poster img{
+    justify-content: center;
+  align-items: center;
+  display: flex; 
+  flex-direction: column;
+  object-fit: contain; 
+  margin: auto;
+  text-align: center;
+  margin-top: 12%;
+  border:2px solid rgba(34, 34, 51, 0.342);
+  margin-bottom: 15%;
+  height: 70%;
+  
+  /*
+   width: 100vh; 
+  height: 100vh;  */
+  height: 300px;
+  width: 300px;
+object-fit: contain;
+}
 }
 .about-ieee-day .banner-pdf{
     justify-content: center;
@@ -860,6 +953,10 @@ body{
     color: #333;
     text-align: center;
     font-size: 2.5em;
+    
+}
+.combo{
+  padding-top: 0%;
 }
 /* .content-section{
     background: #2980B9;  /* fallback for old browsers 
@@ -946,11 +1043,38 @@ background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+
     align-items: center;
     padding-left: 20%;
     padding-right: 20%;
-}
+  padding-top:5% ;
+  }
 #cost .container{
   padding:0% !important;
 }
 
+
+.btn-purchase{
+  margin-top:5%;
+  background-color: #055fad;
+  color:white;
+  font-weight: 4rem !important;
+  border-radius: 4%;
+  border-color:#055fad;
+  
+}
+
+.btn-purchase:hover{
+  margin-top:5%;
+  background-color: white;
+  color:#055fad;
+  border-radius: 4%;
+  border-color:#055fad !important;
+}
+
+
+.btn-purchase i{
+  color:#fff;
+}
+.btn-purchase:hover i{
+  color:#11293f !important;
+}
 
 
 .shop-item-button{
@@ -998,6 +1122,11 @@ background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+
     align-items: center;
     margin-right: 1.5em;
 
+}
+@media screen and (max-width:600px) {
+  .cart-column{
+    text-align:left;
+  }
 }
 
 .cart-column1 {
@@ -1107,12 +1236,15 @@ background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+
     font-size: 1.1em;
 }
 
-.btn-purchase {
+/* .btn-purchase {
     display: block;
     margin: 40px auto 80px auto;
     font-size: 1.75em;
-}
+} */
 
+section{
+  padding-top: 5%;
+}
 
 /* 
 .content-section1{
@@ -1428,10 +1560,10 @@ border-bottom: 1px solid #F1F1F1;
 
 }
 
-.btn-purchase1:hover{
+.btn-purchase1 button:hover{
   background-color: white;
   border-color: #055fad;
-  color:#055fad;
+  color:#055fad !important;
 
 
 }
@@ -1694,3 +1826,91 @@ border-bottom: 1px solid #F1F1F1;
 }
 
 
+
+
+
+/*video styles*/
+.video{
+  width:65%;
+   height:auto;
+}
+
+@media  screen and (max-width:500px){
+  .video{
+    width:85%;
+     height:auto;
+  }
+}
+@media  screen and (max-width:800px){
+  .video{
+    width:90%;
+     height:auto;
+  }
+}
+
+
+
+
+
+/*detail tag */
+summary {
+  border: 4px solid transparent;
+  outline: none;
+  border-radius: 3%;
+  /* padding: 1rem; */
+  display: block;
+  background: #055fad;
+  color: white;
+
+  position: relative;
+  cursor: pointer;
+}
+details {
+  max-width: 500px;
+  box-sizing: border-box;
+  margin: 5px;
+  margin-bottom: 20px;
+  background: white;
+}
+details summary::-webkit-details-marker {
+  display:none;
+}
+details[open] > summary:before {
+  transform: rotate(90deg);
+}
+.hsummary{
+  padding:5px;
+  text-align: center;
+  color:#fff;
+}
+summary:before {
+  /* display: none; */
+  content: '';
+  border-width: .4rem;
+  border-style: solid;
+  border-color: transparent transparent transparent #fff;
+  position: absolute;
+  top: 1.1rem;
+  left: 2.5rem;
+  transform: rotate(0);
+  transform-origin: .2rem 50%;
+  transition: .25s transform ease;
+  
+}
+
+
+
+.content {
+  border-top: none;
+  padding: 10px;
+  border: 2px solid #888;
+  border-top: none;
+  border-radius:  0% 0% 2% 2%;
+
+}
+
+.contentp {
+  margin: 0;
+  padding-bottom: 10px;
+  
+}

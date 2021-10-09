@@ -83,54 +83,6 @@ body{
     width: 9rem;
     margin-left: 5vw;
 }
-
-/* ieee day model
-
-.modal-title{
-    text-align: center;
-    left: 25%;
-    margin-left: 25%;
-    color: #fff;
-    font-family: 'Merriweather', serif;
-
-}
-.modal-content{
-    background-color: #031522 !important;
-
-} */
-/* .close{
-    color: #fff;
-} */
-/* .redirect{
-    text-align: center;
-    align-items: center;
-    margin-left: 28%;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    
-    /* color: #031522; 
-
-    background-color: white;
-}
-.redirect:hover{
-    background-color: #031522;
-    color: white;
-    border: #ffffff;
-
-} */
-/* .ieee_day{
-    
-    color: #031522;
-    text-decoration: none;
-
-}
-.ieee_day:hover{
-    color: white;
-    border: #ffffff;
-    text-decoration: none;
-    
-
-} */
-
 /*ieee day model */
 
 .modal-title{
@@ -146,7 +98,7 @@ body{
 .ieeeday-text{
     color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
+    font-size: medium;
     /* font-family: 'PT Serif', serif; */
 }
 .modal-body{
@@ -199,6 +151,54 @@ a.ieee-day {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+
+
+
+
+
+/*ieee-day*/
+.icon-bar {
+    position: fixed !important;
+    bottom:3%;
+    right:3%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 150px;
+    z-index:999;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px;
+    border-radius: 4%;
+    }
+
+    .blink{
+    width:120px;
+    height: 50px;
+    background-color: #193f7d;
+    text-align: center;
+    line-height: 50px;
+    display: none;
+}
+.blink a,h6{
+    font-size: 20px;
+    font-family: cursive;
+    color: white;
+    animation: blink 2s linear infinite;
+}
+
+.blink h6{
+    padding: 0% !important;
+    font-size: 1.2rem;
+}
+
+@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: .5;}
+100%{opacity: 1;}
+}
+
+
+
+
 @media (max-width: 1080px){
     .sb-navbar .navbar-brand img{
         height: 3rem;
