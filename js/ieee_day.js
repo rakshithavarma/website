@@ -137,8 +137,8 @@ const day5 = [
 const day6 = [
   {
     name: "Resume/linkedln webinar",
-    startTime: "16:30 - ",
-    endTime: "17:30",
+    startTime: "15:00- ",
+    endTime: "17:00",
     link: "../events/2021/27Embark_Enhance _Emerge.html",
     speaker: "Mr. Atishay Jain",
     ieee:"₹50/-",
@@ -160,8 +160,8 @@ const day6 = [
 const day7 = [
   {
     name: "IEEE DAY",
-    startTime: "10:00 - ",
-    endTime: "16:00",
+    startTime: "14:30 - ",
+    endTime: "18:00",
     link: "../events/2021/29_ieee_day_2021.html",
 
     ieee:"free",
@@ -238,7 +238,9 @@ const locateCoords = (event) => {
 const createEventElement = (event) => {
     let eventElement = document.createElement('div');
     let linkEle = document.createElement('a');
+    
   linkEle.classList.add('eventHref');
+  linkEle.href = "#calender";
     if(window.screen.width <= 700){
     eventElement.style.left = 5 + "px";
       eventElement.style.width = "95%";
@@ -249,7 +251,7 @@ const createEventElement = (event) => {
       eventElement.style.width = "95%";
     linkEle.innerHTML = event.name + `<br> (${event.startTime}  ${event.endTime}) `;
   }
-    linkEle.href = "";
+    
   linkEle.setAttribute('data-object', event);
   let modalPopup = modalContent(event);
   
