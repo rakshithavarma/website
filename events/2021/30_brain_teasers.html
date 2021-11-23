@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Brain Teasers</title>
+    <script type="module" src="../js/hf_single_event.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/single_event_styles.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+</head>
+
+<style type="text/css">
+    #winners_poster img{
+        height: 25rem;
+        width: 25rem;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    .icon-bar {
+    position: fixed;
+    top: 60%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    }
+
+    /* Style the icon bar links */
+    .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+    }
+
+    /* Style the social media icons with color, if you want */
+    .icon-bar a:hover {
+    background-color: #000;
+    }
+
+    .results {
+    background: #fc9b1c;
+    color: white;
+    }
+</style>
+
+<body>
+
+    <!-- navbar - ieee sb gvp -->
+
+    <div class="container-fluid navbar navbar-expand-lg sb-navbar sticky-top">
+        <a class="navbar-brand" href="#"><img src="../../images/ieee_sb_logo.png"></a>
+        <button class="navbar-toggler" type="button" data-trigger="#navbarNavDropdown">
+	    	<i class="fa fa-bars hamburger" aria-hidden = "true"></i>
+	  	</button>
+        <div class="navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <div class="offcanvas-header mt-3">
+                <button class="btn btn-outline-danger btn-close float-right"> &times </button>
+                <h5 class="py-2 text-white">IEEE SB GVPCE(A)</h5>
+            </div>
+            <my-header></my-header>
+        </div>
+    </div>
+
+    <!-- ieee events banner -->
+
+    <header class="events-banner">
+        <div class="container">
+            <div class="row align-items-center events-header">
+                <div class="col-md-6 event-poster text-center">
+                    <img src="../images/2021/30_brain_teasers.jpeg" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6 text-center">
+                    <h3 class="p-1">Brain Teasers</h3>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container single-event">
+        <div class="container event-info">
+
+            <div class="row align-items-center">
+                <div class="col-sm-10 offset-sm-1 m-2 details">
+
+                    <p><span class="heading">Date:</span> 21st Nov, 2021</p>
+                    <p><span class="heading">Time:</span> 4:00PM - 5:00PM </p>
+                    <p><span class="heading">Platform:</span> DC@ platform</p>
+
+                </div>
+            </div>
+
+            <hr class="seperator" style="border: 1px solid #000; background-color: #000;">
+
+            <div class="row align-items-center">
+                <div class="col-sm-10 offset-sm-1 m-2 sub-details">
+
+                    <div class="single-detail">
+
+                        <h3 class="heading">Introduction</h3>
+
+                        <p class="matter"><b>“Being able to 'think out of the box' presupposes you were able to think it. ” <br>– Bob Lutz </b></p>
+
+                        <p class="matter">Hello everyone !!✨<br> Greetings from IEEE SB CS GVPCE (A)!<br> Hope you are doing well and staying safe.<br>
+                            <b style="color: #fc9b1c; font-weight: 750">IEEE SB CS GVPCE(A)</b> is conducting a new event <b>"Brain Teasers"</b>, an event to build up your logical reasoning!
+                        </p>
+
+
+                        <div class="single-detail">
+                            <h3 class="heading">Highlights</h3>
+                            <p class="matter">✅ No Entry Fee </p>
+                            <p class="matter">✅ Students from any branch of study and any year can participate. </p>
+                            <p class="matter">✅ Merit certificates for top 3 winners and participation certificates for participants. </p>
+                            <!-- <p class="matter">✅ Code snippets are in python. </p>
+                            <p class="matter">✅ Platform Kahoot⚡</p> -->
+                            <p class="matter">✅ Open for IEEE and Non-IEEE members. </p>
+                        </div>
+
+                        <div class="single-detail">
+                            <!-- <h3 class="heading">Reward</h3> -->
+                            <a href="https://bit.ly/BrainTeasersForm" class="btn" role="button" aria-pressed="true" target="_blank">Register
+							Here</a>
+                        </div>
+
+
+
+                        <div class="single-detail">
+                            <h3 class="heading">Contact</h3>
+                            <p class="matter">
+                                <ul style="list-style: none;">
+                                    <li>Manvitha : <a href="tel:+919014742597">+91 9014742597</a></li>
+                                    <li>Firoza : <a href="tel:+919390662827">+91 9390662827</a></li>
+                                </ul>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="seperator" style="border: 1px solid #000; background-color: #000;">
+
+            <!-- <div class="container event-info" id="winners_announcement">
+                <div class="row align-items-center">
+                    <div class="col-sm-10 offset-sm-1 m-2 sub-details">
+                        <br><br><br><br>
+    
+                        <div class="single-detail" style="font-weight: bolder; font-size: large;">
+                            <p class="matter">Here are the results of <b>Crack the code</b> by <b style="color: #fc9b1c">IEEE CS SB GVPCE (A).</b></p>
+    
+                            <p class="matter"><b>Congratulations to Gowrav, Sumanth and Uday for scoring the highest in given time!✨
+
+                                We hope you all enjoyed participating in the event.⚡<br>
+                                Thank you and have a great time ahead!✨</b></p>
+                        </div>
+    
+                        
+                    </div>
+                </div> -->
+            </div>
+    
+            <!-- <div class="container-fluid event-photos" id="winners_poster">
+                <div class="row align-items-center" style="justify-content: center; text-align: center;">
+                    <div class="col">
+                        <img src="../images/2021/19_crack_the_code/winners.jpeg" class="img-fluid p-4">
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="container-fluid event-photos">
+                <div class="row">
+                    <div class="col-md-6 image">
+                        <img src="../images/2021/19_crack_the_code/1.jpeg" class="img-fluid p-2">
+                    </div>
+                    <div class="col-md-6 image">
+                        <img src="../images/2021/19_crack_the_code/2.jpeg" class="img-fluid p-2">
+                    </div>
+                    <div class="col-md-6 image">
+                        <img src="../images/2021/19_crack_the_code/3.jpeg" class="img-fluid p-2">
+                    </div>
+                    <div class="col-md-6 image">
+                        <img src="../images/2021/19_crack_the_code/4.jpeg" class="img-fluid p-2">
+                    </div>
+                    <div class="col-md-6 image">
+                        <img src="../images/2021/19_crack_the_code/5.jpeg" class="img-fluid p-2">
+                    </div>
+                    <div class="col-md-6 image">
+                        <img src="../images/2021/19_crack_the_code/6.jpeg" class="img-fluid p-2">
+                    </div>
+                </div> -->
+            </div>
+    
+        </section>
+
+    </section>
+
+    <!-- footer -->
+
+    <section class="page-footer" id="contact-info">
+
+        <div class="container footer-heading">
+            <div class="row">
+                <div class="col-sm-10 offset-sm-1">
+                    <h1 class="text-center">Contact Us</h1>
+                    <hr class="underline" align="center" style="width:8.5em">
+                </div>
+            </div>
+        </div>
+
+        <my-footer></my-footer>
+    </section>
+
+    <div class="icon-bar">
+		<a href="#winners_announcement" class="results" style="color: #fff;">Check Results</a>
+	</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="../../js/scripts.js"></script>
+
+</body>
+
+</html>
