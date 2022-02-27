@@ -27,7 +27,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Cookie&family=Mate+SC&family=Montserrat:wght@500&display=swap" rel="stylesheet">
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 </head>
 <!--
@@ -553,15 +553,24 @@
 
         </div>
         <!-- <div class="container"> -->
-            <div class="events-heading">
+            <!-- <div class="events-heading">
                 <div class="row">
                     <div class="col-sm-10 offset-sm-1">
                         <h1 class="text-center">Events 2022</h1>
                         <hr class="underline" align="center" style="width:8.5em">
                         <a href="./events_2022.html" >Events 2022</a>
                     </div>
-                </div>
+                </div> -->
             <!-- </div> -->
+  
+            <div class="events-2022">
+                <button class="button-os button1"><a href="./events_2022.html"><p style="margin:auto; text-align:center;" class="ml10">
+                    <span class="text-wrapper">
+                      <span class="letters">EVENTS 2022</span>
+                    </span>
+                </p></a></button>
+            </div>
+    
     </section>
 
     <!-- events-count -->
@@ -905,6 +914,26 @@
     $( ".blink" ).css( "display", "none" ); 
     } 
     });
+
+
+    //events 2022 button styles
+    var textWrapper = document.querySelector('.ml10 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml10 .letter',
+    rotateY: [-90, 0],
+    duration: 300,
+    delay: (el, i) => 60 * i
+  }).add({
+    targets: '.ml10',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 500
+  });
+
     </script>
 
 </body>

@@ -924,3 +924,72 @@ a.ieee-day {
 .social-media-handles a{
     padding: 10px;
 }
+
+
+
+
+
+
+
+
+/*button styles*/
+
+  
+
+.events-2022{
+    overflow: hidden;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button1{
+  border: none;
+  box-shadow: 0 0 8px rgb(207, 207, 207);
+}
+
+.button1:hover{
+  border: none;
+  padding: 15px;
+  box-shadow: inset 0 0 8px #c2beee;
+  } 
+
+
+
+.button-os{
+    width: 200px;
+    height: 60px;
+    margin: auto;
+    background-color: #ffffff;
+    border: 2.5px solid #0e172c;
+    transition: background-color 2.2s;
+    transition-duration: 3s;
+    transition: 1s;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .button-os:hover{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;    left: 0;
+
+    top: 30px;
+    background-color: #c2beee;
+  }
+  
+  .button-os a{
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    color:#0e172c;
+    transition: 1s;
+  }
+  
+  .button-os a:hover{
+    letter-spacing: 2px;
+  }
+
+
+  .ml10 .letter {
+    display: inline-block;
+    transform-origin: 0 0;
+  }
