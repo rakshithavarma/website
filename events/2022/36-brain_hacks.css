@@ -12,15 +12,6 @@ table{
     width:100%;
     justify-content: center;
 }
-th{
-    padding: 20px 15px;
-    padding-left: 25px;
-    font-size: 18px;
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    justify-content: center;
-    text-align: left;
-  }
 
   td{
     padding: 10px;
@@ -28,7 +19,7 @@ th{
     vertical-align:middle;
     font-size: 16px;
     color: rgb(0, 0, 0);
-    text-align: left;
+    text-align: center;
     
   }
 tr {
@@ -39,10 +30,7 @@ tr:hover td{
     color:#000000;
 }
 
-.table-header{
-    background-color: #1a2647 !important;
-    color:#ffffff;
-}
+
 
 tbody tr:hover{
     background-color: rgb(219, 219, 220) !important;
@@ -114,3 +102,86 @@ tbody tr:hover{
     cursor: pointer;
     padding-left: 0% !important;
 }
+#award-icon{
+    font-size: 2.5rem;
+}
+
+.part-name{
+    font-size: 17px;
+}
+
+#down-arrow{
+    font-size: 1.5rem;
+}
+
+.overall-score{
+    font-size: 17px;
+}
+.numberCircle{
+    font-size: 17px;
+}
+th{
+    padding: 20px 15px;
+    padding-left: 25px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .table-header{
+    background-color: #1a2647 !important;
+    color:#ffffff;
+}
+@media (max-width: 1080px){
+    .results-table{
+        width:90%;
+    }
+    #award-icon{
+        font-size: 2.5rem;
+    }
+    
+    .part-name{
+        font-size: 17px;
+    }
+    
+    #down-arrow{
+        font-size: 1.5rem;
+    }
+    .overall-score{
+        font-size: 17px;
+    }
+    .numberCircle{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 650px){
+    .results-table{
+        width:100%;
+    }
+    #award-icon{
+        font-size: 1.5rem;
+    }
+    
+    .part-name{
+        font-size: 14px;
+    }
+    
+    #down-arrow{
+        font-size: 0.5rem;
+    }
+    .overall-score{
+        font-size: 14px;
+    }
+    .numberCircle{
+        font-size: 14px;
+    }
+    th{
+        font-size: 15px;
+    }
+
+}
+
+
