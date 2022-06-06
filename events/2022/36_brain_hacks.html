@@ -160,39 +160,45 @@
 
 						<table>
 							<colgroup>
-								<col style="width:8%">
-								<col style="width:8%">
+								<col style="width:15%">
+								<col style="width:15%">
 								<col style="width:40%">
-								<col style="width:26%">
-								<col style="width:10%">
+								<col style="width:20%">
 								<col style="width:10%">
 							  </colgroup> 
+							  <thead class="table-header">
+								  <th></th>
+								  <th>Rank</th>
+								  <th>Name</th>
+								  <th>Score</th>
+                                  <th></th>
+							  </thead>
 							<tbody class="table-content">
 							<!-- 1 -->
 								<tr onclick="showHideRow('hidden_row1');">
-									<td><i style="font-size: 2.5rem;" class="bi bi-award-fill"></i></td>
+									<td><i id="award-icon" class="bi bi-award-fill"></i></td>
 									<td><span class="numberCircle"><span>1</span></span></td>
-								<td style="font-size: 17px;" style="font-size: 17px;">VINAYAK KAUSHAL</td>
-								<td class="overall-score">Overall Score -</td>
+								<td class="part-name">VINAYAK KAUSHAL</td>
+								
 								<td class="score counter" data-target="13">0</td>
-								<td><i style="font-size: 1.5rem;" class="bi bi-caret-down-fill icon"></i></td>
+								<td><i id="down-arrow" class="bi bi-caret-down-fill icon"></i></td>
 								</tr>
 								<tr id="hidden_row1" class="hidden_row">
 									<td colspan="6">
 										👉 Team Id: Jun1828
 										<br>
-										👉 Register mail id: vinayak.22676@bhagwanpur.sunbeamschools.com
+										👉 Register mail id: vinayak.22676@bhagwanpur<br>.sunbeamschools.com
 									</td>
 								</tr>
 
 								<!-- 2 -->
 								<tr onclick="showHideRow('hidden_row2');">
-									<td><i style="font-size: 2.5rem;" class="bi bi-award-fill"></i></td>
+									<td><i id="award-icon" class="bi bi-award-fill"></i></td>
 									<td><span class="numberCircle"><span>2</span></span></td>
-								<td style="font-size: 17px;" style="font-size: 17px;">Aluri Manasa</td>
-								<td class="overall-score">Overall Score -</td>
+								<td class="part-name">Aluri Manasa</td>
+								
 								<td class="score counter" data-target="12">0</td>
-								<td><i style="font-size: 1.5rem;" class="bi bi-caret-down-fill icon"></i></td>
+								<td><i id="down-arrow" class="bi bi-caret-down-fill icon"></i></td>
 								</tr>
 								<tr id="hidden_row2" class="hidden_row">
 									<td colspan="6">
@@ -204,12 +210,12 @@
 
 								<!-- 3 -->
 								<tr onclick="showHideRow('hidden_row3');">
-									<td><i style="font-size: 2.5rem;" class="bi bi-award-fill"></i></td>
+									<td><i id="award-icon" class="bi bi-award-fill"></i></td>
 									<td><span class="numberCircle"><span>3</span></span></td>
-								<td style="font-size: 17px;" style="font-size: 17px;">KUMARAN THANIKASALAM</td>
-								<td class="overall-score">Overall Score -</td>
+								<td class="part-name">KUMARAN THANIKASALAM</td>
+								
 								<td class="score counter" data-target="12">0</td>
-								<td><i style="font-size: 1.5rem;" class="bi bi-caret-down-fill icon"></i></td>
+								<td><i id="down-arrow" class="bi bi-caret-down-fill icon"></i></td>
 								</tr>
 								<tr id="hidden_row3" class="hidden_row">
 									<td colspan="6">
@@ -221,12 +227,12 @@
 
 								<!-- 4 -->
 								<tr onclick="showHideRow('hidden_row4');">
-									<td><i style="font-size: 2.5rem;" class="bi bi-award-fill"></i></td>
+									<td><i id="award-icon" class="bi bi-award-fill"></i></td>
 									<td><span class="numberCircle"><span>4</span></span></td>
-								<td style="font-size: 17px;" style="font-size: 17px;">MAREEDU SURYA CHAITANYA</td>
-								<td class="overall-score">Overall Score -</td>
+								<td class="part-name">MAREEDU SURYA CHAITANYA</td>
+								
 								<td class="score counter" data-target="12">0</td>
-								<td><i style="font-size: 1.5rem;" class="bi bi-caret-down-fill icon"></i></td>
+								<td><i id="down-arrow" class="bi bi-caret-down-fill icon"></i></td>
 								</tr>
 								<tr id="hidden_row4" class="hidden_row">
 									<td colspan="6">
@@ -238,12 +244,12 @@
 
 								<!-- 5 -->
 								<tr onclick="showHideRow('hidden_row5');">
-									<td><i style="font-size: 2.5rem;" class="bi bi-award-fill"></i></td>
+									<td><i id="award-icon" class="bi bi-award-fill"></i></td>
 									<td><span class="numberCircle"><span>5</span></span></td>
-								<td style="font-size: 17px;" style="font-size: 17px;">Arpan</td>
-								<td class="overall-score">Overall Score -</td>
+								<td class="part-name">Arpan</td>
+								
 								<td class="score counter" data-target="11">0</td>
-								<td><i style="font-size: 1.5rem;" class="bi bi-caret-down-fill icon"></i></td>
+								<td><i id="down-arrow" class="bi bi-caret-down-fill icon"></i></td>
 								</tr>
 								<tr id="hidden_row5" class="hidden_row">
 									<td colspan="6">
@@ -255,12 +261,12 @@
 
 								<!-- 6 -->
 								<tr onclick="showHideRow('hidden_row6');">
-									<td><i style="font-size: 2.5rem;" class="bi bi-award-fill"></i></td>
+									<td><i id="award-icon" class="bi bi-award-fill"></i></td>
 									<td><span class="numberCircle"><span>6</span></span></td>
-								<td style="font-size: 17px;" style="font-size: 17px;">POLEPALLE SAHITHI PRIYA</td>
-								<td class="overall-score">Overall Score -</td>
+								<td class="part-name">POLEPALLE SAHITHI PRIYA</td>
+								
 								<td class="score counter" data-target="11">0</td>
-								<td><i style="font-size: 1.5rem;" class="bi bi-caret-down-fill icon"></i></td>
+								<td><i id="down-arrow" class="bi bi-caret-down-fill icon"></i></td>
 								</tr>
 								<tr id="hidden_row6" class="hidden_row">
 									<td colspan="6">
@@ -272,12 +278,12 @@
 
 								<!-- 7 -->
 								<tr onclick="showHideRow('hidden_row7');">
-									<td><i style="font-size: 2.5rem;" class="bi bi-award-fill"></i></td>
+									<td><i id="award-icon" class="bi bi-award-fill"></i></td>
 									<td><span class="numberCircle"><span>7</span></span></td>
-								<td style="font-size: 17px;" style="font-size: 17px;">YESHITA DUTTA</td>
-								<td class="overall-score">Overall Score -</td>
+								<td class="part-name">YESHITA DUTTA</td>
+								
 								<td class="score counter" data-target="11">0</td>
-								<td><i style="font-size: 1.5rem;" class="bi bi-caret-down-fill icon"></i></td>
+								<td><i id="down-arrow" class="bi bi-caret-down-fill icon"></i></td>
 								</tr>
 								<tr id="hidden_row7" class="hidden_row">
 									<td colspan="6">
@@ -289,12 +295,12 @@
 
 								<!-- 8 -->
 								<tr onclick="showHideRow('hidden_row8');">
-									<td><i style="font-size: 2.5rem;" class="bi bi-award-fill"></i></td>
+									<td><i id="award-icon" class="bi bi-award-fill"></i></td>
 									<td><span class="numberCircle"><span>8</span></span></td>
-								<td style="font-size: 17px;" style="font-size: 17px;">Nerella Surya Nishitha</td>
-								<td class="overall-score">Overall Score -</td>
+								<td class="part-name">Nerella Surya Nishitha</td>
+								
 								<td class="score counter" data-target="11">0</td>
-								<td><i style="font-size: 1.5rem;" class="bi bi-caret-down-fill icon"></i></td>
+								<td><i id="down-arrow" class="bi bi-caret-down-fill icon"></i></td>
 								</tr>
 								<tr id="hidden_row8" class="hidden_row">
 									<td colspan="6">
@@ -306,12 +312,12 @@
 
 								<!-- 9 -->
 								<tr onclick="showHideRow('hidden_row9');">
-									<td><i style="font-size: 2.5rem;" class="bi bi-award-fill"></i></td>
+									<td><i id="award-icon" class="bi bi-award-fill"></i></td>
 									<td><span class="numberCircle"><span>9</span></span></td>
-								<td style="font-size: 17px;" style="font-size: 17px;">Chandini</td>
-								<td class="overall-score">Overall Score -</td>
+								<td class="part-name">Chandini</td>
+								
 								<td class="score counter" data-target="11">0</td>
-								<td><i style="font-size: 1.5rem;" class="bi bi-caret-down-fill icon"></i></td>
+								<td><i id="down-arrow" class="bi bi-caret-down-fill icon"></i></td>
 								</tr>
 								<tr id="hidden_row9" class="hidden_row">
 									<td colspan="6">
@@ -323,12 +329,12 @@
 
 								<!-- 10 -->
 								<tr onclick="showHideRow('hidden_row10');">
-									<td><i style="font-size: 2.5rem;" class="bi bi-award-fill"></i></td>
+									<td><i id="award-icon" class="bi bi-award-fill"></i></td>
 									<td><span class="numberCircle"><span>10</span></span></td>
-								<td style="font-size: 17px;" style="font-size: 17px;">might</td>
-								<td class="overall-score">Overall Score -</td>
+								<td class="part-name">might</td>
+								
 								<td class="score counter" data-target="10">0</td>
-								<td><i style="font-size: 1.5rem;" class="bi bi-caret-down-fill icon"></i></td>
+								<td><i id="down-arrow" class="bi bi-caret-down-fill icon"></i></td>
 								</tr>
 								<tr id="hidden_row10" class="hidden_row">
 									<td colspan="6">
@@ -353,22 +359,29 @@
 
 						<table>
 							<colgroup>
-								<col style="width:8%">
-								<col style="width:8%">
+								<col style="width:15%">
+								<col style="width:15%">
 								<col style="width:40%">
-								<col style="width:26%">
-								<col style="width:10%">
+								<col style="width:20%">
 								<col style="width:10%">
 							  </colgroup> 
+
+                              <thead class="table-header">
+                                <th></th>
+                                <th>Rank</th>
+                                <th>Name</th>
+                                <th>Score</th>
+                                <th></th>
+                            </thead>
 							<tbody class="table-content">
 							<!-- 1 -->
 								<tr onclick="showHideRow('hidden_row11');">
-									<td><i style="font-size: 2.5rem;" class="bi bi-award-fill"></i></td>
+									<td><i id="award-icon" class="bi bi-award-fill"></i></td>
 									<td><span class="numberCircle"><span>1</span></span></td>
-								<td style="font-size: 17px;" style="font-size: 17px;">Mann Nagda</td>
-								<td class="overall-score">Overall Score -</td>
+								<td class="part-name">Mann Nagda</td>
+								
 								<td class="score counter" data-target="12">0</td>
-								<td><i style="font-size: 1.5rem;" class="bi bi-caret-down-fill icon"></i></td>
+								<td><i id="down-arrow" class="bi bi-caret-down-fill icon"></i></td>
 								</tr>
 								<tr id="hidden_row11" class="hidden_row">
 									<td colspan="6">
@@ -380,12 +393,12 @@
 
 								<!-- 2 -->
 								<tr onclick="showHideRow('hidden_row12');">
-									<td><i style="font-size: 2.5rem;" class="bi bi-award-fill"></i></td>
+									<td><i id="award-icon" class="bi bi-award-fill"></i></td>
 									<td><span class="numberCircle"><span>2</span></span></td>
-								<td style="font-size: 17px;" style="font-size: 17px;">SNIT</td>
-								<td class="overall-score">Overall Score -</td>
+								<td class="part-name">SNIT</td>
+								
 								<td class="score counter" data-target="12">0</td>
-								<td><i style="font-size: 1.5rem;" class="bi bi-caret-down-fill icon"></i></td>
+								<td><i id="down-arrow" class="bi bi-caret-down-fill icon"></i></td>
 								</tr>
 								<tr id="hidden_row12" class="hidden_row">
 									<td colspan="6">
@@ -397,12 +410,12 @@
 
 								<!-- 3 -->
 								<tr onclick="showHideRow('hidden_row13');">
-									<td><i style="font-size: 2.5rem;" class="bi bi-award-fill"></i></td>
+									<td><i id="award-icon" class="bi bi-award-fill"></i></td>
 									<td><span class="numberCircle"><span>3</span></span></td>
-								<td style="font-size: 17px;" style="font-size: 17px;">Ramachandra Rao Trjomurtula</td>
-								<td class="overall-score">Overall Score -</td>
+								<td class="part-name">Ramachandra Rao Trjomurtula</td>
+								
 								<td class="score counter" data-target="12">0</td>
-								<td><i style="font-size: 1.5rem;" class="bi bi-caret-down-fill icon"></i></td>
+								<td><i id="down-arrow" class="bi bi-caret-down-fill icon"></i></td>
 								</tr>
 								<tr id="hidden_row13" class="hidden_row">
 									<td colspan="6">
@@ -414,12 +427,12 @@
 
 								<!-- 4 -->
 								<tr onclick="showHideRow('hidden_row14');">
-									<td><i style="font-size: 2.5rem;" class="bi bi-award-fill"></i></td>
+									<td><i id="award-icon" class="bi bi-award-fill"></i></td>
 									<td><span class="numberCircle"><span>4</span></span></td>
-								<td style="font-size: 17px;" style="font-size: 17px;">ARPIT PAUL</td>
-								<td class="overall-score">Overall Score -</td>
+								<td class="part-name">ARPIT PAUL</td>
+								
 								<td class="score counter" data-target="12">0</td>
-								<td><i style="font-size: 1.5rem;" class="bi bi-caret-down-fill icon"></i></td>
+								<td><i id="down-arrow" class="bi bi-caret-down-fill icon"></i></td>
 								</tr>
 								<tr id="hidden_row14" class="hidden_row">
 									<td colspan="6">
@@ -431,12 +444,12 @@
 
 								<!-- 5 -->
 								<tr onclick="showHideRow('hidden_row15');">
-									<td><i style="font-size: 2.5rem;" class="bi bi-award-fill"></i></td>
+									<td><i id="award-icon" class="bi bi-award-fill"></i></td>
 									<td><span class="numberCircle"><span>5</span></span></td>
-								<td style="font-size: 17px;" style="font-size: 17px;">KUMARAN THANIKASALAM</td>
-								<td class="overall-score">Overall Score -</td>
+								<td class="part-name">KUMARAN THANIKASALAM</td>
+								
 								<td class="score counter" data-target="12">0</td>
-								<td><i style="font-size: 1.5rem;" class="bi bi-caret-down-fill icon"></i></td>
+								<td><i id="down-arrow" class="bi bi-caret-down-fill icon"></i></td>
 								</tr>
 								<tr id="hidden_row15" class="hidden_row">
 									<td colspan="6">
@@ -448,12 +461,12 @@
 
 								<!-- 6 -->
 								<tr onclick="showHideRow('hidden_row16');">
-									<td><i style="font-size: 2.5rem;" class="bi bi-award-fill"></i></td>
+									<td><i id="award-icon" class="bi bi-award-fill"></i></td>
 									<td><span class="numberCircle"><span>6</span></span></td>
-								<td style="font-size: 17px;" style="font-size: 17px;">B ADARSH</td>
-								<td class="overall-score">Overall Score -</td>
+								<td class="part-name">B ADARSH</td>
+								
 								<td class="score counter" data-target="11">0</td>
-								<td><i style="font-size: 1.5rem;" class="bi bi-caret-down-fill icon"></i></td>
+								<td><i id="down-arrow" class="bi bi-caret-down-fill icon"></i></td>
 								</tr>
 								<tr id="hidden_row16" class="hidden_row">
 									<td colspan="6">
@@ -465,12 +478,12 @@
 
 								<!-- 7 -->
 								<tr onclick="showHideRow('hidden_row17');">
-									<td><i style="font-size: 2.5rem;" class="bi bi-award-fill"></i></td>
+									<td><i id="award-icon" class="bi bi-award-fill"></i></td>
 									<td><span class="numberCircle"><span>7</span></span></td>
-								<td style="font-size: 17px;" style="font-size: 17px;">Rakshitha Varma</td>
-								<td class="overall-score">Overall Score -</td>
+								<td class="part-name">Rakshitha Varma</td>
+								
 								<td class="score counter" data-target="11">0</td>
-								<td><i style="font-size: 1.5rem;" class="bi bi-caret-down-fill icon"></i></td>
+								<td><i id="down-arrow" class="bi bi-caret-down-fill icon"></i></td>
 								</tr>
 								<tr id="hidden_row17" class="hidden_row">
 									<td colspan="6">
@@ -482,12 +495,12 @@
 
 								<!-- 8 -->
 								<tr onclick="showHideRow('hidden_row18');">
-									<td><i style="font-size: 2.5rem;" class="bi bi-award-fill"></i></td>
+									<td><i id="award-icon" class="bi bi-award-fill"></i></td>
 									<td><span class="numberCircle"><span>8</span></span></td>
-								<td style="font-size: 17px;" style="font-size: 17px;">Vethan Yadam</td>
-								<td class="overall-score">Overall Score -</td>
+								<td class="part-name">Vethan Yadam</td>
+								
 								<td class="score counter" data-target="11">0</td>
-								<td><i style="font-size: 1.5rem;" class="bi bi-caret-down-fill icon"></i></td>
+								<td><i id="down-arrow" class="bi bi-caret-down-fill icon"></i></td>
 								</tr>
 								<tr id="hidden_row18" class="hidden_row">
 									<td colspan="6">
@@ -499,12 +512,12 @@
 
 								<!-- 9 -->
 								<tr onclick="showHideRow('hidden_row19');">
-									<td><i style="font-size: 2.5rem;" class="bi bi-award-fill"></i></td>
+									<td><i id="award-icon" class="bi bi-award-fill"></i></td>
 									<td><span class="numberCircle"><span>9</span></span></td>
-								<td style="font-size: 17px;" style="font-size: 17px;">Sai Durga Sree Sahithi Gurlinka</td>
-								<td class="overall-score">Overall Score -</td>
+								<td class="part-name">Sai Durga Sree Sahithi Gurlinka</td>
+								
 								<td class="score counter" data-target="11">0</td>
-								<td><i style="font-size: 1.5rem;" class="bi bi-caret-down-fill icon"></i></td>
+								<td><i id="down-arrow" class="bi bi-caret-down-fill icon"></i></td>
 								</tr>
 								<tr id="hidden_row19" class="hidden_row">
 									<td colspan="6">
@@ -516,12 +529,12 @@
 
 								<!-- 10 -->
 								<tr onclick="showHideRow('hidden_row20');">
-									<td><i style="font-size: 2.5rem;" class="bi bi-award-fill"></i></td>
+									<td><i id="award-icon" class="bi bi-award-fill"></i></td>
 									<td><span class="numberCircle"><span>10</span></span></td>
-								<td style="font-size: 17px;" style="font-size: 17px;">Chandini</td>
-								<td class="overall-score">Overall Score -</td>
+								<td class="part-name">Chandini</td>
+								
 								<td class="score counter" data-target="11">0</td>
-								<td><i style="font-size: 1.5rem;" class="bi bi-caret-down-fill icon"></i></td>
+								<td><i id="down-arrow" class="bi bi-caret-down-fill icon"></i></td>
 								</tr>
 								<tr id="hidden_row20" class="hidden_row">
 									<td colspan="6">
