@@ -577,6 +577,12 @@ input.right {
   border-radius: 0 10px;
 }
 
+.img-area .social ul .github a:hover
+{
+  background-color:  #000;
+  border-radius: 0 10px;
+}
+
 .img-area .social ul .instagram a:hover
 {
   background-color:  #DD2A7B ;
