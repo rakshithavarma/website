@@ -591,6 +591,11 @@
     background-color:  #DD2A7B ;
     border-radius: 0 10px;
   }
+  .img-area .social ul .github a:hover
+{
+  background-color:  #000;
+  border-radius: 0 10px;
+}
   
   .img-area .social ul li a:hover i
   {
