@@ -3,7 +3,8 @@
   padding: 0;
 }
 .amountcontainer {
-  max-width: 60vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
   border-radius: 4px;
 
   /* background-color: #aee6f3; */
@@ -19,6 +20,11 @@
 .card-text, .card-title{
   color: #094b86;
   font-family: "Merriweather", serif;
+}
+
+.lastrow{
+  margin-left: 40vh!important;
+  margin-right: 40vh!important;
 }
 .oct-dates {
   /* background-color: rgb(164, 33, 33); */
@@ -57,8 +63,13 @@
     width: 100%;
   }
   .amountcontainer {
-    max-width: 100vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
   }
+  .lastrow{
+  margin-left: 10vw!important;
+  margin-right:10vw!important;
+}
   .eventtickets {
     flex-direction: column;
     justify-content: space-around;
@@ -328,11 +339,6 @@ body {
   padding-bottom: 50px;
 }
 
-.amountcontainer {
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
 .mainnav {
   background-color: #222222;
   left: 0;
@@ -346,8 +352,6 @@ body {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
   padding: 20px 0;
   transition: all 0.3s ease-in-out;
 }
