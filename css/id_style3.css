@@ -9,22 +9,23 @@
 
   /* background-color: #aee6f3; */
 }
-.event-page-link{
+.event-page-link {
   background-color: #094b86;
   border-color: #8c8c8c;
 }
-.card-img-top{
+.card-img-top {
   height: auto;
   width: auto;
 }
-.card-text, .card-title{
+.card-text,
+.card-title {
   color: #094b86;
   font-family: "Merriweather", serif;
 }
 
-.lastrow{
-  margin-left: 40vh!important;
-  margin-right: 40vh!important;
+.lastrow {
+  margin-left: 40vh !important;
+  margin-right: 40vh !important;
 }
 .oct-dates {
   /* background-color: rgb(164, 33, 33); */
@@ -58,18 +59,31 @@
   background-size: cover;
   border-radius: 10px;
 }
+
+#customers td{
+  /* background-color:whitesmoke; */
+  background-image:url("images/white.jpg");
+  border-bottom: 6px solid white;
+ 
+}
+
+#customers td, #customers th {
+ 
+  padding: 8px;
+  text-align: center;
+}
 @media screen and (max-width: 760px) {
   .accordion-body .card {
     width: 100%;
   }
   .amountcontainer {
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
   }
-  .lastrow{
-  margin-left: 10vw!important;
-  margin-right:10vw!important;
-}
+  .lastrow {
+    margin-left: 10vw !important;
+    margin-right: 10vw !important;
+  }
   .eventtickets {
     flex-direction: column;
     justify-content: space-around;
@@ -87,6 +101,10 @@
     line-height: 28vh;
     font-size: 2em;
   }
+  .cart{
+    margin-left: auto!important;
+    margin-right: auto!important;
+  }
 }
 @media screen and (min-width: 680px) {
   .card img {
@@ -101,9 +119,9 @@
     width: 100%;
   }
 }
-.modal{
-  font-family: "Merriweather",serif!important;
-  font-weight: lighter!important;
+.modal {
+  font-family: "Merriweather", serif !important;
+  font-weight: lighter !important;
 }
 .nav {
   width: 100%;
@@ -140,8 +158,8 @@ h5 {
   color: #c0392b;
   border-radius: 4px;
 }
-.event-name{
-  font-family: "Merriweather",serif!important;
+.event-name {
+  font-family: "Merriweather", serif !important;
 }
 .dates .nav-tabs .nav-link:hover {
   animation-name: example;
@@ -226,19 +244,19 @@ h5 {
 }
 
 #price_footer {
-  font-family:'Garamond',serif!important;
+  font-family: "Garamond", serif !important;
   border-collapse: collapse;
   width: 100%;
 }
 #price_footer th {
   /* background-color: #055fad; */
   color: white;
-  text-align:center;
+  text-align: center;
   padding-right: 8vw;
 }
 
 #customers {
-  font-family:'Garamond',serif!important;
+  font-family: "Garamond", serif !important;
   border-collapse: collapse;
   width: 100%;
   background-image: url("../images/blue3.jpg");
@@ -248,13 +266,14 @@ h5 {
   border-bottom: 6px solid white;
   background-color: white;
 }
-#customers  td:hover {
+#customers td:hover {
   /* background-color:whitesmoke; */
   border-bottom: 6px solid white;
   background-color: rgb(228, 228, 228);
 }
 
-#customers td, #customers th {
+#customers td,
+#customers th {
   padding: 8px;
   text-align: center;
 }
@@ -523,13 +542,13 @@ h1 {
   background-color: #055fad;
   color: #ffffff;
 }
-.section_header  {
+.section_header {
   font-family: "Merriweather", serif;
   font-weight: bolder;
   color: #055fad;
   text-align: center;
 }
-.calender_header{
+.calender_header {
   padding-top: 10vh;
-  align-content:center;
+  align-content: center;
 }
