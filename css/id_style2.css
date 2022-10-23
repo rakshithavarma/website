@@ -1,0 +1,253 @@
+::selection {
+  background-color: #000;
+  color: #fff;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+/*.ieee-navbar{
+  font-size: 13px;
+  background: #0874a4;
+  height: 35px;
+}
+
+.ieee-navbar a{
+  padding: 0 20px;
+  margin: 0 10px;
+  color: #fff;
+}
+*/
+
+.sticky-top{
+  top: 0;
+}
+
+.sb-navbar{
+  position: fixed;
+  background: transparent;
+  margin-bottom: -10px;
+  font-weight: 400;
+}
+/* 
+.sb-navbar .fa-bars{
+  color: #fff;
+} */
+
+.sb-navbar.scrolled .fa-bars{
+  color: #000;
+}
+
+.sb-navbar .dropdown-menu{
+  border: 0;
+  background: #fff;
+}
+
+.sb-navbar .dropdown a{
+  text-align: center;
+}
+
+/* .sb-navbar .nav-item a{
+  color: #fff;
+} */
+
+.sb-navbar.scrolled {  
+  /*background-color: #fbc108;*/
+  background-color: #fff;
+  transition: background-color 200ms linear;
+}
+
+.sb-navbar.scrolled a{
+  color: #000;
+}
+
+.sb-navbar.scrolled .dropdown-menu{
+  background-color: #fff;
+}
+
+.sb-navbar .navbar-brand img{
+  /*height: 50px;
+  width: 100%;*/
+  height: 4rem;
+  width: 9rem;
+  margin-left: 5vw;
+}
+
+@media (max-width: 1080px){
+  .sb-navbar .navbar-brand img{
+      height: 3rem;
+      width: 6.75rem;
+  }
+}
+
+.sb-navbar .navbar-nav{
+  margin-right: 25px;
+  position: relative;
+}
+
+.sb-navbar .navbar-nav li{
+  padding: 5px 20px;
+  /*padding-left: 20px;*/
+}
+
+.sb-navbar ul{
+  padding-right: 25px;
+  list-style: none;
+}
+
+.sb-navbar ul li{
+  display: inline-block;
+  position: relative;
+  line-height: 21px;
+  text-align: center;
+}
+
+.sb-navbar ul li a{
+  display: block;
+  padding: 8px 25px;
+  text-decoration: none;
+}
+
+.sb-navbar ul li:hover{
+  color: #fff;
+  background: #193f7d;
+}
+
+.sb-navbar.scrolled ul li:hover a{
+  color: #fff;
+  /*background: #193f7d;*/
+}
+
+.sb-navbar.scrolled ul li:hover .dropdown-menu a{
+  color: #000;
+  /*background: #193f7d;*/
+}
+
+.sb-navbar ul li .dropdown{
+  min-width: 100%;
+  background: #f2f2f2;
+  display: none;
+  position: absolute;
+  /*z-index: 999;*/
+  left: 0;
+}
+
+.sb-navbar ul li .dropdown-menu a:hover{
+  background: #426296;   
+}
+
+.offcanvas-header{ display:none; }
+
+@media (max-width: 992px) {
+.offcanvas-header{ display:block; }
+.navbar-collapse {
+  position: fixed;
+  top:0; 
+  bottom: 0;
+  left: 100%;
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  overflow-y: auto;
+  visibility: hidden;
+  background-color: #055fad;
+  transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+.navbar-collapse.show {
+  visibility: visible;
+  transform: translateX(-100%);
+}
+}
+
+.notices-banner {
+  color: #fff;
+  height: 80vh;
+  min-height: 500px;
+  background:linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/notices_banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.notices .single-notice{
+  padding: 20px 20px 0 20px;
+}
+
+.team-announcement .modal-body img{
+  width: 100%;
+  /*height: 235px;*/
+  object-fit: cover;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.modal-body img{
+  width: 100%;
+  /*height: 235px;*/
+  object-fit: cover;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.notices .single-notice .notice-matter{
+  padding-top: 20px;
+}
+
+.notices .single-notice .notice-matter .sub-heading{
+  color: #055fad;
+}
+
+.notices .single-notice .notice-matter .register-btn{
+  border: 2px solid #055fad;
+  color: #055fad;
+}
+
+.notices .single-notice .notice-matter .register-btn:hover{
+  border: 2px solid #055fad;
+  color: #fff;
+  background-color: #055fad;
+  transition: 0.3s;
+}
+
+.page-footer{
+  background-color: #055fad;
+  color: #ffffff;
+}
+
+.footer-heading{
+  padding: 30px;
+  color: #fff;
+}
+
+.footer-heading .underline{
+  background-color: #fff;
+  border: 2px solid #fff;
+  margin-top: -5px;
+}
+
+.footer-info{
+  padding: 40px 0;
+  margin: 0 40px;
+}
+
+.footer-info .underline{
+  background-color: #fff;
+}
+
+.footer-info .contact-mode{
+  padding: 20px 0;
+}
+
+.page-footer a{
+  color: #ffffff;
+}
+
+.social-media-handles a{
+  padding: 10px;
+}
