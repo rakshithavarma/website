@@ -60,6 +60,40 @@
   border-radius: 10px;
 }
 
+
+#customers {
+  font-family: Garamond;
+  border-collapse: collapse;
+  width: 100%;
+}
+#customers td{
+  /* background-color:whitesmoke; */
+  background-image:url("images/white.jpg");
+  border-bottom: 6px solid white;
+ 
+}
+
+#customers td, #customers th {
+
+  padding: 8px;
+  text-align: center;
+}
+
+.event-name{
+  color:#055fad
+}
+
+#customers tr:hover {background-color: #ddd;
+ 
+}
+
+#customers th {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  /* background-color: #055fad; */
+  background-image: url("images/blue4.jpg");
+  color: white;
+}
 #customers td{
   /* background-color:whitesmoke; */
   background-image:url("images/white.jpg");
@@ -72,11 +106,6 @@
   max-width:35%;
 }
 
-#customers td, #customers th {
- 
-  padding: 8px;
-  text-align: center;
-}
 @media screen and (max-width: 760px) {
   .accordion-body .card {
     width: 100%;
@@ -89,10 +118,6 @@
     margin-left: 5vw;
     margin-right: 5vw;
   }
-  .lastrow {
-    margin-left: 10vw !important;
-    margin-right: 10vw !important;
-  }
   .eventtickets {
     flex-direction: column;
     justify-content: space-around;
@@ -103,6 +128,7 @@
     width: 100%;
   }
   .shop-item-button {
+    margin-top: 5px!important;
     margin-bottom: 20px;
   }
   .box .inner {
@@ -111,8 +137,8 @@
     font-size: 2em;
   }
   .cart{
-    margin-left: auto!important;
-    margin-right: auto!important;
+    margin-left: 5vw!important;
+    margin-right: 5vw!important;
   }
 }
 @media screen and (min-width: 680px) {

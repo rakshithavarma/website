@@ -103,6 +103,7 @@ for (b of btnnew) {
     c1.innerHTML = eventname;
     c2.innerHTML = ieeprice;
     c3.innerHTML = nonieeprice;
+    c3.style.paddingTop="10px";
     eventnamesarray.add(eventname);
     ieesum += parseFloat(c2.innerText.replace("₹", ""));
 
@@ -110,6 +111,7 @@ for (b of btnnew) {
 
     var button = document.createElement("button");
     button.type = "button";
+    button.style.marginTop="0";
     button.innerHTML =
       ' <i class="fa fa-trash-alt" aria-hidden="true" width="50%"></i>';
     button.className = "btn btn-outline-light";
