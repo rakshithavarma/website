@@ -226,21 +226,19 @@ h5 {
 }
 
 #price_footer {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:'Garamond',serif!important;
   border-collapse: collapse;
   width: 100%;
 }
 #price_footer th {
-  padding: 6px;
   /* background-color: #055fad; */
   color: white;
-  
-  padding-left: 10px;
-  text-align: center;
+  text-align:center;
+  padding-right: 8vw;
 }
 
 #customers {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:'Garamond',serif!important;
   border-collapse: collapse;
   width: 100%;
   background-image: url("../images/blue3.jpg");
@@ -533,4 +531,5 @@ h1 {
 }
 .calender_header{
   padding-top: 10vh;
+  align-content:center;
 }
