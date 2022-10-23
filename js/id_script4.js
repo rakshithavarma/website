@@ -76,7 +76,7 @@ function totalamountupdate(ieesums, nonieesums) {
     nonieee.innerText = nonieesums;
   } else {
     nonieee.innerText = nonieesums;
-    ieedisc.innerText = 0
+    nonieedisc.innerText = 0
   }
 }
 
