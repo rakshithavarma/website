@@ -67,6 +67,11 @@
  
 }
 
+#ss_demo{
+  height:auto;
+  max-width:35%;
+}
+
 #customers td, #customers th {
  
   padding: 8px;
@@ -75,6 +80,10 @@
 @media screen and (max-width: 760px) {
   .accordion-body .card {
     width: 100%;
+  }
+  #ss_demo{
+    height:auto;
+    max-width:80%;
   }
   .amountcontainer {
     margin-left: 5vw;
