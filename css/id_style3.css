@@ -101,7 +101,7 @@
  
 }
 
-#ss_demo{
+#ss_demo, #popup_demo{
   height:auto;
   max-width:35%;
 }
@@ -110,7 +110,7 @@
   .accordion-body .card {
     width: 100%;
   }
-  #ss_demo{
+  #ss_demo, #popup_demo{
     height:auto;
     max-width:80%;
   }
@@ -148,7 +148,12 @@
   .card-body {
     width: 70%;
   }
-
+  #demo_imgs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+  }
   .card {
     flex-direction: row;
     width: 100%;
