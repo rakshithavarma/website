@@ -9,6 +9,7 @@ let yescoupon = document.getElementById("yescoupon");
 let nocoupon = document.getElementById("nocoupon");
 let modalbtn = document.getElementById("modalbtn");
 let seletedeventslist = document.getElementById("selectedeventslist");
+let seletedeventslist2 = document.getElementById("selectedeventslist2");
 let finaltotaliee = document.getElementById("finaltotaliee");
 let finaltotalnoniee = document.getElementById("finaltotalnoniee");
 let couponapply = document.getElementById("couponapply");
@@ -130,6 +131,7 @@ function closefunc() {
 
 modalbtn.addEventListener("click", (e) => {
   seletedeventslist.innerHTML = "";
+  seletedeventslist2.innerHTML = "";
   // for (let i = 0; i < eventnamesarray.length; i++) {
 
   //  if(count>1)
@@ -141,10 +143,12 @@ modalbtn.addEventListener("click", (e) => {
 
   // }
   eventnamesarray.forEach(function (value) {
-    var li = document.createElement("li");
-
-    li.appendChild(document.createTextNode(value));
-    seletedeventslist.appendChild(li);
+    var li1 = document.createElement("li");
+    var li2 = document.createElement("li");
+    li1.appendChild(document.createTextNode(value));
+    li2.appendChild(document.createTextNode(value));
+    seletedeventslist.appendChild(li1);
+    seletedeventslist2.appendChild(li2);
   });
   if (ieesum >= 300) {
     finaltotaliee.innerText = Math.round(ieesum * (60 / 100));
