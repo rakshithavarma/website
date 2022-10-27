@@ -6,7 +6,7 @@ class MyHeader extends HTMLElement {
 	        		<a class="nav-link" href="../../index.html">HOME<span class="sr-only">(current)</span></a>
 	      		</li>
 	      		<li class="nav-item">
-	        		<a class="nav-link" href="../../team.html">TEAM</a>
+	        		<a class="nav-link" href="../../team.html">TEAM</a> 
 	      		</li>
 	      		<li class="nav-item dropdown">
 	        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownChaptersLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
