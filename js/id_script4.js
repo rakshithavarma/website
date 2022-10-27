@@ -152,19 +152,19 @@ modalbtn.addEventListener("click", (e) => {
   });
   if (ieesum >= 300) {
     finaltotaliee.innerText = Math.round(ieesum * (60 / 100));
-    finaltotalieewithc.innerText = Math.round(ieesum * (60 / 100));
-    //finaltotalnoniee.innerText = Math.round(nonieesum * (70 / 100));
+    finaltotalnoniee.innerText = Math.round(nonieesum * (70 / 100));
   } else {
     finaltotaliee.innerText = ieesum;
-    finaltotalieewithc.innerText = nonieesum;
+    finaltotalnoniee.innerText = nonieesum;
   }
 
-  if (nonieesum >= 300) {
-    //finaltotalieewithc.innerText = Math.round(ieesum * (60 / 100));
-    finaltotalnoniee.innerText = Math.round(nonieesum * (70 / 100));
+  if (ieesum >= 300) {
+    let temp1 = ieesum;
+    let temp2 = nonieesum;
+    finaltotalieewithc.innerText = Math.round(ieesum * (60 / 100));
     finaltotalnonieewithc.innerText = Math.round(nonieesum * (70 / 100));
   } else {
-    finaltotalnoniee.innerText = ieesum;
+    finaltotalieewithc.innerText = ieesum;
     finaltotalnonieewithc.innerText = nonieesum;
   }
 });
@@ -216,6 +216,8 @@ function initfunc() {
         });
 
         if (enteredmobile == row.PhNo && enteredcoupon == row.CouponCode) {
+          console.log(row.PhNo);
+          console.log(row.CouponCode);
           flag = 1;
           let val1 = ieesum;
           let val2 = nonieesum;
