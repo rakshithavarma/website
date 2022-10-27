@@ -64,14 +64,6 @@ function deleteRow(row) {
 
 function totalamountupdate(ieesums, nonieesums) {
   if (ieesums >= 300) {
-    ieedisc.innerText = ieesums * (40 / 100);
-    ieesums -= ieesums * (40 / 100);
-    ieee.innerText = ieesums;
-  } else {
-    ieee.innerText = ieesums;
-    ieedisc.innerText = 0
-  }
-  if (nonieesums >= 300) {
     nonieedisc.innerText = nonieesums * (30 / 100);
     nonieesums -= nonieesums * (30 / 100);
     nonieee.innerText = nonieesums;
@@ -79,6 +71,15 @@ function totalamountupdate(ieesums, nonieesums) {
     nonieee.innerText = nonieesums;
     nonieedisc.innerText = 0
   }
+  if (ieesums >= 300) {
+    ieedisc.innerText = ieesums * (40 / 100);
+    ieesums -= ieesums * (40 / 100);
+    ieee.innerText = ieesums;
+  } else {
+    ieee.innerText = ieesums;
+    ieedisc.innerText = 0
+  }
+  
 }
 
 for (b of btnnew) {
