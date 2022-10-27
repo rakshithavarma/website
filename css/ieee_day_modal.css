@@ -1,0 +1,46 @@
+.ieee_day_modal {
+  position: fixed;
+  z-index: 9999;
+  padding: 50px 0 50px 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.ieee_day_content {
+  width: 50%;
+  border: none;
+  background-color:lightblue;
+  margin: auto;
+  padding: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 1px 1px 14px 3px rgba(0, 0, 0, 0.75);
+}
+
+.ieee_day_close {
+  color: #aaa;
+  float: right;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.ieee_day_close:focus,
+.ieee_day_close:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.ieee_day_modal_btn {
+  padding-top: 15px;
+}
+#ieee_day_modal_btn {
+  background-color: #055fad !important;
+  color: white !important;
+  border: 0px white;
+  padding: 10px;
+  border-radius: 3px;
+}

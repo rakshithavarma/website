@@ -8,24 +8,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script type="module" src="js/hf.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/notices_styles.css">
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/ieee_day_modal.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
     <!-- carousel -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- font styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Cookie&family=Mate+SC&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Carattere&family=Cookie&family=Mate+SC&family=Montserrat:wght@500&display=swap"
+        rel="stylesheet">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
@@ -37,15 +44,42 @@
     });
 </script>
 -->
-<body>
 
+<body>
+    <!--IEEE DAY Redirection modal-->
+    <section id="ieee_day_modal_section">
+        <!--<h1>Pop up modal tutorial</h1>-->
+        <!--MODAL -->
+        <script src="js/ieee_day_modal.js"></script>
+        <div class='ieee_day_modal' id='ieee_day_modal'>
+            <!-- MODAL CONTENT -->
+
+            <div class='ieee_day_content'>
+                <!-- For the close button -->
+                <span class="ieee_day_close" id='ieee_day_close'>&times;</span>
+                <!-- Actual content -->
+                <h2 class="text-center section_header  calender_header" style="color:#055fad;font-family:Garamond">
+                    <b>IEEE Day 2022</b>
+                </h2>
+                <div>
+                    <img src="images/ieee_day22/ieee_day22_all_events_poster.jpg" alt=""
+                        style="max-width: 70%!important;height:auto">
+                    <br>
+                    <div class="ieee_day_modal_btn">
+                        <a href="ieee_day22.html"><button id="ieee_day_modal_btn">Register Now</button></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- navbar - ieee sb gvp -->
 
     <div class="container-fluid navbar navbar-expand-lg sb-navbar sticky-top" id="navbar">
         <a class="navbar-brand" href="#"><img src="images/ieee_sb_logo.png"></a>
         <button class="navbar-toggler" type="button" data-trigger="#navbarNavDropdown">
-	    	<i class="fa fa-bars hamburger" aria-hidden = "true"></i>
-	  	</button>
+            <i class="fa fa-bars hamburger" aria-hidden="true"></i>
+        </button>
         <div class="navbar-collapse justify-content-end" id="navbarNavDropdown">
             <div class="offcanvas-header mt-3">
                 <button class="btn btn-outline-danger btn-close float-right"> &times </button>
@@ -86,7 +120,7 @@
 		</div>
 	  </div> -->
 
-      <!-- IEEE-DAY 2021 -->
+    <!-- IEEE-DAY 2021 -->
     <!--
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog" role="document">
@@ -146,7 +180,8 @@
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item ieee-sb-gvpce-carousel active">
                 <div class="home-carousel-image">
-                    <img class="carousel-image img-responsive d-block w-100" src="images/team/home-carousel/ieee_team2.jpg" alt="IEEE TEAM">
+                    <img class="carousel-image img-responsive d-block w-100"
+                        src="images/team/home-carousel/ieee_team2.jpg" alt="IEEE TEAM">
                 </div>
                 <div class="carousel-caption">
                     <div>
@@ -159,7 +194,8 @@
 
             <div class="carousel-item">
                 <div class="home-carousel-image">
-                    <img class="carousel-image img-responsive d-block w-100" src="images/team/home-carousel/audience2.jpg" alt="IEEE Event">
+                    <img class="carousel-image img-responsive d-block w-100"
+                        src="images/team/home-carousel/audience2.jpg" alt="IEEE Event">
                 </div>
                 <!-- <div class="carousel-caption">
 	        		<h3>Events</h3>
@@ -169,7 +205,8 @@
 
             <div class="carousel-item">
                 <div class="home-carousel-image">
-                    <img class="carousel-image img-responsive d-block w-100" src="images/team/home-carousel/princey.jpg" alt="Social Event">
+                    <img class="carousel-image img-responsive d-block w-100" src="images/team/home-carousel/princey.jpg"
+                        alt="Social Event">
                 </div>
                 <!-- <div class="carousel-caption">
 	        		<h3>Events</h3>
@@ -179,7 +216,8 @@
 
             <div class="carousel-item">
                 <div class="home-carousel-image">
-                    <img class="carousel-image img-responsive d-block w-100" src="images/team/home-carousel/lightning.jpg" alt="Social Event">
+                    <img class="carousel-image img-responsive d-block w-100"
+                        src="images/team/home-carousel/lightning.jpg" alt="Social Event">
                 </div>
                 <!-- <div class="carousel-caption">
 	        		<h3>Events</h3>
@@ -219,23 +257,32 @@
 
                     <div class="carousel-item active">
                         <div class="carousel-content col-xs-10 offset-xs-1">
-                            <p align="center" style="font-size: smaller;"><b style="color: #055fad; font-weight: 750">IEEE SB GVPCE(A)</b> congratulates student volunteers for getting selected for distinguished volunteering positions.<br>
+                            <p align="center" style="font-size: smaller;"><b
+                                    style="color: #055fad; font-weight: 750">IEEE SB GVPCE(A)</b> congratulates student
+                                volunteers for getting selected for distinguished volunteering positions.<br>
                                 <b><br>1. Gopisetty Haritha (97343962) - IEEE India Council Graphic Design Team
-								<br>2. S. Soumya Sree (98267335) - IEEE XTREME 16.0 STUDENT AMBASSADOR
-								
-                                <br>
-                                <!-- <strong>- IEEE</strong></p> -->
+                                    <br>2. S. Soumya Sree (98267335) - IEEE XTREME 16.0 STUDENT AMBASSADOR
+
+                                    <br>
+                                    <!-- <strong>- IEEE</strong></p> -->
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-content col-xs-10 offset-xs-1">
-                            <p align="center"><i class="fa fa-quote-left" aria-hidden="true"></i><b style="color: #5a9541; font-weight: 750">IEEE PES SB GVPCE(A)</b> celebrates <b style="color: #5a9541; font-weight: 750">PES Day 2021</b> on <b>22nd April, 2021</b>. Check
+                            <p align="center"><i class="fa fa-quote-left" aria-hidden="true"></i><b
+                                    style="color: #5a9541; font-weight: 750">IEEE PES SB GVPCE(A)</b> celebrates <b
+                                    style="color: #5a9541; font-weight: 750">PES Day 2021</b> on <b>22nd April,
+                                    2021</b>. Check
                                 the details <a href="events/2021/6pesday.html">here</a>.<br><strong>- IEEE</strong></p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-content col-xs-10 offset-xs-1">
-                            <p align="center"><i class="fa fa-quote-left" aria-hidden="true"></i>It is official now! <b style="color: #5a9541; font-weight: 750">IEEE SB GVPCE(A) PES CHAPTER</b> and <b style="color: #fc9b1c; font-weight: 750">IEEE SB GVPCE(A) CS CHAPTER</b>                                have been formed. Check the details <a href="notices.html">here</a>.<br><strong>- IEEE</strong></p>
+                            <p align="center"><i class="fa fa-quote-left" aria-hidden="true"></i>It is official now! <b
+                                    style="color: #5a9541; font-weight: 750">IEEE SB GVPCE(A) PES CHAPTER</b> and <b
+                                    style="color: #fc9b1c; font-weight: 750">IEEE SB GVPCE(A) CS CHAPTER</b> have been
+                                formed. Check the details <a href="notices.html">here</a>.<br><strong>- IEEE</strong>
+                            </p>
                         </div>
                     </div>
                     <!-- <div class="carousel-item">
@@ -249,15 +296,19 @@
                     </div> -->
                     <div class="carousel-item">
                         <div class="carousel-content col-xs-10 offset-xs-1">
-                            <p align="center"><i class="fa fa-quote-left" aria-hidden="true"></i><b>IEEE SB GVPCE(A)</b> Recruitment for Society Chapters has completed successfully. Check the results <a href="2021_team_announcement.html">here</a>.<br><strong>- IEEE</strong></p>
+                            <p align="center"><i class="fa fa-quote-left" aria-hidden="true"></i><b>IEEE SB GVPCE(A)</b>
+                                Recruitment for Society Chapters has completed successfully. Check the results <a
+                                    href="2021_team_announcement.html">here</a>.<br><strong>- IEEE</strong></p>
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev carousel-control-icon" href="#updatesCarousel" role="button" data-slide="prev">
+                <a class="carousel-control-prev carousel-control-icon" href="#updatesCarousel" role="button"
+                    data-slide="prev">
                     <i class="fa fa-chevron-circle-left fa-2x" aria-hidden="true"></i>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next carousel-control-icon" href="#updatesCarousel" role="button" data-slide="next">
+                <a class="carousel-control-next carousel-control-icon" href="#updatesCarousel" role="button"
+                    data-slide="next">
                     <i class="fa fa-chevron-circle-right fa-2x" aria-hidden="true"></i>
                     <span class="sr-only">Next</span>
                 </a>
@@ -288,12 +339,20 @@
                                 <h2><b>IEEE</b></h2>
                                 <hr class="underline" align="left" style="width:3em">
 
-                                <p>The Institute of Electrical and Electronics Engineers (IEEE), is a professional association for electrical and electronic engineers along with associate disciplines formed in the year 1953. IEEE produces over 30% of the
-                                    world's literature in the electrical and electronics engineering and computer science fields, publishing well over 100 peer-reviewed journals and magazines and also sponsors over 1800 conferences and events. As of 2018,
-                                    it is the world's largest association of technical professionals with more than 423,000 members in over 160 countries around the world. IEEE offers educational opportunities within the engineering sciences, research,
-                                    and technology such as IEEE e-Learning Library, the Education Partners Program, Standards in Education and Continuing Education Units (CEUs).</p>
+                                <p>The Institute of Electrical and Electronics Engineers (IEEE), is a professional
+                                    association for electrical and electronic engineers along with associate disciplines
+                                    formed in the year 1953. IEEE produces over 30% of the
+                                    world's literature in the electrical and electronics engineering and computer
+                                    science fields, publishing well over 100 peer-reviewed journals and magazines and
+                                    also sponsors over 1800 conferences and events. As of 2018,
+                                    it is the world's largest association of technical professionals with more than
+                                    423,000 members in over 160 countries around the world. IEEE offers educational
+                                    opportunities within the engineering sciences, research,
+                                    and technology such as IEEE e-Learning Library, the Education Partners Program,
+                                    Standards in Education and Continuing Education Units (CEUs).</p>
 
-                                <a href="http://www.ieee.org/?WT.mc_id=mn_ieee" class="btn btn-lg rounded-0" role="button" aria-pressed="true">Know More</a>
+                                <a href="http://www.ieee.org/?WT.mc_id=mn_ieee" class="btn btn-lg rounded-0"
+                                    role="button" aria-pressed="true">Know More</a>
 
                             </div>
 
@@ -302,10 +361,13 @@
                                 <h2><b>IEEE India</b></h2>
                                 <hr class="underline" align="right" style="width:8.5em">
 
-                                <p>IEEE India Council is an organization that coordinates IEEE activities in India. The main aim of the council is to assist and coordinate various sections across the country. The council was established on 20th May 1976
+                                <p>IEEE India Council is an organization that coordinates IEEE activities in India. The
+                                    main aim of the council is to assist and coordinate various sections across the
+                                    country. The council was established on 20th May 1976
                                     and is one of the five councils in the Asia Pacific Region (Region #10 of IEEE).</p>
 
-                                <a href="https://site.ieee.org/indiacouncil/" class="btn btn-lg rounded-0" role="button" aria-pressed="true">Know More</a>
+                                <a href="https://site.ieee.org/indiacouncil/" class="btn btn-lg rounded-0" role="button"
+                                    aria-pressed="true">Know More</a>
 
                             </div>
 
@@ -314,12 +376,20 @@
                                 <h2><b>IEEE Vizag Section</b></h2>
                                 <hr class="underline" align="left" style="width:16.5em">
 
-                                <p>IEEE Vizag Bay Sub-section was a part of IEEE Hyderabad Section. Established in 2011 and with a team of 1,456 members, a petition has been filed to elevate the geographical area of this Sub-section, and thus the IEEE VIZAG
-                                    BAY SECTION has been formed on 15th February,2020. This section has been set up to meet the needs and promote various events of the branches that are a part of it. The Section is vibrant and also includes a Women in
-                                    Engineering affinity group (WIE AG) along with Computer Society(CS) and Power engineering society (PES) chapters. The Section is the best blend of academic and research organisations. Vizag Bay section is all set for
-                                    an IEEE India Council International Sub-sections' conference on 3rd-4th October of 2020.</p>
+                                <p>IEEE Vizag Bay Sub-section was a part of IEEE Hyderabad Section. Established in 2011
+                                    and with a team of 1,456 members, a petition has been filed to elevate the
+                                    geographical area of this Sub-section, and thus the IEEE VIZAG
+                                    BAY SECTION has been formed on 15th February,2020. This section has been set up to
+                                    meet the needs and promote various events of the branches that are a part of it. The
+                                    Section is vibrant and also includes a Women in
+                                    Engineering affinity group (WIE AG) along with Computer Society(CS) and Power
+                                    engineering society (PES) chapters. The Section is the best blend of academic and
+                                    research organisations. Vizag Bay section is all set for
+                                    an IEEE India Council International Sub-sections' conference on 3rd-4th October of
+                                    2020.</p>
 
-                                <a href="https://r10.ieee.org/vizagbay/" class="btn btn-lg rounded-0" role="button" aria-pressed="true">Know More</a>
+                                <a href="https://r10.ieee.org/vizagbay/" class="btn btn-lg rounded-0" role="button"
+                                    aria-pressed="true">Know More</a>
 
                             </div>
 
@@ -343,11 +413,20 @@
                         <img src="images/team/home-carousel/ieee_team.jpg" alt="IEEE SB GVP Team" class="img-fluid">
                     </div>
                     <div class="col-lg-4 mr-auto item">
-                        <p class="mb-4">Our student branch is passionate about community engagement of students and provides a networking opportunity to meet and learn from fellow students, as well as from faculty and professional members in the field of their interests,
-                            professions, and ideas. We have started a Women in Engineering Affinity Group (WIE AG) and are also planning to introduce a computer society (CS) chapter. We, at our student branch, enhance the degree of importance of providing
-                            guidance for students and also aim to create a clear image of various available options in moulding a successful career. The executive committee members volunteering for our student branch are young budding engineers along
-                            with trained professors, and many more goal-driven people. We work together to carry out educational and focussed activities like technical events, Seminars, Workshops, Webinars, and also activities that foster social responsibilities.
-                            We are supportive and creative to novel ideas that link up with the latest technologies and are looking forward to reaching greater heights.</p>
+                        <p class="mb-4">Our student branch is passionate about community engagement of students and
+                            provides a networking opportunity to meet and learn from fellow students, as well as from
+                            faculty and professional members in the field of their interests,
+                            professions, and ideas. We have started a Women in Engineering Affinity Group (WIE AG) and
+                            are also planning to introduce a computer society (CS) chapter. We, at our student branch,
+                            enhance the degree of importance of providing
+                            guidance for students and also aim to create a clear image of various available options in
+                            moulding a successful career. The executive committee members volunteering for our student
+                            branch are young budding engineers along
+                            with trained professors, and many more goal-driven people. We work together to carry out
+                            educational and focussed activities like technical events, Seminars, Workshops, Webinars,
+                            and also activities that foster social responsibilities.
+                            We are supportive and creative to novel ideas that link up with the latest technologies and
+                            are looking forward to reaching greater heights.</p>
                     </div>
                 </div>
             </div>
@@ -404,75 +483,77 @@
                     <h3 class="feature_title">SKILL UP WITH WIE</h3>
                     <p class="feature_text">Graphic Desinging Workshop </p>
                     <a href="events/2022/41_skill_up_with_wie.html" target="_blank"><button type="button"
-							class="btn btn-outline-info">Know More</button></a>
+                            class="btn btn-outline-info">Know More</button></a>
                 </div>
                 <div class="feature_item text-center">
                     <img src="events/images/2022/40_jam.jpeg" style="width: 100%;" alt="">
                     <h3 class="feature_title">JAM(Just A Minute talk)</h3>
                     <p class="feature_text">Interactive Event</p>
                     <a href="events/2022/40_jam.html" target="_blank"><button type="button"
-							class="btn btn-outline-info">Know More</button></a>
+                            class="btn btn-outline-info">Know More</button></a>
                 </div>
                 <div class="feature_item text-center">
                     <img src="events/images/2022/39_publication.jpeg" style="width: 100%;" alt="">
                     <h3 class="feature_title">Innovation to Publication</h3>
                     <p class="feature_text">Workshop</p>
                     <a href="events/2022/39_publication.html" target="_blank"><button type="button"
-							class="btn btn-outline-info">Know More</button></a>
+                            class="btn btn-outline-info">Know More</button></a>
                 </div>
                 <div class="feature_item text-center">
                     <img src="events/images/2022/38_xtreme16.jpg" style="width: 100%;" alt="">
                     <h3 class="feature_title">IEEEXTREME 16.0</h3>
                     <p class="feature_text">Coding contest</p>
                     <a href="events/2022/38_ieeeextreme16.html" target="_blank"><button type="button"
-							class="btn btn-outline-info">Know More</button></a>
+                            class="btn btn-outline-info">Know More</button></a>
                 </div>
                 <div class="feature_item text-center">
-                    <img src="events/images/2022/37_Electricity_Safety_Engineering_and_beyond.jpeg" style="width: 100%;" alt="">
+                    <img src="events/images/2022/37_Electricity_Safety_Engineering_and_beyond.jpeg" style="width: 100%;"
+                        alt="">
                     <h3 class="feature_title">Electricity Safety Engineering</h3>
                     <p class="feature_text">Webinar</p>
-                    <a href="events/2022/37_Electricity_saftey_engneering_and_beyond.html" target="_blank"><button type="button"
-							class="btn btn-outline-info">Know More</button></a>
+                    <a href="events/2022/37_Electricity_saftey_engneering_and_beyond.html" target="_blank"><button
+                            type="button" class="btn btn-outline-info">Know More</button></a>
                 </div>
                 <div class="feature_item text-center">
                     <img src="events/images/2022/36_brain_hacks.jpeg" style="width: 100%;" alt="">
                     <h3 class="feature_title">Brain Hacks</h3>
                     <p class="feature_text">Aptitude & Reasoning Series</p>
                     <a href="events/2022/36_brain_hacks.html" target="_blank"><button type="button"
-							class="btn btn-outline-info">Know More</button></a>
+                            class="btn btn-outline-info">Know More</button></a>
                 </div>
                 <div class="feature_item text-center">
                     <img src="events/images/2022/35_wie_Tech_Intellect.jpeg" style="width: 100%;" alt="">
                     <h3 class="feature_title">TECH INTELLECT</h3>
                     <p class="feature_text">A quiz competition on congnitive ability</p>
                     <a href="events/2022/35_wie_tech_intellect.html" target="_blank"><button type="button"
-							class="btn btn-outline-info">Know More</button></a>
+                            class="btn btn-outline-info">Know More</button></a>
                 </div>
                 <div class="feature_item text-center">
                     <img src="events/images/2022/34_cs_mlworkshop.jpeg" style="width: 100%;" alt="">
                     <h3 class="feature_title">MACHINE LEARNING WORKSHOP</h3>
                     <p class="feature_text">workshop on machine learning</p>
                     <a href="events/2022/34_cs_mlworkshop.html" target="_blank"><button type="button"
-							class="btn btn-outline-info">Know More</button></a>
-                </div>
-            
-                <div class="feature_item text-center">
-                    <img src="events/images/2022/33_pes_webinar.jpeg" style="width: 100%;" alt="">
-                    <h3 class="feature_title">Electric Vehicle Charging Infrastructure: Wired and Wireless Technologies</h3>
-                    <p class="feature_text">Webinar on Electric vehicles</p>
-                    <a href="events/2022/33_pes_webinar.html" target="_blank"><button type="button"
-							class="btn btn-outline-info">Know More</button></a>
-                </div>
-		<div class="feature_item text-center">
-                    <img src="events/images/2022/32_cs_get ready for infytq.jpeg" style="width: 100%;" alt="">
-                    <h3 class="feature_title">Get Ready For infytq</h3>
-                    <p class="feature_text">Warm up your  skills for the lnfytq exam.</p>
-                    <a href="events/2022/32_cs_get_ready_for_infytq.html" target="_blank"><button type="button"
-							class="btn btn-outline-info">Know More</button></a>
+                            class="btn btn-outline-info">Know More</button></a>
                 </div>
 
-                
-                 <!--
+                <div class="feature_item text-center">
+                    <img src="events/images/2022/33_pes_webinar.jpeg" style="width: 100%;" alt="">
+                    <h3 class="feature_title">Electric Vehicle Charging Infrastructure: Wired and Wireless Technologies
+                    </h3>
+                    <p class="feature_text">Webinar on Electric vehicles</p>
+                    <a href="events/2022/33_pes_webinar.html" target="_blank"><button type="button"
+                            class="btn btn-outline-info">Know More</button></a>
+                </div>
+                <div class="feature_item text-center">
+                    <img src="events/images/2022/32_cs_get ready for infytq.jpeg" style="width: 100%;" alt="">
+                    <h3 class="feature_title">Get Ready For infytq</h3>
+                    <p class="feature_text">Warm up your skills for the lnfytq exam.</p>
+                    <a href="events/2022/32_cs_get_ready_for_infytq.html" target="_blank"><button type="button"
+                            class="btn btn-outline-info">Know More</button></a>
+                </div>
+
+
+                <!--
                 <div class="feature_item text-center">
                     <img src="events/images/2021/23_ieee_day_project_prototype.jpeg" style="width: 100%;" alt="">
                     <h3 class="feature_title">Project Prototypes</h3>
@@ -487,7 +568,7 @@
 
         </div>
         <!-- <div class="container"> -->
-            <!-- <div class="events-heading">
+        <!-- <div class="events-heading">
                 <div class="row">
                     <div class="col-sm-10 offset-sm-1">
                         <h1 class="text-center">Events 2022</h1>
@@ -495,16 +576,18 @@
                         <a href="./events_2022.html" >Events 2022</a>
                     </div>
                 </div> -->
-            <!-- </div> -->
-  
-            <div class="events-2022">
-                <button class="button-os button1"><a href="./events_2022.html"><p style="margin:auto; text-align:center;" class="ml10">
-                    <span class="text-wrapper">
-                      <span class="letters">EVENTS 2022</span>
-                    </span>
-                </p></a></button>
-            </div>
-    
+        <!-- </div> -->
+
+        <div class="events-2022">
+            <button class="button-os button1"><a href="./events_2022.html">
+                    <p style="margin:auto; text-align:center;" class="ml10">
+                        <span class="text-wrapper">
+                            <span class="letters">EVENTS 2022</span>
+                        </span>
+                    </p>
+                </a></button>
+        </div>
+
     </section>
 
     <!-- events-count -->
@@ -566,8 +649,10 @@
                                 <img src="images/team/individual/abkrao.jpg" class="img-fluid">
                                 <div class="social">
                                     <ul class="list-inline">
-                                        <li><a href="mailto:principal@gvpce.ac.in? subject = "><i class="fa fa-envelope"></i></a></li>
-                                        <li><a href="mailto:abkr_gvp@yahoo.co.in? subject = "><i class="fa fa-yahoo"></i></a></li>
+                                        <li><a href="mailto:principal@gvpce.ac.in? subject = "><i
+                                                    class="fa fa-envelope"></i></a></li>
+                                        <li><a href="mailto:abkr_gvp@yahoo.co.in? subject = "><i
+                                                    class="fa fa-yahoo"></i></a></li>
                                         <!-- <li><a href="#"><i class="fa fa-instagram"></i></a></li> -->
                                     </ul>
                                 </div>
@@ -585,7 +670,8 @@
                                 <img src="images/team/individual/satish.jpg" class="img-fluid">
                                 <div class="social">
                                     <ul class="list-inline">
-                                        <li><a href="mailto:satishgudey5@gvpce.ac.in? subject = "><i class="fa fa-envelope"></i></a></li>
+                                        <li><a href="mailto:satishgudey5@gvpce.ac.in? subject = "><i
+                                                    class="fa fa-envelope"></i></a></li>
                                         <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li>
 										<li><a href="#"><i class="fa fa-instagram"></i></a></li> -->
                                     </ul>
@@ -604,7 +690,8 @@
                                 <img src="images/team/individual/leelarani.jpg" class="img-fluid">
                                 <div class="social">
                                     <ul class="list-inline">
-                                        <li><a href="mailto:lee_rani@gvpce.ac.in? subject = "><i class="fa fa-envelope"></i></a></li>
+                                        <li><a href="mailto:lee_rani@gvpce.ac.in? subject = "><i
+                                                    class="fa fa-envelope"></i></a></li>
                                         <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li>
 										<li><a href="#"><i class="fa fa-instagram"></i></a></li> -->
                                     </ul>
@@ -623,7 +710,8 @@
                                 <img src="images/team/individual/harini.jpg" class="img-fluid">
                                 <div class="social">
                                     <ul class="list-inline">
-                                        <li><a href="mailto:harinidhara@gvpce.ac.in? subject = "><i class="fa fa-envelope"></i></a></li>
+                                        <li><a href="mailto:harinidhara@gvpce.ac.in? subject = "><i
+                                                    class="fa fa-envelope"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -634,60 +722,68 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3 mb-4 h-100">
-						<div class="single-team">
-							<div class="img-area">
-								<img src="images/team/coreteam-2022/chair.jpg" class="img-fluid">
-								<div class="social">
-									<ul class="list-inline">
-										<li><a href="https://www.linkedin.com/in/hima-bindu-002a45194"><i class="fa fa-linkedin"></i></a></li>
-										<li><a href="https://GitHub.com/himabindu-run"><i class="fa fa-github"></i></a></li>
-										<li><a href="https://www.instagram.com/himaaa.a/"><i class="fa fa-instagram"></i></a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="img-text">
-								<h4>Hima Bindu Tenneti</h4>
-								<h5>SB Chair</h5>
-							</div>
-						</div>
-					</div>
+                        <div class="single-team">
+                            <div class="img-area">
+                                <img src="images/team/coreteam-2022/chair.jpg" class="img-fluid">
+                                <div class="social">
+                                    <ul class="list-inline">
+                                        <li><a href="https://www.linkedin.com/in/hima-bindu-002a45194"><i
+                                                    class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="https://GitHub.com/himabindu-run"><i class="fa fa-github"></i></a>
+                                        </li>
+                                        <li><a href="https://www.instagram.com/himaaa.a/"><i
+                                                    class="fa fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="img-text">
+                                <h4>Hima Bindu Tenneti</h4>
+                                <h5>SB Chair</h5>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-md-6 col-lg-3 mb-4 h-100">
-						<div class="single-team">
-							<div class="img-area">
-								<img src="images/team/coreteam-2022/wie_chair.jpg" class="img-fluid">
-								<div class="social">
-									<ul class="list-inline">
-										<li><a href="https://www.linkedin.com/in/yarakareddy-kusala-sreya-hara-padmini"><i class="fa fa-linkedin"></i></a></li>
-										<li class="instagram"><a href="mailto:kushulasreya2322@ieee.org subject = " target="__blank" class="contactlink"><i class="fa far fa-envelope"></i></a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="img-text">
-								<h4>Y.K.S Hara Padmini</h4>
-								<h5>WIE Chair</h5>
-							</div>
-						</div>
-					</div>
+                        <div class="single-team">
+                            <div class="img-area">
+                                <img src="images/team/coreteam-2022/wie_chair.jpg" class="img-fluid">
+                                <div class="social">
+                                    <ul class="list-inline">
+                                        <li><a href="https://www.linkedin.com/in/yarakareddy-kusala-sreya-hara-padmini"><i
+                                                    class="fa fa-linkedin"></i></a></li>
+                                        <li class="instagram"><a href="mailto:kushulasreya2322@ieee.org subject = "
+                                                target="__blank" class="contactlink"><i
+                                                    class="fa far fa-envelope"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="img-text">
+                                <h4>Y.K.S Hara Padmini</h4>
+                                <h5>WIE Chair</h5>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-md-6 col-lg-3 mb-4 h-100">
-						<div class="single-team">
-							<div class="img-area">
-								<img src="images/team/coreteam-2022/cs_chair.jpeg" class="img-fluid">
-								<div class="social">
-									<ul class="list-inline">
-										<li><a href="https://www.linkedin.com/in/saiprasanna-boyina-0a78551a9/"><i class="fa fa-linkedin"></i></a></li>
-										<!-- <li><a href="https://twitter.com/Rajeshuppada7?s=08"><i class="fa fa-twitter"></i></a></li> -->
-										<li><a href="https://www.instagram.com/_____prasanna__/"><i class="fa fa-instagram"></i></a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="img-text">
-								<h4>Sai Prasanna Boyina</h4>
-								<h5>CS Chapter CHAIR</h5>
-							</div>
-						</div>
-					</div>
+                        <div class="single-team">
+                            <div class="img-area">
+                                <img src="images/team/coreteam-2022/cs_chair.jpeg" class="img-fluid">
+                                <div class="social">
+                                    <ul class="list-inline">
+                                        <li><a href="https://www.linkedin.com/in/saiprasanna-boyina-0a78551a9/"><i
+                                                    class="fa fa-linkedin"></i></a></li>
+                                        <!-- <li><a href="https://twitter.com/Rajeshuppada7?s=08"><i class="fa fa-twitter"></i></a></li> -->
+                                        <li><a href="https://www.instagram.com/_____prasanna__/"><i
+                                                    class="fa fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="img-text">
+                                <h4>Sai Prasanna Boyina</h4>
+                                <h5>CS Chapter CHAIR</h5>
+                            </div>
+                        </div>
+                    </div>
 
-                    
+
 
                     <div class="col-xs-12 col-md-6 col-lg-3 mb-4 h-100">
                         <div class="single-team">
@@ -695,10 +791,12 @@
                                 <img src="images/team/coreteam-2022/pes_chair.jpg" class="img-fluid">
                                 <div class="social">
                                     <ul class="list-inline">
-										<li><a href="https://www.linkedin.com/in/gali-yashwant-ab6683171"><i class="fa fa-linkedin"></i></a></li>
-										<!-- <li><a href="https://www.facebook.com/profile.php?id=100007404198235"><i class="fa fa-facebook"></i></a></li> -->
-										<li><a href="https://www.instagram.com/yashwant.gali/"><i class="fa fa-instagram"></i></a></li>
-									</ul>
+                                        <li><a href="https://www.linkedin.com/in/gali-yashwant-ab6683171"><i
+                                                    class="fa fa-linkedin"></i></a></li>
+                                        <!-- <li><a href="https://www.facebook.com/profile.php?id=100007404198235"><i class="fa fa-facebook"></i></a></li> -->
+                                        <li><a href="https://www.instagram.com/yashwant.gali/"><i
+                                                    class="fa fa-instagram"></i></a></li>
+                                    </ul>
                                 </div>
                             </div>
                             <div class="img-text">
@@ -707,7 +805,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
 
                 </div>
             </div>
@@ -734,16 +832,22 @@
                             <div class="row">
                                 <div class="col-lg-5">
                                     <div class="testimonial-image">
-                                        <img src="images/testimonials/howard_michel.jpg" class="d-block img-responsive rounded" alt="...">
+                                        <img src="images/testimonials/howard_michel.jpg"
+                                            class="d-block img-responsive rounded" alt="...">
                                     </div>
                                 </div>
                                 <div class="col-lg-7">
                                     <div class="single-testimonial">
                                         <h4>Howard Michel</h4>
                                         <h5>IEEE President, 2015</h5>
-                                        <p><i class="fa fa-quote-left fa-2x" aria-hidden="true"></i>People talk about job security. No one can give you that. Job security depends on the company. What IEEE can do - and I use the phrase carefully - is offer
-                                            security. You can be the most valuable engineer by being current in technology and by networking with others. If you take advantage of the products and services that IEEE offers, you will become the most valuable
-                                            engineer in your organization. And if your job goes away, you'll have no trouble finding another.</p>
+                                        <p><i class="fa fa-quote-left fa-2x" aria-hidden="true"></i>People talk about
+                                            job security. No one can give you that. Job security depends on the company.
+                                            What IEEE can do - and I use the phrase carefully - is offer
+                                            security. You can be the most valuable engineer by being current in
+                                            technology and by networking with others. If you take advantage of the
+                                            products and services that IEEE offers, you will become the most valuable
+                                            engineer in your organization. And if your job goes away, you'll have no
+                                            trouble finding another.</p>
                                     </div>
                                 </div>
                             </div>
@@ -754,16 +858,22 @@
                             <div class="row">
                                 <div class="col-lg-5">
                                     <div class="testimonial-image">
-                                        <img src="images/testimonials/lawrence_wong.jpg" class="d-block img-responsive rounded" alt="...">
+                                        <img src="images/testimonials/lawrence_wong.jpg"
+                                            class="d-block img-responsive rounded" alt="...">
                                     </div>
                                 </div>
                                 <div class="col-lg-7">
                                     <div class="single-testimonial">
                                         <h4>Lawrence Wong</h4>
                                         <h5>Vice President, IEEE Member and Geographic Activities</h5>
-                                        <p><i class="fa fa-quote-left fa-2x" aria-hidden="true"></i>IEEE’s mission 'to foster technological innovation and excellence for the benefit of humanity' challenges us engineers to work towards a better future for
-                                            the entire global community, and there’s never a better and more exciting time to be a member of IEEE to be part of this meaningful mission. I hope you will take this opportunity and experience for yourself
-                                            what I discovered when I joined this dynamic community more than 30 years ago.</p>
+                                        <p><i class="fa fa-quote-left fa-2x" aria-hidden="true"></i>IEEE’s mission 'to
+                                            foster technological innovation and excellence for the benefit of humanity'
+                                            challenges us engineers to work towards a better future for
+                                            the entire global community, and there’s never a better and more exciting
+                                            time to be a member of IEEE to be part of this meaningful mission. I hope
+                                            you will take this opportunity and experience for yourself
+                                            what I discovered when I joined this dynamic community more than 30 years
+                                            ago.</p>
                                     </div>
                                 </div>
                             </div>
@@ -784,7 +894,11 @@
 
                 <div class="col-sm-10 offset-sm-1 justify-content-center p-3">
                     <div id="sfck6xxw7mczpe9yqpbpx5ks7saemw81gej" style="text-align: center"></div>
-                    <script type="text/javascript" src="https://counter3.stat.ovh/private/counter.js?c=k6xxw7mczpe9yqpbpx5ks7saemw81gej&down=async" async></script><noscript><a href="https://www.freecounterstat.com" title="website counter"><img src="https://counter3.stat.ovh/private/freecounterstat.php?c=k6xxw7mczpe9yqpbpx5ks7saemw81gej" border="0" title="website counter" alt="website counter"></a></noscript>
+                    <script type="text/javascript"
+                        src="https://counter3.stat.ovh/private/counter.js?c=k6xxw7mczpe9yqpbpx5ks7saemw81gej&down=async"
+                        async></script><noscript><a href="https://www.freecounterstat.com" title="website counter"><img
+                                src="https://counter3.stat.ovh/private/freecounterstat.php?c=k6xxw7mczpe9yqpbpx5ks7saemw81gej"
+                                border="0" title="website counter" alt="website counter"></a></noscript>
                 </div>
 
                 <div class="col-sm-10 offset-sm-1">
@@ -806,14 +920,22 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 
     <script type="text/javascript" src="js/scripts.js"></script>
     <script type="text/javascript" src="js/counter.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript">
         $('.owl-carousel').owlCarousel({
             loop: true,
@@ -839,33 +961,33 @@
         })
 
 
-        $(window).scroll(function(){ 
-    if($(window).scrollTop() >= 250 ){ 
-       $( ".blink" ).css( "display", "block","background-color .3s", "opacity .5s"," visibility .5s" ); 
-    } else { 
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= 250) {
+                $(".blink").css("display", "block", "background-color .3s", "opacity .5s", " visibility .5s");
+            } else {
 
-    $( ".blink" ).css( "display", "none" ); 
-    } 
-    });
+                $(".blink").css("display", "none");
+            }
+        });
 
 
-    //events 2022 button styles
-    var textWrapper = document.querySelector('.ml10 .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+        //events 2022 button styles
+        var textWrapper = document.querySelector('.ml10 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml10 .letter',
-    rotateY: [-90, 0],
-    duration: 300,
-    delay: (el, i) => 60 * i
-  }).add({
-    targets: '.ml10',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 500
-  });
+        anime.timeline({ loop: true })
+            .add({
+                targets: '.ml10 .letter',
+                rotateY: [-90, 0],
+                duration: 300,
+                delay: (el, i) => 60 * i
+            }).add({
+                targets: '.ml10',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 500
+            });
 
     </script>
 

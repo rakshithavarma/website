@@ -20,7 +20,7 @@ let coupongotnames = [];
 let studentname = document.getElementById("studentname");
 let close = document.getElementById("close");
 //let rmobile=document.querySelector('input').value;
-const sheetId = "1XypXjBLOhLiLoz0ZsMGgV6gDub6ftcKoC0lz-QixJ8Y";
+const sheetId = "1uza3_1Qhj2wwkQQs64tEmEQS5NAk0Mqkz64CVwCXXd8";
 const base = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?`;
 const sheetName = "user-data";
 const query = encodeURIComponent("Select *");
@@ -216,6 +216,8 @@ function initfunc() {
         });
 
         if (enteredmobile == row.PhNo && enteredcoupon == row.CouponCode) {
+          console.log(row.PhNo);
+          console.log(row.CouponCode);
           flag = 1;
           let val1 = ieesum;
           let val2 = nonieesum;
