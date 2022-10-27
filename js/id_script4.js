@@ -152,19 +152,19 @@ modalbtn.addEventListener("click", (e) => {
   });
   if (ieesum >= 300) {
     finaltotaliee.innerText = Math.round(ieesum * (60 / 100));
-    finaltotalnoniee.innerText = Math.round(nonieesum * (70 / 100));
+    finaltotalieewithc.innerText = Math.round(ieesum * (60 / 100));
+    //finaltotalnoniee.innerText = Math.round(nonieesum * (70 / 100));
   } else {
     finaltotaliee.innerText = ieesum;
-    finaltotalnoniee.innerText = nonieesum;
+    finaltotalieewithc.innerText = nonieesum;
   }
 
-  if (ieesum >= 300) {
-    let temp1 = ieesum;
-    let temp2 = nonieesum;
-    finaltotalieewithc.innerText = Math.round(ieesum * (60 / 100));
+  if (nonieesum >= 300) {
+    //finaltotalieewithc.innerText = Math.round(ieesum * (60 / 100));
+    finaltotalnoniee.innerText = Math.round(nonieesum * (70 / 100));
     finaltotalnonieewithc.innerText = Math.round(nonieesum * (70 / 100));
   } else {
-    finaltotalieewithc.innerText = ieesum;
+    finaltotalnoniee.innerText = ieesum;
     finaltotalnonieewithc.innerText = nonieesum;
   }
 });
