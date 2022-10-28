@@ -88,6 +88,7 @@ for (b of btnnew) {
       e.target.parentNode.previousElementSibling.getElementsByClassName(
         "event-name"
       )[0].innerHTML;
+      if(!eventnamesarray.has(eventname)){
     let ieeprice =
       e.target.previousElementSibling.getElementsByClassName(
         "shop-item-price"
@@ -123,6 +124,7 @@ for (b of btnnew) {
     c3.appendChild(button);
 
     totalamountupdate(ieesum, nonieesum);
+    }
   });
 }
 
