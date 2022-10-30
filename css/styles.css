@@ -445,7 +445,9 @@ a.ieee-day {
     overflow: hidden;
     margin-bottom: -2px;
 }
-
+.footer-white{
+    color: white!important;
+}
 .ieee-sb-gvpce{
     padding: 50px 0;
     background-image: linear-gradient(rgba(26,88,203,0.5), rgba(7,198,237,0.5)),linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url("../images/cover-gvp.png");
