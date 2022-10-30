@@ -9,6 +9,12 @@
 
   /* background-color: #aee6f3; */
 }
+#demovd{
+  margin-left: 15vw;
+  margin-right: 15vw;
+  height: 72vh;
+  width: 70vw;
+}
 .event-page-link {
   background-color: #094b86;
   border-color: #8c8c8c;
@@ -107,6 +113,10 @@
 }
 
 @media screen and (max-width: 760px) {
+  #demovd{
+    width:80vw!important;
+    height:30vh!important;
+  }
   .accordion-body .card {
     width: 100%;
   }

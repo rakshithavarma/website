@@ -90,9 +90,9 @@ class MyFooter extends HTMLElement {
 							<hr class="underline" align="left" style="width:9em">
 						</div>
 						<div>
-							<p>E-Mail: <span><a href="mailto:ieeesb@gvpce.ac.in? subject = ">ieeesb@gvpce.ac.in</a></span></p>
-							<p>Mobile: <a href="tel:+919441969659">+91 9441969659</a> (Branch Counsellor)</p>
-							<p>Mobile: <a href="tel:+919182985123">+91 9182985123</a> (Chair)</p>
+							<p class="footer-white">E-Mail: <span><a href="mailto:ieeesb@gvpce.ac.in? subject = ">ieeesb@gvpce.ac.in</a></span></p>
+							<p class="footer-white">Mobile: <a href="tel:+919441969659">+91 9441969659</a> (Branch Counsellor)</p>
+							<p class="footer-white">Mobile: <a href="tel:+916303955842">+91 6303955842</a> (Chair)</p>
 						</div>
 					</div>
 					<div class="col-xs-12 col-md-4">
