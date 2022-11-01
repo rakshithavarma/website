@@ -64,16 +64,16 @@ function deleteRow(row) {
 
 function totalamountupdate(ieesums, nonieesums) {
   if (ieesums >= 300) {
-    nonieedisc.innerText = nonieesums * (30 / 100);
-    nonieesums -= nonieesums * (30 / 100);
+    nonieedisc.innerText = nonieesums * (15 / 100);
+    nonieesums -= nonieesums * (15 / 100);
     nonieee.innerText = nonieesums;
   } else {
     nonieee.innerText = nonieesums;
     nonieedisc.innerText = 0
   }
   if (ieesums >= 300) {
-    ieedisc.innerText = ieesums * (40 / 100);
-    ieesums -= ieesums * (40 / 100);
+    ieedisc.innerText = ieesums * (20 / 100);
+    ieesums -= ieesums * (20 / 100);
     ieee.innerText = ieesums;
   } else {
     ieee.innerText = ieesums;
@@ -154,8 +154,8 @@ modalbtn.addEventListener("click", (e) => {
     seletedeventslist2.appendChild(li2);
   });
   if (ieesum >= 300) {
-    finaltotaliee.innerText = Math.round(ieesum * (60 / 100));
-    finaltotalnoniee.innerText = Math.round(nonieesum * (70 / 100));
+    finaltotaliee.innerText = Math.round(ieesum * (80 / 100));
+    finaltotalnoniee.innerText = Math.round(nonieesum * (85 / 100));
   } else {
     finaltotaliee.innerText = ieesum;
     finaltotalnoniee.innerText = nonieesum;
@@ -164,8 +164,8 @@ modalbtn.addEventListener("click", (e) => {
   if (ieesum >= 300) {
     let temp1 = ieesum;
     let temp2 = nonieesum;
-    finaltotalieewithc.innerText = Math.round(ieesum * (60 / 100));
-    finaltotalnonieewithc.innerText = Math.round(nonieesum * (70 / 100));
+    finaltotalieewithc.innerText = Math.round(ieesum * (80 / 100));
+    finaltotalnonieewithc.innerText = Math.round(nonieesum * (85 / 100));
   } else {
     finaltotalieewithc.innerText = ieesum;
     finaltotalnonieewithc.innerText = nonieesum;
