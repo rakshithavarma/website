@@ -1,12 +1,18 @@
 class MyHeader extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
+	connectedCallback() {
+		this.innerHTML = `
         <ul class="navbar-nav justify-content-center">
 	      		<li class="nav-item active">
 	        		<a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
 	      		</li>
 	      		<li class="nav-item">
-	        		<a class="nav-link" href="team.html">TEAM</a>
+				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownChaptersLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					TEAM
+					</a>
+					<div class="dropdown-menu justify-content-start" aria-labelledby="navbarDropdownChaptersLink">
+						<a class="dropdown-item" href="team.html">Exe-com 2023-24</a>
+						<a class="dropdown-item" href="execom2022-23.html">Exe-com 2022-23</a>
+					</div>
 	      		</li>
 	      		<li class="nav-item dropdown">
 	        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownChaptersLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -60,14 +66,14 @@ class MyHeader extends HTMLElement {
 	      		</li>
 	    	</ul>
         `
-    }
+	}
 }
 
 customElements.define('my-header', MyHeader)
 
 class MyFooter extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
+	connectedCallback() {
+		this.innerHTML = `
 
 		<div class="footer-info">
 			<div class="container">
@@ -91,9 +97,9 @@ class MyFooter extends HTMLElement {
 							<hr class="underline" align="left" style="width:9em">
 						</div>
 						<div>
-							<p class="footer-white">E-Mail: <span><a href="mailto:ieeesb@gvpce.ac.in? subject = ">ieeesb@gvpce.ac.in</a></span></p>
-							<p class="footer-white">Mobile: <a href="tel:+919441969659">+91 9441969659</a> (Branch Counsellor)</p>
-							<p class="footer-white">Mobile: <a href="tel:+916303955842">+91 6303955842</a> (Chair)</p>
+							<p>E-Mail: <span><a href="mailto:ieeesb@gvpce.ac.in? subject = ">ieeesb@gvpce.ac.in</a></span></p>
+							<p>Mobile: <a href="tel:+919494332133">+91 9494332133</a> (Branch Counsellor)</p>
+							<p>Mobile: <a href="tel:+918688962494">+91 8688962494</a> (Chair)</p>
 						</div>
 					</div>
 					<div class="col-xs-12 col-md-4">
@@ -115,7 +121,7 @@ class MyFooter extends HTMLElement {
 			</div>
 		</div>
         `
-    }
+	}
 }
 
 customElements.define('my-footer', MyFooter)

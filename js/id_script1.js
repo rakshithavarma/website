@@ -91,8 +91,8 @@ class MyFooter extends HTMLElement {
           </div>
           <div>
             <p>E-Mail: <span><a href="mailto:ieeesb@gvpce.ac.in? subject = ">ieeesb@gvpce.ac.in</a></span></p>
-            <p>Mobile: <a href="tel:+919441969659">+91 9441969659</a> (Branch Counsellor)</p>
-            <p>Mobile: <a href="tel:+919182985123">+91 9182985123</a> (Chair)</p>
+            <p>Mobile: <a href="tel:+919494332133">+91 9494332133</a> (Branch Counsellor)</p>
+            <p>Mobile: <a href="tel:+918688962494">+91 8688962494</a> (Chair)</p>
           </div>
         </div>
         <div class="col-xs-12 col-md-4">

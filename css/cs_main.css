@@ -688,22 +688,6 @@ background: #ffa726;
 }
 
 
-/* @keyframes animate-line 
-{
-    0%
-    {
-        transform: scaleX(0);
-    }
-    50%
-    {
-        transform: scaleX(1);
-    }
-    100%
-    {
-        transform: scaleX(0);
-    }
-} */
-
 /*Events*/
 .latestevents{
   width: 100%;
