@@ -565,11 +565,17 @@ a.ieee-day {
     box-shadow: 1px 1px 25px 0 rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     padding: 60px 30px;
-    height: 71vh;
+    height: 65vh;
     transition: all .4s ease-in-out;
     margin: 20px auto;
   }
   
+  .tofix {
+    position: absolute;
+    bottom: 30px;
+    margin-left: 25%;
+  }
+
   .feature_item:hover{
     transform: translateY(-30px);
     box-shadow: 1px 1px 25px 0 rgba(0,0,0,0.09);
