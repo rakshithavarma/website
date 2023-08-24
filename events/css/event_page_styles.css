@@ -74,37 +74,15 @@ body {
 }
 
 /* Pre Event Details Styling */
-
-.event-boxes-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.event-box {
-    margin-bottom: 20px;
-    /* Add spacing between boxes */
-    padding: 20px;
-    border: 1px solid #000;
+.pre-event{
+    border: none;
+    border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .primary-details {
-    border: none;
-    border-radius: 10px;
     background-color: #055fad;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     color: white;
-}
-
-.event-content {
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .register-here .btn {
@@ -125,10 +103,37 @@ body {
 }
 
 .pre-event {
-    margin-right: auto;
-    margin-left: auto;
     margin-top: 10vh;
     margin-bottom: 2vh;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-details {
+    background-color: #055fad;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px 0 0 10px;
+    padding: 20px;
+}
+
+.event-content {
+    padding: 20px;
+}
+
+@media (max-width: 991px) {
+    .event-details{
+        border-radius: 10px 10px 0 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .pre-event {
+        width: 84%;
+    }
 }
 
 /* Pre Event Details Styling Ends */
@@ -137,6 +142,11 @@ body {
 
 /* Event Highlights Styling */
 
+.event-highlights{
+    margin-top: 6vh;
+    margin-left: 7vw;
+    margin-right: 7vw;
+}
 .event-highlights-header {
     padding: 30px;
     color: #055fad;
@@ -154,35 +164,11 @@ body {
     height: max-content;
 }
 
-@media (min-width: 768px) {
-    .event-highlights-carousel {
-        width: 44vw;
-        /* Apply the width only for large screens */
-    }
-}
-
-@media (max-width: 767px) {
-    .event-highlights-carousel {
-        width: 80vw;
-        /* Apply the width for screens less than 768px */
-    }
-}
-
 /* Customize the carousel control buttons */
 .carousel-control-prev,
 .carousel-control-next {
-  opacity: 1!important;
+    opacity: 1 !important;
 }
-
-/* Customize the carousel control icons */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-
-  width: 40px; /* Adjust the icon width as needed */
-  height: 40px; /* Adjust the icon height as needed */
-}
-
-
 
 /* Event Highlights Styling Ends */
 
@@ -191,8 +177,15 @@ body {
 /* Winners Announcement Styling */
 
 .winners-announcement {
-    margin-top: 10vh;
+    margin-top: 6vh;
     margin-bottom: 20vh;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    padding-top: 4vh;
+    padding-bottom: 10vh;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .winners-announcement-header {
@@ -323,11 +316,7 @@ body {
     /* border: 3px solid #055fad; */
 }
 
-.event-info {
-    padding: 10px;
-}
-
-.event-info .details {
+.details {
     padding: 10px;
     font-size: 1.15rem;
 }
