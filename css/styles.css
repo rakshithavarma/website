@@ -647,6 +647,11 @@ h6 {
     padding: 0;
 }
 
+.tofix {
+    position: absolute;
+    margin-left: 25%;
+}
+
 .btn {
     margin-top: 10px;
 }
