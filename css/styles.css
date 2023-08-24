@@ -617,7 +617,7 @@ h6 {
     box-shadow: 1px 1px 25px 0 rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     padding: 60px 30px;
-    height: 80vh;
+    height: max-content;
     transition: all .4s ease-in-out;
     margin: 20px auto;
 }
