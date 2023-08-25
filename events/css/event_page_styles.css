@@ -330,20 +330,20 @@ body {
     text-justify: inter-word;
 }
 
-.event-info .details .heading {
+.pre-event .details .heading {
     font-weight: bold;
 }
 
-.event-info .sub-details {
+.sub-details {
     padding: 10px;
 }
 
-.event-info .sub-details .btn {
+.sub-details .btn {
     border: 2px solid #055fad;
     color: #055fad;
 }
 
-.event-info .sub-details .btn:hover {
+.sub-details .btn:hover {
     border: 2px solid #055fad;
     color: #fff;
     background-color: #055fad;
