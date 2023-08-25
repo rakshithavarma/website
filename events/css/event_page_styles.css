@@ -80,6 +80,10 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+.heading{
+    font-weight: bold!important;
+}
+
 .primary-details {
     background-color: #055fad;
     color: white;
@@ -144,6 +148,7 @@ body {
 
 .event-highlights{
     margin-top: 6vh;
+    margin-bottom: 6vh;
     margin-left: 7vw;
     margin-right: 7vw;
 }
