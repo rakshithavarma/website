@@ -24,6 +24,43 @@
 
 <body>
 
+
+    <style type="text/css">
+		#winners_poster img{
+			height: 25rem;
+    		width: 25rem;
+    		object-fit: cover;
+    		overflow: hidden;
+		}
+		.icon-bar {
+		position: fixed;
+		top: 60%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		}
+
+		/* Style the icon bar links */
+		.icon-bar a {
+		display: block;
+		text-align: center;
+		padding: 16px;
+		transition: all 0.3s ease;
+		color: white;
+		font-size: 20px;
+		}
+
+		/* Style the social media icons with color, if you want */
+		.icon-bar a:hover {
+		background-color: #000;
+		}
+
+		.results {
+		background: #5a9541;
+		color: white;
+		}
+	</style>
+
     <!-- navbar - ieee sb gvp -->
 
     <div class="container-fluid navbar navbar-expand-lg sb-navbar sticky-top">
@@ -60,7 +97,7 @@
     <section class="container registration-section">
         <div class="container pre-event">
             <div class="row align-content-center">
-                <div class="col-lg-4 event-details">
+                <div class="col-lg-4 event-details" style="background-color: #5a9541;">
                     <div class="details">
                         <p><span class="heading">📅 Date: </span>23<sup>rd</sup>August, 2023</p>
                         <p><span class="heading">⏰ Time: </span>2:30-3:20 pm</p>
@@ -183,7 +220,7 @@
     </section>
 
     <!-- winners announcement section -->
-    <!-- <section class="winners-announcement" id="winners-announcement">
+    <section class="winners-announcement" id="winners-announcement">
         <div class="winners-announcement-header">
             <div class="row">
                 <div class="col-sm-10 offset-sm-1">
@@ -199,13 +236,13 @@
                 </div>
                 <div class="col-md-8 winners-announcement-content p-3">
                     <p class="p-4">
-                        Here are the results of <b style="color: #420b5a; font-weight: bold;">Vocal Odyssey</b> by <b
-                            style="color: #420b5a; font-weight: bold;">IEEE WIE-AG SB GVPCE (A)</b>.
+                        Here are the <b>results</b> of <b style="color: #5a9541; font-weight: bold;">Debate Royale</b> by <b
+                            style="color: #5a9541; font-weight: bold;">IEEE PES SB GVPCE (A)</b>.
                         <br>
                         <br>
-
-                        Congratulations to <b>Praveena</b>, <b>Yashwanth</b> and <b>Fathima</b> for delivering the most
-                        captivating speeches based on pre-informed themes, showcasing their exceptional talent!✨
+                        Congratulations🥳 to the winners 🏆
+                        <b>( Dedepya, Fathima and team)</b>,
+                        <b>( Vanamali, Aparna and team)</b> who eagerly debated and continuously counterattacked their opponent...
                         <br>
                         <br>
                         We hope you all enjoyed participating in the event.⚡
@@ -214,7 +251,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
 
     <!-- footer -->
@@ -232,6 +269,10 @@
 
         <my-footer></my-footer>
     </section>
+
+    <div class="icon-bar">
+		<a href="#winners-announcement" class="results" style="color: #fff;">Check Results</a>
+	</div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
