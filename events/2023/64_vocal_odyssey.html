@@ -24,6 +24,42 @@
 
 <body>
 
+    <style type="text/css">
+		#winners_poster img{
+			height: 25rem;
+    		width: 25rem;
+    		object-fit: cover;
+    		overflow: hidden;
+		}
+		.icon-bar {
+		position: fixed;
+		top: 60%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		}
+
+		/* Style the icon bar links */
+		.icon-bar a {
+		display: block;
+		text-align: center;
+		padding: 16px;
+		transition: all 0.3s ease;
+		color: white;
+		font-size: 20px;
+		}
+
+		/* Style the social media icons with color, if you want */
+		.icon-bar a:hover {
+		background-color: #000;
+		}
+
+		.results {
+		background: #420b5a;
+		color: white;
+		}
+	</style>
+
     <!-- navbar - ieee sb gvp -->
 
     <div class="container-fluid navbar navbar-expand-lg sb-navbar sticky-top">
@@ -220,6 +256,10 @@
 
         <my-footer></my-footer>
     </section>
+
+    <div class="icon-bar">
+		<a href="#winners-announcement" class="results" style="color: #fff;">Check Results</a>
+	</div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
