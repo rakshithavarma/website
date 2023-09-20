@@ -24,6 +24,42 @@
 
 <body>
 
+    <style type="text/css">
+		#winners_poster img{
+			height: 25rem;
+    		width: 25rem;
+    		object-fit: cover;
+    		overflow: hidden;
+		}
+		.icon-bar {
+		position: fixed;
+		top: 60%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		}
+
+		/* Style the icon bar links */
+		.icon-bar a {
+		display: block;
+		text-align: center;
+		padding: 16px;
+		transition: all 0.3s ease;
+		color: white;
+		font-size: 20px;
+		}
+
+		/* Style the social media icons with color, if you want */
+		.icon-bar a:hover {
+		background-color: #000;
+		}
+
+		.results {
+		background: #420b5a;
+		color: white;
+		}
+	</style>
+
     <!-- navbar - ieee sb gvp -->
 
     <div class="container-fluid navbar navbar-expand-lg sb-navbar sticky-top">
@@ -46,7 +82,7 @@
         <div class="container">
             <div class="row align-items-center events-header">
                 <div class="col-md-6 event-poster text-center">
-                    <img src="/events/images/2023/64_vocal_odyssey.jpg" class="img-fluid rounded">
+                    <img src="/events/images/wie/2023/64_vocal_odyssey/event_poster.jpg" class="img-fluid rounded">
                 </div>
                 <div class="col-md-6 text-center">
                     <h3 class="p-1">Vocal Odyssey</h3>
@@ -60,7 +96,7 @@
         <section class="container registration-section">
             <div class="container pre-event">
                 <div class="row align-content-center">
-                    <div class="col-lg-4 event-details">
+                    <div class="col-lg-4 event-details" style="background-color:#420b5a;">
                         <div class="details">
                             <p><span class="heading">📅 Date: </span>24<sup>th</sup>August, 2023</p>
                             <p><span class="heading">⏰ Time: </span>2:30-3:20 pm</p>
@@ -183,7 +219,7 @@
             <div class="container winners-announcement-body">
                 <div class="row align-items-center">
                     <div class="col-md-4 winners-announcement-poster text-center">
-                        <img src="/events/images/wie/64_vocal_odyssey/winners.jpg" class="img-fluid rounded">
+                        <img src="/events/images/wie/2023/64_vocal_odyssey/winners.jpg" class="img-fluid rounded">
                     </div>
                     <div class="col-md-8 winners-announcement-content p-3">
                         <p class="p-4">
@@ -220,6 +256,10 @@
 
         <my-footer></my-footer>
     </section>
+
+    <div class="icon-bar">
+		<a href="#winners-announcement" class="results" style="color: #fff;">Check Results</a>
+	</div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
