@@ -16,13 +16,14 @@
     background-color: white;
     text-align: center;
     font-family: 'Nunito', sans-serif;
-    
     background-color: rgb(193, 229, 255);
     border-radius: 0px 0px 0px 40px;
 }
 
 .calenderTable td, th{
     font-size: 22px;
+    border: 0.8px ridge;
+    border-collapse: collapse;
 }
 
 .calenderDatesDiv{

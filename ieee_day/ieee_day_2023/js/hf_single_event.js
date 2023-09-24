@@ -1,6 +1,6 @@
 class MyHeader extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
+	connectedCallback() {
+		this.innerHTML = `
         <ul class="navbar-nav justify-content-center">
 	      		<li class="nav-item active">
 	        		<a class="nav-link" href="../../index.html">HOME<span class="sr-only"></span></a>
@@ -60,14 +60,14 @@ class MyHeader extends HTMLElement {
 	      		</li>
 	    	</ul>
         `
-    }
+	}
 }
 
 customElements.define('my-header', MyHeader)
 
 class MyFooter extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
+	connectedCallback() {
+		this.innerHTML = `
 
 		<div class="footer-info">
 			<div class="container">
@@ -92,9 +92,9 @@ class MyFooter extends HTMLElement {
 						</div>
 						<div>
 							<p>E-Mail: <span><a href="mailto:ieeesb@gvpce.ac.in? subject = ">ieeesb@gvpce.ac.in</a></span></p>
-							<p>Mobile: <a href="tel:+919441969659">+91 9441969659</a> (Branch Counsellor)</p>
-							<p>Mobile: <a href="tel:+919182985123">+91 9182985123</a> (Chair)</p>
-						</div>
+							<p>Mobile: <a href="tel:+919494332133">+91 9494332133</a> (Branch Counsellor)</p>
+							<p>Mobile: <a href="tel:+918688962494">+91 8688962494</a> (Chair)</p>
+						</div>s
 					</div>
 					<div class="col-xs-12 col-md-4">
 						<div class="contact-mode social-media">
@@ -115,7 +115,7 @@ class MyFooter extends HTMLElement {
 			</div>
 		</div>
         `
-    }
+	}
 }
 
 customElements.define('my-footer', MyFooter)

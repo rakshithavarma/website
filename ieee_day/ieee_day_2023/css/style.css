@@ -2,6 +2,10 @@ body{
     width: 100vw;
 }
 
+.aboutIeeeDayPara{
+    padding: 50px;
+}
+
 .sectionHeadingStyle{
     font-size: x-large;
     font-weight: 700;
@@ -33,12 +37,18 @@ body{
     #demovd {
         width: 80vw !important;
         height: 30vh !important;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #ss_demo,
     #popup_demo {
         height: auto;
         max-width: 80%;
+    }
+
+    .aboutIeeeDayPara{
+        padding: 10px;
     }
 
     .amountcontainer {
