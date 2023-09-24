@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Our Events 2023</title>
+    <script type="module" src="js/hf_single_event.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/events_styles.css">
+    <link rel="stylesheet" href="css/stars.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- navbar - ieee sb gvp -->
+    <div class="container-fluid navbar navbar-expand-lg sb-navbar sticky-top" style="width: 100vw;">
+        <a class="navbar-brand" href="#"><img src="../../images/ieee_sb_logo.png"></a>
+        <button class="navbar-toggler" type="button" data-trigger="#navbarNavDropdown">
+            <i class="fa fa-bars hamburger" aria-hidden="true"></i>
+        </button>
+        <div class="navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <div class="offcanvas-header mt-3">
+                <button class="btn btn-outline-danger btn-close float-right"> &times </button>
+                <h5 class="py-2 text-white">IEEE SB GVPCE(A)</h5>
+            </div>
+            <my-header></my-header>
+        </div>
+    </div>
+
+    <!-- Checkout Panel -->
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <section class="checkOutPanel align-items-center justify-content-center text-center" id="checkOutPanel"
+        style="margin-top: 15vh;">
+        <div class="container checkoutContainer" style="padding-top: 5vh; padding-bottom: 5vh;">
+            <h1>Checkout</h1>
+            <br>
+            <h4 class="p-2">Selected Items:</h4>
+            <br>
+            <table class="mx-auto" style="width: 80%;">
+                <thead style="background-color: rgb(193, 229, 255); color: black;">
+                    <th>Event</th>
+                    <th>Price</th>
+                </thead>
+                <tbody id="checkout-items"></tbody>
+            </table>
+            <br>
+            <div class="mx-auto" style="background-color: rgb(193, 229, 255); color: black; width: 80%;">
+                <h6>Total Amount to be Paid</h6>
+            <h5>₹<span id="total-amount"></span></h5>
+            </div>
+            <h5>Scan to Pay:</h5>
+            <img src="assets/payments_qr.jpg" alt="Payment QR Code" width="160" height="160">
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="page-footer" id="contact-info">
+        <div class="container footer-heading">
+            <div class="row align-items-center">
+                <div class="col-sm-10 offset-sm-1" align="center">
+                    <h1 class="text-center section_header">Contact Us</h1>
+                    <hr width="100em" align="center" color=" #555555;">
+                </div>
+            </div>
+        </div>
+
+        <my-footer></my-footer>
+    </section>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="../../js/scripts.js"></script>
+    <script>
+        // Retrieve cart data from localStorage
+        const cartData = JSON.parse(localStorage.getItem("cartData"));
+
+        // Display selected items in the checkout page
+        const checkoutItemsElement = document.getElementById("checkout-items");
+        const totalAmountElement = document.getElementById("total-amount");
+
+        if (cartData && cartData.items) {
+            cartData.items.forEach((item) => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td>${item.name}</td>
+                    <td>₹${item.price.toFixed(2)}</td>
+                `;
+                checkoutItemsElement.appendChild(row);
+            });
+        }
+
+        if (cartData && cartData.total) {
+            totalAmountElement.textContent = cartData.total.toFixed(2);
+        }
+    </script>
+
+</body>
+
+</html>

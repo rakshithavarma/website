@@ -1,7 +1,12 @@
 .calenderDatesDiv,
-.calenderCardsDiv {
+.calenderCardsDiv,
+.checkoutContainer {
     background: radial-gradient(ellipse at bottom, #314965 0%, #090a0f 100%);
 
+}
+
+.checkoutContainer{
+    color: white;
 }
 
 .calenderDatesDiv {

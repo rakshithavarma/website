@@ -20,13 +20,78 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+  <!--Icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Scripts -->
   <script src="js/accordion.js"></script>
   <script src="js/id_script4.js"></script>
   <script src="js/id_script3.js"></script>
+  <style>
+    .button-container {
+      text-align: center;
+    }
+
+    /* Style for the hidden button */
+    .hidden-button {
+      display: none;
+      background-color: #e74c3c;
+    }
+
+    /* Styling of cart table */
+
+
+
+
+    /* Style for the side nav-bar*/
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .snavbar {
+      background-color: #555;
+      display: flex;
+      /* Make snavbar horizontal */
+      justify-content: space-around;
+      /* Align items horizontally */
+      align-items: center;
+      /* Center items vertically */
+      height: 60px;
+      /* Set a fixed height */
+      z-index: 1000;
+    }
+
+    .snavbar a {
+      text-decoration: none;
+      /* border-radius: 20px; */
+      /* background-color: #007bff; */
+      color: white;
+      padding: 10px;
+      /* Adjust padding for a more compact snavbar */
+      z-index: 1000;
+    }
+
+    .snavbar a:hover {
+      background-color: #007bff;
+      z-index: 1000;
+    }
+  </style>
 </head>
 
 <body>
+
+  <!--Side nav bar-->
+  <!-- <div class="snavbar" style="background-color: black">
+    <a href="#aboutIeeeDaySection"><i class="fa fa-info-circle"></i> About</a>
+    <a href="#ieeeDayEventRegistrationCal"><i class="fa fa-calendar"></i> Calender</a>
+    <a href="#guidelines"><i class="fa fa-check"></i> Guidelines</a>
+    <a href="#text-center section_header"><i class="fa fa-plus-circle"></i> Add Items</a>
+    <a href="#cart"><i class="fa fa-cart-arrow-down"></i> Cart</a>
+  </div> -->
 
   <!-- navbar - ieee sb gvp -->
   <div class="container-fluid navbar navbar-expand-lg sb-navbar sticky-top" style="width: 100vw;">
@@ -49,7 +114,7 @@
   </section>
 
   <!-- About IEEE Day Section -->
-  <section class="aboutIeeeDaySection" style="margin-top: 8vh;">
+  <section class="aboutIeeeDaySection" id="aboutIeeeDaySection" style="margin-top: 8vh;">
     <div class="sectionHeadingStyle">
       <div class="row align-items-center">
         <div class="col-sm-10 offset-sm-1" align="center">
@@ -105,7 +170,7 @@
   </section>
 
   <!-- Registration Fees Instructions Section-->
-  <section class="container" style="margin-top: 8vh;">
+  <section class="container" id="container" style="margin-top: 8vh;">
     <div class="sectionHeadingStyle">
       <div class="row align-items-center">
         <div class="col-sm-10 offset-sm-1" align="center">
@@ -131,7 +196,7 @@
   <!-- Registration Fees Instructions Section-->
 
   <!-- Calender Section -->
-  <section class="ieeeDayEventRegistrationCal align-items-center"
+  <section class="ieeeDayEventRegistrationCal align-items-center" id="ieeeDayEventRegistrationCal"
     style="width: 70%; margin-left: auto; margin-right: auto; margin-top: 8vh;">
     <div class="sectionHeadingStyle">
       <div class="row align-items-center">
@@ -210,11 +275,30 @@
                       <h3>Art Beyond Brushes</h3>
                       <div class="size">
                         <h4>Team Size:</h4>
-                        <span>1</span>
-                        <span>2</span>
-                        <span>3</span>
+
+                        <div class="button-container item">
+                          <h3 style="display:none">Art Beyond Brushes</h3>
+                          <p style="display:none">Price: $50.00</p>
+                          <button class="show-button"><span>1</span></button>
+                          <button onclick="toggleItem('Art Beyond Brushes', 50.00, this)"
+                            class="hidden-button">Add</button>
+                        </div>
+
+                        <div class="button-container">
+                          <h3 style="display:none">Item 2</h3>
+                          <p style="display:none">Price: $75.00</p>
+                          <button class="show-button"><span>2</span></button>
+                          <button onclick="toggleItem('Item 2', 75.00, this)" class="hidden-button">Add</button>
+                        </div>
+                        <div class="button-container">
+                          <h3 style="display:none">Item 3</h3>
+                          <p style="display:none">Price: $100.00</p>
+                          <button class="show-button"><span>3</span></button>
+                          <button onclick="toggleItem('Item 3', 100.00, this)" class="hidden-button">Add</button>
+                        </div>
+
                       </div>
-                      <a href="#">Add to Cart</a>
+                      <a href="#cart">Go to Cart</a>
                     </div>
                   </div>
                 </div>
@@ -236,7 +320,7 @@
                         <span>2</span>
                         <span>3</span>
                       </div>
-                      <a href="#">Add to Cart</a>
+                      <a href="#cart">Go to Cart</a>
                     </div>
                   </div>
                 </div>
@@ -257,7 +341,7 @@
                         <span>2</span>
                         <span>3</span>
                       </div>
-                      <a href="#">Add to Cart</a>
+                      <a href="#cart">Go to Cart</a>
                     </div>
                   </div>
                 </div>
@@ -279,7 +363,7 @@
                         <span>2</span>
                         <span>3</span>
                       </div>
-                      <a href="#">Add to Cart</a>
+                      <a href="#cart">Go to Cart</a>
                     </div>
                   </div>
                 </div>
@@ -301,7 +385,7 @@
                         <span>2</span>
                         <span>3</span>
                       </div>
-                      <a href="#">Add to Cart</a>
+                      <a href="#cart">Go to Cart</a>
                     </div>
                   </div>
                 </div>
@@ -324,7 +408,7 @@
                         <span>2</span>
                         <span>3</span>
                       </div>
-                      <a href="#">Add to Cart</a>
+                      <a href="#cart">Go to Cart</a>
                     </div>
                   </div>
                 </div>
@@ -345,7 +429,7 @@
                         <span>2</span>
                         <span>3</span>
                       </div>
-                      <a href="#">Add to Cart</a>
+                      <a href="#cart">Go to Cart</a>
                     </div>
                   </div>
                 </div>
@@ -367,7 +451,7 @@
                         <span>2</span>
                         <span>3</span>
                       </div>
-                      <a href="#">Add to Cart</a>
+                      <a href="#cart">Go to Cart</a>
                     </div>
                   </div>
                 </div>
@@ -390,7 +474,7 @@
                         <span>2</span>
                         <span>3</span>
                       </div>
-                      <a href="#">Add to Cart</a>
+                      <a href="#cart">Go to Cart</a>
                     </div>
                   </div>
                 </div>
@@ -411,7 +495,7 @@
                         <span>2</span>
                         <span>3</span>
                       </div>
-                      <a href="#">Add to Cart</a>
+                      <a href="#cart">Go to Cart</a>
                     </div>
                   </div>
                 </div>
@@ -428,12 +512,22 @@
                     <div class="eventContentBx">
                       <h3>Code Break</h3>
                       <div class="size">
-                        <h4>Team Size:</h4>
-                        <span>1</span>
-                        <span>2</span>
-                        <span>3</span>
+                        <h4>Are you IEEE Member ?</h4>
+                        <div class="button-container item">
+                          <h3 style="display:none">Yes</h3>
+                          <p style="display:none">Price: $250.00</p>
+                          <button class="show-button"><span>Yes</span></button>
+                          <button onclick="toggleItem('IEEE Day', 250.00, this)" class="hidden-button">Add</button>
+                        </div>
+
+                        <div class="button-container">
+                          <h3 style="display:none">No</h3>
+                          <p style="display:none">Price: $350.00</p>
+                          <button class="show-button"><span>No</span></button>
+                          <button onclick="toggleItem('IEEE Day', 350.00, this)" class="hidden-button">Add</button>
+                        </div>
                       </div>
-                      <a href="#">Add to Cart</a>
+                      <a href="#cart">Go to Cart</a>
                     </div>
                   </div>
                 </div>
@@ -446,7 +540,7 @@
   </section>
 
   <!--Guidelines-->
-  <section class="guidelines container-fluid mb-4" style="margin-top: 10vh;">
+  <section class="guidelines container-fluid mb-4" id="guidelines" style="margin-top: 10vh;">
     <div class="">
       <div class="sectionHeadingStyle">
         <div class="row align-items-center">
@@ -491,8 +585,7 @@
   <!--End of Guidelines-->
 
   <!-- Cart Section -->
-  <div class="cart amountcontainer container" style="margin-top: 8vh; margin-bottom: 8vh; width: 100%;">
-
+  <div class="cart amountcontainer" id="cart" style="margin-top: 8vh; margin-bottom: 8vh;">
     <div class="card d-flex flex-column text-center" style="background: radial-gradient(ellipse at bottom, #314965 0%, #090a0f 100%);
       border: 0px;">
       <div id="stars"></div>
@@ -506,34 +599,11 @@
           <thead style="background-color: rgb(193, 229, 255);">
             <tr>
               <th>Event Selected</th>
-              <th>
-                Price
-              </th>
-              <th class="delbtn" style="padding-top: 12px;">
-                <i class="material-icons">delete</i>
-              </th>
+              <th>Price</th>
+              <th class="delbtn" style="padding-top: 12px;"><i class="material-icons">delete</i></th>
             </tr>
           </thead>
-          <tbody style="color: white; font-weight: 500;">
-            <tr>
-              <td>Event Selected</th>
-              <td>
-                Price
-              </td>
-              <td class="delbtn" style="padding-top: 12px;">
-                <i class="material-icons">delete</i>
-              </td>
-            </tr>
-            <tr>
-              <td>Event Selected</th>
-              <td>
-                Price
-              </td>
-              <td class="delbtn" style="padding-top: 12px;">
-                <i class="material-icons">delete</i>
-              </td>
-            </tr>
-          </tbody>
+          <tbody id="cart-items"></tbody>
         </table>
       </div>
       <div class="cardfooter pt-3">
@@ -541,29 +611,22 @@
           <table id="price_footer" style="width:81%; text-align: right; padding-right: 19%; ">
             <thead style="background-color: rgb(193, 229, 255);">
               <tr>
-                <th>Discount:</th>
-                <th>
-                  ₹<span id="nonieeedisc">0</span>
-                </th>
-              </tr>
-              <tr>
                 <th>Total :</th>
                 <th>
-                  ₹<span id="nonieee">0</span>
+                  ₹<span id="cart-total">0</span>
                 </th>
               </tr>
 
             </thead>
           </table>
+
           <h6 class="text-light"></h6>
           <h6 class="text-light">
 
           </h6>
         </div>
         <div class="makepayment mb-4">
-
-          <button class="btn btn-light btn-purchase trigger cart-column mt-4" id="modalbtn" data-toggle="modal"
-            data-target="#exampleModalCenter" type="button">
+          <button class="btn btn-light btn-purchase trigger cart-column mt-4"  id="pay-now-button" onclick="redirectToCheckout()" type="button">
             🎟 Buy your ticket
           </button>
         </div>
@@ -572,6 +635,9 @@
   </div>
 
   <!-- End of Cart Section -->
+
+  <!--New and Actual cart without the css-->
+
 
   <!-- footer -->
   <section class="page-footer" id="contact-info">
@@ -598,6 +664,125 @@
     crossorigin="anonymous"></script>
 
   <script type="text/javascript" src="../../js/scripts.js"></script>
+
+  <script>
+    // Initialize variables to keep track of added items
+    let cart = [];
+    let total = 0;
+
+    // Function to check if an item is in the cart
+    function isItemInCart(itemName) {
+      return cart.some((item) => item.name === itemName);
+    }
+
+    // Function to add or remove an item from the cart and update the total amount
+    function toggleItem(itemName, itemPrice, button) {
+      if (isItemInCart(itemName)) {
+        // Remove the item from the cart
+        removeItem(itemName);
+        button.textContent = "Add";
+      } else {
+        // Add the item to the cart
+        addItem(itemName, itemPrice);
+        button.textContent = "Remove";
+      }
+    }
+
+    // Function to add an item to the cart and update the total amount
+    function addItem(itemName, itemPrice) {
+      // Check if the item is already in the cart
+      if (!isItemInCart(itemName)) {
+        // Add the item to the cart
+        cart.push({ name: itemName, price: itemPrice });
+        total += itemPrice;
+
+        // Update the cart display
+        updateCartDisplay();
+      }
+    }
+
+    // Function to remove an item from the cart
+    function removeItem(itemName) {
+      const existingItemIndex = cart.findIndex((item) => item.name === itemName);
+
+      if (existingItemIndex !== -1) {
+        // Remove the item from the cart
+        total -= cart[existingItemIndex].price;
+        cart.splice(existingItemIndex, 1);
+
+        // Update the cart display
+        updateCartDisplay();
+      }
+    }
+
+    // Function to update the cart display
+    function updateCartDisplay() {
+      const cartItemsElement = document.getElementById("cart-items");
+      const cartTotalElement = document.getElementById("cart-total");
+      const payNowButton = document.getElementById("pay-now-button");
+
+      // Clear the previous cart items
+      cartItemsElement.innerHTML = "";
+
+      // Add each item to the cart display as a table row
+      cart.forEach((item) => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+                    <td>${item.name}</td>
+                    <td>₹${item.price.toFixed(2)}</td>
+                    <td><button style="background-color: transparent; border:none;" onclick="toggleItem('${item.name}', ${item.price}, this)"><i class="material-icons" style="color:white">delete</i></button></td>
+                `;
+        cartItemsElement.appendChild(row);
+      });
+
+      // Update the total
+      cartTotalElement.textContent = total.toFixed(2);
+
+      // Enable or disable the "Pay Now" button based on the cart content
+      payNowButton.disabled = cart.length === 0;
+    }
+
+    // Function to redirect to the checkout page
+    function redirectToCheckout() {
+      // Save cart data in localStorage
+      localStorage.setItem("cartData", JSON.stringify({ items: cart, total: total }));
+
+      // Redirect to the checkout page
+      window.location.href = "checkout.html";
+    }
+  </script>
+
+  <script>
+    // Function to set up the event listeners for all button pairs
+    function setupButtonListeners() {
+      const buttonPairs = document.querySelectorAll(".button-container");
+
+      buttonPairs.forEach(function (pair) {
+        const showButton = pair.querySelector(".show-button");
+        const hiddenButton = pair.querySelector(".hidden-button");
+
+        // Initialize hidden button as hidden
+        hiddenButton.style.display = "none";
+
+        showButton.addEventListener("click", function () {
+          // Toggle the visibility of the hidden button
+          if (hiddenButton.style.display === "none") {
+            hiddenButton.style.display = "block";
+          } else {
+            hiddenButton.style.display = "none";
+          }
+        });
+      });
+    }
+
+    // Call the function to set up the event listeners for all button pairs
+    setupButtonListeners();
+
+
+
+
+  </script>
+
 
 </body>
 

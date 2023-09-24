@@ -30,7 +30,8 @@ body{
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;
-    width: 50%;
+    border: 0px;
+    width: 60%;
 }
 
 @media screen and (max-width: 760px) {
@@ -89,4 +90,13 @@ body{
 
 #customers tbody{
     background-color: transparent;
+}
+
+#customers tbody{
+    color: white;
+}
+
+#customers tbody tr{
+    padding-top: 5px;
+    padding-bottom: 3px;
 }

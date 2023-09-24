@@ -1,6 +1,7 @@
 class MyHeader extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
+		<div style="width=100%">
         <ul class="navbar-nav justify-content-center">
 	      		<li class="nav-item active">
 	        		<a class="nav-link" href="../../index.html">HOME<span class="sr-only"></span></a>
@@ -59,7 +60,8 @@ class MyHeader extends HTMLElement {
 	        		<a class="nav-link" href="../../contact.html">CONTACT US</a>
 	      		</li>
 	    	</ul>
-        `
+			</div>
+		`
 	}
 }
 
@@ -68,10 +70,8 @@ customElements.define('my-header', MyHeader)
 class MyFooter extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
-
-		<div class="footer-info">
-			<div class="container">
-				<div class="row">
+			<div class="container" style="width=80%; padding-bottom:10vh;">
+			<div class="row">
 					<div class="col-xs-12 col-md-4">
 						<div class="contact-mode address">
 							<h4 class="text-left">Address</h4>
@@ -94,7 +94,7 @@ class MyFooter extends HTMLElement {
 							<p>E-Mail: <span><a href="mailto:ieeesb@gvpce.ac.in? subject = ">ieeesb@gvpce.ac.in</a></span></p>
 							<p>Mobile: <a href="tel:+919494332133">+91 9494332133</a> (Branch Counsellor)</p>
 							<p>Mobile: <a href="tel:+918688962494">+91 8688962494</a> (Chair)</p>
-						</div>s
+						</div>
 					</div>
 					<div class="col-xs-12 col-md-4">
 						<div class="contact-mode social-media">
@@ -109,11 +109,8 @@ class MyFooter extends HTMLElement {
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3798.3861539630434!2d83.34015411494428!3d17.820523887820432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a395bedc7efb603%3A0x87c06caab54e902a!2sGVP%20College%20of%20Engineering%20(Autonomous)!5e0!3m2!1sen!2sin!4v1598167973876!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-				</div>
+
 			</div>
-		</div>
         `
 	}
 }
