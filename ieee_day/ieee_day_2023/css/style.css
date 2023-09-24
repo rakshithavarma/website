@@ -1,0 +1,62 @@
+.guidelines div {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#demovd {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    height: 72vh;
+    width: 70vw;
+}
+
+.amountcontainer {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 760px) {
+    #demovd {
+        width: 80vw !important;
+        height: 30vh !important;
+    }
+
+    #ss_demo,
+    #popup_demo {
+        height: auto;
+        max-width: 80%;
+    }
+
+    .amountcontainer {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+
+    .shop-item-button {
+        margin-top: 5px !important;
+        margin-bottom: 20px;
+    }
+
+    .box .inner {
+        height: 28vh;
+        line-height: 28vh;
+        font-size: 2em;
+    }
+
+    .cart {
+        margin-left: 5vw !important;
+        margin-right: 5vw !important;
+    }
+}
+
+.mainnav .amountcontainer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 0;
+}

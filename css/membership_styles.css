@@ -64,11 +64,11 @@ body{
 	/*border-bottom: 2px solid #090979;*/
 }
 
-.membership-form-info input[]:focus{
+/* .membership-form-info input[]:focus{
 	border: none;
 	outline: none;
-	/*border-bottom: 2px solid #090979;*/
-}
+	/*border-bottom: 2px solid #090979;
+} */
 
 .membership-form-info textarea{
 	border: 2px solid #090979;

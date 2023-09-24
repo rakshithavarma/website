@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+.calenderDiv {
+    font-family: 'Merriweather';
+}
+
+.calenderWrapper {
+    height: 50%;
+    overflow: hidden;
+    background: radial-gradient(ellipse at bottom, #314965 0%, #090a0f 100%);
+    border-radius: 40px 0px 0px 0px;
+}
+
+.calenderTable {
+    height: 50%;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    
+    background-color: rgb(193, 229, 255);
+    border-radius: 0px 0px 0px 40px;
+}
+
+.calenderTable td, th{
+    font-size: 22px;
+}
+
+.calenderDatesDiv{
+    border-radius: 40px 0px 0px 40px;
+    
+}
+
+.calenderCardsDiv{
+    border-radius: 0px 40px 40px 0px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+.vertical-middle {
+    padding: auto;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700,800, 800i, 900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ieeeDayEventRegistrationCal{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.container {
+    position: relative;
+}
+
+.container .eventCard {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container .eventCard:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+    background-color: rgb(193, 229, 255);
+    clip-path: circle(150px at 80% 20%);
+}
+
+.container .eventCard:hover:before {
+    clip-path: circle(300px at 80% -20%);
+}
+
+.container .eventCard:after {
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.container .eventCard .eventImgBx {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    width: 80%;
+    height: 80%;
+    transition: .5s;
+}
+
+.container .eventCard:hover .eventImgBx {
+    padding-top: 10px;
+    top: 15%;
+    transform: translateY(-25%);
+    /* bug  */
+}
+
+.container .eventCard .eventImgBx img {
+    position: absolute;
+    top: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(-50%, -50%);
+}
+
+.container .eventCard .eventContentBx {
+    padding-top: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 90;
+}
+
+.container .eventCard:hover .eventContentBx {
+    height: 210px;
+}
+
+.container .eventCard .eventContentBx h3 {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.container .eventCard .eventContentBx .size {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container .eventCard:hover .eventContentBx .size {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: .5s;
+}
+
+.container .eventCard:hover .eventContentBx h3 {
+    opacity: 0;
+    /* visibility: visible; */
+    transition-delay: .5s;
+}
+
+.container .eventCard .eventContentBx .size h4 {
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+
+.container .eventCard .eventContentBx .size span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin: 0 5px;
+    transition: .5s;
+    color: #111;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container .eventCard .eventContentBx .size span:hover {
+    /* other bug */
+    background: #B90000;
+}
+
+.container .eventCard .eventContentBx .color span {
+    width: 20px;
+    height: 20px;
+    background: #ff0;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.container .eventCard .eventContentBx a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: .5s;
+}
+
+.container .eventCard:hover .eventContentBx a {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: .7s;
+}
+
+
+.date-button {
+    
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    transform-origin: center;
+    height: 50px;
+    width: 50px;
+}
+.date-button:hover {
+    transform: scale(1.15);
+    color:white;
+    background-color: #314965;
+    font-weight: 650;
+    /* Increase size on hover */
+}
+
+.date-button:active {
+    transform: scale(1.10);
+}
+
+.accordion-content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.panel-button {
+    width: 100%;
+    height: 10vh;
+    border: none;
+    border-radius: 10px;
+    font-size: larger;
+    font-weight: 650;
+    background-color: rgb(193, 229, 255);
+}
+
+@media (max-width: 768px) {
+    table thead {
+        display: none;
+    }
+    .redundant-dates{
+        display: none;
+    }
+
+    .calenderWrapper {
+        border-radius: 40px 40px 0px 0px;
+    }
+    
+    .calenderTable {
+        height: 50%;
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        font-family: 'Nunito', sans-serif;
+        background-color: rgb(193, 229, 255);
+        border-radius: 0px 0px 0px 0px;
+    }
+    
+    .calenderDatesDiv{
+        border-radius: 40px 40px 0px 0px;
+        
+    }
+    
+    .calenderCardsDiv{
+        border-radius: 0px 0px 40px 40px;
+    }
+
+    .aboutIeeeDaySection , .ieeeDayEventRegistrationCal{
+        margin: 3vw;
+    }
+
+}

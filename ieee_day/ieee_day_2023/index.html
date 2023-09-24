@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Our Events 2023</title>
+  <script type="module" src="js/hf_single_event.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/events_styles.css">
+  <link rel="stylesheet" href="css/calender.css">
+  <link rel="stylesheet" href="css/sample_header.css">
+  <link rel="stylesheet" href="css/stars.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+
+  <!-- Scripts -->
+  <script src="js/accordion.js"></script>
+</head>
+
+<body>
+
+  <!-- navbar - ieee sb gvp -->
+  <div class="container-fluid navbar navbar-expand-lg sb-navbar sticky-top">
+    <a class="navbar-brand" href="#"><img src="../../images/ieee_sb_logo.png"></a>
+    <button class="navbar-toggler" type="button" data-trigger="#navbarNavDropdown">
+      <i class="fa fa-bars hamburger" aria-hidden="true"></i>
+    </button>
+    <div class="navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <div class="offcanvas-header mt-3">
+        <button class="btn btn-outline-danger btn-close float-right"> &times </button>
+        <h5 class="py-2 text-white">IEEE SB GVPCE(A)</h5>
+      </div>
+      <my-header></my-header>
+    </div>
+  </div>
+
+  <!-- Banner -->
+  <section>
+    <img src="../../images/ieeeday-cal3.png" alt="" style="width:100vw">
+  </section>
+
+  <!-- About IEEE Day Section -->
+  <section class="aboutIeeeDaySection">
+    <div class="container p-3">
+      <div class="row">
+        <div class="ieeeDayAnimCard col-lg-5 align-items-center">
+          <div class="ieeeDayCardContent">
+            <h2 class="text_shadows">IEEE Day '23</h2>
+          </div>
+        </div>
+        <div class="ieeDayDescription col-lg-7 align-items-center p-3 justify-content-center">
+          <p class="text-center" style="color:black;text-align: justify !important;">
+            IEEE Student Branch GVPCE(A) is set to laud IEEE day on 5th November 2022 . This year, we choose
+            to embrace the theme “Innovate - Developing limitless ideas.”. We believe that a better tomorrow
+            is
+            possible only when young people believe that they can make a difference through innovation .
+            "Innovate-Developing
+            Limitless ideas '' is not just a theme for this year's IEEE Day, It is a call to action to
+            actively engage
+            and take up initiatives to explore today's emerging technologies and develop ideas limitlessly.
+            Together, we
+            work to assure that this year's celebration will be even bigger and more impressive than the
+            last
+            editions. Our IEEE Day team is set to initiate, motivate, coordinate events and inspire others
+            to join in . We
+            welcome everyone to share their excitement, visions, and joy with engineers worldwide by joining
+            us in
+            celebrating our biggest joy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Preview Section -->
+  <section style="margin-top: 5vh;">
+    <div class="about-ieee-day-heading">
+      <div class="row align-items-center">
+        <div class="col-sm-10 offset-sm-1" align="center">
+          <h1 class="text-center section_header">Preview</h1>
+          <hr width="100em" align="center" color=" #555555;">
+          <!--<hr class="underline" style="width:5em">-->
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <p class="preview text-center justify-content-center "
+          style="padding-left: auto; padding-right: auto; color:black;text-align: center!important; margin-top: 0rem;">
+          Thank
+          you for your interest. Below is a small video which will guide you through the payments. For more queries
+          contact .
+        </p>
+      </div>
+      <center>
+        <iframe id="demovd" src="https://www.youtube.com/embed/6ygARHP0uM8">
+        </iframe>
+      </center>
+
+    </div>
+  </section>
+
+  <!-- Registration Fees Instructions Section-->
+  <section class="container" style="margin-top: 7%;">
+    <div class="about-ieee-day-heading">
+      <div class="row align-items-center">
+        <div class="col-sm-10 offset-sm-1" align="center">
+          <h2 class="text-center section_header">How to Register</h2>
+          <hr width="150em" align="center" color=" #555555;">
+          <!-- <hr class="underline" style="width:10em"> -->
+        </div>
+      </div>
+    </div>
+    <div style="margin-left: 10%;margin-right: 10%; ">
+      <p>Pick out your preferences and grab the chance to get upto 30% discount... </p>
+      <h5><b>Disclaimer: </b>
+        <p style="font-size: 1rem;">Discover more and add to cart accordingly </p>
+      </h5>
+      <p>
+        💥For total cost of event(s) ₹300/- and above you can grab a discount of 20%(for IEEE Members) and 15%(for
+        Non-IEEE Members) on total amount.
+      </p>
+      <p>
+        💥With a valid coupon, you can grab a discount of 15% on total amount.
+      </p>
+    </div>
+  </section>
+  <!-- Registration Fees Instructions Section-->
+
+  <!-- Calender Section -->
+  <section class="ieeeDayEventRegistrationCal align-items-center"
+    style="width: 70%; margin-left: auto; margin-right: auto;">
+    <div class="calenderDiv" style="height:92vh">
+      <div class="container" style="height:90%;">
+        <div class="row" style="height:100%; ">
+          <div class="calenderDatesDiv col-lg-8">
+            <div class="calenderWrapper align-items-center">
+              <h1 id="calenderTitle">Events '23</h1>
+              <div id="stars " style="border-radius: 200px;"></div>
+              <div id="stars2"></div>
+            </div>
+            <table class="calenderTable">
+              <thead style="height: 33%;">
+                <tr>
+                  <th class="vertical-middle">Month</th>
+                  <th class="vertical-middle">Sun</th>
+                  <th class="vertical-middle">Mon</th>
+                  <th class="vertical-middle">Tue</th>
+                  <th class="vertical-middle">Wed</th>
+                  <th class="vertical-middle">Thu</th>
+                  <th class="vertical-middle">Fri</th>
+                  <th class="vertical-middle">Sat</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="height: 33%;">
+                  <th class="vertical-middle">Sept</th>
+                  <td class="redundant-dates"></td>
+                  <td class="redundant-dates"></td>
+                  <td class="redundant-dates"></td>
+                  <td><button class="date-button" onclick="toggleAccordion('accordion1')">
+                      27</button></td>
+                  <td><button class="date-button" onclick="toggleAccordion('accordion2')">
+                      28</button></td>
+                  <td><button class="date-button" onclick="toggleAccordion('accordion3')">
+                      29</button></td>
+                  <td><button class="date-button" onclick="toggleAccordion('accordion4')">
+                      30</button></td>
+                </tr>
+                <tr style="height: 33%;">
+                  <th>Oct</th>
+                  <td class=" redundant-dates vertical-middle">1</td>
+                  <td class=" redundant-dates vertical-middle">2</td>
+                  <td><button class="date-button" onclick="toggleAccordion('accordion5')">
+                      3</button></td>
+                  <td><button class="date-button" onclick="toggleAccordion('accordion6')">
+                      4</button></td>
+                  <td><button class="date-button" onclick="toggleAccordion('accordion7')">
+                      5</button></td>
+                  <td class="redundant-dates">6</td>
+                  <td><button class="date-button" onclick="toggleAccordion('accordion8')">
+                      7</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="calenderCardsDiv col-lg-4 p-2">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="accordion1" class="accordion-content" style="display: none;">
+              <button class="panel-button" onclick="togglePanel('panel1')">Art Beyond Brushes</button>
+              <div id="panel1" class="panel-content" style="display: none;">
+                <div class="container">
+                  <div class="eventCard align-items-center align-content-center">
+                    <div class="eventImgBx align-items-center align-content-center">
+                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
+                    </div>
+                    <div class="eventContentBx">
+                      <h3>Art Beyond Brushes</h3>
+                      <div class="size">
+                        <h4>Team Size:</h4>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                      </div>
+                      <a href="#">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="accordion2" class="accordion-content" style="display: none;">
+              <button class="panel-button" onclick="togglePanel('panel3')">CodeBreak</button>
+              <div id="panel3" class="panel-content" style="display: none;">
+                <div class="container" style="height: 90%;">
+                  <div class="eventCard align-items-center align-content-center">
+                    <div class="eventImgBx align-items-center align-content-center">
+                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
+                    </div>
+                    <div class="eventContentBx">
+                      <h3>Code Break</h3>
+                      <div class="size">
+                        <h4>Team Size:</h4>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                      </div>
+                      <a href="#">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <button class="panel-button" onclick="togglePanel('panel4')">Thesis Thrive</button>
+              <div id="panel4" class="panel-content" style="display: none;">
+                <div class="container">
+                  <div class="eventCard align-items-center align-content-center">
+                    <div class="eventImgBx align-items-center align-content-center">
+                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
+                    </div>
+                    <div class="eventContentBx">
+                      <h3>Thesis Thrive</h3>
+                      <div class="size">
+                        <h4>Team Size:</h4>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                      </div>
+                      <a href="#">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="accordion3" class="accordion-content" style="display: none;">
+              <button class="panel-button" onclick="togglePanel('panel5')">Tech Puzzle Unscramble</button>
+              <div id="panel5" class="panel-content" style="display: none;">
+                <div class="container">
+                  <div class="eventCard align-items-center align-content-center">
+                    <div class="eventImgBx align-items-center align-content-center">
+                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
+                    </div>
+                    <div class="eventContentBx">
+                      <h3>Code Break</h3>
+                      <div class="size">
+                        <h4>Team Size:</h4>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                      </div>
+                      <a href="#">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="accordion4" class="accordion-content" style="display: none;">
+              <button class="panel-button" onclick="togglePanel('panel7')"> Flutter Fest</button>
+              <div id="panel7" class="panel-content" style="display: none;">
+                <div class="container">
+                  <div class="eventCard align-items-center align-content-center">
+                    <div class="eventImgBx align-items-center align-content-center">
+                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
+                    </div>
+                    <div class="eventContentBx">
+                      <h3>Code Break</h3>
+                      <div class="size">
+                        <h4>Team Size:</h4>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                      </div>
+                      <a href="#">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+            </div>
+            <div id="accordion5" class="accordion-content" style="display: none;">
+              <button class="panel-button" onclick="togglePanel('panel9')">Math Tale Housie</button>
+              <div id="panel9" class="panel-content" style="display: none;">
+                <div class="container">
+                  <div class="eventCard align-items-center align-content-center">
+                    <div class="eventImgBx align-items-center align-content-center">
+                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
+                    </div>
+                    <div class="eventContentBx">
+                      <h3>Code Break</h3>
+                      <div class="size">
+                        <h4>Team Size:</h4>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                      </div>
+                      <a href="#">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <button class="panel-button" onclick="togglePanel('panel10')">Ladder Logic</button>
+              <div id="panel10" class="panel-content" style="display: none;">
+                <div class="container">
+                  <div class="eventCard align-items-center align-content-center">
+                    <div class="eventImgBx align-items-center align-content-center">
+                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
+                    </div>
+                    <div class="eventContentBx">
+                      <h3>Code Break</h3>
+                      <div class="size">
+                        <h4>Team Size:</h4>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                      </div>
+                      <a href="#">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="accordion6" class="accordion-content" style="display: none;">
+              <button class="panel-button" onclick="togglePanel('panel11')">Mystic Code</button>
+              <div id="panel11" class="panel-content" style="display: none;">
+                <div class="container">
+                  <div class="eventCard align-items-center align-content-center">
+                    <div class="eventImgBx align-items-center align-content-center">
+                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
+                    </div>
+                    <div class="eventContentBx">
+                      <h3>Code Break</h3>
+                      <div class="size">
+                        <h4>Team Size:</h4>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                      </div>
+                      <a href="#">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+            </div>
+            <div id="accordion7" class="accordion-content" style="display: none;">
+              <button class="panel-button" onclick="togglePanel('panel13')">PitchFest</button>
+              <div id="panel13" class="panel-content" style="display: none;">
+                <div class="container">
+                  <div class="eventCard align-items-center align-content-center">
+                    <div class="eventImgBx align-items-center align-content-center">
+                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
+                    </div>
+                    <div class="eventContentBx">
+                      <h3>Code Break</h3>
+                      <div class="size">
+                        <h4>Team Size:</h4>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                      </div>
+                      <a href="#">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <button class="panel-button" onclick="togglePanel('panel14')">TechnoTussle</button>
+              <div id="panel14" class="panel-content" style="display: none;">
+                <div class="container">
+                  <div class="eventCard align-items-center align-content-center">
+                    <div class="eventImgBx align-items-center align-content-center">
+                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
+                    </div>
+                    <div class="eventContentBx">
+                      <h3>Code Break</h3>
+                      <div class="size">
+                        <h4>Team Size:</h4>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                      </div>
+                      <a href="#">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="accordion8" class="accordion-content" style="display: none;">
+              <button class="panel-button" onclick="togglePanel('panel17')">IEEE Day 2023</button>
+              <div id="panel17" class="panel-content" style="display: none;">
+                <div class="container">
+                  <div class="eventCard align-items-center align-content-center">
+                    <div class="eventImgBx align-items-center align-content-center">
+                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
+                    </div>
+                    <div class="eventContentBx">
+                      <h3>Code Break</h3>
+                      <div class="size">
+                        <h4>Team Size:</h4>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                      </div>
+                      <a href="#">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Guidelines-->
+  <section class="guidelines container-fluid mb-4">
+    <div class="">
+      <div class="">
+        <h5 style="color:#055fad!important;">Guidelines to be followed:</h5>
+
+        <hr width="80em" align="center" color=" #555555;">
+
+      </div>
+      <div class="">
+
+        <p>👉 Take the screenshot of the popup appearing after clicking on <b
+            style="color:#055fad;font-weight:bolder!important"> 🎟 Buy your ticket</b> </p>
+        <p>👉 Take a screenshot after you are done with the payment to <span
+            style="text-align: center;padding: 0%;margin: 0%;"><b>PhonePe/Google pay:</b> <a
+              class="mobilesOnly contactlink" href="tel:+91 8341565076">+91 8341565076</a> or by using the UPI Id -
+            bvsslgayathri@oksbi / 8341565076@ybl</span></p>
+        <p>👉 The screenshots should be in the following format:</p>
+        <div align="center" id="demo_imgs" style="padding-bottom: 15px;">
+          <img id="popup_demo" src="../../images/popup_ss_demo.png" alt="image" srcset="" width="48%!important">
+          <img id="ss_demo" src="../../images/id_ss_demo.png" alt="image" srcset="" width="48%!important">
+        </div>
+        <p>👉 Make sure that the UPI Transaction ID should be clearly visible.</p>
+        <p>👉 Its mandatory to attach the screenshots into the google form redirected after clicking the <b>next</b>
+          button.</p>
+        <p>👉 After finishing the payment and registration process, you have to register for each individual event by
+          clicking <b style="color:#055fad;font-weight:bolder!important"> Register Here</b> on each event page in the
+          calender displayed above.</p>
+        <p>👉 In case of team events, please make sure to add a small message/note along with your payment mentioning
+          the names and roll no.s of your teammates</p>
+        <p>👉 In case of any queries, please join the IEEE Day Help Desk group - <b
+            style="color:#055fad!important;font-weight:bolder!important"><a href="https://bit.ly/IEEE-HelpDesk"
+              style="color:#055fad!important">https://bit.ly/IEEE-HelpDesk</a></b> <br> You can post your questions
+          there and we will get back to you ASAP.</p>
+        <h5><b>Note: </b>
+          <p style="font-size: 1rem;"> IEEE membership ID's will be verified. Incase of unreliable data you will not be
+            given an entry pass for event(s). </p>
+        </h5>
+      </div>
+    </div>
+  </section>
+  <!--End of Guidelines-->
+
+  <!-- Cart Section -->
+  <div class="cart amountcontainer mt-4">
+    <div class="card d-flex flex-column text-center">
+      <div class="cardheader p-2 mb-2">
+        <h2 class="section_header">Your Selected Items</h2>
+      </div>
+      <div class="cardbody mb-2">
+        <table id="customers" style="font-family:'Garamond',serif!important;">
+          <tr>
+            <th>Event Selected</th>
+            <th>
+              Price
+              <p class="text-light">(IEEE)</p>
+            </th>
+            <th class="delbtn">
+              Price
+              <p class="text-light">(Non-IEEE)</p>
+            </th>
+          </tr>
+        </table>
+      </div>
+      <div class="cardfooter pt-3">
+        <div class="prices text-center">
+          <table id="price_footer">
+            <tr>
+              <th>Discount:</th>
+              <th>
+                ₹<span id="ieeedisc">0</span>
+              </th>
+              <th>
+                ₹<span id="nonieeedisc">0</span>
+              </th>
+            </tr>
+            <tr>
+              <th>Total :</th>
+              <th>
+                ₹<span id="ieee">0</span>
+              </th>
+              <th>
+                ₹<span id="nonieee">0</span>
+              </th>
+            </tr>
+          </table>
+          <h6 class="text-light"></h6>
+          <h6 class="text-light">
+
+          </h6>
+        </div>
+        <div class="makepayment mb-4">
+
+          <button class="btn btn-light btn-purchase trigger cart-column mt-4" id="modalbtn" data-toggle="modal"
+            data-target="#exampleModalCenter" type="button">
+            🎟 Buy your ticket
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End of Cart Section -->
+
+  <!-- footer -->
+  <section class="page-footer" id="contact-info">
+    <div class="container footer-heading">
+      <div class="row">
+        <div class="col-sm-10 offset-sm-1">
+          <h1 class="text-center">Contact Us</h1>
+          <hr class="underline" align="center" style="width:8.5em">
+        </div>
+      </div>
+    </div>
+
+    <my-footer></my-footer>
+  </section>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="../../js/scripts.js"></script>
+
+</body>
+
+</html>

@@ -2,27 +2,30 @@
   margin: 0;
   padding: 0;
 }
+
 .amountcontainer {
   margin-left: 10vw;
   margin-right: 10vw;
   border-radius: 4px;
-
-  /* background-color: #aee6f3; */
 }
-#demovd{
+
+#demovd {
   margin-left: 15vw;
   margin-right: 15vw;
   height: 72vh;
   width: 70vw;
 }
+
 .event-page-link {
   background-color: #094b86;
   border-color: #8c8c8c;
 }
+
 .card-img-top {
   height: auto;
   width: auto;
 }
+
 .card-text,
 .card-title {
   color: #094b86;
@@ -33,12 +36,14 @@
   margin-left: 40vh !important;
   margin-right: 40vh !important;
 }
+
 .oct-dates {
   /* background-color: rgb(164, 33, 33); */
   background-image: url("../images/white3.jpg");
   box-shadow: rgba(16, 6, 102, 0.35) 0px 17px 17px;
   z-index: 3;
 }
+
 .box .inner {
   width: 90vw;
   height: 35vh;
@@ -49,9 +54,11 @@
   white-space: nowrap;
   overflow: hidden;
 }
+
 .accordion-body {
   background-color: #0d1e40;
 }
+
 .ticket {
   width: 33%;
   height: 50vh;
@@ -72,25 +79,28 @@
   border-collapse: collapse;
   width: 100%;
 }
-#customers td{
+
+#customers td {
   /* background-color:whitesmoke; */
-  background-image:url("images/white.jpg");
+  background-image: url("images/white.jpg");
   border-bottom: 6px solid white;
- 
+
 }
 
-#customers td, #customers th {
+#customers td,
+#customers th {
 
   padding: 8px;
   text-align: center;
 }
 
-.event-name{
-  color:#055fad
+.event-name {
+  color: #055fad
 }
 
-#customers tr:hover {background-color: #ddd;
- 
+#customers tr:hover {
+  background-color: #ddd;
+
 }
 
 #customers th {
@@ -100,85 +110,103 @@
   background-image: url("images/blue4.jpg");
   color: white;
 }
-#customers td{
+
+#customers td {
   /* background-color:whitesmoke; */
-  background-image:url("images/white.jpg");
+  background-image: url("images/white.jpg");
   border-bottom: 6px solid white;
- 
+
 }
 
-#ss_demo, #popup_demo{
-  height:auto;
-  max-width:35%;
+#ss_demo,
+#popup_demo {
+  height: auto;
+  max-width: 35%;
 }
 
 @media screen and (max-width: 760px) {
-  #demovd{
-    width:80vw!important;
-    height:30vh!important;
+  #demovd {
+    width: 80vw !important;
+    height: 30vh !important;
   }
+
   .accordion-body .card {
     width: 100%;
   }
-  #ss_demo, #popup_demo{
-    height:auto;
-    max-width:80%;
+
+  #ss_demo,
+  #popup_demo {
+    height: auto;
+    max-width: 80%;
   }
+
   .amountcontainer {
     margin-left: 5vw;
     margin-right: 5vw;
   }
+
   .eventtickets {
     flex-direction: column;
     justify-content: space-around;
   }
+
   /* new added css */
   .ticket {
     height: 70vh;
     width: 100%;
   }
+
   .shop-item-button {
-    margin-top: 5px!important;
+    margin-top: 5px !important;
     margin-bottom: 20px;
   }
+
   .box .inner {
     height: 28vh;
     line-height: 28vh;
     font-size: 2em;
   }
-  .cart{
-    margin-left: 5vw!important;
-    margin-right: 5vw!important;
+
+  .cart {
+    margin-left: 5vw !important;
+    margin-right: 5vw !important;
   }
 }
+
 @media screen and (min-width: 680px) {
   .card img {
     width: 30%;
   }
+
   .card-body {
     width: 70%;
   }
-  #demo_imgs{
+
+  #demo_imgs {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding-bottom: 10px;
   }
+
   .card {
     flex-direction: row;
     width: 100%;
   }
 }
+
 .modal {
   font-family: "Merriweather", serif !important;
   font-weight: lighter !important;
 }
+
 .nav {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
+
 a,
 h1,
 p,
@@ -186,9 +214,11 @@ h3,
 h4 {
   color: azure;
 }
+
 h5 {
   color: rgb(31, 8, 98);
 }
+
 .nav-tabs .nav-link {
   border: 3px solid #055fad;
   border-radius: 0.25rem;
@@ -208,14 +238,17 @@ h5 {
   color: #c0392b;
   border-radius: 4px;
 }
+
 .event-name {
   font-family: "Merriweather", serif !important;
 }
+
 .dates .nav-tabs .nav-link:hover {
   animation-name: example;
   animation-duration: 1s;
   animation-iteration-count: 2;
 }
+
 @keyframes example {
   0% {
     transform: rotate(-10deg);
@@ -225,6 +258,7 @@ h5 {
     transform: rotate(10deg);
   }
 }
+
 .accordion-button:not(.collapsed) {
   padding: 12px;
   width: 100%;
@@ -232,10 +266,12 @@ h5 {
   background-image: url("../images/blue3.jpg");
   border-radius: 4px;
 }
+
 .rolling {
   color: #053056;
   font-weight: 900;
 }
+
 .card1 {
   /* width: 320px; */
   width: 19rem;
@@ -246,6 +282,7 @@ h5 {
   overflow: hidden;
   box-shadow: rgba(13, 3, 104, 0.35) 0px 15px 15px;
 }
+
 .card1-header {
   width: 100%;
   height: 100px;
@@ -254,6 +291,7 @@ h5 {
   border-radius: 10px 10px 0 0;
   position: relative;
 }
+
 .card1-header:before,
 .card1-header:after {
   content: "";
@@ -266,12 +304,15 @@ h5 {
   border: 2px solid rgb(20, 4, 55);
   box-sizing: border-box;
 }
+
 .card1-header:before {
   left: -13px;
 }
+
 .card1-header:after {
   right: -13px;
 }
+
 .card1-body {
   height: 250px;
   border: 2px solid rgb(20, 4, 55);
@@ -298,6 +339,7 @@ h5 {
   border-collapse: collapse;
   width: 100%;
 }
+
 #price_footer th {
   /* background-color: #055fad; */
   color: white;
@@ -311,11 +353,13 @@ h5 {
   width: 100%;
   background-image: url("../images/blue3.jpg");
 }
+
 #customers td {
   /* background-color:whitesmoke; */
   border-bottom: 6px solid white;
   background-color: white;
 }
+
 #customers td:hover {
   /* background-color:whitesmoke; */
   border-bottom: 6px solid white;
@@ -338,15 +382,18 @@ h5 {
   /* background-color: #055fad; */
   color: white;
 }
+
 .cardheader {
   background-color: white;
 }
+
 .cardfooter {
   /* background-color: #055fad; */
   background-image: url("../images/blue3.jpg");
   /* background-repeat: no-repeat;
   background-size: cover; */
 }
+
 .delete-btn {
   float: right;
   margin-right: 3px;
@@ -354,17 +401,20 @@ h5 {
   color: #1b134b;
   padding: 0;
 }
+
 .accordion-button:focus {
   z-index: 3;
   border-color: #1b134b;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgb(7 34 73 / 25%);
 }
+
 .btn-purchase {
   align-items: center;
   background-color: whitesmoke;
   color: #055fad;
 }
+
 .shop-item-button {
   align-items: center;
   background-color: whitesmoke;
@@ -383,11 +433,13 @@ h5 {
   display: block;
   margin: auto;
 }
+
 .googleform {
   text-decoration: none;
   color: white;
   margin-bottom: 10px;
 }
+
 .googleform:hover {
   color: white;
 }
@@ -504,15 +556,16 @@ body {
   letter-spacing: 1.2px;
   line-height: 30px;
 }
+
 .makepayment {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-p,
-h1 {
-  color: #000000;
-}
+
+body p, h1 {
+    color: #000000;
+  }
 
 /* new ticket container */
 .eventtickets {
@@ -525,6 +578,7 @@ h1 {
 .colorincard {
   color: white;
 }
+
 .tktbtn {
   color: #055fad;
 }
@@ -577,11 +631,13 @@ h1 {
     left: -100%;
   }
 }
+
 .nav-tabs .nav-link.active {
   color: white;
   background-color: #055fad;
   border-color: white;
 }
+
 .nav-tabs .nav-link:hover {
   border-color: #055fad;
 }
@@ -592,12 +648,14 @@ h1 {
   background-color: #055fad;
   color: #ffffff;
 }
+
 .section_header {
   font-family: "Merriweather", serif;
   font-weight: bolder;
   color: #055fad;
   text-align: center;
 }
+
 .calender_header {
   padding-top: 10vh;
   align-content: center;

@@ -1,0 +1,172 @@
+.ieeeDayAnimCard {
+  position: relative;
+  overflow: hidden;
+  padding: 15px 0;
+  box-sizing: border-box;
+
+  &::before {
+      content: "";
+      display: block;
+      background: linear-gradient(90deg,
+              rgb(193, 229, 255) 30%,
+              transparent 30%,
+              transparent 75%,
+              rgb(193, 229, 255) 75%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      background-size: 40px;
+      position: absolute;
+      top: -1000px;
+      left: -50px;
+      bottom: -1000px;
+      right: -50px;
+      transform: rotate(45deg);
+  }
+
+  .ieeeDayCardContent {
+      background: rgb(193, 229, 255);
+      height: 300px;
+  }
+}
+
+:root {
+  --color-primary: #055fad;
+  --color-secondary: #1a025c;
+  --color-tertiary: #531f7d;
+  --color-quaternary: #277d7b;
+}
+
+.text_shadows {
+  position: relative;
+  top: 38%;
+  padding-top: 15px;
+  text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+  font-family: bungee, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: calc(1rem + 3vw);
+  text-align: center;
+  margin: 0;
+  color: var(--color-primary);
+  animation: shadows 2.4s ease-in infinite, move 2.4s ease-in infinite;
+  letter-spacing: 0.4rem;
+}
+
+@keyframes shadows {
+  0% {
+      text-shadow: none;
+  }
+
+  16.67% {
+      text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+
+  33.33% {
+      text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary);
+  }
+
+  50% {
+      text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+
+  66.67% {
+      text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary);
+  }
+
+  83.33% {
+      text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+
+  100% {
+      text-shadow: none;
+  }
+}
+
+@keyframes move {
+  0% {
+      transform: translate(0px, 0px);
+  }
+
+  40% {
+      transform: translate(-12px, -12px);
+  }
+
+  50% {
+      transform: translate(-12px, -12px);
+  }
+
+  60% {
+      transform: translate(-12px, -12px);
+  }
+
+  100% {
+      transform: translate(0px, 0px);
+  }
+}
+
+@media (max-width: 768px) {
+  .ieeeDayAnimCard{
+      height: 180px;
+
+      .ieeeDayCardContent {
+          background: rgb(193, 229, 255);
+          height: 150px;
+      }
+  }
+  .text_shadows {
+      position: relative;
+      top: 32%;
+      text-shadow: 1px 1px 0 var(--color-secondary), 2px 2px 0 var(--color-tertiary), 3px 3px var(--color-quaternary), 4px 4px 0 var(--color-quinary);
+      animation: shadows 2.4s ease-in infinite, move 2.4s ease-in infinite;
+  }
+  @keyframes shadows {
+      0% {
+          text-shadow: none;
+      }
+  
+      16.67% {
+          text-shadow: 1px 1px 0 var(--color-secondary);
+      }
+  
+      33.33% {
+          text-shadow: 1px 1px 0 var(--color-secondary), 2px 2px 0 var(--color-tertiary);
+      }
+  
+      50% {
+          text-shadow: 1px 1px 0 var(--color-secondary), 2px 2px 0 var(--color-tertiary), 3px 3px var(--color-quaternary);
+      }
+  
+      66.67% {
+          text-shadow: 1px 1px 0 var(--color-secondary), 2px 2px 0 var(--color-tertiary);
+      }
+  
+      83.33% {
+          text-shadow: 1px 1px 0 var(--color-secondary);
+      }
+  
+      100% {
+          text-shadow: none;
+      }
+  }
+  
+  @keyframes move {
+      0% {
+          transform: translate(0px, 0px);
+      }
+  
+      40% {
+          transform: translate(-4px, -4px);
+      }
+  
+      50% {
+          transform: translate(-4px, -4px);
+      }
+  
+      60% {
+          transform: translate(-4px, -4px);
+      }
+  
+      100% {
+          transform: translate(0px, 0px);
+      }
+  }
+}
