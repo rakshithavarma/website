@@ -262,10 +262,10 @@
 }
 
 @media (max-width: 768px) {
-    table thead {
+    .calenderTable thead {
         display: none;
     }
-    .redundant-dates{
+    .calenderTable .redundant-dates{
         display: none;
     }
 

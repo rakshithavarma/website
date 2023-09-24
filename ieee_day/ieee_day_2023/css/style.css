@@ -42,8 +42,7 @@ body{
     }
 
     .amountcontainer {
-        margin-left: 5vw;
-        margin-right: 5vw;
+        width: 90%;
     }
 
 
@@ -56,11 +55,6 @@ body{
         height: 28vh;
         line-height: 28vh;
         font-size: 2em;
-    }
-
-    .cart {
-        margin-left: 5vw !important;
-        margin-right: 5vw !important;
     }
 }
 
