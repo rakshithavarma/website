@@ -1,17 +1,17 @@
-body{
+body {
     width: 100vw;
 }
 
-.aboutIeeeDayPara{
+.aboutIeeeDayPara {
     padding: 50px;
 }
 
-.sectionHeadingStyle{
+.sectionHeadingStyle {
     font-size: x-large;
     font-weight: 700;
     color: #055fad;
     font-family: 'Poppins', sans-serif;
-  }
+}
 
 .guidelines div {
     width: 80%;
@@ -35,6 +35,10 @@ body{
 }
 
 @media screen and (max-width: 760px) {
+    .bannerDiv {
+        margin-top: 10vh;
+    }
+
     #demovd {
         width: 80vw !important;
         height: 30vh !important;
@@ -48,7 +52,7 @@ body{
         max-width: 80%;
     }
 
-    .aboutIeeeDayPara{
+    .aboutIeeeDayPara {
         padding: 10px;
     }
 
@@ -81,22 +85,22 @@ body{
 #customers th {
     padding-top: 6px;
     padding-bottom: 6px;
-  }
+}
 
-.cardheader{
+.cardheader {
     color: white;
     background-color: transparent;
 }
 
-#customers tbody{
+#customers tbody {
     background-color: transparent;
 }
 
-#customers tbody{
+#customers tbody {
     color: white;
 }
 
-#customers tbody tr{
+#customers tbody tr {
     padding-top: 5px;
     padding-bottom: 3px;
 }
