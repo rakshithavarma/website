@@ -1,5 +1,16 @@
+body{
+    width: 100vw;
+}
+
+.sectionHeadingStyle{
+    font-size: x-large;
+    font-weight: 700;
+    color: #055fad;
+    font-family: 'Poppins', sans-serif;
+  }
+
 .guidelines div {
-    width: 75%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -12,9 +23,10 @@
 }
 
 .amountcontainer {
-    margin-left: 10vw;
-    margin-right: 10vw;
-    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    width: 50%;
 }
 
 @media screen and (max-width: 760px) {
@@ -59,4 +71,18 @@
     padding: 20px 0;
     transition: all 0.3s ease-in-out;
     padding: 10px 0;
+}
+
+#customers th {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+.cardheader{
+    color: white;
+    background-color: transparent;
+}
+
+#customers tbody{
+    background-color: transparent;
 }

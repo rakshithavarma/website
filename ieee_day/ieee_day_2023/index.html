@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="css/style.css">
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Scripts -->
   <script src="js/accordion.js"></script>
 </head>
@@ -26,7 +26,7 @@
 <body>
 
   <!-- navbar - ieee sb gvp -->
-  <div class="container-fluid navbar navbar-expand-lg sb-navbar sticky-top">
+  <div class="container-fluid navbar navbar-expand-lg sb-navbar sticky-top" style="width: 100vw;">
     <a class="navbar-brand" href="#"><img src="../../images/ieee_sb_logo.png"></a>
     <button class="navbar-toggler" type="button" data-trigger="#navbarNavDropdown">
       <i class="fa fa-bars hamburger" aria-hidden="true"></i>
@@ -46,7 +46,15 @@
   </section>
 
   <!-- About IEEE Day Section -->
-  <section class="aboutIeeeDaySection">
+  <section class="aboutIeeeDaySection" style="margin-top: 8vh;">
+    <div class="sectionHeadingStyle">
+      <div class="row align-items-center">
+        <div class="col-sm-10 offset-sm-1" align="center">
+          <h1 class="text-center section_header">About IEEE Day</h1>
+          <hr width="100em" align="center" color=" #555555;">
+        </div>
+      </div>
+    </div>
     <div class="container p-3">
       <div class="row">
         <div class="ieeeDayAnimCard col-lg-5 align-items-center">
@@ -54,7 +62,7 @@
             <h2 class="text_shadows">IEEE Day '23</h2>
           </div>
         </div>
-        <div class="ieeDayDescription col-lg-7 align-items-center p-3 justify-content-center">
+        <div class="ieeDayDescription col-lg-7 align-items-center p-4 justify-content-center">
           <p class="text-center" style="color:black;text-align: justify !important;">
             IEEE Student Branch GVPCE(A) is set to laud IEEE day on 5th November 2022 . This year, we choose
             to embrace the theme “Innovate - Developing limitless ideas.”. We believe that a better tomorrow
@@ -79,12 +87,11 @@
 
   <!-- Preview Section -->
   <section style="margin-top: 5vh;">
-    <div class="about-ieee-day-heading">
+    <div class="sectionHeadingStyle">
       <div class="row align-items-center">
         <div class="col-sm-10 offset-sm-1" align="center">
           <h1 class="text-center section_header">Preview</h1>
           <hr width="100em" align="center" color=" #555555;">
-          <!--<hr class="underline" style="width:5em">-->
         </div>
       </div>
     </div>
@@ -106,13 +113,12 @@
   </section>
 
   <!-- Registration Fees Instructions Section-->
-  <section class="container" style="margin-top: 7%;">
-    <div class="about-ieee-day-heading">
+  <section class="container" style="margin-top: 8vh;">
+    <div class="sectionHeadingStyle">
       <div class="row align-items-center">
         <div class="col-sm-10 offset-sm-1" align="center">
-          <h2 class="text-center section_header">How to Register</h2>
-          <hr width="150em" align="center" color=" #555555;">
-          <!-- <hr class="underline" style="width:10em"> -->
+          <h1 class="text-center section_header">How to Register?</h1>
+          <hr width="100em" align="center" color=" #555555;">
         </div>
       </div>
     </div>
@@ -134,14 +140,22 @@
 
   <!-- Calender Section -->
   <section class="ieeeDayEventRegistrationCal align-items-center"
-    style="width: 70%; margin-left: auto; margin-right: auto;">
+    style="width: 70%; margin-left: auto; margin-right: auto; margin-top: 8vh;">
+    <div class="sectionHeadingStyle">
+      <div class="row align-items-center">
+        <div class="col-sm-10 offset-sm-1" align="center">
+          <h1 class="text-center section_header">Select Your Events!</h1>
+          <hr width="100em" align="center" color=" #555555;">
+        </div>
+      </div>
+    </div>
     <div class="calenderDiv" style="height:92vh">
       <div class="container" style="height:90%;">
         <div class="row" style="height:100%; ">
           <div class="calenderDatesDiv col-lg-8">
             <div class="calenderWrapper align-items-center">
               <h1 id="calenderTitle">Events '23</h1>
-              <div id="stars " style="border-radius: 200px;"></div>
+              <div id="stars"></div>
               <div id="stars2"></div>
             </div>
             <table class="calenderTable">
@@ -442,11 +456,13 @@
   <!--Guidelines-->
   <section class="guidelines container-fluid mb-4">
     <div class="">
-      <div class="">
-        <h5 style="color:#055fad!important;">Guidelines to be followed:</h5>
-
-        <hr width="80em" align="center" color=" #555555;">
-
+      <div class="sectionHeadingStyle">
+        <div class="row align-items-center">
+          <div class="col-sm-10 offset-sm-1" align="center">
+            <h1 class="text-center section_header">Guidelines to follow</h1>
+            <hr width="100em" align="center" color=" #555555;">
+          </div>
+        </div>
       </div>
       <div class="">
 
@@ -483,47 +499,68 @@
   <!--End of Guidelines-->
 
   <!-- Cart Section -->
-  <div class="cart amountcontainer mt-4">
-    <div class="card d-flex flex-column text-center">
-      <div class="cardheader p-2 mb-2">
+  <div class="cart amountcontainer" style="margin-top: 8vh; margin-bottom: 8vh;">
+
+    <div class="card d-flex flex-column text-center" style="background: radial-gradient(ellipse at bottom, #314965 0%, #090a0f 100%);
+      border: 0px;">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div class="cardheader p-4 mb-2">
         <h2 class="section_header">Your Selected Items</h2>
       </div>
       <div class="cardbody mb-2">
-        <table id="customers" style="font-family:'Garamond',serif!important;">
-          <tr>
-            <th>Event Selected</th>
-            <th>
-              Price
-              <p class="text-light">(IEEE)</p>
-            </th>
-            <th class="delbtn">
-              Price
-              <p class="text-light">(Non-IEEE)</p>
-            </th>
-          </tr>
+        <table id="customers" style="font-family:'Garamond',serif!important; width:100%;">
+          <thead style="background-color: rgb(193, 229, 255);">
+            <tr>
+              <th>Event Selected</th>
+              <th>
+                Price
+              </th>
+              <th class="delbtn" style="padding-top: 12px;">
+                <i class="material-icons">delete</i>
+              </th>
+            </tr>
+          </thead>
+          <tbody style="color: white; font-weight: 500;">
+            <tr>
+              <td>Event Selected</th>
+              <td>
+                Price
+              </td>
+              <td class="delbtn" style="padding-top: 12px;">
+                <i class="material-icons">delete</i>
+              </td>
+            </tr>
+            <tr>
+              <td>Event Selected</th>
+              <td>
+                Price
+              </td>
+              <td class="delbtn" style="padding-top: 12px;">
+                <i class="material-icons">delete</i>
+              </td>
+            </tr>
+          </tbody>
         </table>
       </div>
       <div class="cardfooter pt-3">
-        <div class="prices text-center">
-          <table id="price_footer">
-            <tr>
-              <th>Discount:</th>
-              <th>
-                ₹<span id="ieeedisc">0</span>
-              </th>
-              <th>
-                ₹<span id="nonieeedisc">0</span>
-              </th>
-            </tr>
-            <tr>
-              <th>Total :</th>
-              <th>
-                ₹<span id="ieee">0</span>
-              </th>
-              <th>
-                ₹<span id="nonieee">0</span>
-              </th>
-            </tr>
+        <div class="prices text-center" style="background-color: rgb(193, 229, 255);">
+          <table id="price_footer" style="width:81%; text-align: right; padding-right: 19%; ">
+            <thead style="background-color: rgb(193, 229, 255);">
+              <tr>
+                <th>Discount:</th>
+                <th>
+                  ₹<span id="nonieeedisc">0</span>
+                </th>
+              </tr>
+              <tr>
+                <th>Total :</th>
+                <th>
+                  ₹<span id="nonieee">0</span>
+                </th>
+              </tr>
+
+            </thead>
           </table>
           <h6 class="text-light"></h6>
           <h6 class="text-light">
@@ -546,10 +583,10 @@
   <!-- footer -->
   <section class="page-footer" id="contact-info">
     <div class="container footer-heading">
-      <div class="row">
-        <div class="col-sm-10 offset-sm-1">
-          <h1 class="text-center">Contact Us</h1>
-          <hr class="underline" align="center" style="width:8.5em">
+      <div class="row align-items-center">
+        <div class="col-sm-10 offset-sm-1" align="center">
+          <h1 class="text-center section_header">Contact Us</h1>
+          <hr width="100em" align="center" color=" #555555;">
         </div>
       </div>
     </div>
