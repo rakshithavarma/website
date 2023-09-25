@@ -40,47 +40,16 @@
       /* Add margin to create space between buttons */
     }
 
-    .registrationFeesInstructions ul {
-      list-style: none;
+    .show-button {
+      display: none;
     }
 
-    .registrationFeesInstructions ul li::before {
-      content: "\2022";
-      color: rgb(0, 0, 0);
-      font-weight: bold;
-      display: inline-block;
-      width: 1em;
-      margin-left: -1em;
-    }
-
-    .custom-container {
-      padding: 30px;
-    }
-
-    .custom-container .row {
-      display: flex;
-      align-items: center;
-    }
-
-    .custom-container .left-half {
-      flex: 1;
-      text-align: center;
-    }
-
-    .custom-container .right-half {
-      display: flex;
-      justify-content: center;
-      flex: 1;
-      text-align: center;
-    }
-
-    .poster {
-      width: 100%;
-      max-width: 300px;
-      height: 300px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    /* Style for the hidden button */
+    .hidden-button {
+      display: block;
+      background-color: #194F8F;
+      color: #fff;
+      width: 80px;
     }
   </style>
 </head>
@@ -125,33 +94,8 @@
             <h1 class="text_shadows">IEEE Day '23</h1>
           </div>
         </div>
-        <div class="ieeDayDescription col-lg-7 align-items-center px-auto justify-content-center">
+        <div class="ieeDayDescription col-lg-7 align-items-center p-4 justify-content-center">
           <p class="aboutIeeeDayPara text-center" style="color:black; text-align: justify !important; font-size: 18px;">
-            Join us in celebrating IEEE Day 2023! Since 1884, we've united as a global community, committed to
-            excellence. This year's theme is "EVOLVE: Elevate to Excellence," and our festivities run from September
-            25th to October 7th. Let's collaborate and harness technology for a brighter future! Together, we can shape
-            the next era of innovation and progress. Join the movement and be a part of our global mission for a better
-            tomorrow.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Motto for IEEE Day 2023 -->
-  <section class="container mottoIeeeDaySection" id="mottoIeeeDaySection" style="margin-top: 8vh;">
-    <div class="sectionHeadingStyle">
-      <div class="row align-items-center">
-        <div class="col-sm-10 offset-sm-1" align="center">
-          <h1 class="text-center section_header">Motto for IEEE Day '23</h1>
-          <hr width="100em" align="center" color=" #555555;">
-        </div>
-      </div>
-    </div>
-    <div class="container custom-container mx-auto">
-      <div class="row">
-        <div class="col-md-6 left-half">
-          <p style="text-align: justify !important; font-size: 18px;">
             IEEE Student Branch GVPCE(A) is gearing up for IEEE Day on October 7th, 2023, with the theme
             "Evolve -
             Elevate to Excellence." Join us in our journey of continuous growth and excellence. Our
@@ -159,13 +103,7 @@
             ready to initiate, motivate and coordinate inspiring events.We welcome you all to join us in
             making this
             journey remarkable!
-
           </p>
-        </div>
-        <div class="col-md-6 right-half mx-auto px-ato">
-          <div class="poster">
-            <img src="assets/IEEE_Day_'23.jpg" alt="IEEE Day '23 Poster" height="100%">
-          </div>
         </div>
       </div>
     </div>
@@ -199,7 +137,7 @@
   </section>
 
   <!-- Registration Fees Instructions Section-->
-  <section class="container registrationFeesInstructions" style="margin-top: 8vh;">
+  <section class="container" style="margin-top: 8vh;">
     <div class="sectionHeadingStyle">
       <div class="row align-items-center">
         <div class="col-sm-10 offset-sm-1" align="center">
@@ -208,13 +146,19 @@
         </div>
       </div>
     </div>
-    <div style="margin-left: 10%;margin-right: 10%;" class="registrationFeesInstructions">
-      <ul class="registrationFeesInstructions" style="list-style: none;">
-        <li> Select the date of the event you want to register in the calender below.</li>
-        <li> Click on the button corresponding to your selected event.</li>
-        <li> In case of team events, make sure to select appropriate team size.</li>
-        <li> Go to the cart section to see your selected events and corresponding costs.</li>
-      </ul>
+    <div style="margin-left: 10%;margin-right: 10%; ">
+      <p>Pick out your preferences and grab the chance to get upto 30% discount... </p>
+      <h5><b>Disclaimer: </b>
+        <p style="font-size: 1rem;">Discover more and add to cart accordingly </p>
+      </h5>
+      <p>
+        💥For total cost of event(s) ₹300/- and above you can grab a discount of 20%(for IEEE Members) and
+        15%(for
+        Non-IEEE Members) on total amount.
+      </p>
+      <p>
+        💥With a valid coupon, you can grab a discount of 15% on total amount.
+      </p>
     </div>
   </section>
   <!-- Registration Fees Instructions Section -->
@@ -258,28 +202,28 @@
                   <td class="redundant-dates"></td>
                   <td class="redundant-dates"></td>
                   <td><button class="date-button" onclick="toggleAccordion('accordion1')">
-                      26</button></td>
-                  <td>
-                    27</td>
+                    26</button></td>
+                  <td><button class="date-button" onclick="toggleAccordion('accordion2')">
+                      27</button></td>
                   <td class="redundant-dates">28</td>
-                  <td>
-                    29</td>
-                  <td>
-                    30</td>
+                  <td><button class="date-button" onclick="toggleAccordion('accordion3')">
+                      29</button></td>
+                  <td><button class="date-button" onclick="toggleAccordion('accordion4')">
+                      30</button></td>
                 </tr>
                 <tr style="height: 33%;">
                   <th>Oct</th>
                   <td class=" redundant-dates vertical-middle">1</td>
                   <td class=" redundant-dates vertical-middle">2</td>
-                  <td>
-                    3</td>
-                  <td>
-                    4</td>
-                  <td>
-                    5</td>
+                  <td><button class="date-button" onclick="toggleAccordion('accordion5')">
+                      3</button></td>
+                  <td><button class="date-button" onclick="toggleAccordion('accordion6')">
+                      4</button></td>
+                  <td><button class="date-button" onclick="toggleAccordion('accordion7')">
+                      5</button></td>
                   <td class="redundant-dates">6</td>
-                  <td>
-                    7</td>
+                  <td><button class="date-button" onclick="toggleAccordion('accordion8')">
+                      7</button></td>
                 </tr>
               </tbody>
             </table>
@@ -292,7 +236,7 @@
               <div id="panel1" class="panel-content" style="display: none;">
                 <div class="container mt-5">
                   <div class="card mx-auto py-auto">
-                    <img src="../../events/images/sb/2023/69_art_beyond_brushes/event_poster.jpg" class="card-img-top mx-auto" style="max-width: 240px;"
+                    <img src="assets/brushless painting.jpg" class="card-img-top mx-auto" style="max-width: 240px;"
                       alt="Image">
                     <div class="card-body text-center">
                       <div class="d-flex justify-content-evenly align-items-center">
@@ -300,10 +244,10 @@
                         <div>
                           <button type="button" class="btn addToCartButtons"
                             onclick="toggleItem('Art Beyond Brushes', 50.00, this)"> 1</button>
-                          <!-- <button type="button" class="btn addToCartButtons"
+                          <button type="button" class="btn addToCartButtons"
                             onclick="toggleItem('Art Beyond Brushes', 75.00, this)"> 2</button>
                           <button type="button" class="btn addToCartButtons"
-                            onclick="toggleItem('Art Beyond Brushes', 100.00, this)"> 3</button> -->
+                            onclick="toggleItem('Art Beyond Brushes', 100.00, this)"> 3</button>
 
                         </div>
                       </div>
@@ -319,7 +263,7 @@
                 <div class="container" style="height: 90%;">
                   <div class="eventCard align-items-center align-content-center">
                     <div class="eventImgBx align-items-center align-content-center">
-                      <img src="../../events/images/sb/2023/" alt="event_poster" height="250px">
+                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
                     </div>
                     <div class="eventContentBx">
                       <h3>Code Break</h3>
@@ -340,7 +284,7 @@
                 <div class="container">
                   <div class="eventCard align-items-center align-content-center">
                     <div class="eventImgBx align-items-center align-content-center">
-                      <img src="../../events/images/sb/2023/" alt="event_poster" height="250px">
+                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
                     </div>
                     <div class="eventContentBx">
                       <h3>Thesis Thrive</h3>
@@ -362,7 +306,7 @@
                 <div class="container">
                   <div class="eventCard align-items-center align-content-center">
                     <div class="eventImgBx align-items-center align-content-center">
-                      <img src="../../events/images/sb/2023/" alt="event_poster" height="250px">
+                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
                     </div>
                     <div class="eventContentBx">
                       <h3>Code Break</h3>
@@ -384,7 +328,7 @@
                 <div class="container">
                   <div class="eventCard align-items-center align-content-center">
                     <div class="eventImgBx align-items-center align-content-center">
-                      <img src="../../events/images/sb/2023/" alt="event_poster" height="250px">
+                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
                     </div>
                     <div class="eventContentBx">
                       <h3>Code Break</h3>
@@ -407,7 +351,7 @@
                 <div class="container">
                   <div class="eventCard align-items-center align-content-center">
                     <div class="eventImgBx align-items-center align-content-center">
-                      <img src="../../events/images/sb/2023/" alt="event_poster" height="250px">
+                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
                     </div>
                     <div class="eventContentBx">
                       <h3>Code Break</h3>
@@ -428,7 +372,7 @@
                 <div class="container">
                   <div class="eventCard align-items-center align-content-center">
                     <div class="eventImgBx align-items-center align-content-center">
-                      <img src="../../events/images/sb/2023/" alt="event_poster" height="250px">
+                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
                     </div>
                     <div class="eventContentBx">
                       <h3>Code Break</h3>
@@ -450,7 +394,7 @@
                 <div class="container">
                   <div class="eventCard align-items-center align-content-center">
                     <div class="eventImgBx align-items-center align-content-center">
-                      <img src="../../events/images/sb/2023/" alt="event_poster" height="250px">
+                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
                     </div>
                     <div class="eventContentBx">
                       <h3>Code Break</h3>
@@ -473,7 +417,7 @@
                 <div class="container">
                   <div class="eventCard align-items-center align-content-center">
                     <div class="eventImgBx align-items-center align-content-center">
-                      <img src="../../events/images/sb/2023/" alt="event_poster" height="250px">
+                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
                     </div>
                     <div class="eventContentBx">
                       <h3>Code Break</h3>
@@ -494,7 +438,7 @@
                 <div class="container">
                   <div class="eventCard align-items-center align-content-center">
                     <div class="eventImgBx align-items-center align-content-center">
-                      <img src="../../events/images/sb/2023/" alt="event_poster" height="250px">
+                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
                     </div>
                     <div class="eventContentBx">
                       <h3>Code Break</h3>
@@ -516,7 +460,7 @@
                 <div class="container">
                   <div class="eventCard align-items-center align-content-center">
                     <div class="eventImgBx align-items-center align-content-center">
-                      <img src="../../events/images/sb/2023/" alt="event_poster" height="250px">
+                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
                     </div>
                     <div class="eventContentBx">
                       <h3>Code Break</h3>
@@ -565,9 +509,9 @@
             style="color:#055fad;font-weight:bolder!important"> 🎟 Buy your ticket</b> </p>
         <p>👉 Take a screenshot after you are done with the payment to <span
             style="text-align: center;padding: 0%;margin: 0%;"><b>PhonePe/Google pay:</b> <a
-              class="mobilesOnly contactlink" href="tel:+91 7893009205">+91 7893009205</a> or by using the
+              class="mobilesOnly contactlink" href="tel:+91 8341565076">+91 8341565076</a> or by using the
             UPI Id -
-            nuzzurockzz301@okaxis / 7893009205@paytm / 7893009205@axl</span></p>
+            bvsslgayathri@oksbi / 8341565076@ybl</span></p>
         <p>👉 The screenshots should be in the following format:</p>
         <div align="center" id="demo_imgs" style="padding-bottom: 15px;">
           <img id="popup_demo" src="../../images/popup_ss_demo.png" alt="image" srcset="" width="48%!important">
@@ -579,14 +523,16 @@
           button.
         </p>
         <p>👉 After finishing the payment and registration process, you have to register for each individual
-          event by opening the link displayed at the end of the registration form and then the event page for the evnts
-          you have selected.</p>
+          event by
+          clicking <b style="color:#055fad;font-weight:bolder!important"> Register Here</b> on each event page
+          in the
+          calender displayed above.</p>
         <p>👉 In case of team events, please make sure to add a small message/note along with your payment
           mentioning
           the names and roll no.s of your teammates</p>
-        <p>👉 Join the Help Desk group, incase of any queries - <b
-            style="color:#055fad!important;font-weight:bolder!important"><a href="https://bit.ly/IEEEDay2023HelpDesk"
-              style="color:#055fad!important">https://bit.ly/IEEEDay2023HelpDesk</a>. </b>You can post your
+        <p>👉 In case of any queries, please join the IEEE Day Help Desk group - <b
+            style="color:#055fad!important;font-weight:bolder!important"><a href="https://bit.ly/IEEE-HelpDesk"
+              style="color:#055fad!important">https://bit.ly/IEEE-HelpDesk</a></b> <br> You can post your
           questions
           there and we will get back to you ASAP.</p>
         <h5><b>Note: </b>
@@ -695,7 +641,7 @@
     function toggleItem(itemName, itemPrice, button) {
       if (isItemInCart(itemName)) {
         removeItem(itemName);
-        button.textContent = "1";
+        button.textContent = "Add";
       } else {
         // Add the item to the cart
         addItem(itemName, itemPrice);
@@ -747,7 +693,7 @@
         row.innerHTML = `
                     <td class="py-1">${item.name}</td>
                     <td class="py-1">₹${item.price.toFixed(2)}</td>
-                    <td class="py-1"><button style="background-color: transparent; border:none;" onclick="toggleItem('${item.name}', ${item.price}, this)"><i class="material-icons">delete</i></button></td>
+                    <td class="py-1"><button style="background-color: transparent; border:none;" onclick="toggleItem('${item.name}', ${item.price}, this)"><i class="material-icons" style="color:white">delete</i></button></td>
                 `;
         cartItemsElement.appendChild(row);
       });
