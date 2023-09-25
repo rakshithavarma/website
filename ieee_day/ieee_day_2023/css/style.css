@@ -2,6 +2,31 @@ body {
     width: 100vw;
 }
 
+#bannerImg1 {
+    display: block;
+}
+
+#bannerImg2 {
+    display: none;
+}
+
+.checkout-items tr{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+
+    #bannerImg1 {
+        display: none;
+    }
+
+    #bannerImg2 {
+        display: block;
+    }
+}
+
+
 .aboutIeeeDayPara {
     padding: 50px;
 }
@@ -20,10 +45,17 @@ body {
 }
 
 #demovd {
-    margin-left: 15vw;
-    margin-right: 15vw;
     height: 72vh;
-    width: 70vw;
+}
+
+@media (min-width: 769px) {
+    #demovd {
+        width: 72vw;
+    }
+}
+
+#ieeeDayEventRegistrationCal{
+    width: 70%;
 }
 
 .amountcontainer {
@@ -34,9 +66,20 @@ body {
     width: 60%;
 }
 
+.show-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 760px) {
     .bannerDiv {
         margin-top: 10vh;
+    }
+
+    #ieeeDayEventRegistrationCal{
+        width: 88%;
     }
 
     #demovd {

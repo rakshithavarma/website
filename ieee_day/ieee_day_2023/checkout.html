@@ -46,17 +46,17 @@
             <br>
             <h4 class="p-2">Selected Items:</h4>
             <br>
-            <table class="mx-auto" style="width: 80%;">
+            <table class="mx-auto " style="width: 80%;">
                 <thead style="background-color: rgb(193, 229, 255); color: black;">
-                    <th>Event</th>
-                    <th>Price</th>
+                    <tr>
+                        <th class="py-2">Event</th>
+                        <th class="py-2">Price</th>
+                    </tr>
                 </thead>
-                <tbody id="checkout-items"></tbody>
+                <tbody id="checkout-items" style="background-color: rgb(255, 255, 255); color: black;"></tbody>
             </table>
-            <br>
-            <div class="mx-auto" style="background-color: rgb(193, 229, 255); color: black; width: 80%;">
-                <h6>Total Amount to be Paid</h6>
-            <h5>₹<span id="total-amount"></span></h5>
+            <div class="mx-auto py-2" style="background-color: rgb(193, 229, 255); color: black; width: 80%;">
+                <h6>Total Amount to be Paid: ₹<span id="total-amount"></span></h6>
             </div>
             <h5>Scan to Pay:</h5>
             <img src="assets/payments_qr.jpg" alt="Payment QR Code" width="160" height="160">
@@ -100,8 +100,8 @@
             cartData.items.forEach((item) => {
                 const row = document.createElement("tr");
                 row.innerHTML = `
-                    <td>${item.name}</td>
-                    <td>₹${item.price.toFixed(2)}</td>
+                    <td class="py-1">${item.name}</td>
+                    <td class="py-1">₹${item.price.toFixed(2)}</td>
                 `;
                 checkoutItemsElement.appendChild(row);
             });

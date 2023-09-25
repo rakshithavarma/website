@@ -2,90 +2,49 @@
 <html>
 
 <head>
-  <title>Our Events 2023</title>
-  <script type="module" src="js/hf_single_event.js"></script>
+    <title>Our Events 2023</title>
+    <script type="module" src="js/hf_single_event.js"></script>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/events_styles.css">
-  <link rel="stylesheet" href="css/calender.css">
-  <link rel="stylesheet" href="css/sample_header.css">
-  <link rel="stylesheet" href="css/stars.css">
-  <link rel="stylesheet" href="css/style.css">
-  <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/events_styles.css">
+    <link rel="stylesheet" href="css/calender.css">
+    <link rel="stylesheet" href="css/sample_header.css">
+    <link rel="stylesheet" href="css/stars.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <!--Icons-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Scripts -->
-  <script src="js/accordion.js"></script>
-  <script src="js/id_script4.js"></script>
-  <script src="js/id_script3.js"></script>
-  <style>
-    .button-container {
-      text-align: center;
-    }
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Scripts -->
+    <script src="js/accordion.js"></script>
+    <script src="js/id_script4.js"></script>
+    <script src="js/id_script3.js"></script>
+    <style>
+        .button-container {
+            text-align: center;
+        }
 
-    /* Style for the hidden button */
-    .hidden-button {
-      display: none;
-      background-color: #e74c3c;
-    }
+        /* Style for the hidden button */
+        .hidden-button {
+            display: none;
+            background-color: #194F8F;
+            color: #fff;
+        }
 
-    /* Styling of cart table */
-
-
-
-
-    /* Style for the side nav-bar*/
-
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .snavbar {
-      background-color: #555;
-      display: flex;
-      /* Make snavbar horizontal */
-      justify-content: space-around;
-      /* Align items horizontally */
-      align-items: center;
-      /* Center items vertically */
-      height: 60px;
-      /* Set a fixed height */
-      z-index: 1000;
-    }
-
-    .snavbar a {
-      text-decoration: none;
-      /* border-radius: 20px; */
-      /* background-color: #007bff; */
-      color: white;
-      padding: 10px;
-      /* Adjust padding for a more compact snavbar */
-      z-index: 1000;
-    }
-
-    .snavbar a:hover {
-      background-color: #007bff;
-      z-index: 1000;
-    }
-  </style>
+    </style>
 </head>
 
 <body>
 
-  <!--Side nav bar-->
-  <!-- <div class="snavbar" style="background-color: black">
+    <!--Side nav bar-->
+    <!-- <div class="snavbar" style="background-color: black">
     <a href="#aboutIeeeDaySection"><i class="fa fa-info-circle"></i> About</a>
     <a href="#ieeeDayEventRegistrationCal"><i class="fa fa-calendar"></i> Calender</a>
     <a href="#guidelines"><i class="fa fa-check"></i> Guidelines</a>
@@ -93,695 +52,716 @@
     <a href="#cart"><i class="fa fa-cart-arrow-down"></i> Cart</a>
   </div> -->
 
-  <!-- navbar - ieee sb gvp -->
-  <div class="container-fluid navbar navbar-expand-lg sb-navbar sticky-top" style="width: 100vw;">
-    <a class="navbar-brand" href="#"><img src="../../images/ieee_sb_logo.png"></a>
-    <button class="navbar-toggler" type="button" data-trigger="#navbarNavDropdown">
-      <i class="fa fa-bars hamburger" aria-hidden="true"></i>
-    </button>
-    <div class="navbar-collapse justify-content-end" id="navbarNavDropdown">
-      <div class="offcanvas-header mt-3">
-        <button class="btn btn-outline-danger btn-close float-right"> &times </button>
-        <h5 class="py-2 text-white">IEEE SB GVPCE(A)</h5>
-      </div>
-      <my-header></my-header>
-    </div>
-  </div>
-
-  <!-- Banner -->
-  <section class="bannerDiv">
-    <img src="assets/banners/web 43 (Presentation (169)).gif" alt="" style="width:100vw">
-  </section>
-
-  <!-- About IEEE Day Section -->
-  <section class="aboutIeeeDaySection" id="aboutIeeeDaySection" style="margin-top: 8vh;">
-    <div class="sectionHeadingStyle">
-      <div class="row align-items-center">
-        <div class="col-sm-10 offset-sm-1" align="center">
-          <h1 class="text-center section_header">About IEEE Day</h1>
-          <hr width="100em" align="center" color=" #555555;">
-        </div>
-      </div>
-    </div>
-    <div class="container p-3">
-      <div class="row">
-        <div class="ieeeDayAnimCard col-lg-5 align-items-center">
-          <div class="ieeeDayCardContent">
-            <h2 class="text_shadows">IEEE Day '23</h2>
-          </div>
-        </div>
-        <div class="ieeDayDescription col-lg-7 align-items-center p-4 justify-content-center">
-          <p class="aboutIeeeDayPara text-center" style="color:black; text-align: justify !important; font-size: 18px;">
-            IEEE Student Branch GVPCE(A) is gearing up for IEEE Day on October 7th, 2023, with the theme "Evolve -
-            Elevate to Excellence." Join us in our journey of continuous growth and excellence. Our dedicated team is
-            ready to initiate, motivate and coordinate inspiring events.We welcome you all to join us in making this
-            journey remarkable!
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Preview Section -->
-  <section style="margin-top: 5vh;">
-    <div class="sectionHeadingStyle">
-      <div class="row align-items-center">
-        <div class="col-sm-10 offset-sm-1" align="center">
-          <h1 class="text-center section_header">Preview</h1>
-          <hr width="100em" align="center" color=" #555555;">
-        </div>
-      </div>
-    </div>
-    <div>
-      <div>
-        <p class="preview text-center justify-content-center "
-          style="padding-left: auto; padding-right: auto; color:black;text-align: center!important; margin-top: 0rem;">
-          Thank
-          you for your interest. Below is a small video which will guide you through the payments. For more queries
-          contact .
-        </p>
-      </div>
-      <center>
-        <iframe id="demovd" src="https://www.youtube.com/embed/6ygARHP0uM8">
-        </iframe>
-      </center>
-
-    </div>
-  </section>
-
-  <!-- Registration Fees Instructions Section-->
-  <section class="container" id="container" style="margin-top: 8vh;">
-    <div class="sectionHeadingStyle">
-      <div class="row align-items-center">
-        <div class="col-sm-10 offset-sm-1" align="center">
-          <h1 class="text-center section_header">How to Register?</h1>
-          <hr width="100em" align="center" color=" #555555;">
-        </div>
-      </div>
-    </div>
-    <div style="margin-left: 10%;margin-right: 10%; ">
-      <p>Pick out your preferences and grab the chance to get upto 30% discount... </p>
-      <h5><b>Disclaimer: </b>
-        <p style="font-size: 1rem;">Discover more and add to cart accordingly </p>
-      </h5>
-      <p>
-        💥For total cost of event(s) ₹300/- and above you can grab a discount of 20%(for IEEE Members) and 15%(for
-        Non-IEEE Members) on total amount.
-      </p>
-      <p>
-        💥With a valid coupon, you can grab a discount of 15% on total amount.
-      </p>
-    </div>
-  </section>
-  <!-- Registration Fees Instructions Section-->
-
-  <!-- Calender Section -->
-  <section class="ieeeDayEventRegistrationCal align-items-center" id="ieeeDayEventRegistrationCal"
-    style="width: 70%; margin-left: auto; margin-right: auto; margin-top: 8vh;">
-    <div class="sectionHeadingStyle">
-      <div class="row align-items-center">
-        <div class="col-sm-10 offset-sm-1" align="center">
-          <h1 class="text-center section_header">Select Your Events!</h1>
-          <hr width="100em" align="center" color=" #555555;">
-        </div>
-      </div>
-    </div>
-    <div class="calenderDiv" style="height:92vh">
-      <div class="container" style="height:90%;">
-        <div class="row" style="height:100%; ">
-          <div class="calenderDatesDiv col-lg-8">
-            <div class="calenderWrapper align-items-center">
-              <h1 id="calenderTitle">Events '23</h1>
-              <div id="stars"></div>
-              <div id="stars2"></div>
+    <!-- navbar - ieee sb gvp -->
+    <div class="container-fluid navbar navbar-expand-lg sb-navbar sticky-top" style="width: 100vw;">
+        <a class="navbar-brand" href="#"><img src="../../images/ieee_sb_logo.png"></a>
+        <button class="navbar-toggler" type="button" data-trigger="#navbarNavDropdown">
+            <i class="fa fa-bars hamburger" aria-hidden="true"></i>
+        </button>
+        <div class="navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <div class="offcanvas-header mt-3">
+                <button class="btn btn-outline-danger btn-close float-right"> &times </button>
+                <h5 class="py-2 text-white">IEEE SB GVPCE(A)</h5>
             </div>
-            <table class="calenderTable">
-              <thead style="height: 33%;">
-                <tr>
-                  <th class="vertical-middle">Month</th>
-                  <th class="vertical-middle">Sun</th>
-                  <th class="vertical-middle">Mon</th>
-                  <th class="vertical-middle">Tue</th>
-                  <th class="vertical-middle">Wed</th>
-                  <th class="vertical-middle">Thu</th>
-                  <th class="vertical-middle">Fri</th>
-                  <th class="vertical-middle">Sat</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr style="height: 33%;">
-                  <th class="vertical-middle">Sept</th>
-                  <td class="redundant-dates"></td>
-                  <td class="redundant-dates"></td>
-                  <td class="redundant-dates"></td>
-                  <td><button class="date-button" onclick="toggleAccordion('accordion1')">
-                      27</button></td>
-                  <td><button class="date-button" onclick="toggleAccordion('accordion2')">
-                      28</button></td>
-                  <td><button class="date-button" onclick="toggleAccordion('accordion3')">
-                      29</button></td>
-                  <td><button class="date-button" onclick="toggleAccordion('accordion4')">
-                      30</button></td>
-                </tr>
-                <tr style="height: 33%;">
-                  <th>Oct</th>
-                  <td class=" redundant-dates vertical-middle">1</td>
-                  <td class=" redundant-dates vertical-middle">2</td>
-                  <td><button class="date-button" onclick="toggleAccordion('accordion5')">
-                      3</button></td>
-                  <td><button class="date-button" onclick="toggleAccordion('accordion6')">
-                      4</button></td>
-                  <td><button class="date-button" onclick="toggleAccordion('accordion7')">
-                      5</button></td>
-                  <td class="redundant-dates">6</td>
-                  <td><button class="date-button" onclick="toggleAccordion('accordion8')">
-                      7</button></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="calenderCardsDiv col-lg-4 p-2">
+            <my-header></my-header>
+        </div>
+    </div>
+
+    <!-- Banner -->
+    <div>
+        <img id="bannerImg1" src="assets/banners/banner_16_9.gif" alt="" style="width:100vw">
+        <img id="bannerImg2" src="assets/banners/banner_square.gif" alt="" style="width:100vw;">
+    </div>
+
+    <!-- About IEEE Day Section -->
+    <section class="container aboutIeeeDaySection" id="aboutIeeeDaySection" style="margin-top: 8vh;">
+        <div class="sectionHeadingStyle">
+            <div class="row align-items-center">
+                <div class="col-sm-10 offset-sm-1" align="center">
+                    <h1 class="text-center section_header">About IEEE Day</h1>
+                    <hr width="100em" align="center" color=" #555555;">
+                </div>
+            </div>
+        </div>
+        <div class="container p-3">
+            <div class="row">
+                <div class="ieeeDayAnimCard col-lg-5 align-items-center">
+                    <div class="ieeeDayCardContent">
+                        <h1 class="text_shadows">IEEE Day '23</h1>
+                    </div>
+                </div>
+                <div class="ieeDayDescription col-lg-7 align-items-center p-4 justify-content-center">
+                    <p class="aboutIeeeDayPara text-center"
+                        style="color:black; text-align: justify !important; font-size: 18px;">
+                        IEEE Student Branch GVPCE(A) is gearing up for IEEE Day on October 7th, 2023, with the theme
+                        "Evolve -
+                        Elevate to Excellence." Join us in our journey of continuous growth and excellence. Our
+                        dedicated team is
+                        ready to initiate, motivate and coordinate inspiring events.We welcome you all to join us in
+                        making this
+                        journey remarkable!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preview Section -->
+    <section class="container" style="margin-top: 5vh;">
+        <div class="sectionHeadingStyle">
+            <div class="row align-items-center">
+                <div class="col-sm-10 offset-sm-1" align="center">
+                    <h1 class="text-center section_header">Preview</h1>
+                    <hr width="100em" align="center" color=" #555555;">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <p class="preview text-center justify-content-center "
+                    style="padding-left: auto; padding-right: auto; color:black;text-align: center!important; margin-top: 0rem;">
+                    Thank
+                    you for your interest. Below is a small video which will guide you through the payments. For more
+                    queries
+                    contact .
+                </p>
+            </div>
+            <center>
+                <iframe id="demovd" src="https://www.youtube.com/embed/6ygARHP0uM8">
+                </iframe>
+            </center>
+        </div>
+    </section>
+
+    <!-- Registration Fees Instructions Section-->
+    <section class="container" style="margin-top: 8vh;">
+        <div class="sectionHeadingStyle">
+            <div class="row align-items-center">
+                <div class="col-sm-10 offset-sm-1" align="center">
+                    <h1 class="text-center section_header">How to Register?</h1>
+                    <hr width="100em" align="center" color=" #555555;">
+                </div>
+            </div>
+        </div>
+        <div style="margin-left: 10%;margin-right: 10%; ">
+            <p>Pick out your preferences and grab the chance to get upto 30% discount... </p>
+            <h5><b>Disclaimer: </b>
+                <p style="font-size: 1rem;">Discover more and add to cart accordingly </p>
+            </h5>
+            <p>
+                💥For total cost of event(s) ₹300/- and above you can grab a discount of 20%(for IEEE Members) and
+                15%(for
+                Non-IEEE Members) on total amount.
+            </p>
+            <p>
+                💥With a valid coupon, you can grab a discount of 15% on total amount.
+            </p>
+        </div>
+    </section>
+    <!-- Registration Fees Instructions Section -->
+
+    <!-- Calender Section -->
+    <section class="ieeeDayEventRegistrationCal align-items-center" id="ieeeDayEventRegistrationCal"
+        style="margin-left: auto; margin-right: auto; margin-top: 8vh;">
+        <div class="sectionHeadingStyle">
+            <div class="row align-items-center">
+                <div class="col-sm-10 offset-sm-1" align="center">
+                    <h1 class="text-center section_header">Select Your Events!</h1>
+                    <hr width="100em" align="center" color=" #555555;">
+                </div>
+            </div>
+        </div>
+        <div class="calenderDiv" style="height:92vh">
+            <div class="container" style="height:90%;">
+                <div class="row" style="height:100%; ">
+                    <div class="calenderDatesDiv col-lg-8">
+                        <div class="calenderWrapper align-items-center">
+                            <h1 id="calenderTitle">Events '23</h1>
+                            <div id="stars"></div>
+                            <div id="stars2"></div>
+                        </div>
+                        <table class="calenderTable">
+                            <thead style="height: 33%;">
+                                <tr>
+                                    <th class="vertical-middle">Month</th>
+                                    <th class="vertical-middle">Sun</th>
+                                    <th class="vertical-middle">Mon</th>
+                                    <th class="vertical-middle">Tue</th>
+                                    <th class="vertical-middle">Wed</th>
+                                    <th class="vertical-middle">Thu</th>
+                                    <th class="vertical-middle">Fri</th>
+                                    <th class="vertical-middle">Sat</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="height: 33%;">
+                                    <th class="vertical-middle">Sept</th>
+                                    <td class="redundant-dates"></td>
+                                    <td class="redundant-dates"></td>
+                                    <td class="redundant-dates"></td>
+                                    <td><button class="date-button" onclick="toggleAccordion('accordion1')">
+                                            27</button></td>
+                                    <td><button class="date-button" onclick="toggleAccordion('accordion2')">
+                                            28</button></td>
+                                    <td><button class="date-button" onclick="toggleAccordion('accordion3')">
+                                            29</button></td>
+                                    <td><button class="date-button" onclick="toggleAccordion('accordion4')">
+                                            30</button></td>
+                                </tr>
+                                <tr style="height: 33%;">
+                                    <th>Oct</th>
+                                    <td class=" redundant-dates vertical-middle">1</td>
+                                    <td class=" redundant-dates vertical-middle">2</td>
+                                    <td><button class="date-button" onclick="toggleAccordion('accordion5')">
+                                            3</button></td>
+                                    <td><button class="date-button" onclick="toggleAccordion('accordion6')">
+                                            4</button></td>
+                                    <td><button class="date-button" onclick="toggleAccordion('accordion7')">
+                                            5</button></td>
+                                    <td class="redundant-dates">6</td>
+                                    <td><button class="date-button" onclick="toggleAccordion('accordion8')">
+                                            7</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="calenderCardsDiv col-lg-4 p-2">
+                        <div id="stars"></div>
+                        <div id="stars2"></div>
+                        <div id="accordion1" class="accordion-content" style="display: none;">
+                            <button class="panel-button" onclick="togglePanel('panel1')">Art Beyond Brushes</button>
+                            <div id="panel1" class="panel-content" style="display: none;">
+                                <div class="container">
+                                    <div class="eventCard align-items-center align-content-center">
+                                        <div class="eventImgBx align-items-center align-content-center">
+                                            <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
+                                        </div>
+                                        <div class="eventContentBx">
+                                            <h3>Art Beyond Brushes</h3>
+                                            <div class="size">
+                                                <h4>Team Size:</h4>
+
+                                                <div class="button-container item">
+                                                    <h3 style="display:none">Art Beyond Brushes</h3>
+                                                    <p style="display:none">Price: $50.00</p>
+                                                    <button class="show-button"><span>1</span></button>
+                                                    <button onclick="toggleItem('Art Beyond Brushes', 50.00, this)"
+                                                        class="hidden-button">Add</button>
+                                                </div>
+
+                                                <div class="button-container">
+                                                    <h3 style="display:none">Item 2</h3>
+                                                    <p style="display:none">Price: $75.00</p>
+                                                    <button class="show-button"><span>2</span></button>
+                                                    <button onclick="toggleItem('Item 2', 75.00, this)"
+                                                        class="hidden-button">Add</button>
+                                                </div>
+                                                <div class="button-container">
+                                                    <h3 style="display:none">Item 3</h3>
+                                                    <p style="display:none">Price: $100.00</p>
+                                                    <button class="show-button"><span>3</span></button>
+                                                    <button onclick="toggleItem('Item 3', 100.00, this)"
+                                                        class="hidden-button">Add</button>
+                                                </div>
+
+                                            </div>
+                                            <a href="#cart">Go to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="accordion2" class="accordion-content" style="display: none;">
+                            <button class="panel-button" onclick="togglePanel('panel3')">CodeBreak</button>
+                            <div id="panel3" class="panel-content" style="display: none;">
+                                <div class="container" style="height: 90%;">
+                                    <div class="eventCard align-items-center align-content-center">
+                                        <div class="eventImgBx align-items-center align-content-center">
+                                            <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
+                                        </div>
+                                        <div class="eventContentBx">
+                                            <h3>Code Break</h3>
+                                            <div class="size">
+                                                <h4>Team Size:</h4>
+                                                <span>1</span>
+                                                <span>2</span>
+                                                <span>3</span>
+                                            </div>
+                                            <a href="#cart">Go to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <button class="panel-button" onclick="togglePanel('panel4')">Thesis Thrive</button>
+                            <div id="panel4" class="panel-content" style="display: none;">
+                                <div class="container">
+                                    <div class="eventCard align-items-center align-content-center">
+                                        <div class="eventImgBx align-items-center align-content-center">
+                                            <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
+                                        </div>
+                                        <div class="eventContentBx">
+                                            <h3>Thesis Thrive</h3>
+                                            <div class="size">
+                                                <h4>Team Size:</h4>
+                                                <span>1</span>
+                                                <span>2</span>
+                                                <span>3</span>
+                                            </div>
+                                            <a href="#cart">Go to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="accordion3" class="accordion-content" style="display: none;">
+                            <button class="panel-button" onclick="togglePanel('panel5')">Tech Puzzle Unscramble</button>
+                            <div id="panel5" class="panel-content" style="display: none;">
+                                <div class="container">
+                                    <div class="eventCard align-items-center align-content-center">
+                                        <div class="eventImgBx align-items-center align-content-center">
+                                            <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
+                                        </div>
+                                        <div class="eventContentBx">
+                                            <h3>Code Break</h3>
+                                            <div class="size">
+                                                <h4>Team Size:</h4>
+                                                <span>1</span>
+                                                <span>2</span>
+                                                <span>3</span>
+                                            </div>
+                                            <a href="#cart">Go to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="accordion4" class="accordion-content" style="display: none;">
+                            <button class="panel-button" onclick="togglePanel('panel7')"> Flutter Fest</button>
+                            <div id="panel7" class="panel-content" style="display: none;">
+                                <div class="container">
+                                    <div class="eventCard align-items-center align-content-center">
+                                        <div class="eventImgBx align-items-center align-content-center">
+                                            <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
+                                        </div>
+                                        <div class="eventContentBx">
+                                            <h3>Code Break</h3>
+                                            <div class="size">
+                                                <h4>Team Size:</h4>
+                                                <span>1</span>
+                                                <span>2</span>
+                                                <span>3</span>
+                                            </div>
+                                            <a href="#cart">Go to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div id="accordion5" class="accordion-content" style="display: none;">
+                            <button class="panel-button" onclick="togglePanel('panel9')">Math Tale Housie</button>
+                            <div id="panel9" class="panel-content" style="display: none;">
+                                <div class="container">
+                                    <div class="eventCard align-items-center align-content-center">
+                                        <div class="eventImgBx align-items-center align-content-center">
+                                            <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
+                                        </div>
+                                        <div class="eventContentBx">
+                                            <h3>Code Break</h3>
+                                            <div class="size">
+                                                <h4>Team Size:</h4>
+                                                <span>1</span>
+                                                <span>2</span>
+                                                <span>3</span>
+                                            </div>
+                                            <a href="#cart">Go to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <button class="panel-button" onclick="togglePanel('panel10')">Ladder Logic</button>
+                            <div id="panel10" class="panel-content" style="display: none;">
+                                <div class="container">
+                                    <div class="eventCard align-items-center align-content-center">
+                                        <div class="eventImgBx align-items-center align-content-center">
+                                            <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
+                                        </div>
+                                        <div class="eventContentBx">
+                                            <h3>Code Break</h3>
+                                            <div class="size">
+                                                <h4>Team Size:</h4>
+                                                <span>1</span>
+                                                <span>2</span>
+                                                <span>3</span>
+                                            </div>
+                                            <a href="#cart">Go to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="accordion6" class="accordion-content" style="display: none;">
+                            <button class="panel-button" onclick="togglePanel('panel11')">Mystic Code</button>
+                            <div id="panel11" class="panel-content" style="display: none;">
+                                <div class="container">
+                                    <div class="eventCard align-items-center align-content-center">
+                                        <div class="eventImgBx align-items-center align-content-center">
+                                            <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
+                                        </div>
+                                        <div class="eventContentBx">
+                                            <h3>Code Break</h3>
+                                            <div class="size">
+                                                <h4>Team Size:</h4>
+                                                <span>1</span>
+                                                <span>2</span>
+                                                <span>3</span>
+                                            </div>
+                                            <a href="#cart">Go to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div id="accordion7" class="accordion-content" style="display: none;">
+                            <button class="panel-button" onclick="togglePanel('panel13')">PitchFest</button>
+                            <div id="panel13" class="panel-content" style="display: none;">
+                                <div class="container">
+                                    <div class="eventCard align-items-center align-content-center">
+                                        <div class="eventImgBx align-items-center align-content-center">
+                                            <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
+                                        </div>
+                                        <div class="eventContentBx">
+                                            <h3>Code Break</h3>
+                                            <div class="size">
+                                                <h4>Team Size:</h4>
+                                                <span>1</span>
+                                                <span>2</span>
+                                                <span>3</span>
+                                            </div>
+                                            <a href="#cart">Go to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <button class="panel-button" onclick="togglePanel('panel14')">TechnoTussle</button>
+                            <div id="panel14" class="panel-content" style="display: none;">
+                                <div class="container">
+                                    <div class="eventCard align-items-center align-content-center">
+                                        <div class="eventImgBx align-items-center align-content-center">
+                                            <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
+                                        </div>
+                                        <div class="eventContentBx">
+                                            <h3>Code Break</h3>
+                                            <div class="size">
+                                                <h4>Team Size:</h4>
+                                                <span>1</span>
+                                                <span>2</span>
+                                                <span>3</span>
+                                            </div>
+                                            <a href="#cart">Go to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="accordion8" class="accordion-content" style="display: none;">
+                            <button class="panel-button" onclick="togglePanel('panel17')">IEEE Day 2023</button>
+                            <div id="panel17" class="panel-content" style="display: none;">
+                                <div class="container">
+                                    <div class="eventCard align-items-center align-content-center">
+                                        <div class="eventImgBx align-items-center align-content-center">
+                                            <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
+                                        </div>
+                                        <div class="eventContentBx">
+                                            <h3>Code Break</h3>
+                                            <div class="size">
+                                                <h4>Are you IEEE Member ?</h4>
+                                                <div class="button-container item">
+                                                    <h3 style="display:none">Yes</h3>
+                                                    <p style="display:none">Price: $250.00</p>
+                                                    <button class="show-button"><span>Yes</span></button>
+                                                    <button onclick="toggleItem('IEEE Day', 250.00, this)"
+                                                        class="hidden-button">Add</button>
+                                                </div>
+
+                                                <div class="button-container">
+                                                    <h3 style="display:none">No</h3>
+                                                    <p style="display:none">Price: $350.00</p>
+                                                    <button class="show-button"><span>No</span></button>
+                                                    <button onclick="toggleItem('IEEE Day', 350.00, this)"
+                                                        class="hidden-button">Add</button>
+                                                </div>
+                                            </div>
+                                            <a href="#cart">Go to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Guidelines-->
+    <section class="guidelines container-fluid mb-4" id="guidelines" style="margin-top: 10vh;">
+        <div class="">
+            <div class="sectionHeadingStyle">
+                <div class="row align-items-center">
+                    <div class="col-sm-10 offset-sm-1" align="center">
+                        <h1 class="text-center section_header">Guidelines to follow</h1>
+                        <hr width="100em" align="center" color=" #555555;">
+                    </div>
+                </div>
+            </div>
+            <div class="">
+
+                <p>👉 Take the screenshot of the popup appearing after clicking on <b
+                        style="color:#055fad;font-weight:bolder!important"> 🎟 Buy your ticket</b> </p>
+                <p>👉 Take a screenshot after you are done with the payment to <span
+                        style="text-align: center;padding: 0%;margin: 0%;"><b>PhonePe/Google pay:</b> <a
+                            class="mobilesOnly contactlink" href="tel:+91 8341565076">+91 8341565076</a> or by using the
+                        UPI Id -
+                        bvsslgayathri@oksbi / 8341565076@ybl</span></p>
+                <p>👉 The screenshots should be in the following format:</p>
+                <div align="center" id="demo_imgs" style="padding-bottom: 15px;">
+                    <img id="popup_demo" src="../../images/popup_ss_demo.png" alt="image" srcset=""
+                        width="48%!important">
+                    <img id="ss_demo" src="../../images/id_ss_demo.png" alt="image" srcset="" width="48%!important">
+                </div>
+                <p>👉 Make sure that the UPI Transaction ID should be clearly visible.</p>
+                <p>👉 Its mandatory to attach the screenshots into the google form redirected after clicking the
+                    <b>next</b>
+                    button.
+                </p>
+                <p>👉 After finishing the payment and registration process, you have to register for each individual
+                    event by
+                    clicking <b style="color:#055fad;font-weight:bolder!important"> Register Here</b> on each event page
+                    in the
+                    calender displayed above.</p>
+                <p>👉 In case of team events, please make sure to add a small message/note along with your payment
+                    mentioning
+                    the names and roll no.s of your teammates</p>
+                <p>👉 In case of any queries, please join the IEEE Day Help Desk group - <b
+                        style="color:#055fad!important;font-weight:bolder!important"><a
+                            href="https://bit.ly/IEEE-HelpDesk"
+                            style="color:#055fad!important">https://bit.ly/IEEE-HelpDesk</a></b> <br> You can post your
+                    questions
+                    there and we will get back to you ASAP.</p>
+                <h5><b>Note: </b>
+                    <p style="font-size: 1rem;"> IEEE membership ID's will be verified. Incase of unreliable data you
+                        will not be
+                        given an entry pass for event(s). </p>
+                </h5>
+            </div>
+        </div>
+    </section>
+    <!--End of Guidelines-->
+
+    <!-- Cart Section -->
+    <div class="cart amountcontainer" id="cart" style="margin-top: 8vh; margin-bottom: 8vh;">
+        <div class="card d-flex flex-column text-center" style="background: radial-gradient(ellipse at bottom, #194F8F 0%, #090a0f 100%);
+      border: 0px;">
             <div id="stars"></div>
             <div id="stars2"></div>
-            <div id="accordion1" class="accordion-content" style="display: none;">
-              <button class="panel-button" onclick="togglePanel('panel1')">Art Beyond Brushes</button>
-              <div id="panel1" class="panel-content" style="display: none;">
-                <div class="container">
-                  <div class="eventCard align-items-center align-content-center">
-                    <div class="eventImgBx align-items-center align-content-center">
-                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
-                    </div>
-                    <div class="eventContentBx">
-                      <h3>Art Beyond Brushes</h3>
-                      <div class="size">
-                        <h4>Team Size:</h4>
-
-                        <div class="button-container item">
-                          <h3 style="display:none">Art Beyond Brushes</h3>
-                          <p style="display:none">Price: $50.00</p>
-                          <button class="show-button"><span>1</span></button>
-                          <button onclick="toggleItem('Art Beyond Brushes', 50.00, this)"
-                            class="hidden-button">Add</button>
-                        </div>
-
-                        <div class="button-container">
-                          <h3 style="display:none">Item 2</h3>
-                          <p style="display:none">Price: $75.00</p>
-                          <button class="show-button"><span>2</span></button>
-                          <button onclick="toggleItem('Item 2', 75.00, this)" class="hidden-button">Add</button>
-                        </div>
-                        <div class="button-container">
-                          <h3 style="display:none">Item 3</h3>
-                          <p style="display:none">Price: $100.00</p>
-                          <button class="show-button"><span>3</span></button>
-                          <button onclick="toggleItem('Item 3', 100.00, this)" class="hidden-button">Add</button>
-                        </div>
-
-                      </div>
-                      <a href="#cart">Go to Cart</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="accordion2" class="accordion-content" style="display: none;">
-              <button class="panel-button" onclick="togglePanel('panel3')">CodeBreak</button>
-              <div id="panel3" class="panel-content" style="display: none;">
-                <div class="container" style="height: 90%;">
-                  <div class="eventCard align-items-center align-content-center">
-                    <div class="eventImgBx align-items-center align-content-center">
-                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
-                    </div>
-                    <div class="eventContentBx">
-                      <h3>Code Break</h3>
-                      <div class="size">
-                        <h4>Team Size:</h4>
-                        <span>1</span>
-                        <span>2</span>
-                        <span>3</span>
-                      </div>
-                      <a href="#cart">Go to Cart</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <br>
-              <button class="panel-button" onclick="togglePanel('panel4')">Thesis Thrive</button>
-              <div id="panel4" class="panel-content" style="display: none;">
-                <div class="container">
-                  <div class="eventCard align-items-center align-content-center">
-                    <div class="eventImgBx align-items-center align-content-center">
-                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
-                    </div>
-                    <div class="eventContentBx">
-                      <h3>Thesis Thrive</h3>
-                      <div class="size">
-                        <h4>Team Size:</h4>
-                        <span>1</span>
-                        <span>2</span>
-                        <span>3</span>
-                      </div>
-                      <a href="#cart">Go to Cart</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="accordion3" class="accordion-content" style="display: none;">
-              <button class="panel-button" onclick="togglePanel('panel5')">Tech Puzzle Unscramble</button>
-              <div id="panel5" class="panel-content" style="display: none;">
-                <div class="container">
-                  <div class="eventCard align-items-center align-content-center">
-                    <div class="eventImgBx align-items-center align-content-center">
-                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
-                    </div>
-                    <div class="eventContentBx">
-                      <h3>Code Break</h3>
-                      <div class="size">
-                        <h4>Team Size:</h4>
-                        <span>1</span>
-                        <span>2</span>
-                        <span>3</span>
-                      </div>
-                      <a href="#cart">Go to Cart</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="accordion4" class="accordion-content" style="display: none;">
-              <button class="panel-button" onclick="togglePanel('panel7')"> Flutter Fest</button>
-              <div id="panel7" class="panel-content" style="display: none;">
-                <div class="container">
-                  <div class="eventCard align-items-center align-content-center">
-                    <div class="eventImgBx align-items-center align-content-center">
-                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
-                    </div>
-                    <div class="eventContentBx">
-                      <h3>Code Break</h3>
-                      <div class="size">
-                        <h4>Team Size:</h4>
-                        <span>1</span>
-                        <span>2</span>
-                        <span>3</span>
-                      </div>
-                      <a href="#cart">Go to Cart</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <br>
-            </div>
-            <div id="accordion5" class="accordion-content" style="display: none;">
-              <button class="panel-button" onclick="togglePanel('panel9')">Math Tale Housie</button>
-              <div id="panel9" class="panel-content" style="display: none;">
-                <div class="container">
-                  <div class="eventCard align-items-center align-content-center">
-                    <div class="eventImgBx align-items-center align-content-center">
-                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
-                    </div>
-                    <div class="eventContentBx">
-                      <h3>Code Break</h3>
-                      <div class="size">
-                        <h4>Team Size:</h4>
-                        <span>1</span>
-                        <span>2</span>
-                        <span>3</span>
-                      </div>
-                      <a href="#cart">Go to Cart</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <br>
-              <button class="panel-button" onclick="togglePanel('panel10')">Ladder Logic</button>
-              <div id="panel10" class="panel-content" style="display: none;">
-                <div class="container">
-                  <div class="eventCard align-items-center align-content-center">
-                    <div class="eventImgBx align-items-center align-content-center">
-                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
-                    </div>
-                    <div class="eventContentBx">
-                      <h3>Code Break</h3>
-                      <div class="size">
-                        <h4>Team Size:</h4>
-                        <span>1</span>
-                        <span>2</span>
-                        <span>3</span>
-                      </div>
-                      <a href="#cart">Go to Cart</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="accordion6" class="accordion-content" style="display: none;">
-              <button class="panel-button" onclick="togglePanel('panel11')">Mystic Code</button>
-              <div id="panel11" class="panel-content" style="display: none;">
-                <div class="container">
-                  <div class="eventCard align-items-center align-content-center">
-                    <div class="eventImgBx align-items-center align-content-center">
-                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
-                    </div>
-                    <div class="eventContentBx">
-                      <h3>Code Break</h3>
-                      <div class="size">
-                        <h4>Team Size:</h4>
-                        <span>1</span>
-                        <span>2</span>
-                        <span>3</span>
-                      </div>
-                      <a href="#cart">Go to Cart</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <br>
-            </div>
-            <div id="accordion7" class="accordion-content" style="display: none;">
-              <button class="panel-button" onclick="togglePanel('panel13')">PitchFest</button>
-              <div id="panel13" class="panel-content" style="display: none;">
-                <div class="container">
-                  <div class="eventCard align-items-center align-content-center">
-                    <div class="eventImgBx align-items-center align-content-center">
-                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
-                    </div>
-                    <div class="eventContentBx">
-                      <h3>Code Break</h3>
-                      <div class="size">
-                        <h4>Team Size:</h4>
-                        <span>1</span>
-                        <span>2</span>
-                        <span>3</span>
-                      </div>
-                      <a href="#cart">Go to Cart</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <br>
-              <button class="panel-button" onclick="togglePanel('panel14')">TechnoTussle</button>
-              <div id="panel14" class="panel-content" style="display: none;">
-                <div class="container">
-                  <div class="eventCard align-items-center align-content-center">
-                    <div class="eventImgBx align-items-center align-content-center">
-                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
-                    </div>
-                    <div class="eventContentBx">
-                      <h3>Code Break</h3>
-                      <div class="size">
-                        <h4>Team Size:</h4>
-                        <span>1</span>
-                        <span>2</span>
-                        <span>3</span>
-                      </div>
-                      <a href="#cart">Go to Cart</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="accordion8" class="accordion-content" style="display: none;">
-              <button class="panel-button" onclick="togglePanel('panel17')">IEEE Day 2023</button>
-              <div id="panel17" class="panel-content" style="display: none;">
-                <div class="container">
-                  <div class="eventCard align-items-center align-content-center">
-                    <div class="eventImgBx align-items-center align-content-center">
-                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
-                    </div>
-                    <div class="eventContentBx">
-                      <h3>Code Break</h3>
-                      <div class="size">
-                        <h4>Are you IEEE Member ?</h4>
-                        <div class="button-container item">
-                          <h3 style="display:none">Yes</h3>
-                          <p style="display:none">Price: $250.00</p>
-                          <button class="show-button"><span>Yes</span></button>
-                          <button onclick="toggleItem('IEEE Day', 250.00, this)" class="hidden-button">Add</button>
-                        </div>
-
-                        <div class="button-container">
-                          <h3 style="display:none">No</h3>
-                          <p style="display:none">Price: $350.00</p>
-                          <button class="show-button"><span>No</span></button>
-                          <button onclick="toggleItem('IEEE Day', 350.00, this)" class="hidden-button">Add</button>
-                        </div>
-                      </div>
-                      <a href="#cart">Go to Cart</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--Guidelines-->
-  <section class="guidelines container-fluid mb-4" id="guidelines" style="margin-top: 10vh;">
-    <div class="">
-      <div class="sectionHeadingStyle">
-        <div class="row align-items-center">
-          <div class="col-sm-10 offset-sm-1" align="center">
-            <h1 class="text-center section_header">Guidelines to follow</h1>
-            <hr width="100em" align="center" color=" #555555;">
-          </div>
-        </div>
-      </div>
-      <div class="">
-
-        <p>👉 Take the screenshot of the popup appearing after clicking on <b
-            style="color:#055fad;font-weight:bolder!important"> 🎟 Buy your ticket</b> </p>
-        <p>👉 Take a screenshot after you are done with the payment to <span
-            style="text-align: center;padding: 0%;margin: 0%;"><b>PhonePe/Google pay:</b> <a
-              class="mobilesOnly contactlink" href="tel:+91 8341565076">+91 8341565076</a> or by using the UPI Id -
-            bvsslgayathri@oksbi / 8341565076@ybl</span></p>
-        <p>👉 The screenshots should be in the following format:</p>
-        <div align="center" id="demo_imgs" style="padding-bottom: 15px;">
-          <img id="popup_demo" src="../../images/popup_ss_demo.png" alt="image" srcset="" width="48%!important">
-          <img id="ss_demo" src="../../images/id_ss_demo.png" alt="image" srcset="" width="48%!important">
-        </div>
-        <p>👉 Make sure that the UPI Transaction ID should be clearly visible.</p>
-        <p>👉 Its mandatory to attach the screenshots into the google form redirected after clicking the <b>next</b>
-          button.</p>
-        <p>👉 After finishing the payment and registration process, you have to register for each individual event by
-          clicking <b style="color:#055fad;font-weight:bolder!important"> Register Here</b> on each event page in the
-          calender displayed above.</p>
-        <p>👉 In case of team events, please make sure to add a small message/note along with your payment mentioning
-          the names and roll no.s of your teammates</p>
-        <p>👉 In case of any queries, please join the IEEE Day Help Desk group - <b
-            style="color:#055fad!important;font-weight:bolder!important"><a href="https://bit.ly/IEEE-HelpDesk"
-              style="color:#055fad!important">https://bit.ly/IEEE-HelpDesk</a></b> <br> You can post your questions
-          there and we will get back to you ASAP.</p>
-        <h5><b>Note: </b>
-          <p style="font-size: 1rem;"> IEEE membership ID's will be verified. Incase of unreliable data you will not be
-            given an entry pass for event(s). </p>
-        </h5>
-      </div>
-    </div>
-  </section>
-  <!--End of Guidelines-->
-
-  <!-- Cart Section -->
-  <div class="cart amountcontainer" id="cart" style="margin-top: 8vh; margin-bottom: 8vh;">
-    <div class="card d-flex flex-column text-center" style="background: radial-gradient(ellipse at bottom, #194F8F 0%, #090a0f 100%);
-      border: 0px;">
-      <div id="stars"></div>
-      <div id="stars2"></div>
-      <div class="cardheader p-4 mb-2">
-        <h2 class="section_header" style="font-size: 30px; 
+            <div class="cardheader p-4 mb-2">
+                <h2 class="section_header" style="font-size: 30px; 
         font-weight: 700;">Your Selected Items</h2>
-      </div>
-      <div class="cardbody mb-2">
-        <table id="customers" style="font-family:'Garamond',serif!important; width:100%;">
-          <thead style="background-color: rgb(193, 229, 255);">
-            <tr>
-              <th>Event Selected</th>
-              <th>Price</th>
-              <th class="delbtn" style="padding-top: 12px;"><i class="material-icons">delete</i></th>
-            </tr>
-          </thead>
-          <tbody id="cart-items"></tbody>
-        </table>
-      </div>
-      <div class="cardfooter pt-3">
-        <div class="prices text-center" style="background-color: rgb(193, 229, 255);">
-          <table id="price_footer" style="width:81%; text-align: right; padding-right: 19%; ">
-            <thead style="background-color: rgb(193, 229, 255);">
-              <tr>
-                <th>Total :</th>
-                <th>
-                  ₹<span id="cart-total">0</span>
-                </th>
-              </tr>
+            </div>
+            <div class="cardbody">
+                <table id="customers" style="font-family:'Garamond',serif!important; width:100%;">
+                    <thead style="background-color: rgb(193, 229, 255);">
+                        <tr>
+                            <th>Event Selected</th>
+                            <th>Price</th>
+                            <th class="delbtn" style="padding-top: 12px;"><i class="material-icons">delete</i></th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items" style="background-color: rgb(255, 255, 255); color: black;"></tbody>
+                </table>
+            </div>
+            <div class="cardfooter">
+                <div class="prices text-center" style="background-color: rgb(193, 229, 255);">
+                    <table id="price_footer" style="width:81%; text-align: right; padding-right: 19%; ">
+                        <thead style="background-color: rgb(193, 229, 255);">
+                            <tr>
+                                <th>Total :</th>
+                                <th>
+                                    ₹<span id="cart-total">0</span>
+                                </th>
+                            </tr>
 
-            </thead>
-          </table>
+                        </thead>
+                    </table>
 
-          <h6 class="text-light"></h6>
-          <h6 class="text-light">
+                    <h6 class="text-light"></h6>
+                    <h6 class="text-light">
 
-          </h6>
+                    </h6>
+                </div>
+                <div class="makepayment mb-4">
+                    <button class="btn btn-light btn-purchase trigger cart-column mt-4" id="pay-now-button"
+                        onclick="redirectToCheckout()" type="button">
+                        🎟 Buy your ticket
+                    </button>
+                </div>
+            </div>
         </div>
-        <div class="makepayment mb-4">
-          <button class="btn btn-light btn-purchase trigger cart-column mt-4"  id="pay-now-button" onclick="redirectToCheckout()" type="button">
-            🎟 Buy your ticket
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- End of Cart Section -->
-
-  <!--New and Actual cart without the css-->
-
-
-  <!-- footer -->
-  <section class="page-footer" id="contact-info">
-    <div class="container footer-heading">
-      <div class="row align-items-center">
-        <div class="col-sm-10 offset-sm-1" align="center">
-          <h1 class="text-center section_header">Contact Us</h1>
-          <hr width="100em" align="center" color=" #555555;">
-        </div>
-      </div>
     </div>
 
-    <my-footer></my-footer>
-  </section>
+    <!-- End of Cart Section -->
+
+    <!--New and Actual cart without the css-->
 
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous"></script>
+    <!-- footer -->
+    <section class="page-footer" id="contact-info">
+        <div class="container footer-heading">
+            <div class="row align-items-center">
+                <div class="col-sm-10 offset-sm-1" align="center">
+                    <h1 class="text-center section_header">Contact Us</h1>
+                    <hr width="100em" align="center" color=" #555555;">
+                </div>
+            </div>
+        </div>
 
-  <script type="text/javascript" src="../../js/scripts.js"></script>
+        <my-footer></my-footer>
+    </section>
 
-  <script>
-    // Initialize variables to keep track of added items
-    let cart = [];
-    let total = 0;
 
-    // Function to check if an item is in the cart
-    function isItemInCart(itemName) {
-      return cart.some((item) => item.name === itemName);
-    }
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 
-    // Function to add or remove an item from the cart and update the total amount
-    function toggleItem(itemName, itemPrice, button) {
-      if (isItemInCart(itemName)) {
-        // Remove the item from the cart
-        removeItem(itemName);
-        button.textContent = "Add";
-      } else {
-        // Add the item to the cart
-        addItem(itemName, itemPrice);
-        button.textContent = "Remove";
-      }
-    }
+    <script type="text/javascript" src="../../js/scripts.js"></script>
 
-    // Function to add an item to the cart and update the total amount
-    function addItem(itemName, itemPrice) {
-      // Check if the item is already in the cart
-      if (!isItemInCart(itemName)) {
-        // Add the item to the cart
-        cart.push({ name: itemName, price: itemPrice });
-        total += itemPrice;
+    <script>
+        // Initialize variables to keep track of added items
+        let cart = [];
+        let total = 0;
 
-        // Update the cart display
-        updateCartDisplay();
-      }
-    }
+        // Function to check if an item is in the cart
+        function isItemInCart(itemName) {
+            return cart.some((item) => item.name === itemName);
+        }
 
-    // Function to remove an item from the cart
-    function removeItem(itemName) {
-      const existingItemIndex = cart.findIndex((item) => item.name === itemName);
+        // Function to add or remove an item from the cart and update the total amount
+        function toggleItem(itemName, itemPrice, button) {
+            if (isItemInCart(itemName)) {
+                // Remove the item from the cart
+                removeItem(itemName);
+                button.textContent = "Add";
+            } else {
+                // Add the item to the cart
+                addItem(itemName, itemPrice);
+                button.textContent = "Remove";
+            }
+        }
 
-      if (existingItemIndex !== -1) {
-        // Remove the item from the cart
-        total -= cart[existingItemIndex].price;
-        cart.splice(existingItemIndex, 1);
+        // Function to add an item to the cart and update the total amount
+        function addItem(itemName, itemPrice) {
+            // Check if the item is already in the cart
+            if (!isItemInCart(itemName)) {
+                // Add the item to the cart
+                cart.push({ name: itemName, price: itemPrice });
+                total += itemPrice;
 
-        // Update the cart display
-        updateCartDisplay();
-      }
-    }
+                // Update the cart display
+                updateCartDisplay();
+            }
+        }
 
-    // Function to update the cart display
-    function updateCartDisplay() {
-      const cartItemsElement = document.getElementById("cart-items");
-      const cartTotalElement = document.getElementById("cart-total");
-      const payNowButton = document.getElementById("pay-now-button");
+        // Function to remove an item from the cart
+        function removeItem(itemName) {
+            const existingItemIndex = cart.findIndex((item) => item.name === itemName);
 
-      // Clear the previous cart items
-      cartItemsElement.innerHTML = "";
+            if (existingItemIndex !== -1) {
+                // Remove the item from the cart
+                total -= cart[existingItemIndex].price;
+                cart.splice(existingItemIndex, 1);
 
-      // Add each item to the cart display as a table row
-      cart.forEach((item) => {
-        const row = document.createElement("tr");
-        row.innerHTML = `
-                    <td>${item.name}</td>
-                    <td>₹${item.price.toFixed(2)}</td>
-                    <td><button style="background-color: transparent; border:none;" onclick="toggleItem('${item.name}', ${item.price}, this)"><i class="material-icons" style="color:white">delete</i></button></td>
+                // Update the cart display
+                updateCartDisplay();
+            }
+        }
+
+        // Function to update the cart display
+        function updateCartDisplay() {
+            const cartItemsElement = document.getElementById("cart-items");
+            const cartTotalElement = document.getElementById("cart-total");
+            const payNowButton = document.getElementById("pay-now-button");
+
+            // Clear the previous cart items
+            cartItemsElement.innerHTML = "";
+
+            // Add each item to the cart display as a table row
+            cart.forEach((item) => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td class="py-1">${item.name}</td>
+                    <td class="py-1">₹${item.price.toFixed(2)}</td>
+                    <td class="py-1"><button style="background-color: transparent; border:none;" onclick="toggleItem('${item.name}', ${item.price}, this)"><i class="material-icons" style="color:white">delete</i></button></td>
                 `;
-        cartItemsElement.appendChild(row);
-      });
+                cartItemsElement.appendChild(row);
+            });
 
-      // Update the total
-      cartTotalElement.textContent = total.toFixed(2);
+            // Update the total
+            cartTotalElement.textContent = total.toFixed(2);
 
-      // Enable or disable the "Pay Now" button based on the cart content
-      payNowButton.disabled = cart.length === 0;
-    }
+            // Enable or disable the "Pay Now" button based on the cart content
+            payNowButton.disabled = cart.length === 0;
+        }
 
-    // Function to redirect to the checkout page
-    function redirectToCheckout() {
-      // Save cart data in localStorage
-      localStorage.setItem("cartData", JSON.stringify({ items: cart, total: total }));
+        // Function to redirect to the checkout page
+        function redirectToCheckout() {
+            // Save cart data in localStorage
+            localStorage.setItem("cartData", JSON.stringify({ items: cart, total: total }));
 
-      // Redirect to the checkout page
-      window.location.href = "checkout.html";
-    }
-  </script>
+            // Redirect to the checkout page
+            window.location.href = "checkout.html";
+        }
+    </script>
 
-  <script>
-    // Function to set up the event listeners for all button pairs
-    function setupButtonListeners() {
-      const buttonPairs = document.querySelectorAll(".button-container");
+    <script>
+        // Function to set up the event listeners for all button pairs
+        function setupButtonListeners() {
+            const buttonPairs = document.querySelectorAll(".button-container");
 
-      buttonPairs.forEach(function (pair) {
-        const showButton = pair.querySelector(".show-button");
-        const hiddenButton = pair.querySelector(".hidden-button");
+            buttonPairs.forEach(function (pair) {
+                const showButton = pair.querySelector(".show-button");
+                const hiddenButton = pair.querySelector(".hidden-button");
 
-        // Initialize hidden button as hidden
-        hiddenButton.style.display = "none";
+                // Initialize hidden button as hidden
+                hiddenButton.style.display = "none";
 
-        showButton.addEventListener("click", function () {
-          // Toggle the visibility of the hidden button
-          if (hiddenButton.style.display === "none") {
-            hiddenButton.style.display = "block";
-          } else {
-            hiddenButton.style.display = "none";
-          }
-        });
-      });
-    }
+                showButton.addEventListener("click", function () {
+                    // Toggle the visibility of the hidden button
+                    if (hiddenButton.style.display === "none") {
+                        hiddenButton.style.display = "block";
+                    } else {
+                        hiddenButton.style.display = "none";
+                    }
+                });
+            });
+        }
 
-    // Call the function to set up the event listeners for all button pairs
-    setupButtonListeners();
-
-
+        // Call the function to set up the event listeners for all button pairs
+        setupButtonListeners();
 
 
-  </script>
+
+
+    </script>
 
 
 </body>
