@@ -29,13 +29,26 @@
   <style>
     .button-container {
       text-align: center;
+      margin-top: 10px;
+      /* Add margin to create space between buttons and content */
+    }
+
+    .button-container button {
+      margin: 2px;
+      width: 5vh;
+      /* Add margin to create space between buttons */
+    }
+
+    .show-button {
+      display: none;
     }
 
     /* Style for the hidden button */
     .hidden-button {
-      display: none;
+      display: block;
       background-color: #194F8F;
       color: #fff;
+      width: 80px;
     }
   </style>
 </head>
@@ -220,39 +233,24 @@
             <div id="accordion1" class="accordion-content" style="display: none;">
               <button class="panel-button" onclick="togglePanel('panel1')">Art Beyond Brushes</button>
               <div id="panel1" class="panel-content" style="display: none;">
-                <div class="container">
-                  <div class="eventCard align-items-center align-content-center">
-                    <div class="eventImgBx align-items-center align-content-center">
-                      <img src="assets/brushless painting.jpg" alt="event_poster" height="250px">
-                    </div>
-                    <div class="eventContentBx">
-                      <h3>Art Beyond Brushes</h3>
-                      <div class="size">
-                        <h4>Team Size:</h4>
+                <div class="container mt-5">
+                  <div class="card mx-auto py-auto">
+                    <img src="assets/brushless painting.jpg" class="card-img-top mx-auto" style="max-width: 240px;"
+                      alt="Image">
+                    <div class="card-body text-center">
+                      <div class="d-flex justify-content-evenly align-items-center">
+                        <h6 class="mb-0">Team size</h6>
+                        <div>
+                          <button type="button" class="btn addToCartButtons"
+                            onclick="toggleItem('Art Beyond Brushes', 50.00, this)"> 1</button>
+                          <button type="button" class="btn addToCartButtons"
+                            onclick="toggleItem('Art Beyond Brushes', 75.00, this)"> 2</button>
+                          <button type="button" class="btn addToCartButtons"
+                            onclick="toggleItem('Art Beyond Brushes', 100.00, this)"> 3</button>
 
-                        <div class="button-container item">
-                          <h3 style="display:none">Art Beyond Brushes</h3>
-                          <p style="display:none">Price: $50.00</p>
-                          <button class="show-button">1</button>
-                          <button onclick="toggleItem('Art Beyond Brushes', 50.00, this)"
-                            class="hidden-button">Add</button>
                         </div>
-
-                        <div class="button-container">
-                          <h3 style="display:none">Item 2</h3>
-                          <p style="display:none">Price: $75.00</p>
-                          <button class="show-button">2</button>
-                          <button onclick="toggleItem('Item 2', 75.00, this)" class="hidden-button">Add</button>
-                        </div>
-                        <div class="button-container">
-                          <h3 style="display:none">Item 3</h3>
-                          <p style="display:none">Price: $100.00</p>
-                          <button class="show-button">3</button>
-                          <button onclick="toggleItem('Item 3', 100.00, this)" class="hidden-button">Add</button>
-                        </div>
-
                       </div>
-                      <a href="#cart">Go to Cart</a>
+                      <button type="button" class="btn btn-info mt-3" onclick="goToCart()">Go To Cart</button>
                     </div>
                   </div>
                 </div>
@@ -494,7 +492,7 @@
   </section>
 
   <!--Guidelines-->
-  <section class="guidelines container-fluid mb-4" id="guidelines" style="margin-top: 10vh;">
+  <section class="guidelines container-fluid mb-4" id="guidelines" style="margin-top: 20vh;">
     <div class="">
       <div class="sectionHeadingStyle">
         <div class="row align-items-center">
@@ -549,7 +547,7 @@
   <!-- Cart Section -->
   <div class="cart amountcontainer" id="cart" style="margin-top: 8vh; margin-bottom: 8vh;">
     <div class="card d-flex flex-column text-center" style="background: radial-gradient(ellipse at bottom, #194F8F 0%, #090a0f 100%);
-      border: 0px;">
+      border: 0px; padding-top: 0%!important; padding-bottom: 0%!important;">
       <div id="stars"></div>
       <div id="stars2"></div>
       <div class="cardheader p-4 mb-2">
@@ -716,34 +714,13 @@
   </script>
 
   <script>
-    // Function to set up the event listeners for all button pairs
-    function setupButtonListeners() {
-      const buttonPairs = document.querySelectorAll(".button-container");
-
-      buttonPairs.forEach(function (pair) {
-        const showButton = pair.querySelector(".show-button");
-        const hiddenButton = pair.querySelector(".hidden-button");
-
-        // Initialize hidden button as hidden
-        hiddenButton.style.display = "none";
-
-        showButton.addEventListener("click", function () {
-          // Toggle the visibility of the hidden button
-          if (hiddenButton.style.display === "none") {
-            hiddenButton.style.display = "block";
-          } else {
-            hiddenButton.style.display = "none";
-          }
-        });
-      });
+    function goToCart() {
+      // Scroll to the "cart" division by its ID
+      const cartSection = document.getElementById('cart');
+      if (cartSection) {
+        cartSection.scrollIntoView({ behavior: 'smooth' });
+      }
     }
-
-    // Call the function to set up the event listeners for all button pairs
-    setupButtonListeners();
-
-
-
-
   </script>
 
 

@@ -10,6 +10,49 @@ body {
     display: none;
 }
 
+.addToCartButtons {
+    background-color: #314965;
+    color: rgb(193, 229, 255);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.addToCartButtons:hover {
+    background-color: rgb(193, 229, 255);
+    color: #314965;
+}
+
+.card {
+    overflow: hidden;
+    background-color: transparent;
+    color: #ffffff;
+    height: 100%;
+    padding-top: 30%;
+    padding-bottom: 30%;
+}
+
+.card:hover{
+    padding-bottom: 0%;
+}
+
+.card .card-img-top {
+    transition: transform 0.5s;
+    transform: translateY(0);
+}
+
+.card:hover .card-img-top {
+    transform: translateY(-35%);
+    padding-bottom: 0px;
+}
+
+.card .card-body {
+    transform: translateY(-35%);
+    display: none;
+}
+
+.card:hover .card-body {
+    display: block;
+}
+
 .checkout-items tr{
     background-color: #ffffff;
     color: #000000;
@@ -66,18 +109,27 @@ body {
     width: 60%;
 }
 
-.show-button {
-    padding: 10px 10px 10px 10px;
+.show-button{
+    width: 30px;
+}
+
+/* .show-button {
+    padding: 10px;
     background-color: #3498db;
     color: #fff;
     border: none;
     cursor: pointer;
-}
+} */
 
 @media screen and (max-width: 760px) {
     .bannerDiv {
         margin-top: 10vh;
     }
+
+    .show-button{
+        width: 80px;
+    }
+    
 
     #ieeeDayEventRegistrationCal{
         width: 88%;
