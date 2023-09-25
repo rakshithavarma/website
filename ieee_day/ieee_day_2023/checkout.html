@@ -13,6 +13,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/events_styles.css">
     <link rel="stylesheet" href="css/stars.css">
+    <link rel="stylesheet" href="css/index_styles.css">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -59,7 +60,14 @@
                 <h6>Total Amount to be Paid: ₹<span id="total-amount"></span></h6>
             </div>
             <h5>Scan to Pay:</h5>
-            <img src="assets/payments_qr.jpg" alt="Payment QR Code" width="160" height="160">
+            <img src="assets/payments_qr.jpg" alt="Payment QR Code" width="150" height="150">
+            <br>
+            <a href="../../events/2023/ieee_day2023.html">
+                <button class="btn btn-light btn-purchase trigger goToCartBtn cart-column mt-4" id="pay-now-button"
+                onclick="redirectToCheckout()" type="button">
+                🎟 Register Here
+            </button>
+            </a>
         </div>
     </section>
 

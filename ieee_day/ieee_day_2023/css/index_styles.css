@@ -1,0 +1,70 @@
+.button-container {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .goToCartBtn{
+    background-color: rgb(193, 229, 255)!important;
+    color: #194F8F!important;
+  }
+
+  .button-container button {
+    margin: 2px;
+    width: 5vh;
+  }
+
+  .registrationFeesInstructions ul {
+    list-style: none;
+  }
+
+  .registrationFeesInstructions ul li::before {
+    content: "\2022";
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
+  .custom-container {
+    padding: 30px;
+  }
+
+  .custom-container .row {
+    display: flex;
+    align-items: center;
+  }
+
+  .custom-container .left-half {
+    flex: 1;
+    text-align: center;
+  }
+
+  .custom-container .right-half {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
+  }
+
+  .poster {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #notification {
+    display: none;
+    position: fixed;
+    top: 15%;
+    width: 60%;
+    text-align: center;
+    background-color: #194F8F;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;  
+  }

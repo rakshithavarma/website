@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="css/sample_header.css">
   <link rel="stylesheet" href="css/stars.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index_styles.css">
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -28,73 +29,7 @@
   <script src="js/id_script4.js"></script>
   <script src="js/id_script3.js"></script>
   <style>
-    .button-container {
-      text-align: center;
-      margin-top: 10px;
-      /* Add margin to create space between buttons and content */
-    }
 
-    .button-container button {
-      margin: 2px;
-      width: 5vh;
-      /* Add margin to create space between buttons */
-    }
-
-    .registrationFeesInstructions ul {
-      list-style: none;
-    }
-
-    .registrationFeesInstructions ul li::before {
-      content: "\2022";
-      color: rgb(0, 0, 0);
-      font-weight: bold;
-      display: inline-block;
-      width: 1em;
-      margin-left: -1em;
-    }
-
-    .custom-container {
-      padding: 30px;
-    }
-
-    .custom-container .row {
-      display: flex;
-      align-items: center;
-    }
-
-    .custom-container .left-half {
-      flex: 1;
-      text-align: center;
-    }
-
-    .custom-container .right-half {
-      display: flex;
-      justify-content: center;
-      flex: 1;
-      text-align: center;
-    }
-
-    .poster {
-      width: 100%;
-      max-width: 300px;
-      height: 300px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    #notification {
-      display: none;
-      position: fixed;
-      top: 15%;
-      width: 60%;
-      text-align: center;
-      background-color: #194F8F;
-      color: white;
-      padding: 10px;
-      border-radius: 5px;
-      font-weight: 600;  
-    }
   </style>
 </head>
 
@@ -204,10 +139,8 @@
       <div>
         <p class="preview text-center justify-content-center "
           style="padding-left: auto; padding-right: auto; color:black;text-align: center!important; margin-top: 0rem;">
-          Thank
-          you for your interest. Below is a small video which will guide you through the payments. For more
-          queries
-          contact .
+          Thank you for your interest. Below is a small video which will guide you through the payments. For more
+          queries contact .
         </p>
       </div>
       <center>
@@ -321,7 +254,8 @@
                             onclick="toggleItem('Art Beyond Brushes', 50.00, this)"> 1</button>
                         </div>
                       </div>
-                      <button type="button" class="btn btn-info mt-3" onclick="goToCart()">Go To Cart</button>
+                      <button type="button" class="btn btn-info  goToCartBtn   mt-3" onclick="goToCart()">Go To
+                        Cart</button>
                     </div>
                   </div>
                 </div>
@@ -332,21 +266,22 @@
               <div id="panel3" class="panel-content" style="display: none;">
                 <div class="container mt-5">
                   <div class="card mx-auto py-auto">
-                    <img src="../../events/images/sb/2023/69_art_beyond_brushes/event_poster.jpg"
-                      class="card-img-top mx-auto" style="max-width: 240px;" alt="Image">
+                    <img src="../../events/images/sb/2023/70_code_break/event_poster.jpg" class="card-img-top mx-auto"
+                      style="max-width: 240px;" alt="Image">
                     <div class="card-body text-center">
                       <div class="d-flex justify-content-evenly align-items-center">
                         <h6 class="mb-0">Team size</h6>
                         <div>
                           <button type="button" class="btn addToCartButtons"
-                            onclick="toggleItem('CodeBreak - Team of 1', 50.00, this)"> 1</button>
+                            onclick="toggleItem('CodeBreak - Team of 1', 30.00, this)"> 1</button>
                           <button type="button" class="btn addToCartButtons"
-                            onclick="toggleItem('CodeBreak - Team of 2', 75.00, this)"> 2</button>
+                            onclick="toggleItem('CodeBreak - Team of 2', 45.00, this)"> 2</button>
                           <button type="button" class="btn addToCartButtons"
-                            onclick="toggleItem('CodeBreak - Team of 3', 100.00, this)"> 3</button>
+                            onclick="toggleItem('CodeBreak - Team of 3', 60.00, this)"> 3</button>
                         </div>
                       </div>
-                      <button type="button" class="btn btn-info mt-3" onclick="goToCart()">Go To Cart</button>
+                      <button type="button" class="btn btn-info  goToCartBtn   mt-3" onclick="goToCart()">Go To
+                        Cart</button>
                     </div>
                   </div>
                 </div>
@@ -357,22 +292,21 @@
               <div id="panel4" class="panel-content" style="display: none;">
                 <div class="container mt-5">
                   <div class="card mx-auto py-auto">
-                    <img src="../../events/images/sb/2023/69_art_beyond_brushes/event_poster.jpg"
+                    <img src="../../events/images/sb/2023/71_thesis_thrive/event_poster.jpg"
                       class="card-img-top mx-auto" style="max-width: 240px;" alt="Image">
                     <div class="card-body text-center">
                       <div class="d-flex justify-content-evenly align-items-center">
                         <h6 class="mb-0">Team size</h6>
                         <div>
                           <button type="button" class="btn addToCartButtons"
-                            onclick="toggleItem('Thesis Thrive-1', 50.00, this)"> 1</button>
+                            onclick="toggleItem('Thesis Thrive- 1 Paper', 50.00, this)"> 1</button>
                           <button type="button" class="btn addToCartButtons"
-                            onclick="toggleItem('Thesis Thrive-2', 75.00, this)"> 2</button>
-                          <button type="button" class="btn addToCartButtons"
-                            onclick="toggleItem('Thesis Thrive-3', 100.00, this)"> 3</button>
+                            onclick="toggleItem('Thesis Thrive - 2 Papers', 100.00, this)"> 2</button>
 
                         </div>
                       </div>
-                      <button type="button" class="btn btn-info mt-3" onclick="goToCart()">Go To Cart</button>
+                      <button type="button" class="btn btn-info  goToCartBtn   mt-3" onclick="goToCart()">Go To
+                        Cart</button>
                     </div>
                   </div>
                 </div>
@@ -385,22 +319,20 @@
               <div id="panel5" class="panel-content" style="display: none;">
                 <div class="container mt-5">
                   <div class="card mx-auto py-auto">
-                    <img src="../../events/images/sb/2023/69_art_beyond_brushes/event_poster.jpg"
+                    <img src="../../events/images/sb/2023/72_tech_puzzle_unscramble/event_poster.jpg"
                       class="card-img-top mx-auto" style="max-width: 240px;" alt="Image">
                     <div class="card-body text-center">
                       <div class="d-flex justify-content-evenly align-items-center">
                         <h6 class="mb-0">Team size</h6>
                         <div>
                           <button type="button" class="btn addToCartButtons"
-                            onclick="toggleItem('Tech Puzzle Unscramble - Team of 1', 50.00, this)"> 1</button>
+                            onclick="toggleItem('Tech Puzzle Unscramble - Team of 1', 30.00, this)"> 1</button>
                           <button type="button" class="btn addToCartButtons"
-                            onclick="toggleItem('Tech Puzzle Unscramble - Team of 2', 75.00, this)"> 2</button>
-                          <button type="button" class="btn addToCartButtons"
-                            onclick="toggleItem('Tech Puzzle Unscramble - Team of 3', 100.00, this)"> 3</button>
-
+                            onclick="toggleItem('Tech Puzzle Unscramble - Team of 2', 50.00, this)"> 2</button>
                         </div>
                       </div>
-                      <button type="button" class="btn btn-info mt-3" onclick="goToCart()">Go To Cart</button>
+                      <button type="button" class="btn btn-info  goToCartBtn   mt-3" onclick="goToCart()">Go To
+                        Cart</button>
                     </div>
                   </div>
                 </div>
@@ -418,10 +350,11 @@
                         <h6 class="mb-0">Team size</h6>
                         <div>
                           <button type="button" class="btn addToCartButtons"
-                            onclick="toggleItem('Flutter Fest - Team of 1', 25.00, this)"> 1</button>
+                            onclick="toggleItem('Flutter Fest', 25.00, this)"> 1</button>
                         </div>
                       </div>
-                      <button type="button" class="btn btn-info mt-3" onclick="goToCart()">Go To Cart</button>
+                      <button type="button" class="btn btn-info  goToCartBtn   mt-3" onclick="goToCart()">Go To
+                        Cart</button>
                     </div>
                   </div>
                 </div>
@@ -437,18 +370,19 @@
                       class="card-img-top mx-auto" style="max-width: 240px;" alt="Image">
                     <div class="card-body text-center">
                       <div class="d-flex justify-content-evenly align-items-center">
-                        <h6 class="mb-0">Team size</h6>
+                        <h6 class="mb-0">No. of Tickets</h6>
                         <div>
                           <button type="button" class="btn addToCartButtons"
-                            onclick="toggleItem('MathTale Housie - Team of 1', 50.00, this)"> 1</button>
+                            onclick="toggleItem('MathTale Housie - 1 Ticket', 30.00, this)"> 1</button>
                           <button type="button" class="btn addToCartButtons"
-                            onclick="toggleItem('MathTale Housie - Team of 2', 75.00, this)"> 2</button>
+                            onclick="toggleItem('MathTale Housie - 2 Tickets', 40.00, this)"> 2</button>
                           <button type="button" class="btn addToCartButtons"
-                            onclick="toggleItem('MathTale Housie - Team of 3', 100.00, this)"> 3</button>
+                            onclick="toggleItem('MathTale Housie - 3 Tickets', 50.00, this)"> 3</button>
 
                         </div>
                       </div>
-                      <button type="button" class="btn btn-info mt-3" onclick="goToCart()">Go To Cart</button>
+                      <button type="button" class="btn btn-info  goToCartBtn   mt-3" onclick="goToCart()">Go To
+                        Cart</button>
                     </div>
                   </div>
                 </div>
@@ -466,10 +400,11 @@
                         <h6 class="mb-0">Team size</h6>
                         <div>
                           <button type="button" class="btn addToCartButtons"
-                            onclick="toggleItem('Ladder Logic - Team of 1', 50.00, this)"> 1</button>
+                            onclick="toggleItem('Ladder Logic', 50.00, this)"> 1</button>
                         </div>
                       </div>
-                      <button type="button" class="btn btn-info mt-3" onclick="goToCart()">Go To Cart</button>
+                      <button type="button" class="btn btn-info  goToCartBtn   mt-3" onclick="goToCart()">Go To
+                        Cart</button>
                     </div>
                   </div>
                 </div>
@@ -487,15 +422,16 @@
                         <h6 class="mb-0">Team size</h6>
                         <div>
                           <button type="button" class="btn addToCartButtons"
-                            onclick="toggleItem('Mystic Code - Team of 1', 50.00, this)"> 1</button>
+                            onclick="toggleItem('Mystic Code - Team of 1', 30.00, this)"> 1</button>
                           <button type="button" class="btn addToCartButtons"
-                            onclick="toggleItem('Mystic Code - Team of 2', 75.00, this)"> 2</button>
+                            onclick="toggleItem('Mystic Code - Team of 2', 45.00, this)"> 2</button>
                           <button type="button" class="btn addToCartButtons"
-                            onclick="toggleItem('Mystic Code - Team of 3', 100.00, this)"> 3</button>
+                            onclick="toggleItem('Mystic Code - Team of 3', 60.00, this)"> 3</button>
 
                         </div>
                       </div>
-                      <button type="button" class="btn btn-info mt-3" onclick="goToCart()">Go To Cart</button>
+                      <button type="button" class="btn btn-info  goToCartBtn   mt-3" onclick="goToCart()">Go To
+                        Cart</button>
                     </div>
                   </div>
                 </div>
@@ -513,15 +449,14 @@
                         <h6 class="mb-0">Team size</h6>
                         <div>
                           <button type="button" class="btn addToCartButtons"
-                            onclick="toggleItem('PitchFest - Team of 1', 50.00, this)"> 1</button>
+                            onclick="toggleItem('PitchFest - Team of 1 or 2', 50.00, this)"> 1</button>
                           <button type="button" class="btn addToCartButtons"
-                            onclick="toggleItem('PitchFest - Team of 2', 75.00, this)"> 2</button>
-                          <button type="button" class="btn addToCartButtons"
-                            onclick="toggleItem('PitchFest - Team of 3', 100.00, this)"> 3</button>
+                            onclick="toggleItem('PitchFest - Team of 3 or 4', 80.00, this)"> 2</button>
 
                         </div>
                       </div>
-                      <button type="button" class="btn btn-info mt-3" onclick="goToCart()">Go To Cart</button>
+                      <button type="button" class="btn btn-info  goToCartBtn   mt-3" onclick="goToCart()">Go To
+                        Cart</button>
                     </div>
                   </div>
                 </div>
@@ -539,15 +474,16 @@
                         <h6 class="mb-0">Team size</h6>
                         <div>
                           <button type="button" class="btn addToCartButtons"
-                            onclick="toggleItem('TechnoTussle - Team of 1', 50.00, this)"> 1</button>
+                            onclick="toggleItem('TechnoTussle - Team of 1', 30, this)"> 1</button>
                           <button type="button" class="btn addToCartButtons"
-                            onclick="toggleItem('TechnoTussle - Team of 2', 75.00, this)"> 2</button>
+                            onclick="toggleItem('TechnoTussle - Team of 2', 45.00, this)"> 2</button>
                           <button type="button" class="btn addToCartButtons"
-                            onclick="toggleItem('TechnoTussle - Team of 3', 100.00, this)"> 3</button>
+                            onclick="toggleItem('TechnoTussle - Team of 3', 60.00, this)"> 3</button>
 
                         </div>
                       </div>
-                      <button type="button" class="btn btn-info mt-3" onclick="goToCart()">Go To Cart</button>
+                      <button type="button" class="btn btn-info  goToCartBtn   mt-3" onclick="goToCart()">Go To
+                        Cart</button>
                     </div>
                   </div>
                 </div>
@@ -565,13 +501,14 @@
                         <h6 class="mb-0">Are You a IEEE Meember ?</h6>
                         <div>
                           <button type="button" class="btn addToCartButtons"
-                            onclick="toggleItem('IEEE Day 2023 - 1', 250.00, this)">Yes</button>
+                            onclick="toggleItem('IEEE Day 2023 - IEEE Members', 250.00, this)">Yes</button>
                           <button type="button" class="btn addToCartButtons"
-                            onclick="toggleItem('IEEE Day 2023 - 2', 350.00, this)">No</button>
+                            onclick="toggleItem('IEEE Day 2023 - Non-IEEE Members', 350.00, this)">No</button>
 
                         </div>
                       </div>
-                      <button type="button" class="btn btn-info mt-3" onclick="goToCart()">Go To Cart</button>
+                      <button type="button" class="btn btn-info  goToCartBtn   mt-3" onclick="goToCart()">Go To
+                        Cart</button>
                     </div>
                   </div>
                 </div>
@@ -596,7 +533,7 @@
       </div>
       <div class="">
 
-        <p>👉 Take the screenshot of the popup appearing after clicking on <b
+        <p>👉 Take a screenshot of the page appearing after clicking on <b
             style="color:#055fad;font-weight:bolder!important"> 🎟 Buy your ticket</b> </p>
         <p>👉 Take a screenshot after you are done with the payment to <span
             style="text-align: center;padding: 0%;margin: 0%;"><b>PhonePe/Google pay:</b> <a
@@ -609,16 +546,11 @@
           <img id="ss_demo" src="../../images/id_ss_demo.png" alt="image" srcset="" width="48%!important">
         </div>
         <p>👉 Make sure that the UPI Transaction ID should be clearly visible.</p>
-        <p>👉 Its mandatory to attach the screenshots into the google form redirected after clicking the
-          <b>next</b>
-          button.
-        </p>
-        <p>👉 After finishing the payment and registration process, you have to register for each individual
-          event by opening the link displayed at the end of the registration form and then the event page for the evnts
-          you have selected.</p>
+        <p>👉 After finishing the payment, you have to register for each individual
+          event by clicking <b style="color:#055fad;font-weight:bolder!important"> 🎟 Register Here</b> in the Checkout
+          page displayed in the example above </p>
         <p>👉 In case of team events, please make sure to add a small message/note along with your payment
-          mentioning
-          the names and roll no.s of your teammates</p>
+          mentioning the names and roll no.s of your teammates</p>
         <p>👉 Join the Help Desk group, incase of any queries - <b
             style="color:#055fad!important;font-weight:bolder!important"><a href="https://bit.ly/IEEEDay2023HelpDesk"
               style="color:#055fad!important">https://bit.ly/IEEEDay2023HelpDesk</a>. </b>You can post your
@@ -646,20 +578,20 @@
       </div>
       <div class="cardbody">
         <table id="customers" style="font-family:'Garamond',serif!important; width:100%;">
-          <thead style="background-color: rgb(193, 229, 255); color: black;">
+          <thead style="background-color: rgb(193, 229, 255); color: #194F8F;">
             <tr>
               <th>Event Selected</th>
               <th>Price</th>
               <th class="delbtn" style="padding-top: 12px;"><i class="material-icons">delete</i></th>
             </tr>
           </thead>
-          <tbody id="cart-items" style="background-color: rgb(255, 255, 255); color: black;"></tbody>
+          <tbody id="cart-items" style="background-color: rgb(255, 255, 255); color: #194F8F;"></tbody>
         </table>
       </div>
       <div class="cardfooter">
-        <div class="prices text-center" style="background-color: rgb(193, 229, 255);  color: black;">
+        <div class="prices text-center" style="background-color: rgb(193, 229, 255);  color: #194F8F;">
           <table id="price_footer" style="width:81%; text-align: right; padding-right: 19%; ">
-            <thead style="background-color: rgb(193, 229, 255);  color: black;">
+            <thead style="background-color: rgb(193, 229, 255);  color: #194F8F;">
               <tr>
                 <th>Total :</th>
                 <th>
@@ -676,8 +608,9 @@
           </h6>
         </div>
         <div class="makepayment mb-4">
-          <button class="btn btn-light btn-purchase trigger cart-column mt-4" id="pay-now-button"
-            onclick="redirectToCheckout()" type="button">
+          <button class="btn btn-light btn-purchase trigger goToCartBtn cart-column mt-4" id="pay-now-button"
+            onclick="redirectToCheckout()" type="button"
+            style="background-color: rgb(193, 229, 255)!important; color: #194F8F!important;">
             🎟 Buy your ticket
           </button>
         </div>
@@ -734,19 +667,19 @@
         button.style.color = "rgb(193,229,255)";
         button.style.backgroundColor = "#194F8F";
 
-        showNotification(`Removed ${itemName} from the cart.`);
+        showNotification(`Removed ${itemName} (₹${itemPrice}) from the cart.`);
       } else {
         // Add the item to the cart
         addItem(itemName, itemPrice);
         // button.textContent = "Remove";
         //bacgclr
         //text clr
-        
+
         button.style.color = "#194F8F";
         button.style.backgroundColor = "rgb(193,229,255)";
-        
 
-        showNotification(`Added ${itemName} to the cart.`);
+
+        showNotification(`Added ${itemName} (₹${itemPrice}) to the cart.`);
       }
     }
 

@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="css/sample_header.css">
   <link rel="stylesheet" href="css/stars.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index_styles.css">
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -28,60 +29,7 @@
   <script src="js/id_script4.js"></script>
   <script src="js/id_script3.js"></script>
   <style>
-    .button-container {
-      text-align: center;
-      margin-top: 10px;
-      /* Add margin to create space between buttons and content */
-    }
 
-    .button-container button {
-      margin: 2px;
-      width: 5vh;
-      /* Add margin to create space between buttons */
-    }
-
-    .registrationFeesInstructions ul {
-      list-style: none;
-    }
-
-    .registrationFeesInstructions ul li::before {
-      content: "\2022";
-      color: rgb(0, 0, 0);
-      font-weight: bold;
-      display: inline-block;
-      width: 1em;
-      margin-left: -1em;
-    }
-
-    .custom-container {
-      padding: 30px;
-    }
-
-    .custom-container .row {
-      display: flex;
-      align-items: center;
-    }
-
-    .custom-container .left-half {
-      flex: 1;
-      text-align: center;
-    }
-
-    .custom-container .right-half {
-      display: flex;
-      justify-content: center;
-      flex: 1;
-      text-align: center;
-    }
-
-    .poster {
-      width: 100%;
-      max-width: 300px;
-      height: 300px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
   </style>
 </head>
 
@@ -101,6 +49,12 @@
       <my-header></my-header>
     </div>
   </div>
+
+  <!--Notification alert-->
+
+  <section class="mx-auto" style="display: flex; justify-content: center;">
+    <div style="z-index: 100000;" class="mx-auto" id="notification"></div>
+  </section>
 
   <!-- Banner -->
   <div>
@@ -129,7 +83,7 @@
           <p class="aboutIeeeDayPara text-center" style="color:black; text-align: justify !important; font-size: 18px;">
             Join us in celebrating IEEE Day 2023! Since 1884, we've united as a global community, committed to
             excellence. This year's theme is "EVOLVE: Elevate to Excellence," and our festivities run from September
-            25th to October 7th. Let's collaborate and harness technology for a brighter future! Together, we can shape
+            26th to October 7th. Let's collaborate and harness technology for a brighter future! Together, we can shape
             the next era of innovation and progress. Join the movement and be a part of our global mission for a better
             tomorrow.
           </p>
@@ -185,10 +139,8 @@
       <div>
         <p class="preview text-center justify-content-center "
           style="padding-left: auto; padding-right: auto; color:black;text-align: center!important; margin-top: 0rem;">
-          Thank
-          you for your interest. Below is a small video which will guide you through the payments. For more
-          queries
-          contact .
+          Thank you for your interest. Below is a small video which will guide you through the payments. For more
+          queries contact .
         </p>
       </div>
       <center>
@@ -259,27 +211,27 @@
                   <td class="redundant-dates"></td>
                   <td><button class="date-button" onclick="toggleAccordion('accordion1')">
                       26</button></td>
-                  <td>
-                    27</td>
-                  <td class="redundant-dates">28</td>
-                  <td>
-                    29</td>
-                  <td>
-                    30</td>
+                  <td><button class="date-button" onclick="toggleAccordion('accordion2')">
+                      27</button></td>
+                  <td class="redundant-dates vertical-middle">28</td>
+                  <td><button class="date-button" onclick="toggleAccordion('accordion3')">
+                      29</button></td>
+                  <td><button class="date-button" onclick="toggleAccordion('accordion4')">
+                      30</button></td>
                 </tr>
                 <tr style="height: 33%;">
                   <th>Oct</th>
                   <td class=" redundant-dates vertical-middle">1</td>
                   <td class=" redundant-dates vertical-middle">2</td>
-                  <td>
-                    3</td>
-                  <td>
-                    4</td>
-                  <td>
-                    5</td>
+                  <td><button class="date-button" onclick="toggleAccordion('accordion5')">
+                      3</button></td>
+                  <td><button class="date-button" onclick="toggleAccordion('accordion6')">
+                      4</button></td>
+                  <td><button class="date-button" onclick="toggleAccordion('accordion7')">
+                      5</button></td>
                   <td class="redundant-dates">6</td>
-                  <td>
-                    7</td>
+                  <td><button class="date-button" onclick="toggleAccordion('accordion8')">
+                      7</button></td>
                 </tr>
               </tbody>
             </table>
@@ -292,22 +244,18 @@
               <div id="panel1" class="panel-content" style="display: none;">
                 <div class="container mt-5">
                   <div class="card mx-auto py-auto">
-                    <img src="../../events/images/sb/2023/69_art_beyond_brushes/event_poster.jpg" class="card-img-top mx-auto" style="max-width: 240px;"
-                      alt="Image">
+                    <img src="../../events/images/sb/2023/69_art_beyond_brushes/event_poster.jpg"
+                      class="card-img-top mx-auto" style="max-width: 240px;" alt="Image">
                     <div class="card-body text-center">
                       <div class="d-flex justify-content-evenly align-items-center">
                         <h6 class="mb-0">Team size</h6>
                         <div>
                           <button type="button" class="btn addToCartButtons"
                             onclick="toggleItem('Art Beyond Brushes', 50.00, this)"> 1</button>
-                          <!-- <button type="button" class="btn addToCartButtons"
-                            onclick="toggleItem('Art Beyond Brushes', 75.00, this)"> 2</button>
-                          <button type="button" class="btn addToCartButtons"
-                            onclick="toggleItem('Art Beyond Brushes', 100.00, this)"> 3</button> -->
-
                         </div>
                       </div>
-                      <button type="button" class="btn btn-info mt-3" onclick="goToCart()">Go To Cart</button>
+                      <button type="button" class="btn btn-info  goToCartBtn   mt-3" onclick="goToCart()">Go To
+                        Cart</button>
                     </div>
                   </div>
                 </div>
@@ -316,129 +264,147 @@
             <div id="accordion2" class="accordion-content" style="display: none;">
               <button class="panel-button" onclick="togglePanel('panel3')">CodeBreak</button>
               <div id="panel3" class="panel-content" style="display: none;">
-                <div class="container" style="height: 90%;">
-                  <div class="eventCard align-items-center align-content-center">
-                    <div class="eventImgBx align-items-center align-content-center">
-                      <img src="../../events/images/sb/2023/" alt="event_poster" height="250px">
-                    </div>
-                    <div class="eventContentBx">
-                      <h3>Code Break</h3>
-                      <div class="size">
-                        <h4>Team Size:</h4>
-                        1
-                        2
-                        3
+                <div class="container mt-5">
+                  <div class="card mx-auto py-auto">
+                    <img src="../../events/images/sb/2023/70_code_break/event_poster.jpg" class="card-img-top mx-auto"
+                      style="max-width: 240px;" alt="Image">
+                    <div class="card-body text-center">
+                      <div class="d-flex justify-content-evenly align-items-center">
+                        <h6 class="mb-0">Team size</h6>
+                        <div>
+                          <button type="button" class="btn addToCartButtons"
+                            onclick="toggleItem('CodeBreak - Team of 1', 30.00, this)"> 1</button>
+                          <button type="button" class="btn addToCartButtons"
+                            onclick="toggleItem('CodeBreak - Team of 2', 45.00, this)"> 2</button>
+                          <button type="button" class="btn addToCartButtons"
+                            onclick="toggleItem('CodeBreak - Team of 3', 60.00, this)"> 3</button>
+                        </div>
                       </div>
-                      <a href="#cart">Go to Cart</a>
+                      <button type="button" class="btn btn-info  goToCartBtn   mt-3" onclick="goToCart()">Go To
+                        Cart</button>
                     </div>
                   </div>
                 </div>
               </div>
+
               <br>
               <button class="panel-button" onclick="togglePanel('panel4')">Thesis Thrive</button>
               <div id="panel4" class="panel-content" style="display: none;">
-                <div class="container">
-                  <div class="eventCard align-items-center align-content-center">
-                    <div class="eventImgBx align-items-center align-content-center">
-                      <img src="../../events/images/sb/2023/" alt="event_poster" height="250px">
-                    </div>
-                    <div class="eventContentBx">
-                      <h3>Thesis Thrive</h3>
-                      <div class="size">
-                        <h4>Team Size:</h4>
-                        1
-                        2
-                        3
+                <div class="container mt-5">
+                  <div class="card mx-auto py-auto">
+                    <img src="../../events/images/sb/2023/71_thesis_thrive/event_poster.jpg"
+                      class="card-img-top mx-auto" style="max-width: 240px;" alt="Image">
+                    <div class="card-body text-center">
+                      <div class="d-flex justify-content-evenly align-items-center">
+                        <h6 class="mb-0">Team size</h6>
+                        <div>
+                          <button type="button" class="btn addToCartButtons"
+                            onclick="toggleItem('Thesis Thrive- 1 Paper', 50.00, this)"> 1</button>
+                          <button type="button" class="btn addToCartButtons"
+                            onclick="toggleItem('Thesis Thrive - 2 Papers', 100.00, this)"> 2</button>
+
+                        </div>
                       </div>
-                      <a href="#cart">Go to Cart</a>
+                      <button type="button" class="btn btn-info  goToCartBtn   mt-3" onclick="goToCart()">Go To
+                        Cart</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
+
             <div id="accordion3" class="accordion-content" style="display: none;">
               <button class="panel-button" onclick="togglePanel('panel5')">Tech Puzzle Unscramble</button>
               <div id="panel5" class="panel-content" style="display: none;">
-                <div class="container">
-                  <div class="eventCard align-items-center align-content-center">
-                    <div class="eventImgBx align-items-center align-content-center">
-                      <img src="../../events/images/sb/2023/" alt="event_poster" height="250px">
-                    </div>
-                    <div class="eventContentBx">
-                      <h3>Code Break</h3>
-                      <div class="size">
-                        <h4>Team Size:</h4>
-                        1
-                        2
-                        3
+                <div class="container mt-5">
+                  <div class="card mx-auto py-auto">
+                    <img src="../../events/images/sb/2023/72_tech_puzzle_unscramble/event_poster.jpg"
+                      class="card-img-top mx-auto" style="max-width: 240px;" alt="Image">
+                    <div class="card-body text-center">
+                      <div class="d-flex justify-content-evenly align-items-center">
+                        <h6 class="mb-0">Team size</h6>
+                        <div>
+                          <button type="button" class="btn addToCartButtons"
+                            onclick="toggleItem('Tech Puzzle Unscramble - Team of 1', 30.00, this)"> 1</button>
+                          <button type="button" class="btn addToCartButtons"
+                            onclick="toggleItem('Tech Puzzle Unscramble - Team of 2', 50.00, this)"> 2</button>
+                        </div>
                       </div>
-                      <a href="#cart">Go to Cart</a>
+                      <button type="button" class="btn btn-info  goToCartBtn   mt-3" onclick="goToCart()">Go To
+                        Cart</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div id="accordion4" class="accordion-content" style="display: none;">
-              <button class="panel-button" onclick="togglePanel('panel7')"> Flutter Fest</button>
+              <button class="panel-button" onclick="togglePanel('panel7')">Flutter Fest</button>
               <div id="panel7" class="panel-content" style="display: none;">
-                <div class="container">
-                  <div class="eventCard align-items-center align-content-center">
-                    <div class="eventImgBx align-items-center align-content-center">
-                      <img src="../../events/images/sb/2023/" alt="event_poster" height="250px">
-                    </div>
-                    <div class="eventContentBx">
-                      <h3>Code Break</h3>
-                      <div class="size">
-                        <h4>Team Size:</h4>
-                        1
-                        2
-                        3
+                <div class="container mt-5">
+                  <div class="card mx-auto py-auto">
+                    <img src="../../events/images/sb/2023/69_art_beyond_brushes/event_poster.jpg"
+                      class="card-img-top mx-auto" style="max-width: 240px;" alt="Image">
+                    <div class="card-body text-center">
+                      <div class="d-flex justify-content-evenly align-items-center">
+                        <h6 class="mb-0">Team size</h6>
+                        <div>
+                          <button type="button" class="btn addToCartButtons"
+                            onclick="toggleItem('Flutter Fest', 25.00, this)"> 1</button>
+                        </div>
                       </div>
-                      <a href="#cart">Go to Cart</a>
+                      <button type="button" class="btn btn-info  goToCartBtn   mt-3" onclick="goToCart()">Go To
+                        Cart</button>
                     </div>
                   </div>
                 </div>
               </div>
-              <br>
             </div>
+
             <div id="accordion5" class="accordion-content" style="display: none;">
               <button class="panel-button" onclick="togglePanel('panel9')">Math Tale Housie</button>
               <div id="panel9" class="panel-content" style="display: none;">
-                <div class="container">
-                  <div class="eventCard align-items-center align-content-center">
-                    <div class="eventImgBx align-items-center align-content-center">
-                      <img src="../../events/images/sb/2023/" alt="event_poster" height="250px">
-                    </div>
-                    <div class="eventContentBx">
-                      <h3>Code Break</h3>
-                      <div class="size">
-                        <h4>Team Size:</h4>
-                        1
-                        2
-                        3
+                <div class="container mt-5">
+                  <div class="card mx-auto py-auto">
+                    <img src="../../events/images/sb/2023/69_art_beyond_brushes/event_poster.jpg"
+                      class="card-img-top mx-auto" style="max-width: 240px;" alt="Image">
+                    <div class="card-body text-center">
+                      <div class="d-flex justify-content-evenly align-items-center">
+                        <h6 class="mb-0">No. of Tickets</h6>
+                        <div>
+                          <button type="button" class="btn addToCartButtons"
+                            onclick="toggleItem('MathTale Housie - 1 Ticket', 30.00, this)"> 1</button>
+                          <button type="button" class="btn addToCartButtons"
+                            onclick="toggleItem('MathTale Housie - 2 Tickets', 40.00, this)"> 2</button>
+                          <button type="button" class="btn addToCartButtons"
+                            onclick="toggleItem('MathTale Housie - 3 Tickets', 50.00, this)"> 3</button>
+
+                        </div>
                       </div>
-                      <a href="#cart">Go to Cart</a>
+                      <button type="button" class="btn btn-info  goToCartBtn   mt-3" onclick="goToCart()">Go To
+                        Cart</button>
                     </div>
                   </div>
                 </div>
               </div>
+
               <br>
               <button class="panel-button" onclick="togglePanel('panel10')">Ladder Logic</button>
               <div id="panel10" class="panel-content" style="display: none;">
-                <div class="container">
-                  <div class="eventCard align-items-center align-content-center">
-                    <div class="eventImgBx align-items-center align-content-center">
-                      <img src="../../events/images/sb/2023/" alt="event_poster" height="250px">
-                    </div>
-                    <div class="eventContentBx">
-                      <h3>Code Break</h3>
-                      <div class="size">
-                        <h4>Team Size:</h4>
-                        1
-                        2
-                        3
+                <div class="container mt-5">
+                  <div class="card mx-auto py-auto">
+                    <img src="../../events/images/sb/2023/69_art_beyond_brushes/event_poster.jpg"
+                      class="card-img-top mx-auto" style="max-width: 240px;" alt="Image">
+                    <div class="card-body text-center">
+                      <div class="d-flex justify-content-evenly align-items-center">
+                        <h6 class="mb-0">Team size</h6>
+                        <div>
+                          <button type="button" class="btn addToCartButtons"
+                            onclick="toggleItem('Ladder Logic', 50.00, this)"> 1</button>
+                        </div>
                       </div>
-                      <a href="#cart">Go to Cart</a>
+                      <button type="button" class="btn btn-info  goToCartBtn   mt-3" onclick="goToCart()">Go To
+                        Cart</button>
                     </div>
                   </div>
                 </div>
@@ -447,64 +413,77 @@
             <div id="accordion6" class="accordion-content" style="display: none;">
               <button class="panel-button" onclick="togglePanel('panel11')">Mystic Code</button>
               <div id="panel11" class="panel-content" style="display: none;">
-                <div class="container">
-                  <div class="eventCard align-items-center align-content-center">
-                    <div class="eventImgBx align-items-center align-content-center">
-                      <img src="../../events/images/sb/2023/" alt="event_poster" height="250px">
-                    </div>
-                    <div class="eventContentBx">
-                      <h3>Code Break</h3>
-                      <div class="size">
-                        <h4>Team Size:</h4>
-                        1
-                        2
-                        3
+                <div class="container mt-5">
+                  <div class="card mx-auto py-auto">
+                    <img src="../../events/images/sb/2023/69_art_beyond_brushes/event_poster.jpg"
+                      class="card-img-top mx-auto" style="max-width: 240px;" alt="Image">
+                    <div class="card-body text-center">
+                      <div class="d-flex justify-content-evenly align-items-center">
+                        <h6 class="mb-0">Team size</h6>
+                        <div>
+                          <button type="button" class="btn addToCartButtons"
+                            onclick="toggleItem('Mystic Code - Team of 1', 30.00, this)"> 1</button>
+                          <button type="button" class="btn addToCartButtons"
+                            onclick="toggleItem('Mystic Code - Team of 2', 45.00, this)"> 2</button>
+                          <button type="button" class="btn addToCartButtons"
+                            onclick="toggleItem('Mystic Code - Team of 3', 60.00, this)"> 3</button>
+
+                        </div>
                       </div>
-                      <a href="#cart">Go to Cart</a>
+                      <button type="button" class="btn btn-info  goToCartBtn   mt-3" onclick="goToCart()">Go To
+                        Cart</button>
                     </div>
                   </div>
                 </div>
               </div>
-              <br>
             </div>
             <div id="accordion7" class="accordion-content" style="display: none;">
               <button class="panel-button" onclick="togglePanel('panel13')">PitchFest</button>
               <div id="panel13" class="panel-content" style="display: none;">
-                <div class="container">
-                  <div class="eventCard align-items-center align-content-center">
-                    <div class="eventImgBx align-items-center align-content-center">
-                      <img src="../../events/images/sb/2023/" alt="event_poster" height="250px">
-                    </div>
-                    <div class="eventContentBx">
-                      <h3>Code Break</h3>
-                      <div class="size">
-                        <h4>Team Size:</h4>
-                        1
-                        2
-                        3
+                <div class="container mt-5">
+                  <div class="card mx-auto py-auto">
+                    <img src="../../events/images/sb/2023/69_art_beyond_brushes/event_poster.jpg"
+                      class="card-img-top mx-auto" style="max-width: 240px;" alt="Image">
+                    <div class="card-body text-center">
+                      <div class="d-flex justify-content-evenly align-items-center">
+                        <h6 class="mb-0">Team size</h6>
+                        <div>
+                          <button type="button" class="btn addToCartButtons"
+                            onclick="toggleItem('PitchFest - Team of 1 or 2', 50.00, this)"> 1</button>
+                          <button type="button" class="btn addToCartButtons"
+                            onclick="toggleItem('PitchFest - Team of 3 or 4', 80.00, this)"> 2</button>
+
+                        </div>
                       </div>
-                      <a href="#cart">Go to Cart</a>
+                      <button type="button" class="btn btn-info  goToCartBtn   mt-3" onclick="goToCart()">Go To
+                        Cart</button>
                     </div>
                   </div>
                 </div>
               </div>
+
               <br>
               <button class="panel-button" onclick="togglePanel('panel14')">TechnoTussle</button>
               <div id="panel14" class="panel-content" style="display: none;">
-                <div class="container">
-                  <div class="eventCard align-items-center align-content-center">
-                    <div class="eventImgBx align-items-center align-content-center">
-                      <img src="../../events/images/sb/2023/" alt="event_poster" height="250px">
-                    </div>
-                    <div class="eventContentBx">
-                      <h3>Code Break</h3>
-                      <div class="size">
-                        <h4>Team Size:</h4>
-                        1
-                        2
-                        3
+                <div class="container mt-5">
+                  <div class="card mx-auto py-auto">
+                    <img src="../../events/images/sb/2023/69_art_beyond_brushes/event_poster.jpg"
+                      class="card-img-top mx-auto" style="max-width: 240px;" alt="Image">
+                    <div class="card-body text-center">
+                      <div class="d-flex justify-content-evenly align-items-center">
+                        <h6 class="mb-0">Team size</h6>
+                        <div>
+                          <button type="button" class="btn addToCartButtons"
+                            onclick="toggleItem('TechnoTussle - Team of 1', 30, this)"> 1</button>
+                          <button type="button" class="btn addToCartButtons"
+                            onclick="toggleItem('TechnoTussle - Team of 2', 45.00, this)"> 2</button>
+                          <button type="button" class="btn addToCartButtons"
+                            onclick="toggleItem('TechnoTussle - Team of 3', 60.00, this)"> 3</button>
+
+                        </div>
                       </div>
-                      <a href="#cart">Go to Cart</a>
+                      <button type="button" class="btn btn-info  goToCartBtn   mt-3" onclick="goToCart()">Go To
+                        Cart</button>
                     </div>
                   </div>
                 </div>
@@ -513,30 +492,23 @@
             <div id="accordion8" class="accordion-content" style="display: none;">
               <button class="panel-button" onclick="togglePanel('panel17')">IEEE Day 2023</button>
               <div id="panel17" class="panel-content" style="display: none;">
-                <div class="container">
-                  <div class="eventCard align-items-center align-content-center">
-                    <div class="eventImgBx align-items-center align-content-center">
-                      <img src="../../events/images/sb/2023/" alt="event_poster" height="250px">
-                    </div>
-                    <div class="eventContentBx">
-                      <h3>Code Break</h3>
-                      <div class="size">
-                        <h4>Are you IEEE Member ?</h4>
-                        <div class="button-container item">
-                          <h3 style="display:none">Yes</h3>
-                          <p style="display:none">Price: $250.00</p>
-                          <button class="show-button"><span>Yes</span></button>
-                          <button onclick="toggleItem('IEEE Day', 250.00, this)" class="hidden-button">Add</button>
-                        </div>
+                <div class="container mt-5">
+                  <div class="card mx-auto py-auto">
+                    <img src="../../events/images/sb/2023/69_art_beyond_brushes/event_poster.jpg"
+                      class="card-img-top mx-auto" style="max-width: 240px;" alt="Image">
+                    <div class="card-body text-center">
+                      <div class="d-flex justify-content-evenly align-items-center">
+                        <h6 class="mb-0">Are You a IEEE Meember ?</h6>
+                        <div>
+                          <button type="button" class="btn addToCartButtons"
+                            onclick="toggleItem('IEEE Day 2023 - IEEE Members', 250.00, this)">Yes</button>
+                          <button type="button" class="btn addToCartButtons"
+                            onclick="toggleItem('IEEE Day 2023 - Non-IEEE Members', 350.00, this)">No</button>
 
-                        <div class="button-container">
-                          <h3 style="display:none">No</h3>
-                          <p style="display:none">Price: $350.00</p>
-                          <button class="show-button"><span>No</span></button>
-                          <button onclick="toggleItem('IEEE Day', 350.00, this)" class="hidden-button">Add</button>
                         </div>
                       </div>
-                      <a href="#cart">Go to Cart</a>
+                      <button type="button" class="btn btn-info  goToCartBtn   mt-3" onclick="goToCart()">Go To
+                        Cart</button>
                     </div>
                   </div>
                 </div>
@@ -561,7 +533,7 @@
       </div>
       <div class="">
 
-        <p>👉 Take the screenshot of the popup appearing after clicking on <b
+        <p>👉 Take a screenshot of the page appearing after clicking on <b
             style="color:#055fad;font-weight:bolder!important"> 🎟 Buy your ticket</b> </p>
         <p>👉 Take a screenshot after you are done with the payment to <span
             style="text-align: center;padding: 0%;margin: 0%;"><b>PhonePe/Google pay:</b> <a
@@ -574,16 +546,11 @@
           <img id="ss_demo" src="../../images/id_ss_demo.png" alt="image" srcset="" width="48%!important">
         </div>
         <p>👉 Make sure that the UPI Transaction ID should be clearly visible.</p>
-        <p>👉 Its mandatory to attach the screenshots into the google form redirected after clicking the
-          <b>next</b>
-          button.
-        </p>
-        <p>👉 After finishing the payment and registration process, you have to register for each individual
-          event by opening the link displayed at the end of the registration form and then the event page for the evnts
-          you have selected.</p>
+        <p>👉 After finishing the payment, you have to register for each individual
+          event by clicking <b style="color:#055fad;font-weight:bolder!important"> 🎟 Register Here</b> in the Checkout
+          page displayed in the example above </p>
         <p>👉 In case of team events, please make sure to add a small message/note along with your payment
-          mentioning
-          the names and roll no.s of your teammates</p>
+          mentioning the names and roll no.s of your teammates</p>
         <p>👉 Join the Help Desk group, incase of any queries - <b
             style="color:#055fad!important;font-weight:bolder!important"><a href="https://bit.ly/IEEEDay2023HelpDesk"
               style="color:#055fad!important">https://bit.ly/IEEEDay2023HelpDesk</a>. </b>You can post your
@@ -611,20 +578,20 @@
       </div>
       <div class="cardbody">
         <table id="customers" style="font-family:'Garamond',serif!important; width:100%;">
-          <thead style="background-color: rgb(193, 229, 255); color: black;">
+          <thead style="background-color: rgb(193, 229, 255); color: #194F8F;">
             <tr>
               <th>Event Selected</th>
               <th>Price</th>
               <th class="delbtn" style="padding-top: 12px;"><i class="material-icons">delete</i></th>
             </tr>
           </thead>
-          <tbody id="cart-items" style="background-color: rgb(255, 255, 255); color: black;"></tbody>
+          <tbody id="cart-items" style="background-color: rgb(255, 255, 255); color: #194F8F;"></tbody>
         </table>
       </div>
       <div class="cardfooter">
-        <div class="prices text-center" style="background-color: rgb(193, 229, 255); color: black;">
+        <div class="prices text-center" style="background-color: rgb(193, 229, 255);  color: #194F8F;">
           <table id="price_footer" style="width:81%; text-align: right; padding-right: 19%; ">
-            <thead style="background-color: rgb(193, 229, 255);">
+            <thead style="background-color: rgb(193, 229, 255);  color: #194F8F;">
               <tr>
                 <th>Total :</th>
                 <th>
@@ -641,8 +608,9 @@
           </h6>
         </div>
         <div class="makepayment mb-4">
-          <button class="btn btn-light btn-purchase trigger cart-column mt-4" id="pay-now-button"
-            onclick="redirectToCheckout()" type="button">
+          <button class="btn btn-light btn-purchase trigger goToCartBtn cart-column mt-4" id="pay-now-button"
+            onclick="redirectToCheckout()" type="button"
+            style="background-color: rgb(193, 229, 255)!important; color: #194F8F!important;">
             🎟 Buy your ticket
           </button>
         </div>
@@ -695,13 +663,23 @@
     function toggleItem(itemName, itemPrice, button) {
       if (isItemInCart(itemName)) {
         removeItem(itemName);
-        button.textContent = "1";
+        // button.textContent = "Add";
+        button.style.color = "rgb(193,229,255)";
+        button.style.backgroundColor = "#194F8F";
+
+        showNotification(`Removed ${itemName} (₹${itemPrice}) from the cart.`);
       } else {
         // Add the item to the cart
         addItem(itemName, itemPrice);
-        button.textContent = "Remove";
+        // button.textContent = "Remove";
         //bacgclr
         //text clr
+
+        button.style.color = "#194F8F";
+        button.style.backgroundColor = "rgb(193,229,255)";
+
+
+        showNotification(`Added ${itemName} (₹${itemPrice}) to the cart.`);
       }
     }
 
@@ -766,6 +744,19 @@
 
       // Redirect to the checkout page
       window.location.href = "checkout.html";
+    }
+
+
+    //notification
+    function showNotification(message) {
+      const notificationElement = document.getElementById("notification");
+      notificationElement.textContent = message;
+      notificationElement.style.display = "block";
+
+      // Hide the notification after 3 seconds (3000 milliseconds)
+      setTimeout(() => {
+        notificationElement.style.display = "none";
+      }, 3000);
     }
   </script>
 
