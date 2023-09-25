@@ -202,7 +202,7 @@
                   <td class="redundant-dates"></td>
                   <td class="redundant-dates"></td>
                   <td><button class="date-button" onclick="toggleAccordion('accordion1')">
-                    26</button></td>
+                      26</button></td>
                   <td><button class="date-button" onclick="toggleAccordion('accordion2')">
                       27</button></td>
                   <td class="redundant-dates">28</td>
@@ -243,12 +243,11 @@
                         <h6 class="mb-0">Team size</h6>
                         <div>
                           <button type="button" class="btn addToCartButtons"
-                            onclick="toggleItem('Art Beyond Brushes', 50.00, this)"> 1</button>
+                            onclick="toggleItem('Art Beyond Brushes - Team of 1', 50.00, this)"> 1</button>
                           <button type="button" class="btn addToCartButtons"
-                            onclick="toggleItem('Art Beyond Brushes', 75.00, this)"> 2</button>
+                            onclick="toggleItem('Art Beyond Brushes  - Team of 2', 75.00, this)"> 2</button>
                           <button type="button" class="btn addToCartButtons"
-                            onclick="toggleItem('Art Beyond Brushes', 100.00, this)"> 3</button>
-
+                            onclick="toggleItem('Art Beyond Brushes  - Team of 3', 100.00, this)"> 3</button>
                         </div>
                       </div>
                       <button type="button" class="btn btn-info mt-3" onclick="goToCart()">Go To Cart</button>
@@ -640,14 +639,18 @@
     // Function to add or remove an item from the cart and update the total amount
     function toggleItem(itemName, itemPrice, button) {
       if (isItemInCart(itemName)) {
+        // Remove the item from the cart
         removeItem(itemName);
-        button.textContent = "Add";
+        //button.textContent = "Add";
+        button.style.color = "#194F8F";
+        button.style.backgroundColor = "rgb(193,229,255)";
       } else {
         // Add the item to the cart
         addItem(itemName, itemPrice);
-        button.textContent = "Remove";
-        //bacgclr
-        //text clr
+        //button.textContent = "Remove";
+        button.style.color = "rgb(193,229,255)";
+        button.style.backgroundColor = "#194F8F";
+
       }
     }
 
