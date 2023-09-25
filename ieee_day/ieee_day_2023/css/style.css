@@ -67,6 +67,7 @@ body {
 }
 
 .show-button {
+    padding: 10px 10px 10px 10px;
     background-color: #3498db;
     color: #fff;
     border: none;
