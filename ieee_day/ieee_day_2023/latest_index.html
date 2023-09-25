@@ -731,8 +731,8 @@
       if (isItemInCart(itemName)) {
         removeItem(itemName);
         // button.textContent = "Add";
-        button.style.color = "#194F8F";
-        button.style.backgroundColor = "rgb(193,229,255)";
+        button.style.color = "rgb(193,229,255)";
+        button.style.backgroundColor = "#194F8F";
 
         showNotification(`Removed ${itemName} from the cart.`);
       } else {
@@ -741,8 +741,10 @@
         // button.textContent = "Remove";
         //bacgclr
         //text clr
-        button.style.color = "rgb(193,229,255)";
-        button.style.backgroundColor = "#194F8F";
+        
+        button.style.color = "#194F8F";
+        button.style.backgroundColor = "rgb(193,229,255)";
+        
 
         showNotification(`Added ${itemName} to the cart.`);
       }
