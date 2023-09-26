@@ -40,12 +40,12 @@ body {
 }
 
 .card:hover .card-img-top {
-    transform: translateY(-35%);
+    transform: translateY(-30%);
     padding-bottom: 0px;
 }
 
 .card .card-body {
-    transform: translateY(-35%);
+    transform: translateY(-37%);
     display: none;
 }
 
