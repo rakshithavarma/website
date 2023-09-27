@@ -37,6 +37,17 @@
         </div>
     </div>
 
+    <!--Notification alert-->
+    <section class="mx-auto" style="display: flex; justify-content: center;">
+        <!-- Notification Modal -->
+        <div id="notification">
+            <div>
+                <p id="notificationMessage">Please take a screenshot of this page for future reference</p>
+                <button id="okayButton">Okay</button>
+            </div>
+        </div>
+    </section>
+
     <!-- Checkout Panel -->
     <div id="stars"></div>
     <div id="stars2"></div>
@@ -64,9 +75,9 @@
             <br>
             <a href="../../events/2023/ieee_day2023.html">
                 <button class="btn btn-light btn-purchase trigger goToCartBtn cart-column mt-4" id="pay-now-button"
-                onclick="redirectToCheckout()" type="button">
-                🎟 Register Here
-            </button>
+                    onclick="redirectToCheckout()" type="button">
+                    🎟 Register Here
+                </button>
             </a>
         </div>
     </section>
@@ -118,6 +129,27 @@
         if (cartData && cartData.total) {
             totalAmountElement.textContent = cartData.total.toFixed(2);
         }
+    </script>
+    <script>
+        // Get the modal element and the button inside it
+        const modal = document.getElementById("notification");
+        const okayButton = document.getElementById("okayButton");
+
+        // Display the modal when the page is opened
+        modal.style.display = "block";
+
+        // Close the modal when the "Okay" button is clicked
+        okayButton.addEventListener("click", function () {
+            modal.style.display = "none";
+        });
+
+        // Optionally, you can also close the modal if the user clicks anywhere outside of it
+        window.addEventListener("click", function (event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+
     </script>
 
 </body>
