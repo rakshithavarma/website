@@ -24,6 +24,42 @@
 
 <body>
 
+    <style type="text/css">
+		#winners_poster img{
+			height: 25rem;
+    		width: 25rem;
+    		object-fit: cover;
+    		overflow: hidden;
+		}
+		.icon-bar {
+		position: fixed;
+		top: 60%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		}
+
+		/* Style the icon bar links */
+		.icon-bar a {
+		display: block;
+		text-align: center;
+		padding: 16px;
+		transition: all 0.3s ease;
+		color: white;
+		font-size: 20px;
+		}
+
+		/* Style the social media icons with color, if you want */
+		.icon-bar a:hover {
+		background-color: #000;
+		}
+
+		.results {
+		background: #277d7b;
+		color: white;
+		}
+	</style>
+
     <!-- navbar - ieee sb gvp -->
 
     <div class="container-fluid navbar navbar-expand-lg sb-navbar sticky-top">
@@ -122,7 +158,7 @@
     </section>
 
     <!-- event highlights section -->
-    <!--<section class="event-highlights" id="event-highlights">
+    <section class="event-highlights" id="event-highlights">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-6 event-highlights-header">
@@ -144,19 +180,7 @@
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img class="d-block w-100 custom-carousel-image"
-                                        src="../images/wie/64_vocal_odyssey/event-highlights-1.jpg" alt="First slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100 custom-carousel-image"
-                                        src="../images/wie/64_vocal_odyssey/event-highlights-2.jpg" alt="Second slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100 custom-carousel-image"
-                                        src="../images/wie/64_vocal_odyssey/event-highlights-3.jpg" alt="Third slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100 custom-carousel-image"
-                                        src="../images/wie/64_vocal_odyssey/event-highlights-4.jpg" alt="Fourth slide">
+                                        src="../../images/sb/2023/74_ladder_logic/highlight1.jpg" alt="First slide">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -171,7 +195,41 @@
                     </div>
                 </div>
             </div>
-        </section>-->
+        </section>
+
+
+        <!-- winners announcement section -->
+        <section class="winners-announcement" id="winners-announcement">
+            <div class="winners-announcement-header">
+                <div class="row">
+                    <div class="col-sm-10 offset-sm-1">
+                        <h1 class="text-center">Winners</h1>
+                        <hr class="underline" align="center" style="width:4.5em">
+                    </div>
+                </div>
+            </div>
+            <div class="container winners-announcement-body">
+                <div class="row align-items-center">
+                    <div class="col-md-4 winners-announcement-poster text-center">
+                        <img src="../../images/sb/2023/74_ladder_logic/winners.jpg" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-8 winners-announcement-content p-3">
+                        <p class="p-4">
+                            Here are the results of <b style="color: #277d7b; font-weight: bold;">Ladder Logic</b> by <b
+                                style="color: #055fad; font-weight: bold;">IEEE SB GVPCE (A)</b>.
+                            <br>
+                            <br>
+    
+                            Congratulations to <b>Ravi Kiran</b>, <b>Hari Krishna</b>, <b>Balaji</b> and <b>Gayatri</b> for showcasing their outstanding skills in designing efficient industrial control programs!!✨
+                            <br>
+                            <br>
+                            We hope you all enjoyed participating in the event.⚡
+                            Thank you and have a great time ahead!✨
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 
@@ -192,6 +250,10 @@
 
         <my-footer></my-footer>
     </section>
+
+    <div class="icon-bar">
+		<a href="#winners-announcement" class="results" style="color: #fff;">Check Results</a>
+	</div>
 
 
     <!-- Optional JavaScript -->
